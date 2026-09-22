@@ -1,0 +1,6 @@
+{
+  "name": "Nomikos Tools",
+  "description": "Βιομηχανικά και Επαγγελματικά Εργαλεία, Μηχανήματα & Εξοπλισμός - E-Shop & Logistics",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
