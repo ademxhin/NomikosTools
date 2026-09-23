@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { StoreProvider, useStore } from './context/StoreContext';
 import { AuthProvider } from './context/AuthContext';
-import { TopBar } from './components/layout/TopBar';
 import { Header } from './components/layout/Header';
 import { MegaMenu } from './components/layout/MegaMenu';
 import { MobileDrawer } from './components/layout/MobileDrawer';
@@ -9,33 +8,47 @@ import { Footer } from './components/layout/Footer';
 import { QuickViewModal } from './components/product/QuickViewModal';
 import { NotificationToast } from './components/common/NotificationToast';
 
-// Pages
-import { HomePage } from './pages/HomePage';
-import { CategoryPage } from './pages/CategoryPage';
-import { ProductDetailPage } from './pages/ProductDetailPage';
-import { CartPage } from './pages/CartPage';
-import { CheckoutPage } from './pages/CheckoutPage';
-import { OrderConfirmationPage } from './pages/OrderConfirmationPage';
-import { AccountPage } from './pages/AccountPage';
-import { WishlistPage } from './pages/WishlistPage';
-import { ComparePage } from './pages/ComparePage';
-import { BrandDirectoryPage } from './pages/BrandDirectoryPage';
-import { SearchResultsPage } from './pages/SearchResultsPage';
-import { TrackOrderPage } from './pages/TrackOrderPage';
-import { AdminDashboardPage } from './pages/AdminDashboardPage';
-import { InfoPage } from './pages/InfoPage';
 import { Order } from './types/order';
 
+const HomePage = lazy(() => import('./pages/HomePage').then((module) => ({ default: module.HomePage })));
+const CategoryPage = lazy(() => import('./pages/CategoryPage').then((module) => ({ default: module.CategoryPage })));
+const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage').then((module) => ({ default: module.ProductDetailPage })));
+const CartPage = lazy(() => import('./pages/CartPage').then((module) => ({ default: module.CartPage })));
+const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then((module) => ({ default: module.CheckoutPage })));
+const OrderConfirmationPage = lazy(() => import('./pages/OrderConfirmationPage').then((module) => ({ default: module.OrderConfirmationPage })));
+const AccountPage = lazy(() => import('./pages/AccountPage').then((module) => ({ default: module.AccountPage })));
+const WishlistPage = lazy(() => import('./pages/WishlistPage').then((module) => ({ default: module.WishlistPage })));
+const ComparePage = lazy(() => import('./pages/ComparePage').then((module) => ({ default: module.ComparePage })));
+const BrandDirectoryPage = lazy(() => import('./pages/BrandDirectoryPage').then((module) => ({ default: module.BrandDirectoryPage })));
+const SearchResultsPage = lazy(() => import('./pages/SearchResultsPage').then((module) => ({ default: module.SearchResultsPage })));
+const TrackOrderPage = lazy(() => import('./pages/TrackOrderPage').then((module) => ({ default: module.TrackOrderPage })));
+const AdminDashboardPage = lazy(() => import('./pages/AdminDashboardPage').then((module) => ({ default: module.AdminDashboardPage })));
+const InfoPage = lazy(() => import('./pages/InfoPage').then((module) => ({ default: module.InfoPage })));
+
+const getBrowserRoute = () => `${window.location.pathname}${window.location.search}`;
+
 function AppContent() {
-  const [currentRoute, setCurrentRoute] = useState<string>('/');
+  const [currentRoute, setCurrentRoute] = useState<string>(getBrowserRoute);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [lastCompletedOrder, setLastCompletedOrder] = useState<Order | null>(null);
 
   // Navigate handler that scrolls to top smoothly
   const handleNavigate = (route: string) => {
+    if (route !== currentRoute) window.history.pushState({}, '', route);
     setCurrentRoute(route);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentRoute(getBrowserRoute());
+      window.scrollTo({ top: 0 });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Render appropriate view based on route pattern
   const renderView = () => {
@@ -156,32 +169,43 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f5f5f5] text-neutral-900 font-sans antialiased">
-      {/* 1. Top Contact & Value Strip */}
-      <TopBar onNavigate={handleNavigate} />
-
-      {/* 2. Main Search-Focused Header */}
+      {/* 1. Main Search-Focused Header */}
       <Header
         onNavigate={handleNavigate}
         onOpenMobileMenu={() => setIsMobileMenuOpen(true)}
+        onToggleMegaMenu={setIsMegaMenuOpen}
       />
 
-      {/* 3. Mega-Menu (Desktop) */}
-      <MegaMenu onNavigate={handleNavigate} />
+      {/* 2. Mega-Menu (Desktop) */}
+      <MegaMenu onNavigate={handleNavigate} isOpen={isMegaMenuOpen} onOpenChange={setIsMegaMenuOpen} />
 
-      {/* 4. Responsive Mobile Drawer */}
+      {/* 3. Responsive Mobile Drawer */}
       <MobileDrawer
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
         onNavigate={handleNavigate}
       />
 
-      {/* 5. Main Active Screen */}
-      <main className="flex-1 w-full">{renderView()}</main>
+      {/* 4. Main Active Screen */}
+      <main className="flex-1 w-full">
+        <Suspense
+          fallback={
+            <div className="min-h-[45vh] grid place-items-center bg-[#f4f4f2]" role="status">
+              <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-neutral-700">
+                <span className="h-5 w-5 animate-spin border-2 border-neutral-300 border-t-[#e21b22] rounded-full" />
+                Φόρτωση περιεχομένου
+              </div>
+            </div>
+          }
+        >
+          {renderView()}
+        </Suspense>
+      </main>
 
-      {/* 6. Comprehensive Industrial Footer */}
+      {/* 5. Comprehensive Industrial Footer */}
       <Footer onNavigate={handleNavigate} />
 
-      {/* 7. Global Modals & Notifications */}
+      {/* 6. Global Modals & Notifications */}
       <QuickViewModal onNavigate={handleNavigate} />
       <NotificationToast />
     </div>

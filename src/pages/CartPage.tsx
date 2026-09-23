@@ -66,7 +66,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
         </p>
         <button
           onClick={() => onNavigate('/products')}
-          className="bg-[#af101a] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider shadow"
+          className="bg-[#e21b22] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider shadow"
         >
           ΕΝΑΡΞΗ ΑΓΟΡΩΝ
         </button>
@@ -79,7 +79,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
       <div className="border-b border-[#cfd8dc] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <ShoppingCart className="w-7 h-7 text-[#af101a]" />
+            <ShoppingCart className="w-7 h-7 text-[#e21b22]" />
             <span>ΚΑΛΑΘΙ ΑΓΟΡΩΝ ({cart.reduce((s, i) => s + i.quantity, 0)} ΠΡΟΪΟΝΤΑ)</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -100,10 +100,10 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
       <div className="bg-[#fcf9f9] border border-[#cfd8dc] p-4 rounded-lg space-y-2">
         <div className="flex items-center justify-between text-xs">
           <div className="flex items-center space-x-2 font-bold text-neutral-800">
-            <Truck className="w-4 h-4 text-[#af101a]" />
+            <Truck className="w-4 h-4 text-[#e21b22]" />
             {remainingForFreeShipping > 0 ? (
               <span>
-                Προσθέστε ακόμη <strong className="text-[#af101a]">€{remainingForFreeShipping.toFixed(2)}</strong> για ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ!
+                Προσθέστε ακόμη <strong className="text-[#e21b22]">€{remainingForFreeShipping.toFixed(2)}</strong> για ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ!
               </span>
             ) : (
               <span className="text-emerald-700 flex items-center space-x-1">
@@ -118,7 +118,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
         </div>
         <div className="w-full bg-neutral-200 h-2 rounded-full overflow-hidden">
           <div
-            className="bg-[#af101a] h-full rounded-full transition-all duration-300"
+            className="bg-[#e21b22] h-full rounded-full transition-all duration-300"
             style={{ width: `${Math.min(100, (subtotal / freeShippingThreshold) * 100)}%` }}
           />
         </div>
@@ -155,7 +155,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
                 <div className="flex-1 min-w-0 text-center sm:text-left">
                   <h3
                     onClick={() => onNavigate(`/product/${item.product.slug}`)}
-                    className="font-bold text-xs sm:text-sm text-neutral-900 hover:text-[#af101a] cursor-pointer line-clamp-2"
+                    className="font-bold text-xs sm:text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer line-clamp-2"
                   >
                     {item.product.name}
                   </h3>
@@ -217,7 +217,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
           <div className="p-4 bg-neutral-50 flex items-center justify-between text-xs">
             <button
               onClick={() => onNavigate('/products')}
-              className="text-[#af101a] font-bold hover:underline flex items-center space-x-1 uppercase font-display"
+              className="text-[#e21b22] font-bold hover:underline flex items-center space-x-1 uppercase font-display"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Συνέχεια Αγορών</span>
@@ -289,7 +289,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
             <button
               id="proceed-to-checkout-btn"
               onClick={() => onNavigate('/checkout')}
-              className="w-full bg-[#af101a] hover:bg-[#b71c1c] text-white font-display font-bold uppercase tracking-wider py-3.5 px-4 rounded shadow flex items-center justify-center space-x-2 text-sm transition-colors"
+              className="w-full bg-[#e21b22] hover:bg-[#c81016] text-white font-display font-bold uppercase tracking-wider py-3.5 px-4 rounded shadow flex items-center justify-center space-x-2 text-sm transition-colors"
             >
               <span>ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</span>
               <ArrowRight className="w-4 h-4" />
@@ -299,7 +299,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
           {/* Coupon Code Box */}
           <div className="bg-white border border-[#cfd8dc] rounded-lg p-4 shadow-sm text-xs">
             <span className="font-bold text-neutral-800 uppercase block mb-2 flex items-center space-x-1.5">
-              <Percent className="w-4 h-4 text-[#af101a]" />
+              <Percent className="w-4 h-4 text-[#e21b22]" />
               <span>ΕΧΕΤΕ ΕΚΠΤΩΤΙΚΟ ΚΟΥΠΟΝΙ;</span>
             </span>
             <form onSubmit={handleApplyCoupon} className="flex space-x-2">
@@ -308,7 +308,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
                 value={couponCode}
                 onChange={(e) => setCouponCode(e.target.value)}
                 placeholder="π.χ. NOMIKOS10"
-                className="flex-1 p-2 border border-neutral-300 rounded font-mono-spec uppercase text-xs focus:border-[#af101a] focus:outline-none"
+                className="flex-1 p-2 border border-neutral-300 rounded font-mono-spec uppercase text-xs focus:border-[#e21b22] focus:outline-none"
               />
               <button
                 type="submit"

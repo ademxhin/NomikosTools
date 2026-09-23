@@ -5,16 +5,39 @@
     --font-display: 'Barlow Condensed', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
+    --nt-red: #e21b22;
+    --nt-red-dark: #c81016;
+    --nt-charcoal: #191919;
+    --nt-paper: #f4f4f2;
   }
 
   body {
     font-family: var(--font-body);
+    background: var(--nt-paper);
+    color: #171717;
   }
 
   h1, h2, h3, .font-heading {
     font-family: var(--font-display);
     letter-spacing: 0.02em;
   }
+
+  button,
+  input,
+  select,
+  textarea {
+    border-radius: 0.75rem;
+  }
+}
+
+::selection {
+  background: var(--nt-red);
+  color: white;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .font-display {
@@ -42,5 +65,5 @@
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #af101a;
+  background: #e21b22;
 }

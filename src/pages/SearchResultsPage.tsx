@@ -40,7 +40,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
       <div className="border-b border-[#cfd8dc] pb-4 flex items-center justify-between">
         <div>
           <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <Search className="w-7 h-7 text-[#af101a]" />
+            <Search className="w-7 h-7 text-[#e21b22]" />
             <span>ΑΠΟΤΕΛΕΣΜΑΤΑ ΓΙΑ: "{query}"</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -66,7 +66,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
           </p>
           <button
             onClick={() => onNavigate('/products')}
-            className="bg-[#af101a] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider"
+            className="bg-[#e21b22] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider"
           >
             ΠΡΟΒΟΛΗ ΟΛΩΝ ΤΩΝ ΠΡΟΪΟΝΤΩΝ
           </button>

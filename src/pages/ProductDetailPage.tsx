@@ -60,7 +60,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         <h2 className="text-xl font-bold text-neutral-800">Το προϊόν δεν βρέθηκε</h2>
         <button
           onClick={() => onNavigate('/products')}
-          className="mt-4 bg-[#af101a] text-white px-4 py-2 rounded text-xs font-bold uppercase font-display"
+          className="mt-4 bg-[#e21b22] text-white px-4 py-2 rounded text-xs font-bold uppercase font-display"
         >
           Επιστροφή στον Κατάλογο
         </button>
@@ -151,7 +151,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         <div className="lg:col-span-5 space-y-4">
           <div className="relative w-full h-80 sm:h-96 bg-[#fafafa] border border-[#cfd8dc] rounded-lg p-4 flex items-center justify-center overflow-hidden">
             {product.salePrice && (
-              <span className="absolute top-3 left-3 bg-[#af101a] text-white text-xs font-display font-black px-2 py-1 rounded shadow z-10">
+              <span className="absolute top-3 left-3 bg-[#e21b22] text-white text-xs font-display font-black px-2 py-1 rounded shadow z-10">
                 ΠΡΟΣΦΟΡΑ
               </span>
             )}
@@ -170,7 +170,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                   key={idx}
                   onClick={() => setSelectedImage(idx)}
                   className={`w-16 h-16 rounded border p-1 shrink-0 bg-[#fafafa] ${
-                    selectedImage === idx ? 'border-[#af101a] ring-2 ring-[#af101a]/30' : 'border-neutral-200'
+                    selectedImage === idx ? 'border-[#e21b22] ring-2 ring-[#e21b22]/30' : 'border-neutral-200'
                   }`}
                 >
                   <img src={img} alt="" className="w-full h-full object-contain" />
@@ -190,7 +190,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             </div>
             <button
               onClick={() => setActiveTab('barcode')}
-              className="text-[#af101a] font-bold hover:underline font-mono-spec text-[11px]"
+              className="text-[#e21b22] font-bold hover:underline font-mono-spec text-[11px]"
             >
               Προβολή Barcode →
             </button>
@@ -205,7 +205,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => brand && onNavigate(`/brand/${brand.slug}`)}
-                  className="font-display font-extrabold text-sm text-[#af101a] hover:underline uppercase tracking-wider"
+                  className="font-display font-extrabold text-sm text-[#e21b22] hover:underline uppercase tracking-wider"
                 >
                   {brand?.name}
                 </button>
@@ -271,7 +271,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                       onClick={() => setSelectedVariantId(v.id)}
                       className={`px-3 py-1.5 rounded text-xs font-medium border transition-colors ${
                         selectedVariantId === v.id
-                          ? 'border-[#af101a] bg-[#af101a] text-white font-bold'
+                          ? 'border-[#e21b22] bg-[#e21b22] text-white font-bold'
                           : 'border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-50'
                       }`}
                     >
@@ -292,7 +292,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                       {isB2BMode ? 'Χωρίς ΦΠΑ 24%' : 'με ΦΠΑ 24%'}
                     </span>
                   </div>
-                  <div className="text-xs font-mono-spec text-[#af101a] font-semibold mt-0.5">
+                  <div className="text-xs font-mono-spec text-[#e21b22] font-semibold mt-0.5">
                     {isB2BMode
                       ? `Τελική τιμή λιανικής: €${grossPrice.toFixed(2)} με ΦΠΑ`
                       : `Καθαρή αξία B2B: €${netPrice.toFixed(2)} χωρίς ΦΠΑ`}
@@ -304,7 +304,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                     <span className="text-sm text-neutral-400 line-through font-mono-spec">
                       €{(isB2BMode ? oldNetPrice! : oldGrossPrice).toFixed(2)}
                     </span>
-                    <span className="block text-xs font-bold text-[#af101a] font-display">
+                    <span className="block text-xs font-bold text-[#e21b22] font-display">
                       ΚΕΡΔΙΖΕΤΕ €{(oldGrossPrice - grossPrice).toFixed(2)}
                     </span>
                   </div>
@@ -323,11 +323,11 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                   </div>
                   <div className="bg-white p-1.5 rounded border border-neutral-200">
                     <div className="font-bold text-neutral-800">3 - 5 τεμ.</div>
-                    <div className="font-mono-spec text-[#af101a] font-bold">Έκπτωση -5%</div>
+                    <div className="font-mono-spec text-[#e21b22] font-bold">Έκπτωση -5%</div>
                   </div>
                   <div className="bg-white p-1.5 rounded border border-neutral-200">
                     <div className="font-bold text-neutral-800">6+ τεμ.</div>
-                    <div className="font-mono-spec text-[#af101a] font-bold">Έκπτωση -8%</div>
+                    <div className="font-mono-spec text-[#e21b22] font-bold">Έκπτωση -8%</div>
                   </div>
                 </div>
               </div>
@@ -356,7 +356,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <button
                 id="pdp-add-to-cart-btn"
                 onClick={() => addToCart(product, quantity, selectedVariantId)}
-                className="w-full sm:flex-1 bg-[#af101a] hover:bg-[#b71c1c] active:bg-[#8e0c14] text-white font-display font-bold uppercase tracking-wider py-3.5 px-6 rounded-md flex items-center justify-center space-x-2 shadow-md transition-all text-sm"
+                className="w-full sm:flex-1 bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white font-display font-bold uppercase tracking-wider py-3.5 px-6 rounded-md flex items-center justify-center space-x-2 shadow-md transition-all text-sm"
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</span>
@@ -367,9 +367,9 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             <div className="flex items-center justify-between pt-2 border-t border-neutral-100 text-xs text-neutral-600">
               <button
                 onClick={() => toggleWishlist(product.id)}
-                className={`flex items-center space-x-1.5 ${isWish ? 'text-[#af101a] font-bold' : 'hover:text-neutral-900'}`}
+                className={`flex items-center space-x-1.5 ${isWish ? 'text-[#e21b22] font-bold' : 'hover:text-neutral-900'}`}
               >
-                <Heart className={`w-4 h-4 ${isWish ? 'fill-[#af101a]' : ''}`} />
+                <Heart className={`w-4 h-4 ${isWish ? 'fill-[#e21b22]' : ''}`} />
                 <span>{isWish ? 'Στα Αγαπημένα σας' : 'Προσθήκη στη Λίστα Επιθυμιών'}</span>
               </button>
 
@@ -386,7 +386,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           {/* Delivery & Service Badges */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-neutral-200 text-xs">
             <div className="flex items-start space-x-2.5 bg-neutral-50 p-2.5 rounded border border-neutral-200">
-              <Truck className="w-4 h-4 text-[#af101a] shrink-0 mt-0.5" />
+              <Truck className="w-4 h-4 text-[#e21b22] shrink-0 mt-0.5" />
               <div>
                 <span className="font-bold text-neutral-800 block">Express Αποστολή</span>
                 <span className="text-neutral-500 text-[11px]">ACS 1-2 ημέρες ή άμεσα σε Box Now Locker 24/7.</span>
@@ -411,7 +411,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             onClick={() => setActiveTab('specs')}
             className={`px-5 py-3 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'specs'
-                ? 'border-[#af101a] bg-white text-[#af101a]'
+                ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
             }`}
           >
@@ -421,7 +421,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             onClick={() => setActiveTab('description')}
             className={`px-5 py-3 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'description'
-                ? 'border-[#af101a] bg-white text-[#af101a]'
+                ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
             }`}
           >
@@ -431,7 +431,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             onClick={() => setActiveTab('warranty')}
             className={`px-5 py-3 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'warranty'
-                ? 'border-[#af101a] bg-white text-[#af101a]'
+                ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
             }`}
           >
@@ -441,7 +441,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             onClick={() => setActiveTab('barcode')}
             className={`px-5 py-3 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'barcode'
-                ? 'border-[#af101a] bg-white text-[#af101a]'
+                ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
             }`}
           >
@@ -451,7 +451,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             onClick={() => setActiveTab('reviews')}
             className={`px-5 py-3 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'reviews'
-                ? 'border-[#af101a] bg-white text-[#af101a]'
+                ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
             }`}
           >
@@ -513,7 +513,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               {product.includedItems && product.includedItems.length > 0 && (
                 <div className="bg-[#f8f9fa] border border-[#cfd8dc] p-4 rounded">
                   <h4 className="font-display font-bold text-sm text-neutral-900 uppercase mb-2 flex items-center space-x-1.5">
-                    <Boxes className="w-4 h-4 text-[#af101a]" />
+                    <Boxes className="w-4 h-4 text-[#e21b22]" />
                     <span>ΠΑΡΑΔΙΔΕΤΑΙ ΜΕ (ΒΑΣΙΚΟΣ ΕΞΟΠΛΙΣΜΟΣ):</span>
                   </h4>
                   <ul className="space-y-1 pl-4 list-disc text-xs text-neutral-700">
@@ -600,7 +600,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
                 <button
                   onClick={() => showToast('Η φόρμα υποβολής κριτικής είναι διαθέσιμη για πιστοποιημένους αγοραστές')}
-                  className="bg-[#af101a] text-white text-xs font-display font-bold uppercase px-4 py-2 rounded"
+                  className="bg-[#e21b22] text-white text-xs font-display font-bold uppercase px-4 py-2 rounded"
                 >
                   ΓΡΑΨΤΕ ΚΡΙΤΙΚΗ
                 </button>
@@ -652,7 +652,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             </h2>
             <button
               onClick={() => onNavigate(`/category/${mainCategory?.slug || 'ergaleia-mpatarias'}`)}
-              className="text-xs font-bold text-[#af101a] hover:underline flex items-center space-x-1 uppercase font-display"
+              className="text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 uppercase font-display"
             >
               <span>Περισσότερα</span>
               <ChevronRight className="w-4 h-4" />

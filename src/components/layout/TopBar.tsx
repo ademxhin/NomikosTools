@@ -20,13 +20,13 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
             href="tel:2105550190"
             className="flex items-center space-x-1.5 text-neutral-200 hover:text-white transition-colors"
           >
-            <Phone className="w-3.5 h-3.5 text-[#af101a]" />
+            <Phone className="w-3.5 h-3.5 text-[#e21b22]" />
             <span className="font-semibold tracking-wide">210 5550190</span>
             <span className="hidden sm:inline text-neutral-400 font-normal">(08:00 - 17:30)</span>
           </a>
           <span className="hidden md:inline text-neutral-600">|</span>
           <div className="hidden md:flex items-center space-x-1.5 text-neutral-300">
-            <Truck className="w-3.5 h-3.5 text-[#af101a]" />
+            <Truck className="w-3.5 h-3.5 text-[#e21b22]" />
             <span>Δωρεάν Μεταφορικά άνω των 50€</span>
           </div>
           <span className="hidden lg:inline text-neutral-600">|</span>
@@ -45,7 +45,7 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
               id="b2b-vat-toggle"
               onClick={() => setIsB2BMode(!isB2BMode)}
               className={`relative inline-flex h-4 w-8 items-center rounded-full transition-colors ${
-                isB2BMode ? 'bg-[#af101a]' : 'bg-neutral-600'
+                isB2BMode ? 'bg-[#e21b22]' : 'bg-neutral-600'
               }`}
               title="Εναλλαγή προβολής τιμών με/χωρίς ΦΠΑ 24%"
             >
@@ -55,7 +55,7 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
                 }`}
               />
             </button>
-            <span className={`text-[10px] font-bold ${isB2BMode ? 'text-[#ffb3ac]' : 'text-neutral-400'}`}>
+            <span className={`text-[10px] font-bold ${isB2BMode ? 'text-[#ffb4b7]' : 'text-neutral-400'}`}>
               {isB2BMode ? 'NET' : 'GROSS'}
             </span>
           </div>
@@ -64,9 +64,9 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
           <button
             id="top-admin-portal-btn"
             onClick={() => onNavigate('/admin')}
-            className="flex items-center space-x-1 text-[#ffb3ac] hover:text-white bg-[#af101a]/20 hover:bg-[#af101a] px-2.5 py-0.5 rounded border border-[#af101a]/40 transition-colors text-[11px] font-semibold"
+            className="flex items-center space-x-1 text-[#ffb4b7] hover:text-white bg-[#e21b22]/20 hover:bg-[#e21b22] px-2.5 py-0.5 rounded border border-[#e21b22]/40 transition-colors text-[11px] font-semibold"
           >
-            <ShieldAlert className="w-3 h-3 text-[#ffdad6]" />
+            <ShieldAlert className="w-3 h-3 text-[#ffe0e1]" />
             <span className="font-display uppercase tracking-wider">Logistics &amp; Admin</span>
           </button>
 

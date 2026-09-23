@@ -20,11 +20,18 @@ import { Category } from '../../types/category';
 
 interface MegaMenuProps {
   onNavigate: (route: string) => void;
+  isOpen?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
-export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
+export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, onOpenChange }) => {
   const { categories, brands } = useStore();
-  const [isAllCategoriesOpen, setIsAllCategoriesOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
+  const isAllCategoriesOpen = isOpen || internalOpen;
+  const setIsAllCategoriesOpen = (open: boolean) => {
+    setInternalOpen(open);
+    onOpenChange?.(open);
+  };
   const [activeMainCatId, setActiveMainCatId] = useState<string>('cat-battery');
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -47,17 +54,17 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setIsAllCategoriesOpen(true);
+    onOpenChange?.(true); setInternalOpen(true);
   };
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
-      setIsAllCategoriesOpen(false);
+      onOpenChange?.(false); setInternalOpen(false);
     }, 250);
   };
 
   const getCategoryIcon = (slug: string) => {
-    if (slug.includes('battery') || slug.includes('mpatarias')) return <BatteryCharging className="w-4 h-4 text-[#af101a]" />;
+    if (slug.includes('battery') || slug.includes('mpatarias')) return <BatteryCharging className="w-4 h-4 text-[#e21b22]" />;
     if (slug.includes('electric') || slug.includes('ilektrika')) return <Zap className="w-4 h-4 text-amber-500" />;
     if (slug.includes('hand') || slug.includes('xeiros')) return <Wrench className="w-4 h-4 text-sky-500" />;
     if (slug.includes('accessories') || slug.includes('analosima')) return <Disc className="w-4 h-4 text-emerald-500" />;
@@ -70,7 +77,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
   const selectedCategory = categories.find((c) => c.id === activeMainCatId);
 
   return (
-    <nav className="bg-[#121212] text-white border-b border-[#252525] relative hidden lg:block select-none z-30">
+    <nav className="fixed top-[76px] left-0 right-0 text-white hidden lg:block select-none z-30 pointer-events-none">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Left: All Categories Dropdown Trigger */}
         <div
@@ -81,7 +88,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
           <button
             id="mega-menu-trigger-btn"
             onClick={() => setIsAllCategoriesOpen(!isAllCategoriesOpen)}
-            className="flex items-center space-x-3 bg-[#af101a] hover:bg-[#b71c1c] text-white px-5 py-3 font-display font-bold uppercase tracking-wider text-sm transition-colors border-r border-red-800"
+            className="hidden"
           >
             <Layers className="w-4 h-4" />
             <span>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</span>
@@ -92,7 +99,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
           {isAllCategoriesOpen && (
             <div
               id="desktop-mega-menu-panel"
-              className="absolute top-full left-0 w-[1050px] bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex min-h-[460px] text-neutral-200"
+              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1050px,calc(100vw-2rem))] overflow-hidden rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex min-h-[460px] text-neutral-200"
             >
               {/* Left Column: Level 1 Main Categories */}
               <div className="w-72 bg-[#161616] border-r border-[#2a2a2a] py-2 overflow-y-auto max-h-[520px]">
@@ -108,7 +115,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
                       }}
                       className={`flex items-center justify-between px-4 py-2.5 text-xs font-semibold cursor-pointer border-l-2 transition-colors ${
                         isActive
-                          ? 'border-[#af101a] bg-[#222] text-white'
+                          ? 'border-[#e21b22] bg-[#222] text-white'
                           : 'border-transparent text-neutral-300 hover:text-white hover:bg-[#1c1c1c]'
                       }`}
                     >
@@ -116,7 +123,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
                         {getCategoryIcon(cat.slug)}
                         <span className="truncate">{cat.name}</span>
                       </div>
-                      <ChevronRight className={`w-3.5 h-3.5 ${isActive ? 'text-[#af101a]' : 'text-neutral-500'}`} />
+                      <ChevronRight className={`w-3.5 h-3.5 ${isActive ? 'text-[#e21b22]' : 'text-neutral-500'}`} />
                     </div>
                   );
                 })}
@@ -146,7 +153,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
                         setIsAllCategoriesOpen(false);
                         if (selectedCategory) onNavigate(`/category/${selectedCategory.slug}`);
                       }}
-                      className="text-xs text-[#ffb3ac] hover:text-white font-semibold flex items-center space-x-1"
+                      className="text-xs text-[#ffb4b7] hover:text-white font-semibold flex items-center space-x-1"
                     >
                       <span>Προβολή Όλων</span>
                       <ChevronRight className="w-3.5 h-3.5" />
@@ -166,7 +173,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
                                 setIsAllCategoriesOpen(false);
                                 onNavigate(`/category/${subcat.slug}`);
                               }}
-                              className="font-display font-bold text-sm text-neutral-100 hover:text-[#af101a] tracking-wide text-left flex items-center space-x-1 uppercase transition-colors"
+                              className="font-display font-bold text-sm text-neutral-100 hover:text-[#e21b22] tracking-wide text-left flex items-center space-x-1 uppercase transition-colors"
                             >
                               <span>{subcat.name}</span>
                             </button>
@@ -201,7 +208,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
                           setIsAllCategoriesOpen(false);
                           if (selectedCategory) onNavigate(`/category/${selectedCategory.slug}`);
                         }}
-                        className="mt-3 bg-[#af101a] text-white px-4 py-1.5 text-xs font-bold rounded uppercase font-display"
+                        className="mt-3 bg-[#e21b22] text-white px-4 py-1.5 text-xs font-bold rounded uppercase font-display"
                       >
                         Εξερεύνηση Προϊόντων
                       </button>
@@ -212,7 +219,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
                 {/* Bottom Promo Strip in Mega Menu */}
                 <div className="mt-6 pt-4 border-t border-[#2e2e2e] flex items-center justify-between bg-[#181818] p-3 rounded">
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded bg-[#af101a]/20 flex items-center justify-center text-[#ffb3ac]">
+                    <div className="w-8 h-8 rounded bg-[#e21b22]/20 flex items-center justify-center text-[#ffb4b7]">
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <div>
@@ -240,7 +247,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
         </div>
 
         {/* Center Horizontal Quick Category Links */}
-        <div className="flex items-center space-x-1 overflow-x-auto text-xs font-semibold uppercase tracking-wider text-neutral-300">
+        <div className="hidden">
           <button
             onClick={() => onNavigate('/category/ergaleia-mpatarias')}
             className="px-3 py-3 hover:text-white hover:bg-[#1e1e1e] transition-colors whitespace-nowrap"
@@ -280,7 +287,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate }) => {
         </div>
 
         {/* Right Quick Links: Offers & Brands */}
-        <div className="flex items-center space-x-2 shrink-0">
+        <div className="hidden">
           <button
             id="nav-offers-btn"
             onClick={() => onNavigate('/offers')}

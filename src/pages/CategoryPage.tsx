@@ -201,13 +201,13 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         <aside className="hidden lg:block space-y-5 bg-white border border-[#cfd8dc] p-4 rounded text-xs">
           <div className="flex items-center justify-between pb-3 border-b border-[#cfd8dc]">
             <span className="font-display font-bold text-sm uppercase tracking-wider text-neutral-900 flex items-center space-x-1.5">
-              <Filter className="w-4 h-4 text-[#af101a]" />
+              <Filter className="w-4 h-4 text-[#e21b22]" />
               <span>ΦΙΛΤΡΑ ΑΝΑΖΗΤΗΣΗΣ</span>
             </span>
             {hasActiveFilters && (
               <button
                 onClick={resetFilters}
-                className="text-[11px] text-[#af101a] hover:underline font-semibold flex items-center space-x-1"
+                className="text-[11px] text-[#e21b22] hover:underline font-semibold flex items-center space-x-1"
               >
                 <RotateCcw className="w-3 h-3" />
                 <span>Καθαρισμός</span>
@@ -222,7 +222,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                 type="checkbox"
                 checked={inStockOnly}
                 onChange={(e) => setInStockOnly(e.target.checked)}
-                className="rounded border-[#cfd8dc] text-[#af101a] focus:ring-[#af101a]"
+                className="rounded border-[#cfd8dc] text-[#e21b22] focus:ring-[#e21b22]"
               />
               <span>Μόνο Ετοιμοπαράδοτα ({baseProducts.filter((p) => p.stockQuantity > 0).length})</span>
             </label>
@@ -276,7 +276,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                               isChecked ? prev.filter((id) => id !== b.id) : [...prev, b.id]
                             )
                           }
-                          className="rounded border-[#cfd8dc] text-[#af101a] focus:ring-[#af101a]"
+                          className="rounded border-[#cfd8dc] text-[#e21b22] focus:ring-[#e21b22]"
                         />
                         <span className="font-medium uppercase">{b.name}</span>
                       </div>
@@ -307,7 +307,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                             isChecked ? prev.filter((v) => v !== volt) : [...prev, volt]
                           )
                         }
-                        className="rounded border-[#cfd8dc] text-[#af101a] focus:ring-[#af101a]"
+                        className="rounded border-[#cfd8dc] text-[#e21b22] focus:ring-[#e21b22]"
                       />
                       <span className="font-mono-spec font-medium">{volt}</span>
                     </label>
@@ -336,7 +336,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                             isChecked ? prev.filter((item) => item !== m) : [...prev, m]
                           )
                         }
-                        className="rounded border-[#cfd8dc] text-[#af101a] focus:ring-[#af101a]"
+                        className="rounded border-[#cfd8dc] text-[#e21b22] focus:ring-[#e21b22]"
                       />
                       <span>{m}</span>
                     </label>
@@ -357,7 +357,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                 onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
                 className="lg:hidden flex items-center space-x-1.5 bg-neutral-100 hover:bg-neutral-200 px-3 py-1.5 rounded font-semibold border border-neutral-300"
               >
-                <SlidersHorizontal className="w-4 h-4 text-[#af101a]" />
+                <SlidersHorizontal className="w-4 h-4 text-[#e21b22]" />
                 <span>Φίλτρα {hasActiveFilters && '(Ενεργά)'}</span>
               </button>
 
@@ -373,7 +373,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
-                  className="bg-neutral-50 border border-neutral-300 rounded px-2.5 py-1 text-xs focus:border-[#af101a] focus:outline-none"
+                  className="bg-neutral-50 border border-neutral-300 rounded px-2.5 py-1 text-xs focus:border-[#e21b22] focus:outline-none"
                 >
                   <option value="featured">Προτεινόμενα</option>
                   <option value="price-asc">Τιμή: Χαμηλή προς Υψηλή</option>
@@ -446,7 +446,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
               <button
                 onClick={resetFilters}
-                className="text-[11px] text-[#af101a] font-bold hover:underline ml-2"
+                className="text-[11px] text-[#e21b22] font-bold hover:underline ml-2"
               >
                 Καθαρισμός Όλων
               </button>
@@ -477,7 +477,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </p>
               <button
                 onClick={resetFilters}
-                className="bg-[#af101a] text-white px-4 py-2 rounded text-xs font-bold uppercase font-display"
+                className="bg-[#e21b22] text-white px-4 py-2 rounded text-xs font-bold uppercase font-display"
               >
                 Επαναφορά Όλων των Φίλτρων
               </button>

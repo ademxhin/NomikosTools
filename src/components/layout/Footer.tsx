@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       <div className="border-b border-[#262626] bg-[#1a1a1a]">
         <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex items-start space-x-3.5">
-            <div className="w-10 h-10 rounded bg-[#af101a]/20 border border-[#af101a]/40 flex items-center justify-center shrink-0 text-[#ffb3ac]">
+            <div className="w-10 h-10 rounded bg-[#e21b22]/20 border border-[#e21b22]/40 flex items-center justify-center shrink-0 text-[#ffb4b7]">
               <Truck className="w-5 h-5" />
             </div>
             <div>
@@ -101,15 +101,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-xs">
         {/* Col 1: Brand Info */}
         <div className="lg:col-span-2 space-y-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#af101a] flex items-center justify-center font-display font-black text-lg text-white rounded">
-              NT
-            </div>
-            <div className="flex items-center space-x-1.5">
-              <span className="font-display font-black text-xl text-white tracking-wider">NOMIKOS</span>
-              <span className="font-display font-black text-xl text-[#af101a] tracking-wider">TOOLS</span>
-            </div>
-          </div>
+          <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-10 w-[205px] object-contain object-left scale-[1.5] origin-left" />
 
           <p className="text-neutral-400 leading-relaxed max-w-sm">
             Η <strong>Nomikos Tools Α.Ε.Β.Ε.</strong> εξειδικεύεται στον βιομηχανικό εξοπλισμό, στα επαγγελματικά εργαλεία μπαταρίας, στα μηχανήματα συνεργείου και στις ολοκληρωμένες λύσεις εργοταξίου από το 1994.
@@ -117,19 +109,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           <div className="space-y-2 text-neutral-300">
             <div className="flex items-center space-x-2.5">
-              <MapPin className="w-4 h-4 text-[#af101a] shrink-0" />
+              <MapPin className="w-4 h-4 text-[#e21b22] shrink-0" />
               <span>Κεντρικό: Θέση Γκορυτσά, 19300 Ασπρόπυργος Αττικής</span>
             </div>
             <div className="flex items-center space-x-2.5">
-              <MapPin className="w-4 h-4 text-[#af101a] shrink-0" />
+              <MapPin className="w-4 h-4 text-[#e21b22] shrink-0" />
               <span>Κατάστημα: Λεωφ. Κηφισού 42, 18233 Αγ. Ι. Ρέντης</span>
             </div>
             <div className="flex items-center space-x-2.5">
-              <Phone className="w-4 h-4 text-[#af101a] shrink-0" />
+              <Phone className="w-4 h-4 text-[#e21b22] shrink-0" />
               <span>Τηλεφωνικό Κέντρο: 210 5550190 (Δευτ-Παρ 08:00 - 17:30)</span>
             </div>
             <div className="flex items-center space-x-2.5">
-              <Mail className="w-4 h-4 text-[#af101a] shrink-0" />
+              <Mail className="w-4 h-4 text-[#e21b22] shrink-0" />
               <span>Email: sales@nomikostools.gr | b2b@nomikostools.gr</span>
             </div>
           </div>
@@ -229,11 +221,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder="Εισάγετε το επαγγελματικό email σας..."
-                className="w-full bg-[#242424] text-white px-3 py-2 text-xs rounded border border-[#383838] focus:border-[#af101a] focus:outline-none"
+                className="w-full bg-[#242424] text-white px-3 py-2 text-xs rounded border border-[#383838] focus:border-[#e21b22] focus:outline-none"
               />
               <button
                 type="submit"
-                className="mt-1.5 w-full bg-[#af101a] hover:bg-[#b71c1c] text-white font-display font-bold uppercase py-2 px-3 rounded text-xs tracking-wider flex items-center justify-center space-x-1.5 transition-colors"
+                className="mt-1.5 w-full bg-[#e21b22] hover:bg-[#c81016] text-white font-display font-bold uppercase py-2 px-3 rounded text-xs tracking-wider flex items-center justify-center space-x-1.5 transition-colors"
               >
                 <span>ΕΓΓΡΑΦΗ</span>
                 <Send className="w-3.5 h-3.5" />

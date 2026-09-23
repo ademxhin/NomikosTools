@@ -49,13 +49,13 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
               value={voucher}
               onChange={(e) => setVoucher(e.target.value)}
               placeholder="Αριθμός Voucher (π.χ. ACS-893049102GR)..."
-              className="w-full pl-9 pr-3 py-2.5 bg-white border border-[#cfd8dc] rounded text-xs font-mono-spec focus:border-[#af101a] focus:outline-none"
+              className="w-full pl-9 pr-3 py-2.5 bg-white border border-[#cfd8dc] rounded text-xs font-mono-spec focus:border-[#e21b22] focus:outline-none"
             />
             <Search className="w-4 h-4 text-neutral-400 absolute left-3 top-3" />
           </div>
           <button
             type="submit"
-            className="bg-[#af101a] hover:bg-[#b71c1c] text-white px-5 py-2.5 rounded font-display font-bold text-xs uppercase tracking-wider"
+            className="bg-[#e21b22] hover:bg-[#c81016] text-white px-5 py-2.5 rounded font-display font-bold text-xs uppercase tracking-wider"
           >
             ΑΝΑΖΗΤΗΣΗ
           </button>
@@ -74,7 +74,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
                 {searchedVoucher}
               </div>
               {matchingOrder && (
-                <div className="text-xs text-[#af101a] font-semibold mt-0.5">
+                <div className="text-xs text-[#e21b22] font-semibold mt-0.5">
                   Συνδεδεμένη με Παραγγελία #{matchingOrder.orderNumber}
                 </div>
               )}
@@ -95,7 +95,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
             <div className="relative pl-6 space-y-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-neutral-200 text-xs">
               {trackingInfo.history.map((step, idx) => (
                 <div key={idx} className="relative">
-                  <div className="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-[#af101a] text-white flex items-center justify-center border-2 border-white shadow">
+                  <div className="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-[#e21b22] text-white flex items-center justify-center border-2 border-white shadow">
                     <span className="w-1.5 h-1.5 rounded-full bg-white" />
                   </div>
                   <div>
@@ -118,7 +118,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
             </span>
             <a
               href="tel:2105550190"
-              className="text-[#af101a] font-bold hover:underline"
+              className="text-[#e21b22] font-bold hover:underline"
             >
               Καλέστε στο 210 5550190 →
             </a>

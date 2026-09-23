@@ -59,7 +59,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
         {/* Drawer Header */}
         <div className="p-4 bg-[#1f1f1f] border-b border-[#2e2e2e] flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#af101a] flex items-center justify-center font-display font-black text-lg text-white rounded">
+            <div className="w-8 h-8 bg-[#e21b22] flex items-center justify-center font-display font-black text-lg text-white rounded">
               NT
             </div>
             <div>
@@ -82,7 +82,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
             <button
               onClick={() => setIsB2BMode(!isB2BMode)}
               className={`relative inline-flex h-4 w-8 items-center rounded-full transition-colors ${
-                isB2BMode ? 'bg-[#af101a]' : 'bg-neutral-600'
+                isB2BMode ? 'bg-[#e21b22]' : 'bg-neutral-600'
               }`}
             >
               <span
@@ -137,7 +137,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
                     >
                       <ChevronDown
                         className={`w-4 h-4 transition-transform duration-200 ${
-                          isExpanded ? 'rotate-180 text-[#af101a]' : ''
+                          isExpanded ? 'rotate-180 text-[#e21b22]' : ''
                         }`}
                       />
                     </button>
@@ -167,7 +167,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
                               >
                                 <ChevronRight
                                   className={`w-3.5 h-3.5 transition-transform ${
-                                    isSubExpanded ? 'rotate-90 text-[#af101a]' : ''
+                                    isSubExpanded ? 'rotate-90 text-[#e21b22]' : ''
                                   }`}
                                 />
                               </button>
@@ -205,14 +205,14 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
               onClick={() => handleNav(isAuthenticated ? '/account' : '/login')}
               className="flex items-center space-x-2 text-neutral-300 hover:text-white"
             >
-              <User className="w-4 h-4 text-[#af101a]" />
+              <User className="w-4 h-4 text-[#e21b22]" />
               <span>{isAuthenticated ? user?.name : 'Σύνδεση / Εγγραφή'}</span>
             </button>
             <button
               onClick={() => handleNav('/wishlist')}
               className="flex items-center space-x-1 text-neutral-300 hover:text-white"
             >
-              <Heart className="w-4 h-4 text-[#af101a]" />
+              <Heart className="w-4 h-4 text-[#e21b22]" />
               <span>({wishlist.length})</span>
             </button>
             <button
@@ -225,7 +225,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
           </div>
           <div className="pt-2 border-t border-neutral-700/60 flex items-center justify-between text-[11px] text-neutral-400">
             <a href="tel:2105550190" className="flex items-center space-x-1 text-neutral-300">
-              <Phone className="w-3 h-3 text-[#af101a]" />
+              <Phone className="w-3 h-3 text-[#e21b22]" />
               <span>210 5550190</span>
             </a>
             <button onClick={() => handleNav('/track-order')} className="text-neutral-400 hover:text-white">

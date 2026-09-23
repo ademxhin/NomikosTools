@@ -42,7 +42,7 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
       {currentBrand ? (
         <div className="bg-[#181818] text-white p-6 sm:p-8 rounded-lg border border-[#2e2e2e] flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center space-x-2 bg-[#af101a] text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase font-mono-spec">
+            <div className="inline-flex items-center space-x-2 bg-[#e21b22] text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase font-mono-spec">
               ΕΠΙΣΗΜΟΣ ΔΙΑΝΟΜΕΑΣ ΕΛΛΑΔΟΣ
             </div>
             <h1 className="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight text-white">
@@ -54,7 +54,7 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
           </div>
 
           <div className="text-right shrink-0 bg-[#222] p-4 rounded border border-[#333]">
-            <div className="text-2xl font-bold font-mono-spec text-[#ffb3ac]">
+            <div className="text-2xl font-bold font-mono-spec text-[#ffb4b7]">
               {brandProducts.length}
             </div>
             <div className="text-xs text-neutral-400">Διαθέσιμα Εργαλεία &amp; Αξεσουάρ</div>
@@ -79,7 +79,7 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
             onClick={() => onNavigate(`/brand/${b.slug}`)}
             className={`px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-wider transition-colors border ${
               currentBrand?.id === b.id
-                ? 'bg-[#af101a] text-white border-[#af101a]'
+                ? 'bg-[#e21b22] text-white border-[#e21b22]'
                 : 'bg-white text-neutral-700 border-neutral-300 hover:bg-neutral-100'
             }`}
           >

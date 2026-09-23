@@ -97,7 +97,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
               />
 
               {quickViewProduct.salePrice && (
-                <div className="absolute top-3 left-3 bg-[#af101a] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow uppercase font-display tracking-wider">
+                <div className="absolute top-3 left-3 bg-[#e21b22] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow uppercase font-display tracking-wider">
                   ΕΚΠΤΩΣΗ -{Math.round((1 - quickViewProduct.salePrice / quickViewProduct.price) * 100)}%
                 </div>
               )}
@@ -112,7 +112,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
                     onClick={() => setSelectedImageIndex(idx)}
                     className={`w-16 h-16 p-1 border rounded bg-white shrink-0 transition-all ${
                       idx === selectedImageIndex
-                        ? 'border-[#af101a] ring-2 ring-red-100'
+                        ? 'border-[#e21b22] ring-2 ring-red-100'
                         : 'border-neutral-200 opacity-70 hover:opacity-100'
                     }`}
                   >
@@ -128,7 +128,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
             <div>
               {/* Brand and SKU */}
               <div className="flex items-center justify-between text-xs text-neutral-500 mb-1.5">
-                <span className="font-bold text-[#af101a] uppercase tracking-wider">
+                <span className="font-bold text-[#e21b22] uppercase tracking-wider">
                   {brand?.name || 'Nomikos Pro'}
                 </span>
                 <span className="font-mono-spec">SKU: {quickViewProduct.sku}</span>
@@ -222,7 +222,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
                 <button
                   type="button"
                   onClick={handleAddToCart}
-                  className="flex-1 bg-[#af101a] hover:bg-[#b71c1c] text-white py-2.5 px-4 rounded font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-colors shadow-sm"
+                  className="flex-1 bg-[#e21b22] hover:bg-[#c81016] text-white py-2.5 px-4 rounded font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-colors shadow-sm"
                 >
                   <ShoppingCart className="w-4 h-4" />
                   <span>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</span>
@@ -236,7 +236,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
                     type="button"
                     onClick={() => toggleWishlist(quickViewProduct.id)}
                     className={`flex items-center space-x-1 ${
-                      inWishlist ? 'text-[#af101a] font-bold' : 'text-neutral-600 hover:text-neutral-900'
+                      inWishlist ? 'text-[#e21b22] font-bold' : 'text-neutral-600 hover:text-neutral-900'
                     }`}
                   >
                     <Heart className={`w-4 h-4 ${inWishlist ? 'fill-current' : ''}`} />
@@ -257,7 +257,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
                 <button
                   type="button"
                   onClick={handleGoToDetails}
-                  className="text-[#af101a] hover:underline font-bold flex items-center space-x-1"
+                  className="text-[#e21b22] hover:underline font-bold flex items-center space-x-1"
                 >
                   <span>Πλήρης Σελίδα Προϊόντος</span>
                   <ChevronRight className="w-3.5 h-3.5" />

@@ -45,7 +45,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
         </p>
         <button
           onClick={() => onNavigate('/products')}
-          className="bg-[#af101a] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider shadow"
+          className="bg-[#e21b22] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider shadow"
         >
           ΠΕΡΙΗΓΗΣΗ ΣΤΑ ΕΡΓΑΛΕΙΑ
         </button>
@@ -76,7 +76,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#cfd8dc] pb-4">
         <div>
           <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <Scale className="w-7 h-7 text-[#af101a]" />
+            <Scale className="w-7 h-7 text-[#e21b22]" />
             <span>ΣΥΓΚΡΙΣΗ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΕΡΓΑΛΕΙΩΝ</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -90,14 +90,14 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
               type="checkbox"
               checked={highlightDifferences}
               onChange={(e) => setHighlightDifferences(e.target.checked)}
-              className="rounded text-[#af101a] focus:ring-[#af101a]"
+              className="rounded text-[#e21b22] focus:ring-[#e21b22]"
             />
             <span>Επισήμανση Διαφορών</span>
           </label>
 
           <button
             onClick={clearCompare}
-            className="text-xs text-[#af101a] hover:underline font-bold flex items-center space-x-1"
+            className="text-xs text-[#e21b22] hover:underline font-bold flex items-center space-x-1"
           >
             <Trash2 className="w-3.5 h-3.5" />
             <span>Καθαρισμός Όλων</span>
@@ -141,12 +141,12 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
                       </div>
 
                       <div>
-                        <span className="font-display font-bold text-[#af101a] uppercase text-[11px]">
+                        <span className="font-display font-bold text-[#e21b22] uppercase text-[11px]">
                           {brand?.name}
                         </span>
                         <h4
                           onClick={() => onNavigate(`/product/${p.slug}`)}
-                          className="font-bold text-neutral-900 text-xs line-clamp-2 hover:text-[#af101a] cursor-pointer mt-0.5 leading-snug"
+                          className="font-bold text-neutral-900 text-xs line-clamp-2 hover:text-[#e21b22] cursor-pointer mt-0.5 leading-snug"
                         >
                           {p.name}
                         </h4>
@@ -168,7 +168,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
                       {/* Add to Cart */}
                       <button
                         onClick={() => addToCart(p, 1)}
-                        className="w-full bg-[#af101a] hover:bg-[#b71c1c] text-white py-1.5 px-2 rounded text-xs font-display font-bold uppercase tracking-wider flex items-center justify-center space-x-1"
+                        className="w-full bg-[#e21b22] hover:bg-[#c81016] text-white py-1.5 px-2 rounded text-xs font-display font-bold uppercase tracking-wider flex items-center justify-center space-x-1"
                       >
                         <ShoppingCart className="w-3.5 h-3.5" />
                         <span>ΠΡΟΣΘΗΚΗ</span>
@@ -181,7 +181,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
                 <th className="p-4 w-48 border-l border-neutral-200 text-center align-middle bg-neutral-50/50">
                   <button
                     onClick={() => onNavigate('/products')}
-                    className="border-2 border-dashed border-neutral-300 hover:border-[#af101a] text-neutral-500 hover:text-[#af101a] p-6 rounded flex flex-col items-center justify-center space-y-2 w-full transition-colors"
+                    className="border-2 border-dashed border-neutral-300 hover:border-[#e21b22] text-neutral-500 hover:text-[#e21b22] p-6 rounded flex flex-col items-center justify-center space-y-2 w-full transition-colors"
                   >
                     <Plus className="w-6 h-6" />
                     <span className="font-display font-bold uppercase text-[11px]">ΠΡΟΣΘΗΚΗ ΕΡΓΑΛΕΙΟΥ</span>
@@ -244,7 +244,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
             <tr className="bg-white">
               <td className="p-3 font-bold text-neutral-700 bg-neutral-50">ΜΕΓΙΣΤΗ ΡΟΠΗ</td>
               {comparedProducts.map((p) => (
-                <td key={p.id} className="p-3 border-l border-neutral-200 font-mono-spec font-bold text-[#af101a]">
+                <td key={p.id} className="p-3 border-l border-neutral-200 font-mono-spec font-bold text-[#e21b22]">
                   {p.attributes.maxTorque || '-'}
                 </td>
               ))}

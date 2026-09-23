@@ -209,7 +209,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
       {/* Title */}
       <div className="border-b border-[#cfd8dc] pb-4">
         <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-          <Lock className="w-6 h-6 text-[#af101a]" />
+          <Lock className="w-6 h-6 text-[#e21b22]" />
           <span>ΑΣΦΑΛΗΣ ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</span>
         </h1>
         <p className="text-xs text-neutral-500 mt-1">
@@ -225,7 +225,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
             <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-4">
               <div className="flex items-center justify-between border-b border-neutral-200 pb-3">
                 <div className="flex items-center space-x-2.5">
-                  <div className="w-6 h-6 rounded-full bg-[#af101a] text-white flex items-center justify-center font-display font-bold text-xs">
+                  <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                     1
                   </div>
                   <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
@@ -251,7 +251,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                     onClick={() => setInvoiceType('invoice')}
                     className={`px-3 py-1 rounded font-medium transition-colors ${
                       invoiceType === 'invoice'
-                        ? 'bg-[#af101a] text-white shadow font-bold'
+                        ? 'bg-[#e21b22] text-white shadow font-bold'
                         : 'text-neutral-600 hover:text-neutral-900'
                     }`}
                   >
@@ -264,14 +264,14 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
               {invoiceType === 'invoice' && (
                 <div className="p-3 bg-red-50/50 border border-red-200 rounded-lg space-y-3 text-xs">
                   <div className="flex items-center justify-between text-neutral-800 font-bold">
-                    <span className="flex items-center space-x-1.5 text-[#af101a]">
+                    <span className="flex items-center space-x-1.5 text-[#e21b22]">
                       <Building2 className="w-4 h-4" />
                       <span>ΣΤΟΙΧΕΙΑ ΕΠΑΓΓΕΛΜΑΤΙΚΟΥ ΤΙΜΟΛΟΓΙΟΥ (ΑΡΘΡΟ 39α / ΕΛΤΑ)</span>
                     </span>
                     <button
                       type="button"
                       onClick={handleCheckVat}
-                      className="bg-white hover:bg-neutral-100 text-[#af101a] border border-[#af101a] px-2.5 py-0.5 rounded font-mono-spec font-bold"
+                      className="bg-white hover:bg-neutral-100 text-[#e21b22] border border-[#e21b22] px-2.5 py-0.5 rounded font-mono-spec font-bold"
                     >
                       Έλεγχος ΑΦΜ (Taxis)
                     </button>
@@ -423,7 +423,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
             {/* Step 2: Shipping Method */}
             <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-4">
               <div className="flex items-center space-x-2.5 border-b border-neutral-200 pb-3">
-                <div className="w-6 h-6 rounded-full bg-[#af101a] text-white flex items-center justify-center font-display font-bold text-xs">
+                <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                   2
                 </div>
                 <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
@@ -436,7 +436,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 <label
                   className={`flex items-start justify-between p-3.5 rounded-lg border cursor-pointer transition-colors ${
                     shippingMethod === 'acs'
-                      ? 'border-[#af101a] bg-red-50/30 ring-1 ring-[#af101a]'
+                      ? 'border-[#e21b22] bg-red-50/30 ring-1 ring-[#e21b22]'
                       : 'border-neutral-300 hover:bg-neutral-50'
                   }`}
                 >
@@ -446,7 +446,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                       name="shippingMethod"
                       checked={shippingMethod === 'acs'}
                       onChange={() => setShippingMethod('acs')}
-                      className="mt-0.5 text-[#af101a] focus:ring-[#af101a]"
+                      className="mt-0.5 text-[#e21b22] focus:ring-[#e21b22]"
                     />
                     <div>
                       <div className="font-bold text-neutral-900 text-sm flex items-center space-x-2">
@@ -469,7 +469,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 <label
                   className={`flex items-start justify-between p-3.5 rounded-lg border cursor-pointer transition-colors ${
                     shippingMethod === 'boxnow'
-                      ? 'border-[#af101a] bg-red-50/30 ring-1 ring-[#af101a]'
+                      ? 'border-[#e21b22] bg-red-50/30 ring-1 ring-[#e21b22]'
                       : 'border-neutral-300 hover:bg-neutral-50'
                   }`}
                 >
@@ -479,7 +479,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                       name="shippingMethod"
                       checked={shippingMethod === 'boxnow'}
                       onChange={() => setShippingMethod('boxnow')}
-                      className="mt-0.5 text-[#af101a] focus:ring-[#af101a]"
+                      className="mt-0.5 text-[#e21b22] focus:ring-[#e21b22]"
                     />
                     <div>
                       <div className="font-bold text-neutral-900 text-sm flex items-center space-x-2">
@@ -515,7 +515,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 <label
                   className={`flex items-start justify-between p-3.5 rounded-lg border cursor-pointer transition-colors ${
                     shippingMethod === 'store_pickup'
-                      ? 'border-[#af101a] bg-red-50/30 ring-1 ring-[#af101a]'
+                      ? 'border-[#e21b22] bg-red-50/30 ring-1 ring-[#e21b22]'
                       : 'border-neutral-300 hover:bg-neutral-50'
                   }`}
                 >
@@ -525,7 +525,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                       name="shippingMethod"
                       checked={shippingMethod === 'store_pickup'}
                       onChange={() => setShippingMethod('store_pickup')}
-                      className="mt-0.5 text-[#af101a] focus:ring-[#af101a]"
+                      className="mt-0.5 text-[#e21b22] focus:ring-[#e21b22]"
                     />
                     <div>
                       <div className="font-bold text-neutral-900 text-sm">
@@ -546,7 +546,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
             {/* Step 3: Payment Method */}
             <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-4">
               <div className="flex items-center space-x-2.5 border-b border-neutral-200 pb-3">
-                <div className="w-6 h-6 rounded-full bg-[#af101a] text-white flex items-center justify-center font-display font-bold text-xs">
+                <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                   3
                 </div>
                 <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
@@ -558,7 +558,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 {/* Viva Wallet */}
                 <label
                   className={`flex items-center justify-between p-3 rounded border cursor-pointer ${
-                    paymentMethod === 'viva' ? 'border-[#af101a] bg-red-50/20' : 'border-neutral-300'
+                    paymentMethod === 'viva' ? 'border-[#e21b22] bg-red-50/20' : 'border-neutral-300'
                   }`}
                 >
                   <div className="flex items-center space-x-3">
@@ -573,13 +573,13 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                       <p className="text-[11px] text-neutral-500">Πληρωμή με IRIS, Apple Pay, Google Pay ή κάρτα</p>
                     </div>
                   </div>
-                  <span className="text-[11px] font-bold text-[#af101a]">ΠΡΟΤΕΙΝΟΜΕΝΟ</span>
+                  <span className="text-[11px] font-bold text-[#e21b22]">ΠΡΟΤΕΙΝΟΜΕΝΟ</span>
                 </label>
 
                 {/* Stripe */}
                 <label
                   className={`flex items-center justify-between p-3 rounded border cursor-pointer ${
-                    paymentMethod === 'stripe' ? 'border-[#af101a] bg-red-50/20' : 'border-neutral-300'
+                    paymentMethod === 'stripe' ? 'border-[#e21b22] bg-red-50/20' : 'border-neutral-300'
                   }`}
                 >
                   <div className="flex items-center space-x-3">
@@ -599,7 +599,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 {/* Klarna */}
                 <label
                   className={`flex items-center justify-between p-3 rounded border cursor-pointer ${
-                    paymentMethod === 'klarna' ? 'border-[#af101a] bg-red-50/20' : 'border-neutral-300'
+                    paymentMethod === 'klarna' ? 'border-[#e21b22] bg-red-50/20' : 'border-neutral-300'
                   }`}
                 >
                   <div className="flex items-center space-x-3">
@@ -621,7 +621,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 {/* Cash on delivery */}
                 <label
                   className={`flex items-center justify-between p-3 rounded border cursor-pointer ${
-                    paymentMethod === 'cod' ? 'border-[#af101a] bg-red-50/20' : 'border-neutral-300'
+                    paymentMethod === 'cod' ? 'border-[#e21b22] bg-red-50/20' : 'border-neutral-300'
                   }`}
                 >
                   <div className="flex items-center space-x-3">
@@ -642,7 +642,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 {/* Bank transfer */}
                 <label
                   className={`flex items-center justify-between p-3 rounded border cursor-pointer ${
-                    paymentMethod === 'bank' ? 'border-[#af101a] bg-red-50/20' : 'border-neutral-300'
+                    paymentMethod === 'bank' ? 'border-[#e21b22] bg-red-50/20' : 'border-neutral-300'
                   }`}
                 >
                   <div className="flex items-center space-x-3">
@@ -728,7 +728,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 id="submit-order-btn"
                 type="submit"
                 disabled={isProcessing}
-                className="w-full bg-[#af101a] hover:bg-[#b71c1c] disabled:opacity-50 text-white font-display font-bold uppercase tracking-wider py-3.5 px-4 rounded shadow-lg flex items-center justify-center space-x-2 text-sm transition-all"
+                className="w-full bg-[#e21b22] hover:bg-[#c81016] disabled:opacity-50 text-white font-display font-bold uppercase tracking-wider py-3.5 px-4 rounded shadow-lg flex items-center justify-center space-x-2 text-sm transition-all"
               >
                 {isProcessing ? (
                   <span>ΕΠΕΞΕΡΓΑΣΙΑ ΠΑΡΑΓΓΕΛΙΑΣ...</span>

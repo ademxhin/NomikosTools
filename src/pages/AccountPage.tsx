@@ -33,7 +33,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
       {/* Profile Header */}
       <div className="bg-[#181818] text-white p-6 rounded-lg border border-[#2a2a2a] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center space-x-4">
-          <div className="w-14 h-14 rounded-full bg-[#af101a] text-white flex items-center justify-center font-display font-black text-2xl">
+          <div className="w-14 h-14 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-black text-2xl">
             {user?.name?.slice(0, 1) || 'N'}
           </div>
           <div>
@@ -42,7 +42,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
                 {user?.name || 'Επαγγελματίας Πελάτης'}
               </h1>
               {user?.isB2B && (
-                <span className="text-[10px] font-mono-spec font-bold bg-[#af101a] text-white px-2 py-0.5 rounded">
+                <span className="text-[10px] font-mono-spec font-bold bg-[#e21b22] text-white px-2 py-0.5 rounded">
                   B2B PRO
                 </span>
               )}
@@ -78,7 +78,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           onClick={() => setActiveTab('orders')}
           className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
             activeTab === 'orders'
-              ? 'border-[#af101a] text-[#af101a]'
+              ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
           }`}
         >
@@ -88,7 +88,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           onClick={() => setActiveTab('profile')}
           className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
             activeTab === 'profile'
-              ? 'border-[#af101a] text-[#af101a]'
+              ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
           }`}
         >
@@ -98,7 +98,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           onClick={() => setActiveTab('addresses')}
           className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
             activeTab === 'addresses'
-              ? 'border-[#af101a] text-[#af101a]'
+              ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
           }`}
         >
@@ -149,7 +149,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
 
                 <div className="flex flex-wrap items-center justify-between text-xs text-neutral-500 pt-1">
                   <div className="flex items-center space-x-2">
-                    <Truck className="w-4 h-4 text-[#af101a]" />
+                    <Truck className="w-4 h-4 text-[#e21b22]" />
                     <span>{ord.shipping.carrierName}</span>
                     {ord.shipping.trackingNumber && (
                       <span className="font-mono-spec font-bold text-neutral-700">
@@ -162,7 +162,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
                     {ord.shipping.trackingNumber && (
                       <button
                         onClick={() => onNavigate(`/track-order?voucher=${ord.shipping.trackingNumber}`)}
-                        className="text-[#af101a] font-bold hover:underline"
+                        className="text-[#e21b22] font-bold hover:underline"
                       >
                         Ζωντανός Εντοπισμός Αποστολής →
                       </button>
@@ -233,7 +233,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           <div className="pt-2">
             <button
               onClick={() => alert('Τα στοιχεία αποθηκεύτηκαν επιτυχώς')}
-              className="bg-[#af101a] text-white px-5 py-2.5 rounded font-display font-bold uppercase"
+              className="bg-[#e21b22] text-white px-5 py-2.5 rounded font-display font-bold uppercase"
             >
               ΑΠΟΘΗΚΕΥΣΗ ΑΛΛΑΓΩΝ
             </button>
@@ -248,10 +248,10 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="border border-[#af101a] p-4 rounded-lg bg-red-50/20 space-y-2">
+            <div className="border border-[#e21b22] p-4 rounded-lg bg-red-50/20 space-y-2">
               <div className="flex items-center justify-between">
                 <span className="font-bold text-neutral-900 uppercase">Κεντρικά Γραφεία / Έδρα</span>
-                <span className="text-[10px] font-bold text-[#af101a] bg-white px-2 py-0.5 rounded border border-[#af101a]">
+                <span className="text-[10px] font-bold text-[#e21b22] bg-white px-2 py-0.5 rounded border border-[#e21b22]">
                   ΠΡΟΕΠΙΛΟΓΗ
                 </span>
               </div>

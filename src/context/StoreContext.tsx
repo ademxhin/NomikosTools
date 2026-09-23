@@ -77,12 +77,59 @@ interface StoreContextType {
 
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
 
+const normalizeStoredProducts = (value: string | null): Product[] => {
+  if (!value) return initialProducts;
+
+  try {
+    const storedProducts = JSON.parse(value) as Partial<Product>[];
+    if (!Array.isArray(storedProducts)) return initialProducts;
+
+    return storedProducts.map((storedProduct, index) => {
+      const catalogProduct = initialProducts.find(
+        (product) => product.id === storedProduct.id || product.sku === storedProduct.sku
+      );
+      const fallbackProduct = catalogProduct ?? initialProducts[index % initialProducts.length];
+
+      return {
+        ...fallbackProduct,
+        ...storedProduct,
+        categoryIds: Array.isArray(storedProduct.categoryIds)
+          ? storedProduct.categoryIds
+          : fallbackProduct.categoryIds,
+        images:
+          Array.isArray(storedProduct.images) && storedProduct.images.length > 0
+            ? storedProduct.images
+            : fallbackProduct.images,
+        attributes: storedProduct.attributes ?? fallbackProduct.attributes ?? {},
+        specifications: Array.isArray(storedProduct.specifications)
+          ? storedProduct.specifications
+          : fallbackProduct.specifications ?? [],
+        includedItems: Array.isArray(storedProduct.includedItems)
+          ? storedProduct.includedItems
+          : fallbackProduct.includedItems ?? [],
+        compatibleProductIds: Array.isArray(storedProduct.compatibleProductIds)
+          ? storedProduct.compatibleProductIds
+          : fallbackProduct.compatibleProductIds ?? [],
+        relatedProductIds: Array.isArray(storedProduct.relatedProductIds)
+          ? storedProduct.relatedProductIds
+          : fallbackProduct.relatedProductIds ?? [],
+        manualFiles: Array.isArray(storedProduct.manualFiles)
+          ? storedProduct.manualFiles
+          : fallbackProduct.manualFiles ?? [],
+        createdAt: storedProduct.createdAt ?? fallbackProduct.createdAt,
+        updatedAt: storedProduct.updatedAt ?? fallbackProduct.updatedAt,
+      } as Product;
+    });
+  } catch {
+    return initialProducts;
+  }
+};
+
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Initialize from LocalStorage or Fallback
-  const [products, setProducts] = useState<Product[]>(() => {
-    const saved = localStorage.getItem('nomikos_products');
-    return saved ? JSON.parse(saved) : initialProducts;
-  });
+  const [products, setProducts] = useState<Product[]>(() =>
+    normalizeStoredProducts(localStorage.getItem('nomikos_products'))
+  );
 
   const [categories, setCategories] = useState<Category[]>(() => {
     const saved = localStorage.getItem('nomikos_categories');

@@ -17,7 +17,7 @@ export const WishlistPage: React.FC<WishlistPageProps> = ({ onNavigate }) => {
       <div className="border-b border-[#cfd8dc] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <Heart className="w-7 h-7 text-[#af101a] fill-[#af101a]" />
+            <Heart className="w-7 h-7 text-[#e21b22] fill-[#e21b22]" />
             <span>ΛΙΣΤΑ ΕΠΙΘΥΜΙΩΝ ({wishlistProducts.length})</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -30,7 +30,7 @@ export const WishlistPage: React.FC<WishlistPageProps> = ({ onNavigate }) => {
             onClick={() => {
               wishlistProducts.forEach((p) => addToCart(p, 1));
             }}
-            className="bg-[#af101a] hover:bg-[#b71c1c] text-white text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded flex items-center space-x-1.5 shadow"
+            className="bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded flex items-center space-x-1.5 shadow"
           >
             <ShoppingCart className="w-4 h-4" />
             <span>ΠΡΟΣΘΗΚΗ ΟΛΩΝ ΣΤΟ ΚΑΛΑΘΙ</span>
@@ -55,7 +55,7 @@ export const WishlistPage: React.FC<WishlistPageProps> = ({ onNavigate }) => {
           </p>
           <button
             onClick={() => onNavigate('/products')}
-            className="bg-[#af101a] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider"
+            className="bg-[#e21b22] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider"
           >
             ΕΞΕΡΕΥΝΗΣΗ ΠΡΟΪΟΝΤΩΝ
           </button>

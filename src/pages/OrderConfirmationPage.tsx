@@ -30,7 +30,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
         <h2 className="text-xl font-bold">Η παραγγελία δεν βρέθηκε</h2>
         <button
           onClick={() => onNavigate('/')}
-          className="mt-4 bg-[#af101a] text-white px-4 py-2 rounded text-xs uppercase font-display"
+          className="mt-4 bg-[#e21b22] text-white px-4 py-2 rounded text-xs uppercase font-display"
         >
           Αρχική Σελίδα
         </button>
@@ -66,7 +66,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
 
         {/* Tracking info banner */}
         <div className="bg-[#fcf9f9] border border-[#cfd8dc] p-4 rounded-lg inline-flex flex-col sm:flex-row items-center gap-4 text-xs text-left max-w-xl mx-auto">
-          <Truck className="w-6 h-6 text-[#af101a] shrink-0" />
+          <Truck className="w-6 h-6 text-[#e21b22] shrink-0" />
           <div className="flex-1">
             <div className="font-bold text-neutral-800">
               Τρόπος Αποστολής: {order.shipping.carrierName}
@@ -80,7 +80,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
           {order.shipping.trackingNumber && (
             <button
               onClick={() => onNavigate(`/track-order?voucher=${order.shipping.trackingNumber}`)}
-              className="bg-[#af101a] text-white px-3 py-1.5 rounded font-display font-bold uppercase text-[11px] tracking-wider shrink-0"
+              className="bg-[#e21b22] text-white px-3 py-1.5 rounded font-display font-bold uppercase text-[11px] tracking-wider shrink-0"
             >
               ΕΝΤΟΠΙΣΜΟΣ
             </button>
@@ -147,7 +147,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
               <span className="font-bold text-neutral-900 block mb-0.5">Τύπος Παραστατικού:</span>
               {order.billing.type === 'invoice' ? (
                 <div>
-                  <span className="font-bold text-[#af101a]">Τιμολόγιο B2B:</span> {order.billing.companyName} (ΑΦΜ: {order.billing.vatNumber})
+                  <span className="font-bold text-[#e21b22]">Τιμολόγιο B2B:</span> {order.billing.companyName} (ΑΦΜ: {order.billing.vatNumber})
                 </div>
               ) : (
                 <div>Απόδειξη Λιανικής Πώλησης</div>
@@ -173,7 +173,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-neutral-200">
         <button
           onClick={() => onNavigate('/products')}
-          className="bg-[#af101a] hover:bg-[#b71c1c] text-white text-xs font-display font-bold uppercase tracking-wider py-2.5 px-5 rounded shadow transition-colors"
+          className="bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold uppercase tracking-wider py-2.5 px-5 rounded shadow transition-colors"
         >
           ΣΥΝΕΧΕΙΑ ΣΤΟΝ ΚΑΤΑΛΟΓΟ
         </button>
@@ -188,7 +188,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
           </button>
           <button
             onClick={() => onNavigate('/account')}
-            className="text-[#af101a] font-bold hover:underline"
+            className="text-[#e21b22] font-bold hover:underline"
           >
             Προβολή στον Λογαριασμό μου →
           </button>

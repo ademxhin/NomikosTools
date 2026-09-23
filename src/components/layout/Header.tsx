@@ -3,8 +3,12 @@ import {
   Search,
   ShoppingCart,
   Heart,
-  Scale,
+  ArrowLeftRight,
   User as UserIcon,
+  MapPin,
+  Phone,
+  PhoneCall,
+  LogIn,
   Menu,
   X,
   ChevronDown,
@@ -21,9 +25,10 @@ import { Product } from '../../types/product';
 interface HeaderProps {
   onNavigate: (route: string) => void;
   onOpenMobileMenu: () => void;
+  onToggleMegaMenu?: (open: boolean) => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) => {
+export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, onToggleMegaMenu }) => {
   const {
     products,
     categories,
@@ -141,7 +146,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
       <>
         {parts.map((part, i) =>
           part.toLowerCase() === query.toLowerCase() ? (
-            <mark key={i} className="bg-[#ffdad6] text-[#af101a] font-bold px-0.5 rounded">
+            <mark key={i} className="bg-[#ffe0e1] text-[#e21b22] font-bold px-0.5 rounded">
               {part}
             </mark>
           ) : (
@@ -155,44 +160,34 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
   const totalCartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <header className="bg-[#1c1b1b] text-white sticky top-0 z-40 shadow-md border-b border-[#2e2e2e]">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3 md:gap-6">
+    <header className="bg-[#242424] text-white sticky top-0 z-40 shadow-lg border-b-4 border-[#e21b22]">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap lg:flex-nowrap items-center gap-3 lg:gap-4">
         {/* Mobile menu trigger */}
         <button
           id="mobile-menu-toggle-btn"
           onClick={onOpenMobileMenu}
-          className="lg:hidden p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 rounded transition-colors"
+          onMouseEnter={() => onToggleMegaMenu?.(true)}
+          className="flex items-center justify-center w-14 h-12 shrink-0 bg-[#e21b22] hover:bg-[#c81016] text-white transition-colors rounded-xl"
           aria-label="Άνοιγμα Μενού Κατηγοριών"
         >
-          <Menu className="w-6 h-6" />
+          <Menu className="w-[26px] h-[26px]" />
         </button>
 
         {/* Brand Logo */}
         <div
           id="brand-logo"
           onClick={() => onNavigate('/')}
-          className="cursor-pointer flex items-center space-x-2 shrink-0 select-none group"
+          className="cursor-pointer flex items-center shrink-0 select-none group lg:pr-12"
         >
-          <div className="w-9 h-9 md:w-11 md:h-11 bg-[#af101a] flex items-center justify-center font-display font-black text-xl md:text-2xl text-white rounded tracking-tighter border-t border-red-400 shadow-sm group-hover:bg-[#b71c1c] transition-colors">
-            NT
-          </div>
-          <div className="flex flex-col">
-            <div className="flex items-center space-x-1.5">
-              <span className="font-display font-extrabold text-xl md:text-2xl tracking-wider text-white uppercase leading-none">
-                NOMIKOS
-              </span>
-              <span className="font-display font-extrabold text-xl md:text-2xl tracking-wider text-[#af101a] uppercase leading-none">
-                TOOLS
-              </span>
-            </div>
-            <span className="text-[9px] md:text-[10px] tracking-widest text-neutral-400 font-mono-spec uppercase">
-              HEAVY-DUTY PRECISION
-            </span>
-          </div>
+          <img
+            src="/assets/nomikos-tools-logo.png"
+            alt="Nomikos Tools"
+            className="h-12 md:h-14 w-auto object-contain object-left scale-[1.3] origin-left transition-transform group-hover:scale-[1.33]"
+          />
         </div>
 
-        {/* Large Centered Search Bar */}
-        <div ref={searchContainerRef} className="flex-1 max-w-2xl relative">
+        {/* Compact centered search */}
+        <div ref={searchContainerRef} className="order-3 lg:order-none basis-full lg:basis-auto flex-1 lg:max-w-sm xl:max-w-md relative lg:mx-4">
           <form onSubmit={handleSearchSubmit} className="relative flex items-center">
             <input
               id="global-search-input"
@@ -202,17 +197,17 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
               onChange={(e) => setSearchTerm(e.target.value)}
               onFocus={() => setIsSearchOpen(true)}
               onKeyDown={handleKeyDown}
-              placeholder="Αναζήτηση προϊόντος, κωδικού SKU, barcode EAN, μάρκας (π.χ. Milwaukee, 87 01 250)..."
-              className="w-full bg-[#2a2a2a] text-white text-sm pl-11 pr-24 py-2.5 rounded border border-[#3e3e3e] focus:border-[#af101a] focus:ring-1 focus:ring-[#af101a] focus:bg-[#222] focus:outline-none transition-all placeholder:text-neutral-400"
+              placeholder="Αναζήτηση προϊόντος..."
+              className="w-full bg-white text-neutral-950 text-sm pl-10 pr-16 py-2.5 border-2 border-white rounded-xl focus:border-black focus:ring-2 focus:ring-black/20 focus:outline-none transition-all placeholder:text-neutral-500 shadow-inner"
               autoComplete="off"
             />
-            <Search className="w-5 h-5 text-neutral-400 absolute left-3.5 pointer-events-none" />
+            <Search className="w-5 h-5 text-neutral-500 absolute left-3.5 pointer-events-none" />
 
             {searchTerm && (
               <button
                 type="button"
                 onClick={() => setSearchTerm('')}
-                className="absolute right-20 text-neutral-400 hover:text-white p-1"
+                className="absolute right-14 text-neutral-400 hover:text-neutral-950 p-1"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -220,22 +215,23 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
 
             <button
               type="submit"
-              className="absolute right-1 top-1 bottom-1 px-4 bg-[#af101a] hover:bg-[#b71c1c] text-white text-xs font-bold font-display uppercase tracking-wider rounded flex items-center space-x-1 transition-colors"
+              className="absolute right-1 top-1 bottom-1 w-11 bg-[#e21b22] hover:bg-[#c81016] text-white flex items-center justify-center rounded-lg transition-colors"
+              aria-label="Αναζήτηση"
             >
-              <span>ΒΡΕΣ</span>
+              <Search className="w-4 h-4" />
             </button>
           </form>
 
           {/* Autocomplete Dropdown */}
           {isSearchOpen && (
-            <div className="absolute top-full left-0 right-0 mt-1 bg-[#1e1e1e] border border-[#333] rounded shadow-2xl overflow-hidden z-50 text-neutral-200">
+            <div className="absolute top-full left-0 right-0 mt-2 bg-[#1e1e1e] border border-[#333] rounded-2xl shadow-2xl overflow-hidden z-50 text-neutral-200">
               {/* If no search term, show recent & popular */}
               {!searchTerm.trim() ? (
                 <div className="p-4 space-y-3">
                   {recentSearches.length > 0 && (
                     <div>
                       <div className="flex items-center space-x-1 text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">
-                        <Clock className="w-3.5 h-3.5 text-[#af101a]" />
+                        <Clock className="w-3.5 h-3.5 text-[#e21b22]" />
                         <span>Πρόσφατες Αναζητήσεις</span>
                       </div>
                       <div className="flex flex-wrap gap-1.5">
@@ -309,7 +305,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
                           />
                           <div className="min-w-0">
                             <div className="flex items-center space-x-2 text-[11px] text-neutral-400">
-                              <span className="font-bold text-[#af101a] uppercase">{brand?.name}</span>
+                              <span className="font-bold text-[#e21b22] uppercase">{brand?.name}</span>
                               <span>•</span>
                               <span className="font-mono-spec">SKU: {renderHighlighted(prod.sku, searchTerm)}</span>
                               {category && (
@@ -350,7 +346,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
 
                   <div
                     onClick={handleSearchSubmit}
-                    className="p-2.5 text-center text-xs font-semibold text-[#ffb3ac] hover:bg-[#282828] cursor-pointer"
+                    className="p-2.5 text-center text-xs font-semibold text-[#ffb4b7] hover:bg-[#282828] cursor-pointer"
                   >
                     Προβολή όλων των αποτελεσμάτων για "{searchTerm}" →
                   </div>
@@ -367,18 +363,45 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
           )}
         </div>
 
-        {/* Right Action Icons: Account, Wishlist, Compare, Cart */}
-        <div className="flex items-center space-x-1 md:space-x-4 shrink-0">
+        {/* Contact information and commerce actions */}
+        <div className="flex items-center gap-1.5 shrink-0 lg:ml-auto">
+          <div className="hidden xl:flex items-center gap-2.5 pl-2 pr-3">
+            <PhoneCall className="w-[30px] h-[30px] text-white" />
+            <div className="leading-tight">
+              <div className="font-display font-bold text-base uppercase tracking-wide">Πληροφορίες</div>
+              <div className="text-[15px] text-neutral-200 whitespace-nowrap tracking-tight">210 5550190&nbsp; | &nbsp;sales@nomikostools.gr</div>
+            </div>
+          </div>
+          <button
+            onClick={() => onNavigate('/contact')}
+            className="hidden md:flex xl:hidden items-center gap-2 h-10 px-2.5 rounded-xl text-white hover:bg-black/15 transition-colors"
+            title="Τοποθεσία καταστημάτων"
+            aria-label="Τοποθεσία καταστημάτων"
+          >
+            <MapPin className="w-[22px] h-[22px]" />
+            <span className="hidden 2xl:inline text-[11px] font-semibold">Καταστήματα</span>
+          </button>
+
+          <a
+            href="tel:2105550190"
+            className="hidden md:flex xl:hidden items-center gap-2 h-10 px-2.5 rounded-xl text-white hover:bg-black/15 transition-colors"
+            title="Καλέστε στο 210 5550190"
+            aria-label="Τηλέφωνο 210 5550190"
+          >
+            <Phone className="w-[22px] h-[22px]" />
+            <span className="hidden 2xl:inline text-[11px] font-semibold">210 5550190</span>
+          </a>
+
           {/* Compare Button */}
           <button
             id="header-compare-btn"
             onClick={() => onNavigate('/compare')}
-            className="relative p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 rounded transition-colors hidden sm:flex items-center"
+            className="relative h-10 w-10 text-white hover:bg-black/15 transition-colors hidden md:flex items-center justify-center rounded-xl"
             title="Σύγκριση Εργαλείων"
           >
-            <Scale className="w-5 h-5" />
+            <ArrowLeftRight className="w-[22px] h-[22px]" />
             {compareList.length > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#455b65] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-[#e21b22] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
                 {compareList.length}
               </span>
             )}
@@ -388,13 +411,28 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
           <button
             id="header-wishlist-btn"
             onClick={() => onNavigate('/wishlist')}
-            className="relative p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 rounded transition-colors hidden sm:flex items-center"
+            className="relative h-10 w-10 text-white hover:bg-black/15 transition-colors hidden md:flex items-center justify-center rounded-xl"
             title="Λίστα Επιθυμιών"
           >
-            <Heart className="w-5 h-5" />
+            <Heart className="w-[22px] h-[22px]" />
             {wishlist.length > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#af101a] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-[#e21b22] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
                 {wishlist.length}
+              </span>
+            )}
+          </button>
+
+          {/* Cart Button */}
+          <button
+            id="header-cart-btn"
+            onClick={() => onNavigate('/cart')}
+            className="relative h-10 w-10 text-white hover:bg-black/15 transition-colors rounded-xl flex items-center justify-center"
+            title={`Καλάθι αγορών — ${totalCartCount} προϊόντα, €${getCartTotal().toFixed(2)}`}
+          >
+            <ShoppingCart className="w-[22px] h-[22px]" />
+            {totalCartCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-[#e21b22] text-white text-[10px] font-black w-4 h-4 rounded-full flex items-center justify-center">
+                {totalCartCount}
               </span>
             )}
           </button>
@@ -403,43 +441,10 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu }) 
           <button
             id="header-account-btn"
             onClick={() => onNavigate(isAuthenticated ? '/account' : '/login')}
-            className="flex items-center space-x-1.5 p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 rounded transition-colors"
-            title="Ο Λογαριασμός μου"
+            className="h-10 w-10 text-white hover:bg-black/15 transition-colors rounded-xl flex items-center justify-center"
+            title={isAuthenticated ? `Λογαριασμός — ${user?.name}` : 'Σύνδεση / Εγγραφή'}
           >
-            <UserIcon className="w-5 h-5 text-neutral-300" />
-            <div className="hidden xl:flex flex-col text-left text-xs leading-tight">
-              <span className="text-[10px] text-neutral-400">
-                {isAuthenticated ? 'Καλωσήρθατε' : 'Σύνδεση / Εγγραφή'}
-              </span>
-              <span className="font-semibold text-white truncate max-w-[100px]">
-                {isAuthenticated ? user?.name : 'Λογαριασμός'}
-              </span>
-            </div>
-          </button>
-
-          {/* Cart Button */}
-          <button
-            id="header-cart-btn"
-            onClick={() => onNavigate('/cart')}
-            className="flex items-center space-x-2.5 bg-[#af101a] hover:bg-[#b71c1c] text-white px-3 py-2 rounded transition-colors"
-            title="Καλάθι Αγορών"
-          >
-            <div className="relative">
-              <ShoppingCart className="w-5 h-5" />
-              {totalCartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-black text-white text-[10px] font-black w-4 h-4 rounded-full flex items-center justify-center border border-white">
-                  {totalCartCount}
-                </span>
-              )}
-            </div>
-            <div className="hidden md:flex flex-col text-left leading-tight">
-              <span className="text-[9px] uppercase tracking-wider text-red-100 font-display">
-                ΚΑΛΑΘΙ ({totalCartCount})
-              </span>
-              <span className="text-xs font-bold font-mono-spec">
-                €{getCartTotal().toFixed(2)}
-              </span>
-            </div>
+            {isAuthenticated ? <UserIcon className="w-[22px] h-[22px] text-white" /> : <LogIn className="w-[22px] h-[22px] text-white" />}
           </button>
         </div>
       </div>

@@ -57,7 +57,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     return (
       <div
         id={`product-card-${product.id}`}
-        className="bg-white border border-[#cfd8dc] rounded p-4 flex flex-col md:flex-row items-center justify-between gap-4 hover:border-[#1e1e1e] hover:shadow-md transition-all group"
+        className="bg-white border border-[#cfd8dc] rounded-2xl p-4 flex flex-col md:flex-row items-center justify-between gap-4 hover:border-[#1e1e1e] hover:shadow-md transition-all group"
       >
         {/* Image & Badges */}
         <div
@@ -65,7 +65,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           className="relative w-full md:w-44 h-44 shrink-0 bg-[#fbfbfb] p-3 flex items-center justify-center cursor-pointer overflow-hidden rounded"
         >
           {discountPercent > 0 && (
-            <span className="absolute top-2 left-2 bg-[#af101a] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow z-10">
+            <span className="absolute top-2 left-2 bg-[#e21b22] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow z-10">
               -{discountPercent}%
             </span>
           )}
@@ -80,7 +80,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Content */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center space-x-2 text-xs mb-1">
-            <span className="font-display font-bold text-[#af101a] tracking-wider uppercase">
+            <span className="font-display font-bold text-[#e21b22] tracking-wider uppercase">
               {brand?.name}
             </span>
             <span className="text-neutral-400">•</span>
@@ -89,7 +89,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
           <h3
             onClick={handleCardClick}
-            className="font-semibold text-sm md:text-base text-neutral-900 hover:text-[#af101a] cursor-pointer transition-colors line-clamp-2 leading-snug"
+            className="font-semibold text-sm md:text-base text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug"
           >
             {product.name}
           </h3>
@@ -146,13 +146,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   €{netPrice.toFixed(2)}
                   <span className="text-[11px] font-normal text-neutral-500 ml-1">χωρίς ΦΠΑ</span>
                 </div>
-                <div className="text-xs text-[#af101a] font-medium font-mono-spec">
+                <div className="text-xs text-[#e21b22] font-medium font-mono-spec">
                   €{grossPrice.toFixed(2)} με ΦΠΑ 24%
                 </div>
               </div>
             ) : (
               <div>
-                <div className="text-2xl font-bold font-mono-spec text-[#af101a]">
+                <div className="text-2xl font-bold font-mono-spec text-[#e21b22]">
                   €{grossPrice.toFixed(2)}
                   <span className="text-[11px] font-normal text-neutral-500 ml-1">με ΦΠΑ</span>
                 </div>
@@ -172,7 +172,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           <div className="w-full space-y-2 mt-4">
             <button
               onClick={() => addToCart(product, 1)}
-              className="w-full bg-[#af101a] hover:bg-[#b71c1c] text-white text-xs font-display font-bold uppercase tracking-wider py-2.5 rounded flex items-center justify-center space-x-1.5 shadow transition-colors"
+              className="w-full bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold uppercase tracking-wider py-2.5 rounded flex items-center justify-center space-x-1.5 shadow transition-colors"
             >
               <ShoppingCart className="w-4 h-4" />
               <span>ΠΡΟΣΘΗΚΗ</span>
@@ -189,10 +189,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               </button>
               <button
                 onClick={() => toggleWishlist(product.id)}
-                className={`flex items-center space-x-1 ${isWish ? 'text-[#af101a]' : 'hover:text-[#af101a]'}`}
+                className={`flex items-center space-x-1 ${isWish ? 'text-[#e21b22]' : 'hover:text-[#e21b22]'}`}
                 title="Προσθήκη στα αγαπημένα"
               >
-                <Heart className={`w-3.5 h-3.5 ${isWish ? 'fill-[#af101a]' : ''}`} />
+                <Heart className={`w-3.5 h-3.5 ${isWish ? 'fill-[#e21b22]' : ''}`} />
                 <span>Wishlist</span>
               </button>
               <button
@@ -214,14 +214,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       id={`product-card-${product.id}`}
-      className="bg-white border border-[#cfd8dc] rounded p-3.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
+      className="bg-white border border-[#cfd8dc] rounded-2xl p-3.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
     >
       {/* Top Badges & Actions */}
       <div>
         <div className="flex items-start justify-between relative mb-2">
           {/* Discount badge */}
           {discountPercent > 0 ? (
-            <span className="bg-[#af101a] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow">
+            <span className="bg-[#e21b22] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow">
               -{discountPercent}%
             </span>
           ) : (
@@ -235,11 +235,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <button
               onClick={() => toggleWishlist(product.id)}
               className={`p-1.5 rounded-full hover:bg-neutral-100 transition-colors ${
-                isWish ? 'text-[#af101a]' : 'text-neutral-400 hover:text-neutral-700'
+                isWish ? 'text-[#e21b22]' : 'text-neutral-400 hover:text-neutral-700'
               }`}
               title="Προσθήκη στη λίστα επιθυμιών"
             >
-              <Heart className={`w-4 h-4 ${isWish ? 'fill-[#af101a]' : ''}`} />
+              <Heart className={`w-4 h-4 ${isWish ? 'fill-[#e21b22]' : ''}`} />
             </button>
             <button
               onClick={() => toggleCompare(product.id)}
@@ -280,7 +280,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Brand & SKU info */}
         <div className="flex items-center justify-between text-[11px] text-neutral-500 mb-1">
-          <span className="font-display font-bold text-[#af101a] tracking-wider uppercase">
+          <span className="font-display font-bold text-[#e21b22] tracking-wider uppercase">
             {brand?.name}
           </span>
           <span className="font-mono-spec">SKU: {product.sku}</span>
@@ -289,7 +289,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Product Name */}
         <h3
           onClick={handleCardClick}
-          className="font-semibold text-xs md:text-sm text-neutral-900 hover:text-[#af101a] cursor-pointer transition-colors line-clamp-2 leading-snug mb-2 min-h-[2.5rem]"
+          className="font-semibold text-xs md:text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug mb-2 min-h-[2.5rem]"
           title={product.name}
         >
           {product.name}
@@ -338,13 +338,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <div className="text-lg md:text-xl font-bold font-mono-spec text-neutral-900 leading-none">
                 €{netPrice.toFixed(2)}
               </div>
-              <div className="text-[10px] text-[#af101a] font-mono-spec">
+              <div className="text-[10px] text-[#e21b22] font-mono-spec">
                 (€{grossPrice.toFixed(2)} με ΦΠΑ)
               </div>
             </div>
           ) : (
             <div>
-              <div className="text-lg md:text-xl font-bold font-mono-spec text-[#af101a] leading-none">
+              <div className="text-lg md:text-xl font-bold font-mono-spec text-[#e21b22] leading-none">
                 €{grossPrice.toFixed(2)}
               </div>
               <div className="text-[10px] text-neutral-500 font-mono-spec">
@@ -362,7 +362,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         <button
           onClick={() => addToCart(product, 1)}
-          className="w-full bg-[#af101a] hover:bg-[#b71c1c] active:bg-[#8e0c14] text-white text-xs font-display font-bold uppercase tracking-wider py-2 rounded flex items-center justify-center space-x-1.5 shadow-sm transition-colors"
+          className="w-full bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white text-xs font-display font-bold uppercase tracking-wider py-2 rounded flex items-center justify-center space-x-1.5 shadow-sm transition-colors"
         >
           <ShoppingCart className="w-3.5 h-3.5" />
           <span>ΠΡΟΣΘΗΚΗ</span>
