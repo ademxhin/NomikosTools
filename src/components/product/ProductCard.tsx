@@ -79,10 +79,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center space-x-2 text-xs mb-1">
-            <span className="text-neutral-500 font-mono-spec text-[11px]">SKU: {product.sku}</span>
-          </div>
-
           <h3
             onClick={handleCardClick}
             className="font-semibold text-sm md:text-base text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug"
@@ -196,7 +192,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 className={`flex items-center space-x-1 ${isComp ? 'text-[#0d47a1]' : 'hover:text-[#0d47a1]'}`}
                 title="Σύγκριση τεχνικών προδιαγραφών"
               >
-                <Scale className="w-3.5 h-3.5" />
+                <ArrowLeftRight className="w-3.5 h-3.5" />
                 <span>Σύγκριση</span>
               </button>
             </div>
@@ -210,11 +206,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       id={`product-card-${product.id}`}
-      className="bg-white border border-[#cfd8dc] rounded-2xl p-3.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
+      className="bg-white border border-[#cfd8dc] rounded-2xl p-2.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
     >
       {/* Top Badges & Actions */}
       <div>
-        <div className="relative mb-1 min-h-4">
+        <div className="relative mb-0 min-h-0">
           {/* Discount badge */}
           {discountPercent > 0 ? (
             <span className="bg-[#e21b22] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow">
@@ -254,11 +250,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <Eye className="w-3.5 h-3.5" />
             <span>Γρήγορη Ματιά</span>
           </button>
-        </div>
-
-        {/* Brand & SKU info */}
-        <div className="flex items-center justify-between text-[11px] text-neutral-500 mb-1">
-          <span className="font-mono-spec">SKU: {product.sku}</span>
         </div>
 
         {/* Product Name */}
