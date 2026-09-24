@@ -2,8 +2,8 @@
 
 @layer base {
   :root {
-    --font-display: 'Barlow Condensed', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Noto Sans', sans-serif;
+    --font-body: 'Noto Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     --nt-red: #e21b22;
     --nt-red-dark: #c81016;
@@ -15,6 +15,16 @@
     font-family: var(--font-body);
     background: var(--nt-paper);
     color: #171717;
+  }
+
+  .promo-surface {
+    background-color: #111212;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('/assets/promo-concrete-texture.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   h1, h2, h3, .font-heading {
@@ -41,11 +51,35 @@ a {
 }
 
 .font-display {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Reserved for campaign/promo and category headings. */
+.font-promo,
+.font-category {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+.font-price {
+  font-family: 'Noto Sans', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.brand-marquee-track {
+  animation: brand-marquee-scroll 24s linear infinite;
+}
+
+.brand-marquee:hover .brand-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes brand-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.375rem)); }
+}
+
 .font-body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .font-mono-spec {

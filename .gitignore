@@ -2,7 +2,15 @@ node_modules/
 build/
 dist/
 coverage/
+__pycache__/
+*.py[cod]
 .DS_Store
 *.log
 .env*
 !.env.example
+.venv/
+automation/.venv/
+automation/logs/
+automation/state/
+automation/tools/artifact_runtime/
+outputs/

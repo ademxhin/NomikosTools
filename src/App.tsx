@@ -12,6 +12,7 @@ import { Order } from './types/order';
 
 const HomePage = lazy(() => import('./pages/HomePage').then((module) => ({ default: module.HomePage })));
 const CategoryPage = lazy(() => import('./pages/CategoryPage').then((module) => ({ default: module.CategoryPage })));
+const CategoriesPage = lazy(() => import('./pages/CategoriesPage').then((module) => ({ default: module.CategoriesPage })));
 const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage').then((module) => ({ default: module.ProductDetailPage })));
 const CartPage = lazy(() => import('./pages/CartPage').then((module) => ({ default: module.CartPage })));
 const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then((module) => ({ default: module.CheckoutPage })));
@@ -72,6 +73,9 @@ function AppContent() {
     // 4. All Products / Catalog
     if (currentRoute === '/products' || currentRoute === '/catalog') {
       return <CategoryPage onNavigate={handleNavigate} />;
+    }
+    if (currentRoute === '/categories') {
+      return <CategoriesPage onNavigate={handleNavigate} />;
     }
 
     // 5. Offers

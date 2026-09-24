@@ -12,7 +12,6 @@ import {
   Wrench,
   BatteryCharging,
   Sliders,
-  CheckCircle2,
   Wind,
   Disc3,
   Settings2,
@@ -66,6 +65,33 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   const visibleProducts = sliderProducts.slice(productPage * 4, productPage * 4 + 4);
 
   const mainCategories = categories.filter((c) => c.level === 1 && c.active);
+  const customCategoryImages = [
+    '/assets/category-electric-tools.png', '/assets/category-battery-tools.png',
+    '/assets/category-hand-tools.png', '/assets/category-cutting.png',
+    '/assets/category-plumbing.png', '/assets/category-garden.png',
+    '/assets/category-measurement-safety.png', '/assets/category-all.png',
+  ];
+  const categoryGroups = [
+    { name: 'Ηλεκτρικά Εργαλεία', match: /(δράπανα|δραπανοκατσάβιδα|σκαπτικά|διατρητικά|γωνιακοί τροχοί|τριβεία|σέγες|σπαθοσέγες|πριόνια|φρέζες|πλάνες|πολυεργαλεία|κατσαβίδια|μπουλονόκλειδα|καρφωτικά|πριτσιναδόροι)/i },
+    { name: 'Εργαλεία Μπαταρίας & Φορτιστές', match: /(μπαταρί|φορτιστές|σετ εργαλείων μπαταρίας|εκκινητές)/i },
+    { name: 'Εργαλεία Χειρός', match: /(γερμανο|κλειδιά|καρυδάκια|καστάνιες|πένσες|κόφτες|σφυριά|βαριοπούλες|σκαρπέλα|λοστοί|τσεκούρια|ψαλίδια|καλέμια|βελόνια|εργαλεία χειρός|βοηθητικά εργαλεία)/i },
+    { name: 'Κοπτικά, Λεπίδες & Αναλώσιμα', match: /(δίσκοι|λάμες|τρυπάνια|ποτηροτρύπανα|μύτες|αναλώσιμα|κοπτικά|απογρεζωτές|χαρτοκόπτες|κοπίδια)/i },
+    { name: 'Υδραυλικά, Αέρας & Αντλίες', match: /(υδραυλ|κομπρεσέρ|αέρος|αντλίες|τρόμπες|πρέσες|αποφρακτικά|σωληνοκόφτες|φιλιέρες|κολαούζα|σύνδεσμοι|ρακόρ)/i },
+    { name: 'Κήπος & Εξωτερικές Εργασίες', match: /(κήπου|χλοο|χορτο|αλυσοπρίονα|κλαδέματος|μπορντούρας|ψεκαστήρες|πολυεργαλείων κήπου|ποτίσματος)/i },
+    { name: 'Μέτρηση, Ασφάλεια & Εργοτάξιο', match: /(αλφάδια|laser|μέτρα|πολύμετρα|θερμόμετρα|ανιχνευτές|φωτισ|φακοί|κράνη|γυαλιά|γάντια|μάσκες|ωτοασπίδες|επιγονατίδες|παπούτσια|γιλέκα|εργασίας|εργαλειοθήκες|εργαλειοφόροι|αποθήκευση|μεταφορά|ανύψωση)/i },
+  ].map((group, index) => {
+    const matched = mainCategories.filter((category) => group.match.test(category.name));
+    const ids = new Set(matched.map((category) => category.id));
+    return {
+      ...group,
+      slug: matched[0]?.slug ?? 'products',
+      iconName: matched[0]?.iconName ?? 'Boxes',
+      image: customCategoryImages[index],
+      subcategories: matched.slice(0, 3).map((category) => category.name),
+      count: products.filter((product) => product.categoryIds.some((id) => ids.has(id))).length,
+    };
+  });
+  categoryGroups.push({ name: 'Όλες οι κατηγορίες', match: /.*/, slug: 'products', iconName: 'Boxes', image: customCategoryImages[7], subcategories: [], count: products.length });
   const promoCopy = [
     { image: '/assets/promos/m18-fuel-wide.png', eyebrow: 'Milwaukee M18 FUEL™', title: 'Πάρε τη δύναμη στα χέρια σου', accent: 'δύναμη', description: 'Επαγγελματικά εργαλεία μπαταρίας με άμεση διαθεσιμότητα.', original: 389, price: 311, side: 'left' },
     { image: '/assets/promos/packout-right-wide.png', eyebrow: 'Milwaukee PACKOUT™', title: 'Οργάνωσε το εργοτάξιο', accent: 'εργοτάξιο', description: 'Modular αποθήκευση που αντέχει κάθε καθημερινή χρήση.', original: 249, price: 174, side: 'left' },
@@ -84,7 +110,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-10 pb-8">
       {/* Centered campaign banner, following the dense storefront rhythm of the reference */}
-      <section className="bg-[#0f0f0f] px-4 py-5 sm:py-7">
+      <section className="promo-surface px-4 py-5 sm:py-7">
         <div className="relative mx-auto aspect-[21/9] max-w-7xl overflow-hidden rounded-3xl border-[6px] border-[#e21b22] bg-[#090909] text-white shadow-2xl">
           <img src={currentPromo.image} alt="Milwaukee campaign" className="absolute inset-0 h-full w-full object-cover object-center" />
           <div className={`pointer-events-none absolute inset-0 ${currentPromo.side === 'right' ? 'bg-gradient-to-l from-black/90 via-black/55 to-transparent' : 'bg-gradient-to-r from-black/90 via-black/55 to-transparent'}`} />
@@ -101,7 +127,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 {currentPromo.eyebrow}
               </div>
 
-              <h1 className="max-w-xl font-display text-5xl font-black uppercase leading-[0.86] tracking-tight sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-xl font-promo text-5xl font-black uppercase leading-[0.86] tracking-tight sm:text-6xl lg:text-7xl">
                 {currentPromo.title.split(currentPromo.accent)[0]}
                 <span className="text-[#e21b22]">{currentPromo.accent}</span>
               </h1>
@@ -222,8 +248,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div className="inline-flex flex-col items-center justify-center rounded-lg px-0.5 py-0.5 text-center">
                 {!tile.badge && <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ffb4b7]">{tile.label}</span>}
                 {tile.badge && <img src={tile.badge} alt={tile.label} className="mb-1 h-9 w-auto max-w-[165px] object-contain" />}
-                <h3 className="mt-0 font-display text-lg font-black uppercase leading-none">{tile.title}</h3>
-                <p className="mt-0.5 font-display text-lg font-black uppercase leading-none text-white">{tile.copy}</p>
+                <h3 className="mt-0 font-promo text-lg font-black uppercase leading-none">{tile.title}</h3>
+                <p className="mt-0.5 font-promo text-lg font-black uppercase leading-none text-white">{tile.copy}</p>
               </div>
             </div>
           </div>
@@ -261,12 +287,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between mb-6 border-b border-[#cfd8dc] pb-3">
           <div>
-            <h2 className="font-display font-black text-2xl text-neutral-900 uppercase tracking-wide">
+            <h2 className="font-category font-black text-2xl text-neutral-900 uppercase tracking-wide">
               ΒΑΣΙΚΕΣ ΚΑΤΗΓΟΡΙΕΣ ΕΞΟΠΛΙΣΜΟΥ
             </h2>
-            <p className="text-xs text-neutral-500">
-              Περιηγηθείτε στις κύριες κατηγορίες επαγγελματικών εργαλείων &amp; μηχανημάτων
-            </p>
           </div>
           <button
             onClick={() => onNavigate('/products')}
@@ -277,68 +300,31 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </button>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          {mainCategories.slice(0, 6).map((cat) => (
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {categoryGroups.map((cat) => (
             <div
               key={cat.id}
-              onClick={() => onNavigate(`/category/${cat.slug}`)}
-              className="bg-white rounded-2xl border border-[#cfd8dc] hover:border-[#1e1e1e] hover:shadow-md p-4 text-center cursor-pointer transition-all group flex flex-col items-center justify-between"
+              onClick={() => onNavigate(cat.name === 'Όλες οι κατηγορίες' ? '/categories' : `/category/${cat.slug}`)}
+              className="relative min-h-64 overflow-hidden rounded-2xl border border-[#cfd8dc] bg-[#b8b8b8] text-center cursor-pointer transition-all group hover:border-[#e21b22] hover:shadow-lg"
             >
-              <div className="w-14 h-14 rounded-xl bg-[#f7f7f7] border-2 border-neutral-200 flex items-center justify-center text-[#e21b22] group-hover:bg-[#e21b22] group-hover:border-[#e21b22] group-hover:text-white transition-colors mb-3">
-                {renderCategoryIcon(cat.iconName)}
+              <img src={cat.image} alt="" className="absolute inset-0 h-full w-full object-cover grayscale opacity-70 transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10 transition-colors group-hover:bg-[#e21b22]/50" />
+
+              <div className="relative z-10 flex min-h-64 flex-col items-start justify-end p-4 text-left text-white">
+                <h3 className="font-category text-lg font-black uppercase leading-tight line-clamp-2">
+                  {cat.name}
+                </h3>
+
+                {cat.subcategories.length > 0 && (
+                  <p className="mt-1 line-clamp-1 text-[10px] text-neutral-200">
+                    {cat.subcategories.join(' · ')}
+                  </p>
+                )}
+
+                <ArrowRight className="mt-2 h-4 w-4 translate-x-0 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100" />
               </div>
-
-              <h3 className="font-display font-bold text-xs sm:text-sm text-neutral-900 group-hover:text-[#e21b22] uppercase leading-tight line-clamp-2">
-                {cat.name}
-              </h3>
-
-              <span className="text-[11px] text-neutral-400 mt-1 font-mono-spec">
-                {products.filter((p) => p.categoryIds.includes(cat.id)).length} Προϊόντα
-              </span>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Industrial B2B Banner Callout */}
-      <section className="max-w-7xl mx-auto px-4">
-        <div className="bg-[#1e1e1e] text-white rounded-3xl p-6 sm:p-8 border border-[#333] shadow-lg grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-          <div className="lg:col-span-2 space-y-3">
-            <span className="text-[11px] font-mono-spec uppercase text-[#ffb4b7] font-bold tracking-wider">
-              ΕΙΔΙΚΕΣ ΠΑΡΟΧΕΣ ΓΙΑ ΤΕΧΝΙΚΕΣ ΕΤΑΙΡΕΙΕΣ &amp; ΕΡΓΟΛΑΒΟΥΣ
-            </span>
-            <h3 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-wide">
-              ΕΠΑΓΓΕΛΜΑΤΙΚΟΣ ΛΟΓΑΡΙΑΣΜΟΣ B2B NOMIKOS TOOLS
-            </h3>
-            <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed max-w-2xl">
-              Εγγραφείτε με το ΑΦΜ της επιχείρησής σας και αποκτήστε πρόσβαση σε κλιμακωτές χονδρικές εκπτώσεις, πιστωτικό όριο 30 ημερών, αποκλειστικό B2B Account Manager και αυτόματη απαλλαγή ΦΠΑ (Άρθρο 39α).
-            </p>
-            <div className="flex flex-wrap gap-4 text-xs text-neutral-300 pt-1">
-              <span className="flex items-center space-x-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>Τιμολόγηση με Άρθρο 39α (Laptop / Tablets / Εργαλεία)</span>
-              </span>
-              <span className="flex items-center space-x-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>Αποστολή με φορτωτική πανελλαδικά</span>
-              </span>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
-            <button
-              onClick={() => onNavigate('/contact')}
-              className="bg-[#e21b22] hover:bg-[#c81016] text-white font-display font-bold uppercase text-xs tracking-wider py-3 px-6 rounded text-center transition-colors shadow"
-            >
-              ΑΙΤΗΣΗ ΕΓΓΡΑΦΗΣ B2B
-            </button>
-            <button
-              onClick={() => onNavigate('/contact')}
-              className="bg-[#2a2a2a] hover:bg-[#333] text-white border border-[#444] font-display font-bold uppercase text-xs tracking-wider py-3 px-6 rounded text-center transition-colors"
-            >
-              ΕΠΙΚΟΙΝΩΝΙΑ ΜΕ ΣΥΜΒΟΥΛΟ
-            </button>
-          </div>
         </div>
       </section>
 
@@ -362,21 +348,26 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </button>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
-          {brands.map((b) => (
-            <div
-              key={b.id}
-              onClick={() => onNavigate(`/brand/${b.slug}`)}
-              className="bg-white border border-[#cfd8dc] hover:border-[#1e1e1e] hover:shadow p-3 rounded-2xl text-center cursor-pointer transition-all flex flex-col items-center justify-center space-y-1 group"
-            >
-              <span className="font-display font-black text-sm tracking-wider text-neutral-800 group-hover:text-[#e21b22] uppercase">
-                {b.name}
-              </span>
-              <span className="text-[10px] text-neutral-400 font-mono-spec">
-                {products.filter((p) => p.brandId === b.id).length} Εργαλεία
-              </span>
-            </div>
-          ))}
+        <div className="brand-marquee overflow-hidden">
+          <div className="brand-marquee-track flex w-max gap-3 py-1">
+            {[...brands, ...brands].map((b, index) => (
+              <button
+                key={`${b.id}-${index}`}
+                onClick={() => onNavigate(`/brand/${b.slug}`)}
+                className="group flex h-20 w-52 shrink-0 flex-col items-center justify-center bg-transparent px-6 text-center transition-all"
+              >
+                {b.name.toLowerCase() === 'milwaukee' ? (
+                  <img src="/assets/brand-milwaukee.png" alt="Milwaukee" className="h-12 w-40 scale-125 object-contain grayscale mix-blend-multiply transition duration-200 group-hover:grayscale-0 group-hover:mix-blend-normal" />
+                ) : b.name.toLowerCase() === 'aeg' ? (
+                  <img src="/assets/brand-aeg.png" alt="AEG" className="h-12 w-40 scale-90 object-contain grayscale mix-blend-multiply transition duration-200 group-hover:grayscale-0 group-hover:mix-blend-normal" />
+                ) : b.name.toLowerCase() === 'brennenstuhl' ? (
+                  <img src="/assets/brand-brennenstuhl.png" alt="Brennenstuhl" className="h-12 w-40 scale-[2.1] object-contain grayscale mix-blend-multiply transition duration-200 group-hover:grayscale-0 group-hover:mix-blend-normal" />
+                ) : (
+                  <span className="flex h-12 w-40 items-center justify-center font-display text-xl font-black tracking-wider text-neutral-800 group-hover:text-[#e21b22] uppercase">{b.name}</span>
+                )}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
     </div>

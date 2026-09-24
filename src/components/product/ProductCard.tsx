@@ -2,9 +2,7 @@ import React from 'react';
 import {
   Heart,
   ArrowLeftRight,
-  Eye,
   ShoppingCart,
-  Star,
   CheckCircle2,
   AlertCircle,
   Zap,
@@ -30,7 +28,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     isInWishlist,
     toggleCompare,
     isInCompare,
-    setQuickViewProduct,
     isB2BMode,
   } = useStore();
 
@@ -109,13 +106,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             )}
           </div>
 
-          <div className="flex items-center space-x-3 mt-3 text-xs">
-            <div className="flex items-center text-amber-500">
-              <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-              <span className="font-bold ml-1 text-neutral-800">{product.rating}</span>
-              <span className="text-neutral-400 text-[11px] ml-0.5">({product.reviewCount})</span>
-            </div>
-
+          <div className="flex items-center mt-3 text-xs">
             {product.stockQuantity > 0 ? (
               <span className="inline-flex items-center text-[11px] text-[#2e7d32] font-semibold">
                 <CheckCircle2 className="w-3 h-3 mr-1" /> Σε απόθεμα ({product.stockQuantity} τεμ.)
@@ -131,28 +122,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Pricing & Actions */}
         <div className="w-full md:w-56 shrink-0 flex flex-col justify-between items-end border-t md:border-t-0 md:border-l border-[#cfd8dc] pt-3 md:pt-0 md:pl-4">
           <div className="text-right w-full">
-            {/* Dual Pricing Display */}
-            {isB2BMode ? (
-              <div>
-                <div className="text-2xl font-bold font-mono-spec text-neutral-900">
-                  €{netPrice.toFixed(2)}
-                  <span className="text-[11px] font-normal text-neutral-500 ml-1">χωρίς ΦΠΑ</span>
-                </div>
-                <div className="text-xs text-[#e21b22] font-medium font-mono-spec">
-                  €{grossPrice.toFixed(2)} με ΦΠΑ 24%
-                </div>
-              </div>
-            ) : (
-              <div>
-                <div className="text-2xl font-bold font-mono-spec text-[#e21b22]">
-                  €{grossPrice.toFixed(2)}
-                  <span className="text-[11px] font-normal text-neutral-500 ml-1">με ΦΠΑ</span>
-                </div>
-                <div className="text-xs text-neutral-600 font-medium font-mono-spec">
-                  €{netPrice.toFixed(2)} χωρίς ΦΠΑ
-                </div>
-              </div>
-            )}
+            <div className="text-2xl font-bold font-price text-[#e21b22]">
+              €{grossPrice.toFixed(2)}
+            </div>
 
             {oldGrossPrice && (
               <div className="text-xs text-neutral-400 line-through font-mono-spec mt-0.5">
@@ -170,15 +142,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <span>ΠΡΟΣΘΗΚΗ</span>
             </button>
 
-            <div className="flex items-center justify-between w-full text-xs text-neutral-500 pt-1">
-              <button
-                onClick={() => setQuickViewProduct(product)}
-                className="hover:text-neutral-900 flex items-center space-x-1"
-                title="Γρήγορη Προεπισκόπηση"
-              >
-                <Eye className="w-3.5 h-3.5" />
-                <span>Quick View</span>
-              </button>
+            <div className="flex items-center justify-end w-full text-xs text-neutral-500 pt-1">
               <button
                 onClick={() => toggleWishlist(product.id)}
                 className={`flex items-center space-x-1 ${isWish ? 'text-[#e21b22]' : 'hover:text-[#e21b22]'}`}
@@ -206,7 +170,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       id={`product-card-${product.id}`}
-      className="bg-white border border-[#cfd8dc] rounded-2xl p-2.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
+      className="bg-white border border-[#cfd8dc] rounded-2xl p-3.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
     >
       {/* Top Badges & Actions */}
       <div>
@@ -225,37 +189,44 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Product Image */}
         <div
           onClick={handleCardClick}
-          className="relative w-full h-44 bg-[#fafafa] rounded p-[2px] flex items-center justify-center cursor-pointer overflow-hidden mb-3"
+          className="relative w-full h-56 flex items-center justify-center cursor-pointer overflow-hidden mb-3"
         >
           <img
             src={product.images[0]}
             alt={product.name}
-            className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+            className="max-h-full max-w-full object-contain pt-2 group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
           />
 
-          <div className="absolute right-2 top-2 z-10 flex items-center gap-1 rounded-full bg-white/90 p-1 shadow-sm">
+          <div className="absolute right-2 top-2 z-10 flex flex-col items-center gap-1 rounded-full bg-white/90 p-1 shadow-sm">
             <button onClick={(e) => { e.stopPropagation(); toggleWishlist(product.id); }} className={`rounded-full p-1.5 ${isWish ? 'text-[#e21b22]' : 'text-neutral-600 hover:text-[#e21b22]'}`} title="Προσθήκη στα αγαπημένα" aria-label="Προσθήκη στα αγαπημένα"><Heart className={`h-4 w-4 ${isWish ? 'fill-[#e21b22]' : ''}`} /></button>
             <button onClick={(e) => { e.stopPropagation(); toggleCompare(product.id); }} className={`rounded-full p-1.5 ${isComp ? 'text-[#e21b22]' : 'text-neutral-600 hover:text-[#e21b22]'}`} title="Σύγκριση προϊόντος" aria-label="Σύγκριση προϊόντος"><ArrowLeftRight className="h-4 w-4" /></button>
           </div>
 
-          {/* Quick View Button on Hover */}
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setQuickViewProduct(product);
-            }}
-            className="absolute bottom-2 inset-x-4 bg-[#1e1e1e]/90 hover:bg-[#1e1e1e] text-white text-xs font-semibold py-1.5 rounded flex items-center justify-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm"
-          >
-            <Eye className="w-3.5 h-3.5" />
-            <span>Γρήγορη Ματιά</span>
-          </button>
+        </div>
+
+        {/* Availability and product code */}
+        <div className="flex items-center text-xs mb-1">
+          {product.stockQuantity > 0 ? (
+            <span className="inline-flex items-center text-[#2e7d32] font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2e7d32] mr-1.5 animate-pulse" />
+              ΑΜΕΣΑ ΔΙΑΘΕΣΙΜΟ
+            </span>
+          ) : (
+            <span className="inline-flex items-center text-[#c62828] font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c62828] mr-1.5" />
+              ΚΑΤΟΠΙΝ ΠΑΡΑΓΓΕΛΙΑΣ
+            </span>
+          )}
+        </div>
+        <div className="text-xs text-neutral-600 mb-1.5">
+          Κωδ. προϊόντος: <span className="font-mono-spec text-neutral-700">{product.sku}</span>
         </div>
 
         {/* Product Name */}
         <h3
           onClick={handleCardClick}
-          className="font-semibold text-xs md:text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug mb-2 min-h-[2.5rem]"
+          className="font-semibold text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug mb-1 min-h-[1.25rem]"
           title={product.name}
         >
           {product.name}
@@ -275,49 +246,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           )}
         </div>
 
-        {/* Stock Status */}
-        <div className="flex items-center justify-between text-[11px] mb-3">
-          {product.stockQuantity > 0 ? (
-            <span className="inline-flex items-center text-[#2e7d32] font-semibold">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2e7d32] mr-1.5 animate-pulse" />
-              ΣΕ ΑΠΟΘΕΜΑ
-            </span>
-          ) : (
-            <span className="inline-flex items-center text-[#c62828] font-semibold">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c62828] mr-1.5" />
-              ΚΑΤΟΠΙΝ ΠΑΡΑΓΓΕΛΙΑΣ
-            </span>
-          )}
-
-          <div className="flex items-center text-amber-500 text-[11px]">
-            <Star className="w-3 h-3 fill-amber-400 text-amber-400 mr-0.5" />
-            <span className="font-bold text-neutral-700">{product.rating}</span>
-          </div>
-        </div>
       </div>
 
       {/* Pricing & Add to Cart Footer */}
-      <div className="border-t border-[#f0f0f0] pt-2.5 mt-auto">
-        <div className="flex items-baseline justify-between mb-2">
-          {isB2BMode ? (
-            <div>
-              <div className="text-lg md:text-xl font-bold font-mono-spec text-neutral-900 leading-none">
-                €{netPrice.toFixed(2)}
-              </div>
-              <div className="text-[10px] text-[#e21b22] font-mono-spec">
-                (€{grossPrice.toFixed(2)} με ΦΠΑ)
-              </div>
-            </div>
-          ) : (
-            <div>
-              <div className="text-lg md:text-xl font-bold font-mono-spec text-[#e21b22] leading-none">
-                €{grossPrice.toFixed(2)}
-              </div>
-              <div className="text-[10px] text-neutral-500 font-mono-spec">
-                (€{netPrice.toFixed(2)} χωρ. ΦΠΑ)
-              </div>
-            </div>
-          )}
+      <div className="border-t border-[#f0f0f0] pt-2.5 pb-1.5">
+        <div className="flex items-baseline justify-between mb-3">
+          <div className="text-xl font-black font-price text-[#e21b22] leading-none">
+            €{grossPrice.toFixed(2)}
+          </div>
 
           {oldGrossPrice && (
             <span className="text-[11px] text-neutral-400 line-through font-mono-spec">

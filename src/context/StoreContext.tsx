@@ -13,6 +13,11 @@ import { initialOrders } from '../data/ordersData';
 import { initialStockMovements, initialCountSessions } from '../data/inventoryData';
 import { initialAuditLogs } from '../data/auditData';
 
+// The catalog is generated from the supplier Excel export. Bump this when the
+// source catalog is intentionally replaced so old browser-local products do
+// not survive the migration.
+const PRODUCT_CATALOG_VERSION = 'excel-2026-09-24-v1';
+
 export interface CartItem {
   product: Product;
   quantity: number;
@@ -126,7 +131,18 @@ const normalizeStoredProducts = (value: string | null): Product[] => {
 };
 
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Initialize from LocalStorage or Fallback
+  const catalogVersionMatches = localStorage.getItem('nomikos_catalog_version') === PRODUCT_CATALOG_VERSION;
+  if (!catalogVersionMatches) {
+    localStorage.removeItem('nomikos_products');
+    localStorage.removeItem('nomikos_categories');
+    localStorage.removeItem('nomikos_brands');
+    localStorage.removeItem('nomikos_cart');
+    localStorage.removeItem('nomikos_wishlist');
+    localStorage.removeItem('nomikos_compare');
+    localStorage.setItem('nomikos_catalog_version', PRODUCT_CATALOG_VERSION);
+  }
+
+  // Initialize from LocalStorage or the Excel-backed catalog.
   const [products, setProducts] = useState<Product[]>(() =>
     normalizeStoredProducts(localStorage.getItem('nomikos_products'))
   );
@@ -171,12 +187,12 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const [wishlist, setWishlist] = useState<string[]>(() => {
     const saved = localStorage.getItem('nomikos_wishlist');
-    return saved ? JSON.parse(saved) : ['prod-milw-m18fpd3', 'prod-dewalt-dws780'];
+    return saved ? JSON.parse(saved) : initialProducts.slice(0, 2).map((product) => product.id);
   });
 
   const [compareList, setCompareList] = useState<string[]>(() => {
     const saved = localStorage.getItem('nomikos_compare');
-    return saved ? JSON.parse(saved) : ['prod-milw-m18fpd3', 'prod-dewalt-dcd996p2', 'prod-makita-dhp486'];
+    return saved ? JSON.parse(saved) : initialProducts.slice(0, 3).map((product) => product.id);
   });
 
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);

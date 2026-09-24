@@ -39,6 +39,8 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
   const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc' | 'rating' | 'newest'>('featured');
   const [layoutMode, setLayoutMode] = useState<'grid' | 'list'>('grid');
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+  const [pageSize, setPageSize] = useState(30);
+  const [page, setPage] = useState(1);
 
   // Base products for this category or all
   const baseProducts = useMemo(() => {
@@ -115,6 +117,13 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
     }
   }, [filteredProducts, sortBy]);
 
+  React.useEffect(() => {
+    setPage(1);
+  }, [categorySlug, pageSize, selectedBrands, selectedVoltages, selectedMotors, inStockOnly, minPrice, maxPrice, sortBy]);
+
+  const pageCount = Math.max(1, Math.ceil(sortedProducts.length / pageSize));
+  const pagedProducts = sortedProducts.slice((page - 1) * pageSize, page * pageSize);
+
   const resetFilters = () => {
     setSelectedBrands([]);
     setSelectedVoltages([]);
@@ -166,7 +175,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
       <div className="border-b border-[#cfd8dc] pb-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div>
-            <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight">
+            <h1 className="font-category font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight">
               {currentCategory?.name || 'ΟΛΑ ΤΑ ΕΠΑΓΓΕΛΜΑΤΙΚΑ ΕΡΓΑΛΕΙΑ'}
             </h1>
             <p className="text-xs sm:text-sm text-neutral-500 mt-1 max-w-2xl leading-relaxed">
@@ -455,6 +464,15 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
           {/* Products Grid / List */}
           {sortedProducts.length > 0 ? (
+            <>
+            <div className="mb-4 flex items-center justify-between rounded border border-neutral-200 bg-white px-3 py-2 text-xs">
+              <span className="text-neutral-500">Εμφάνιση {Math.min((page - 1) * pageSize + 1, sortedProducts.length)}–{Math.min(page * pageSize, sortedProducts.length)} από {sortedProducts.length}</span>
+              <label className="flex items-center gap-2 font-semibold text-neutral-700">Προϊόντα ανά σελίδα
+                <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="rounded border border-neutral-300 bg-white px-2 py-1">
+                  <option value={30}>30</option><option value={60}>60</option><option value={90}>90</option>
+                </select>
+              </label>
+            </div>
             <div
               className={
                 layoutMode === 'grid'
@@ -462,10 +480,16 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                   : 'space-y-3'
               }
             >
-              {sortedProducts.map((p) => (
+              {pagedProducts.map((p) => (
                 <ProductCard key={p.id} product={p} onNavigate={onNavigate} layout={layoutMode} />
               ))}
             </div>
+            {pageCount > 1 && <div className="mt-5 flex items-center justify-center gap-2 text-xs">
+              <button disabled={page === 1} onClick={() => setPage((value) => value - 1)} className="rounded border border-neutral-300 bg-white px-3 py-1.5 disabled:opacity-40">Προηγούμενη</button>
+              <span className="font-semibold text-neutral-600">Σελίδα {page} / {pageCount}</span>
+              <button disabled={page === pageCount} onClick={() => setPage((value) => value + 1)} className="rounded border border-neutral-300 bg-white px-3 py-1.5 disabled:opacity-40">Επόμενη</button>
+            </div>}
+            </>
           ) : (
             <div className="bg-white border border-[#cfd8dc] rounded p-12 text-center space-y-3">
               <Filter className="w-12 h-12 text-neutral-300 mx-auto" />
