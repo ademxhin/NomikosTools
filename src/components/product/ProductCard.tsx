@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Heart,
-  Scale,
+  ArrowLeftRight,
   Eye,
   ShoppingCart,
   Star,
@@ -80,10 +80,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Content */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center space-x-2 text-xs mb-1">
-            <span className="font-display font-bold text-[#e21b22] tracking-wider uppercase">
-              {brand?.name}
-            </span>
-            <span className="text-neutral-400">•</span>
             <span className="text-neutral-500 font-mono-spec text-[11px]">SKU: {product.sku}</span>
           </div>
 
@@ -218,45 +214,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     >
       {/* Top Badges & Actions */}
       <div>
-        <div className="flex items-start justify-between relative mb-2">
+        <div className="relative mb-1 min-h-4">
           {/* Discount badge */}
           {discountPercent > 0 ? (
             <span className="bg-[#e21b22] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow">
               -{discountPercent}%
             </span>
           ) : (
-            <span className="text-[10px] font-display font-bold tracking-wider text-neutral-400 uppercase">
-              {brand?.name}
-            </span>
+            <span />
           )}
 
-          {/* Quick Action Floating Icons */}
-          <div className="flex items-center space-x-1">
-            <button
-              onClick={() => toggleWishlist(product.id)}
-              className={`p-1.5 rounded-full hover:bg-neutral-100 transition-colors ${
-                isWish ? 'text-[#e21b22]' : 'text-neutral-400 hover:text-neutral-700'
-              }`}
-              title="Προσθήκη στη λίστα επιθυμιών"
-            >
-              <Heart className={`w-4 h-4 ${isWish ? 'fill-[#e21b22]' : ''}`} />
-            </button>
-            <button
-              onClick={() => toggleCompare(product.id)}
-              className={`p-1.5 rounded-full hover:bg-neutral-100 transition-colors ${
-                isComp ? 'text-[#0d47a1]' : 'text-neutral-400 hover:text-neutral-700'
-              }`}
-              title="Σύγκριση τεχνικών χαρακτηριστικών"
-            >
-              <Scale className="w-4 h-4" />
-            </button>
-          </div>
         </div>
 
         {/* Product Image */}
         <div
           onClick={handleCardClick}
-          className="relative w-full h-44 bg-[#fafafa] rounded p-2 flex items-center justify-center cursor-pointer overflow-hidden mb-3"
+          className="relative w-full h-44 bg-[#fafafa] rounded p-[2px] flex items-center justify-center cursor-pointer overflow-hidden mb-3"
         >
           <img
             src={product.images[0]}
@@ -264,6 +237,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
           />
+
+          <div className="absolute right-2 top-2 z-10 flex items-center gap-1 rounded-full bg-white/90 p-1 shadow-sm">
+            <button onClick={(e) => { e.stopPropagation(); toggleWishlist(product.id); }} className={`rounded-full p-1.5 ${isWish ? 'text-[#e21b22]' : 'text-neutral-600 hover:text-[#e21b22]'}`} title="Προσθήκη στα αγαπημένα" aria-label="Προσθήκη στα αγαπημένα"><Heart className={`h-4 w-4 ${isWish ? 'fill-[#e21b22]' : ''}`} /></button>
+            <button onClick={(e) => { e.stopPropagation(); toggleCompare(product.id); }} className={`rounded-full p-1.5 ${isComp ? 'text-[#e21b22]' : 'text-neutral-600 hover:text-[#e21b22]'}`} title="Σύγκριση προϊόντος" aria-label="Σύγκριση προϊόντος"><ArrowLeftRight className="h-4 w-4" /></button>
+          </div>
 
           {/* Quick View Button on Hover */}
           <button
@@ -280,9 +258,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Brand & SKU info */}
         <div className="flex items-center justify-between text-[11px] text-neutral-500 mb-1">
-          <span className="font-display font-bold text-[#e21b22] tracking-wider uppercase">
-            {brand?.name}
-          </span>
           <span className="font-mono-spec">SKU: {product.sku}</span>
         </div>
 
