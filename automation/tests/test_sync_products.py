@@ -2,10 +2,13 @@ import sys
 from pathlib import Path
 import unittest
 from decimal import Decimal
+from tempfile import TemporaryDirectory
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from sync_products import ProductRecord, build_indexes, match_product, normalize
+from openpyxl import Workbook, load_workbook
+
+from sync_products import ProductRecord, build_indexes, export_product_audit, export_xml_products, match_product, normalize
 
 
 def product(code, alternative, barcode):
@@ -35,6 +38,34 @@ class MatchingTests(unittest.TestCase):
         result = match_product("MPN-1", "222", self.by_alt, self.by_barcode)
         self.assertEqual(result.status, "Σύγκρουση MPN/EAN")
         self.assertIsNone(result.product)
+
+    def test_exports_xml_products_workbook(self):
+        with TemporaryDirectory() as temporary:
+            target = export_xml_products([self.first, self.second], Path(temporary))
+            workbook = load_workbook(target)
+            sheet = workbook["Προϊόντα XML"]
+            self.assertEqual(sheet.max_row, 3)
+            self.assertEqual(sheet["A1"].value, "XML Κωδικός")
+            self.assertEqual(sheet["B2"].value, "MPN-1")
+            self.assertEqual(sheet["G3"].value, 1.24)
+
+    def test_exports_product_audit_workbook(self):
+        with TemporaryDirectory() as temporary:
+            source = Path(temporary) / "source.xlsx"
+            workbook = Workbook()
+            sheet = workbook.active
+            sheet.title = "Προϊόντα που εμφανίζονται"
+            sheet.append(["UID", "SKU ID", "Όνομα", "Κατηγορία προϊόντος", "Κατασκευαστής", "ΕΑΝ", "MPN", "URL προϊόντος"])
+            sheet.append(["u1", "s1", "Matched no image", "Cat", "Brand", "111", "MPN-1", "https://skroutz.example/1"])
+            sheet.append(["u2", "s2", "Unmatched", "Cat", "Brand", "999", "MPN-X", "https://skroutz.example/2"])
+            workbook.save(source)
+            target, stats = export_product_audit(source, Path(temporary), "Προϊόντα που εμφανίζονται", [self.first, self.second])
+            audit = load_workbook(target)
+            self.assertEqual(stats["checked"], 2)
+            self.assertEqual(stats["unmatched"], 1)
+            self.assertEqual(stats["no_image"], 1)
+            self.assertEqual(audit["Χωρίς αντιστοίχιση"]["H2"].value, "https://skroutz.example/2")
+            self.assertEqual(audit["Χωρίς φωτογραφία XML"]["H2"].value, "https://skroutz.example/1")
 
 
 if __name__ == "__main__":

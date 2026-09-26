@@ -23,6 +23,22 @@
 
 `powershell -ExecutionPolicy Bypass -File .\automation\run_now.ps1`
 
+## Εξαγωγή όλων των προϊόντων XML
+
+Για να δημιουργηθεί Excel με όλα τα προϊόντα που υπάρχουν στο XML, χωρίς να ενημερωθεί το βασικό workbook:
+
+`powershell -ExecutionPolicy Bypass -File .\automation\run_xml_export.ps1`
+
+Το αρχείο αποθηκεύεται ως `XML Products - Πλήρης Κατάλογος.xlsx` στον φάκελο εξόδου.
+
+## Έλεγχος προϊόντων Skroutz vs XML
+
+Για αναφορά με προϊόντα του αρχικού Excel που δεν αντιστοιχίζονται στο XML και προϊόντα που αντιστοιχίζονται αλλά δεν έχουν φωτογραφία XML:
+
+`powershell -ExecutionPolicy Bypass -File .\automation\run_product_audit.ps1`
+
+Το αρχείο αποθηκεύεται ως `Έλεγχος προϊόντων Skroutz vs XML.xlsx` στον φάκελο εξόδου και περιλαμβάνει το `URL προϊόντος` ως Skroutz URL.
+
 ## Αφαίρεση προγραμματισμού
 
 `powershell -ExecutionPolicy Bypass -File .\automation\uninstall_task.ps1`

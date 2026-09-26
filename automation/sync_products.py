@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-from openpyxl import load_workbook
+from openpyxl import Workbook, load_workbook
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
@@ -32,6 +32,8 @@ DEFAULT_STATE_DIR = APP_DIR / "state"
 PRODUCT_SHEET = "Προϊόντα που εμφανίζονται"
 SUMMARY_SHEET = "Έλεγχος XML"
 OUTPUT_FILENAME = "Nomikos Tools - Ενημερωμένο.xlsx"
+XML_PRODUCTS_FILENAME = "XML Products - Πλήρης Κατάλογος.xlsx"
+PRODUCT_AUDIT_FILENAME = "Έλεγχος προϊόντων Skroutz vs XML.xlsx"
 
 EXTRA_HEADERS = [
     "XML Κατάσταση Αντιστοίχισης",
@@ -43,6 +45,33 @@ EXTRA_HEADERS = [
     "XML Εικόνα",
     "Τελευταίος Συγχρονισμός",
     "Έλεγχος",
+]
+
+XML_EXPORT_HEADERS = [
+    "XML Κωδικός",
+    "Alternativecode / MPN",
+    "Barcode / EAN",
+    "Τίτλος",
+    "Διαθεσιμότητα",
+    "Τιμή Χονδρικής χωρίς ΦΠΑ",
+    "Τιμή Χονδρικής με ΦΠΑ",
+    "Βάρος",
+    "Εικόνα",
+]
+
+PRODUCT_AUDIT_HEADERS = [
+    "UID",
+    "SKU ID",
+    "Όνομα",
+    "Κατηγορία προϊόντος",
+    "Κατασκευαστής",
+    "EAN",
+    "MPN",
+    "Skroutz URL",
+    "Κατάσταση",
+    "XML Κωδικός",
+    "XML Διαθεσιμότητα",
+    "XML Εικόνα",
 ]
 
 
@@ -358,6 +387,176 @@ def rebuild_summary(workbook, stats: dict[str, int], exceptions: list[dict[str, 
         )
 
 
+def export_xml_products(records: list[ProductRecord], output_dir: Path) -> Path:
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "Προϊόντα XML"
+    sheet.append(XML_EXPORT_HEADERS)
+    header_fill = PatternFill("solid", fgColor="1F4E78")
+    for cell in sheet[1]:
+        cell.fill = header_fill
+        cell.font = Font(name="Arial", size=10, bold=True, color="FFFFFF")
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+
+    for record in records:
+        sheet.append([
+            record.code,
+            record.alternative_code,
+            record.barcode,
+            record.title,
+            record.stock,
+            float(record.wholesale_no_vat) if record.wholesale_no_vat is not None else None,
+            float(record.wholesale_with_vat) if record.wholesale_with_vat is not None else None,
+            float(record.weight) if record.weight is not None else None,
+            record.image,
+        ])
+
+    widths = [16, 24, 20, 70, 18, 26, 25, 12, 55]
+    for index, width in enumerate(widths, start=1):
+        sheet.column_dimensions[get_column_letter(index)].width = width
+    for row in sheet.iter_rows(min_row=2):
+        row[0].number_format = "@"
+        row[1].number_format = "@"
+        row[2].number_format = "@"
+        row[5].number_format = '#,##0.00 "€"'
+        row[6].number_format = '#,##0.00 "€"'
+        row[7].number_format = "0.000"
+    sheet.freeze_panes = "A2"
+    sheet.auto_filter.ref = f"A1:I{max(1, sheet.max_row)}"
+    sheet.sheet_view.showGridLines = False
+    sheet.row_dimensions[1].height = 32
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    target = output_dir / XML_PRODUCTS_FILENAME
+    workbook.save(target)
+    return target
+
+
+def style_audit_sheet(sheet) -> None:
+    header_fill = PatternFill("solid", fgColor="1F4E78")
+    for cell in sheet[1]:
+        cell.fill = header_fill
+        cell.font = Font(name="Arial", size=10, bold=True, color="FFFFFF")
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    widths = [24, 14, 58, 32, 22, 18, 22, 56, 24, 16, 19, 56]
+    for index, width in enumerate(widths, start=1):
+        sheet.column_dimensions[get_column_letter(index)].width = width
+    for row in sheet.iter_rows(min_row=2):
+        row[0].number_format = "@"
+        row[1].number_format = "@"
+        row[5].number_format = "@"
+        row[6].number_format = "@"
+        row[7].number_format = "@"
+        row[8].number_format = "@"
+        row[9].number_format = "@"
+    sheet.freeze_panes = "A2"
+    sheet.auto_filter.ref = f"A1:L{max(1, sheet.max_row)}"
+    sheet.sheet_view.showGridLines = False
+    sheet.row_dimensions[1].height = 34
+
+
+def build_product_audit_row(sheet, row: int, headers: dict[str, int], result: MatchResult) -> list[object]:
+    product = result.product
+    return [
+        normalize(sheet.cell(row, headers["UID"]).value),
+        normalize(sheet.cell(row, headers.get("SKU ID", 0)).value) if headers.get("SKU ID") else "",
+        normalize(sheet.cell(row, headers["Όνομα"]).value),
+        normalize(sheet.cell(row, headers.get("Κατηγορία προϊόντος", 0)).value) if headers.get("Κατηγορία προϊόντος") else "",
+        normalize(sheet.cell(row, headers.get("Κατασκευαστής", 0)).value) if headers.get("Κατασκευαστής") else "",
+        normalize(sheet.cell(row, headers["EAN"]).value),
+        normalize(sheet.cell(row, headers["MPN"]).value),
+        normalize(sheet.cell(row, headers.get("URL προϊόντος", 0)).value) if headers.get("URL προϊόντος") else "",
+        result.status,
+        product.code if product else "",
+        product.stock if product else "",
+        product.image if product else "",
+    ]
+
+
+def export_product_audit(source_path: Path, output_dir: Path, worksheet_name: str, records: list[ProductRecord]) -> tuple[Path, dict[str, int]]:
+    if not source_path.exists():
+        raise FileNotFoundError(f"Δεν βρέθηκε το Excel: {source_path}")
+    source_workbook = load_workbook(source_path, data_only=False)
+    if worksheet_name not in source_workbook.sheetnames:
+        raise KeyError(f"Δεν βρέθηκε το φύλλο '{worksheet_name}'.")
+    source_sheet = source_workbook[worksheet_name]
+    headers = header_map(source_sheet)
+    required = ["UID", "Όνομα", "EAN", "MPN"]
+    missing = [label for label in required if label not in headers]
+    if missing:
+        raise ValueError("Λείπουν απαιτούμενες στήλες: " + ", ".join(missing))
+
+    by_alt, by_barcode = build_indexes(records)
+    unmatched_rows: list[list[object]] = []
+    no_image_rows: list[list[object]] = []
+    checked = 0
+    matched = 0
+
+    for row in range(2, source_sheet.max_row + 1):
+        uid = normalize(source_sheet.cell(row, headers["UID"]).value)
+        name = normalize(source_sheet.cell(row, headers["Όνομα"]).value)
+        if not uid or not name:
+            continue
+        checked += 1
+        result = match_product(
+            source_sheet.cell(row, headers["MPN"]).value,
+            source_sheet.cell(row, headers["EAN"]).value,
+            by_alt,
+            by_barcode,
+        )
+        product = result.product
+        if not product:
+            unmatched_rows.append(build_product_audit_row(source_sheet, row, headers, result))
+            continue
+        matched += 1
+        if not normalize(product.image):
+            no_image_rows.append(build_product_audit_row(source_sheet, row, headers, result))
+
+    workbook = Workbook()
+    summary = workbook.active
+    summary.title = "Σύνοψη"
+    summary_rows = [
+        ("Έλεγχος", "Προϊόντα Skroutz vs XML"),
+        ("Προϊόντα Excel που ελέγχθηκαν", checked),
+        ("Προϊόντα XML", len(records)),
+        ("Αντιστοιχισμένα", matched),
+        ("Χωρίς αντιστοίχιση", len(unmatched_rows)),
+        ("Χωρίς φωτογραφία XML", len(no_image_rows)),
+        ("Δημιουργήθηκε", datetime.now().astimezone().replace(tzinfo=None)),
+    ]
+    for index, (label, value) in enumerate(summary_rows, start=1):
+        summary.cell(index, 1, label)
+        summary.cell(index, 2, value)
+    summary["A1"].font = Font(name="Arial", size=13, bold=True)
+    summary["B7"].number_format = "dd/mm/yyyy hh:mm"
+    summary.column_dimensions["A"].width = 32
+    summary.column_dimensions["B"].width = 22
+    summary.sheet_view.showGridLines = False
+
+    unmatched_sheet = workbook.create_sheet("Χωρίς αντιστοίχιση")
+    unmatched_sheet.append(PRODUCT_AUDIT_HEADERS)
+    for item in unmatched_rows:
+        unmatched_sheet.append(item)
+    style_audit_sheet(unmatched_sheet)
+
+    no_image_sheet = workbook.create_sheet("Χωρίς φωτογραφία XML")
+    no_image_sheet.append(PRODUCT_AUDIT_HEADERS)
+    for item in no_image_rows:
+        no_image_sheet.append(item)
+    style_audit_sheet(no_image_sheet)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    target = output_dir / PRODUCT_AUDIT_FILENAME
+    workbook.save(target)
+    return target, {
+        "checked": checked,
+        "xml_products": len(records),
+        "matched": matched,
+        "unmatched": len(unmatched_rows),
+        "no_image": len(no_image_rows),
+    }
+
+
 def update_workbook(
     source_path: Path,
     output_dir: Path,
@@ -503,6 +702,8 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument("--source", type=Path)
     parser.add_argument("--output-dir", type=Path)
     parser.add_argument("--xml-file", type=Path, help="Χρήση τοπικού XML αντί για λήψη.")
+    parser.add_argument("--export-xml-products", action="store_true", help="Δημιουργεί Excel με όλα τα προϊόντα του XML και σταματά.")
+    parser.add_argument("--audit-products", action="store_true", help="Δημιουργεί αναφορά για προϊόντα χωρίς αντιστοίχιση και χωρίς φωτογραφία XML.")
     parser.add_argument("--verbose", action="store_true")
     return parser.parse_args()
 
@@ -515,7 +716,7 @@ def main() -> int:
     worksheet = os.environ.get("NOMIKOS_WORKSHEET", PRODUCT_SHEET)
     timeout = int(os.environ.get("NOMIKOS_TIMEOUT_SECONDS", "180"))
     logger = configure_logging(DEFAULT_LOG_DIR, args.verbose)
-    if not str(source):
+    if not args.export_xml_products and not str(source):
         logger.error("Δεν έχει οριστεί NOMIKOS_SOURCE_XLSX.")
         return 2
     try:
@@ -531,6 +732,19 @@ def main() -> int:
                 download_xml(url, xml_path, timeout, logger)
             records = parse_xml(xml_path)
             logger.info("Διαβάστηκαν %s προϊόντα από το XML", len(records))
+            if args.export_xml_products:
+                target = export_xml_products(records, output_dir)
+                logger.info("Δημιουργήθηκε πλήρης κατάλογος XML: %s", target)
+                print(target)
+                return 0
+            if args.audit_products:
+                target, stats = export_product_audit(source, output_dir, worksheet, records)
+                logger.info(
+                    "Δημιουργήθηκε έλεγχος προϊόντων: %s | checked=%s, unmatched=%s, no_image=%s",
+                    target, stats["checked"], stats["unmatched"], stats["no_image"],
+                )
+                print(target)
+                return 0
             target, stats = update_workbook(source, output_dir, worksheet, records, logger)
             logger.info(
                 "Ολοκληρώθηκε: %s | Excel=%s, matched=%s, unavailable=%s, unmatched=%s, ambiguous=%s",
