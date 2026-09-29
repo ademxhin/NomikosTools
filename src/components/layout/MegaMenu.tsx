@@ -3,7 +3,6 @@ import {
   ChevronDown,
   Layers,
   ChevronRight,
-  Sparkles,
   Flame,
   Award,
   Wrench,
@@ -17,6 +16,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { Category } from '../../types/category';
+import { categoryGroups, getCategoryGroup } from '../../data/categoryHierarchy';
 
 interface MegaMenuProps {
   onNavigate: (route: string) => void;
@@ -25,24 +25,30 @@ interface MegaMenuProps {
 }
 
 export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, onOpenChange }) => {
-  const { categories, brands } = useStore();
+  const { categories } = useStore();
   const [internalOpen, setInternalOpen] = useState(false);
   const isAllCategoriesOpen = isOpen || internalOpen;
   const setIsAllCategoriesOpen = (open: boolean) => {
     setInternalOpen(open);
     onOpenChange?.(open);
   };
-  const [activeMainCatId, setActiveMainCatId] = useState<string>('cat-battery');
+  const [activeMainCatId, setActiveMainCatId] = useState<string>(categoryGroups[0].id);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Level 1 Categories
-  const mainCategories = categories
-    .filter((c) => c.level === 1 && c.active)
-    .sort((a, b) => a.order - b.order);
+  const mainCategories = categoryGroups.map((group) => ({
+    id: group.id,
+    name: group.name,
+    slug: group.id,
+    description: `Προϊόντα στην κατηγορία ${group.name}.`,
+    level: 1 as const,
+    order: categoryGroups.indexOf(group) + 1,
+    active: true,
+  }));
 
   // Subcategories of currently selected main category
   const activeSubcategories = categories
-    .filter((c) => c.parentId === activeMainCatId && c.level === 2 && c.active)
+    .filter((c) => c.active && getCategoryGroup(c.name).id === activeMainCatId)
     .sort((a, b) => a.order - b.order);
 
   // Get child categories for a subcategory
@@ -74,7 +80,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
     return <Layers className="w-4 h-4 text-neutral-400" />;
   };
 
-  const selectedCategory = categories.find((c) => c.id === activeMainCatId);
+  const selectedCategory = mainCategories.find((c) => c.id === activeMainCatId);
 
   return (
     <nav className="fixed top-[76px] left-0 right-0 text-white hidden lg:block select-none z-30 pointer-events-none">
@@ -102,7 +108,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
               className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1050px,calc(100vw-2rem))] overflow-hidden rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex min-h-[460px] text-neutral-200"
             >
               {/* Left Column: Level 1 Main Categories */}
-              <div className="w-72 bg-[#161616] border-r border-[#2a2a2a] py-2 overflow-y-auto max-h-[520px]">
+              <div className="w-80 bg-[#161616] border-r border-[#2a2a2a] py-2 overflow-y-auto max-h-[520px]">
                 {mainCategories.map((cat) => {
                   const isActive = cat.id === activeMainCatId;
                   return (
@@ -111,9 +117,9 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                       onMouseEnter={() => setActiveMainCatId(cat.id)}
                       onClick={() => {
                         setIsAllCategoriesOpen(false);
-                        onNavigate(`/category/${cat.slug}`);
+                        onNavigate('/products');
                       }}
-                      className={`flex items-center justify-between px-4 py-2.5 text-xs font-semibold cursor-pointer border-l-2 transition-colors ${
+                      className={`flex items-center justify-between px-4 py-3 text-sm font-semibold cursor-pointer border-l-2 transition-colors ${
                         isActive
                           ? 'border-[#e21b22] bg-[#222] text-white'
                           : 'border-transparent text-neutral-300 hover:text-white hover:bg-[#1c1c1c]'
@@ -123,7 +129,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         {getCategoryIcon(cat.slug)}
                         <span className="truncate">{cat.name}</span>
                       </div>
-                      <ChevronRight className={`w-3.5 h-3.5 ${isActive ? 'text-[#e21b22]' : 'text-neutral-500'}`} />
+                        <ChevronRight className={`w-4 h-4 shrink-0 ${isActive ? 'text-[#e21b22]' : 'text-neutral-500'}`} />
                     </div>
                   );
                 })}
@@ -151,7 +157,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                     <button
                       onClick={() => {
                         setIsAllCategoriesOpen(false);
-                        if (selectedCategory) onNavigate(`/category/${selectedCategory.slug}`);
+                        if (selectedCategory) onNavigate('/products');
                       }}
                       className="text-xs text-[#ffb4b7] hover:text-white font-semibold flex items-center space-x-1"
                     >
@@ -199,10 +205,20 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                           </div>
                         );
                       })}
+                      <button
+                        onClick={() => {
+                          setIsAllCategoriesOpen(false);
+                          if (selectedCategory) onNavigate('/products');
+                        }}
+                        className="self-start rounded border border-[#e21b22]/60 bg-[#e21b22]/10 px-3 py-2 text-left text-sm font-bold text-[#ffb4b7] hover:bg-[#e21b22] hover:text-white transition-colors"
+                      >
+                        Προβολή όλων
+                        <span className="mt-1 block text-[11px] font-normal text-neutral-400">Όλα τα προϊόντα της κατηγορίας</span>
+                      </button>
                     </div>
                   ) : (
                     <div className="py-8 text-center text-neutral-400">
-                      <p className="text-sm">Δείτε όλα τα διαθέσιμα προϊόντα στην κατηγορία {selectedCategory?.name}</p>
+                      <p className="text-sm">Δεν υπάρχουν καταχωρημένες υπο-κατηγορίες.</p>
                       <button
                         onClick={() => {
                           setIsAllCategoriesOpen(false);
@@ -210,37 +226,12 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         }}
                         className="mt-3 bg-[#e21b22] text-white px-4 py-1.5 text-xs font-bold rounded uppercase font-display"
                       >
-                        Εξερεύνηση Προϊόντων
+                        Προβολή όλων
                       </button>
                     </div>
                   )}
                 </div>
 
-                {/* Bottom Promo Strip in Mega Menu */}
-                <div className="mt-6 pt-4 border-t border-[#2e2e2e] flex items-center justify-between bg-[#181818] p-3 rounded">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded bg-[#e21b22]/20 flex items-center justify-center text-[#ffb4b7]">
-                      <Sparkles className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-white uppercase font-display">
-                        Επαγγελματική Υποστήριξη Nomikos Tools
-                      </div>
-                      <div className="text-[11px] text-neutral-400">
-                        Εξειδικευμένοι σύμβουλοι εργαλείων για εργοτάξια και βιομηχανίες.
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => {
-                      setIsAllCategoriesOpen(false);
-                      onNavigate('/contact');
-                    }}
-                    className="text-xs bg-[#2a2a2a] hover:bg-[#333] text-white px-3 py-1.5 rounded font-semibold transition-colors"
-                  >
-                    Ζητήστε Προσφορά B2B
-                  </button>
-                </div>
               </div>
             </div>
           )}

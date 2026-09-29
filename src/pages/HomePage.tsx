@@ -303,7 +303,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {categoryGroups.map((cat) => (
             <div
-              key={cat.id}
+              key={cat.slug}
               onClick={() => onNavigate(cat.name === 'Όλες οι κατηγορίες' ? '/categories' : `/category/${cat.slug}`)}
               className="relative min-h-64 overflow-hidden rounded-2xl border border-[#cfd8dc] bg-[#b8b8b8] text-center cursor-pointer transition-all group hover:border-[#e21b22] hover:shadow-lg"
             >
