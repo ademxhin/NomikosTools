@@ -141,8 +141,8 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
                 <div className="bg-[#fbfbfb] p-3 rounded border border-neutral-200 text-xs space-y-1">
                   {ord.items.map((item, idx) => (
                     <div key={idx} className="flex justify-between text-neutral-700">
-                      <span>• {item.name} ({item.quantity} τεμ.)</span>
-                      <span className="font-mono-spec font-semibold">€{(item.price * item.quantity).toFixed(2)}</span>
+                      <span>• {item.name || 'Προϊόν'} ({item.quantity || 0} τεμ.)</span>
+                      <span className="font-mono-spec font-semibold">€{((item.price || 0) * (item.quantity || 0)).toFixed(2)}</span>
                     </div>
                   ))}
                 </div>
@@ -150,8 +150,8 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
                 <div className="flex flex-wrap items-center justify-between text-xs text-neutral-500 pt-1">
                   <div className="flex items-center space-x-2">
                     <Truck className="w-4 h-4 text-[#e21b22]" />
-                    <span>{ord.shipping.carrierName}</span>
-                    {ord.shipping.trackingNumber && (
+                    <span>{ord.shipping?.carrierName || 'Δεν έχει οριστεί μεταφορέας'}</span>
+                    {ord.shipping?.trackingNumber && (
                       <span className="font-mono-spec font-bold text-neutral-700">
                         [{ord.shipping.trackingNumber}]
                       </span>
@@ -159,9 +159,9 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    {ord.shipping.trackingNumber && (
+                    {ord.shipping?.trackingNumber && (
                       <button
-                        onClick={() => onNavigate(`/track-order?voucher=${ord.shipping.trackingNumber}`)}
+                        onClick={() => onNavigate(`/track-order?voucher=${ord.shipping?.trackingNumber}`)}
                         className="text-[#e21b22] font-bold hover:underline"
                       >
                         Ζωντανός Εντοπισμός Αποστολής →

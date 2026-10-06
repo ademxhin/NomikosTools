@@ -48,7 +48,15 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [recentSearches, setRecentSearches] = useState<string[]>(() => {
     const saved = localStorage.getItem('nomikos_recent_searches');
-    return saved ? JSON.parse(saved) : ['Milwaukee M18', 'Knipex Cobra', 'Γωνιακός Τροχός'];
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed.filter((item): item is string => typeof item === 'string');
+      } catch {
+        localStorage.removeItem('nomikos_recent_searches');
+      }
+    }
+    return ['Milwaukee M18', 'Knipex Cobra', 'Γωνιακός Τροχός'];
   });
 
   const popularSearches = ['Milwaukee FPD3', 'DeWalt DCD996', 'Knipex 87 01 250', 'Brushless', 'Packout'];

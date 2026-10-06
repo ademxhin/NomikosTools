@@ -7,6 +7,7 @@ import { MobileDrawer } from './components/layout/MobileDrawer';
 import { Footer } from './components/layout/Footer';
 import { QuickViewModal } from './components/product/QuickViewModal';
 import { NotificationToast } from './components/common/NotificationToast';
+import { AccountPage } from './pages/AccountPage';
 
 import { Order } from './types/order';
 
@@ -17,7 +18,6 @@ const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage').then((m
 const CartPage = lazy(() => import('./pages/CartPage').then((module) => ({ default: module.CartPage })));
 const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then((module) => ({ default: module.CheckoutPage })));
 const OrderConfirmationPage = lazy(() => import('./pages/OrderConfirmationPage').then((module) => ({ default: module.OrderConfirmationPage })));
-const AccountPage = lazy(() => import('./pages/AccountPage').then((module) => ({ default: module.AccountPage })));
 const WishlistPage = lazy(() => import('./pages/WishlistPage').then((module) => ({ default: module.WishlistPage })));
 const ComparePage = lazy(() => import('./pages/ComparePage').then((module) => ({ default: module.ComparePage })));
 const BrandDirectoryPage = lazy(() => import('./pages/BrandDirectoryPage').then((module) => ({ default: module.BrandDirectoryPage })));

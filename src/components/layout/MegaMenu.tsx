@@ -105,10 +105,10 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
           {isAllCategoriesOpen && (
             <div
               id="desktop-mega-menu-panel"
-              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1050px,calc(100vw-2rem))] overflow-hidden rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex min-h-[460px] text-neutral-200"
+              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1050px,calc(100vw-2rem))] overflow-visible rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex text-neutral-200"
             >
               {/* Left Column: Level 1 Main Categories */}
-              <div className="w-80 bg-[#161616] border-r border-[#2a2a2a] py-2 overflow-y-auto max-h-[520px]">
+              <div className="w-80 shrink-0 bg-[#161616] rounded-l-2xl border-r border-[#2a2a2a] py-1.5">
                 {mainCategories.map((cat) => {
                   const isActive = cat.id === activeMainCatId;
                   return (
@@ -119,7 +119,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         setIsAllCategoriesOpen(false);
                         onNavigate('/products');
                       }}
-                      className={`flex items-center justify-between px-4 py-3 text-sm font-semibold cursor-pointer border-l-2 transition-colors ${
+                      className={`flex min-h-[40px] items-center justify-between px-4 py-2 text-[13px] font-semibold leading-tight cursor-pointer border-l-2 transition-colors ${
                         isActive
                           ? 'border-[#e21b22] bg-[#222] text-white'
                           : 'border-transparent text-neutral-300 hover:text-white hover:bg-[#1c1c1c]'
@@ -136,7 +136,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
               </div>
 
               {/* Right Area: Level 2 Subcategories & Level 3 Children */}
-              <div className="flex-1 p-6 bg-[#1e1e1e] flex flex-col justify-between">
+              <div className="min-w-0 flex-1 p-6 bg-[#1e1e1e] rounded-r-2xl flex flex-col">
                 <div>
                   <div className="flex items-center justify-between border-b border-[#2e2e2e] pb-3 mb-5">
                     <div>
@@ -168,18 +168,18 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
 
                   {/* Multi-column Grid for Subcategories */}
                   {activeSubcategories.length > 0 ? (
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="grid grid-cols-3 items-start gap-x-6 gap-y-4">
                       {activeSubcategories.map((subcat) => {
                         const childCats = getChildCategories(subcat.id);
                         return (
-                          <div key={subcat.id} className="space-y-2">
+                          <div key={subcat.id} className="min-w-0 min-h-[56px] space-y-2">
                             {/* Subcategory title (Level 2) */}
                             <button
                               onClick={() => {
                                 setIsAllCategoriesOpen(false);
                                 onNavigate(`/category/${subcat.slug}`);
                               }}
-                              className="font-display font-bold text-sm text-neutral-100 hover:text-[#e21b22] tracking-wide text-left flex items-center space-x-1 uppercase transition-colors"
+                              className="min-h-[40px] w-full font-display font-bold text-sm leading-snug text-neutral-100 hover:text-[#e21b22] tracking-wide text-left flex items-start space-x-1 uppercase transition-colors"
                             >
                               <span>{subcat.name}</span>
                             </button>

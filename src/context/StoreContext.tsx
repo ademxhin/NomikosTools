@@ -130,6 +130,19 @@ const normalizeStoredProducts = (value: string | null): Product[] => {
   }
 };
 
+const readStoredArray = <T,>(key: string, fallback: T[]): T[] => {
+  const saved = localStorage.getItem(key);
+  if (!saved) return fallback;
+
+  try {
+    const parsed = JSON.parse(saved);
+    return Array.isArray(parsed) ? parsed : fallback;
+  } catch {
+    localStorage.removeItem(key);
+    return fallback;
+  }
+};
+
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const catalogVersionMatches = localStorage.getItem('nomikos_catalog_version') === PRODUCT_CATALOG_VERSION;
   if (!catalogVersionMatches) {
@@ -148,51 +161,43 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 
   const [categories, setCategories] = useState<Category[]>(() => {
-    const saved = localStorage.getItem('nomikos_categories');
-    return saved ? JSON.parse(saved) : initialCategories;
+    return readStoredArray('nomikos_categories', initialCategories);
   });
 
   const [brands, setBrands] = useState<Brand[]>(() => {
-    const saved = localStorage.getItem('nomikos_brands');
-    return saved ? JSON.parse(saved) : initialBrands;
+    return readStoredArray('nomikos_brands', initialBrands);
   });
 
   const [orders, setOrders] = useState<Order[]>(() => {
-    const saved = localStorage.getItem('nomikos_orders');
-    return saved ? JSON.parse(saved) : initialOrders;
+    return readStoredArray('nomikos_orders', initialOrders);
   });
 
   const [stockMovements, setStockMovements] = useState<StockMovement[]>(() => {
-    const saved = localStorage.getItem('nomikos_movements');
-    return saved ? JSON.parse(saved) : initialStockMovements;
+    return readStoredArray('nomikos_movements', initialStockMovements);
   });
 
   const [countSessions, setCountSessions] = useState<InventoryCountSession[]>(() => {
-    const saved = localStorage.getItem('nomikos_counts');
-    return saved ? JSON.parse(saved) : initialCountSessions;
+    return readStoredArray('nomikos_counts', initialCountSessions);
   });
 
   const [auditLogs, setAuditLogs] = useState<AuditLogEntry[]>(() => {
-    const saved = localStorage.getItem('nomikos_audit');
-    return saved ? JSON.parse(saved) : initialAuditLogs;
+    return readStoredArray('nomikos_audit', initialAuditLogs);
   });
 
   const [cart, setCart] = useState<CartItem[]>(() => {
-    const saved = localStorage.getItem('nomikos_cart');
-    return saved ? JSON.parse(saved) : [
+    const saved = readStoredArray<CartItem>('nomikos_cart', [
       { product: initialProducts[0], quantity: 1 },
       { product: initialProducts[4], quantity: 2 },
-    ];
+    ]);
+    return saved;
   });
 
   const [wishlist, setWishlist] = useState<string[]>(() => {
-    const saved = localStorage.getItem('nomikos_wishlist');
-    return saved ? JSON.parse(saved) : initialProducts.slice(0, 2).map((product) => product.id);
+    return readStoredArray('nomikos_wishlist', initialProducts.slice(0, 2).map((product) => product.id));
   });
 
   const [compareList, setCompareList] = useState<string[]>(() => {
-    const saved = localStorage.getItem('nomikos_compare');
-    return saved ? JSON.parse(saved) : initialProducts.slice(0, 3).map((product) => product.id);
+    return readStoredArray('nomikos_compare', initialProducts.slice(0, 3).map((product) => product.id));
   });
 
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);

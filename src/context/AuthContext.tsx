@@ -15,9 +15,15 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(() => {
     const saved = localStorage.getItem('nomikos_user');
-    return saved
-      ? JSON.parse(saved)
-      : {
+    if (saved) {
+      try {
+        return JSON.parse(saved) as User;
+      } catch {
+        localStorage.removeItem('nomikos_user');
+      }
+    }
+
+    return {
           id: 'usr-admin-01',
           name: 'Γιώργος Νομικός',
           email: 'g.nomikos@nomikostools.gr',
