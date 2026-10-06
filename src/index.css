@@ -101,3 +101,32 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #e21b22;
 }
+
+/* Mobile polish: keep dense catalogue layouts usable without horizontal page drift. */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 639px) {
+  button, a, input, select, textarea {
+    min-height: 42px;
+  }
+
+  /* Small utility/icon controls should remain compact. */
+  button.p-1, button.p-1\.5, button.p-2, button.w-10, button.h-10 {
+    min-height: 0;
+  }
+
+  h1 { line-height: 1.08; }
+  h2 { line-height: 1.15; }
+
+  /* Prevent long SKUs/emails from pushing the viewport wider. */
+  code, pre, .font-mono-spec {
+    overflow-wrap: anywhere;
+  }
+}

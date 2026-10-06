@@ -169,13 +169,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
 
   return (
     <header className="bg-[#242424] text-white sticky top-0 z-40 shadow-lg border-b-4 border-[#e21b22]">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap lg:flex-nowrap items-center gap-3 lg:gap-4">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-2.5 lg:py-3 flex flex-wrap lg:flex-nowrap items-center gap-2.5 lg:gap-4">
         {/* Mobile menu trigger */}
         <button
           id="mobile-menu-toggle-btn"
           onClick={onOpenMobileMenu}
           onMouseEnter={() => onToggleMegaMenu?.(true)}
-          className="flex items-center justify-center w-14 h-12 shrink-0 bg-[#e21b22] hover:bg-[#c81016] text-white transition-colors rounded-xl"
+          className="flex items-center justify-center w-11 h-11 sm:w-14 sm:h-12 shrink-0 bg-[#e21b22] hover:bg-[#c81016] text-white transition-colors rounded-xl"
           aria-label="Άνοιγμα Μενού Κατηγοριών"
         >
           <Menu className="w-[26px] h-[26px]" />
@@ -190,12 +190,12 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           <img
             src="/assets/nomikos-tools-logo.png"
             alt="Nomikos Tools"
-            className="h-12 md:h-14 w-auto object-contain object-left scale-[1.3] origin-left transition-transform group-hover:scale-[1.33]"
+            className="h-10 sm:h-12 md:h-14 max-w-[145px] sm:max-w-none w-auto object-contain object-left sm:scale-[1.15] lg:scale-[1.3] origin-left transition-transform group-hover:scale-[1.18] lg:group-hover:scale-[1.33]"
           />
         </div>
 
         {/* Compact centered search */}
-        <div ref={searchContainerRef} className="order-3 lg:order-none basis-full lg:basis-auto flex-1 lg:max-w-sm xl:max-w-md relative lg:mx-4">
+        <div ref={searchContainerRef} className="order-3 lg:order-none basis-full lg:basis-auto flex-1 lg:max-w-sm xl:max-w-md relative lg:mx-4 mt-0.5 lg:mt-0">
           <form onSubmit={handleSearchSubmit} className="relative flex items-center">
             <input
               id="global-search-input"
@@ -206,7 +206,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
               onFocus={() => setIsSearchOpen(true)}
               onKeyDown={handleKeyDown}
               placeholder="Αναζήτηση προϊόντος..."
-              className="w-full bg-white text-neutral-950 text-sm pl-10 pr-16 py-2.5 border-2 border-white rounded-xl focus:border-black focus:ring-2 focus:ring-black/20 focus:outline-none transition-all placeholder:text-neutral-500 shadow-inner"
+              className="w-full bg-white text-neutral-950 text-sm pl-10 pr-16 py-3 lg:py-2.5 border-2 border-white rounded-xl focus:border-black focus:ring-2 focus:ring-black/20 focus:outline-none transition-all placeholder:text-neutral-500 shadow-inner"
               autoComplete="off"
             />
             <Search className="w-5 h-5 text-neutral-500 absolute left-3.5 pointer-events-none" />
