@@ -142,7 +142,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
     maxPrice < 2000;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
+    <div className="mx-auto max-w-7xl px-3 py-5 space-y-5 sm:px-4 sm:py-6 sm:space-y-6">
       {/* Breadcrumbs */}
       <nav className="flex items-center space-x-1.5 text-xs text-neutral-500 font-medium">
         <button onClick={() => onNavigate('/')} className="hover:text-neutral-900 transition-colors">
@@ -359,7 +359,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         {/* Product Listing Main Column */}
         <div className="lg:col-span-3 space-y-4">
           {/* Controls Bar: Sort, View Layout, Mobile filter toggle */}
-          <div className="bg-white border border-[#cfd8dc] p-3 rounded flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div className="bg-white border border-[#cfd8dc] p-2.5 sm:p-3 rounded flex flex-wrap items-center justify-between gap-2 sm:gap-3 text-xs">
             <div className="flex items-center space-x-2">
               {/* Mobile Filter Button */}
               <button
@@ -375,14 +375,15 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </span>
             </div>
 
-            <div className="flex items-center space-x-3 ml-auto">
+            <div className="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-end sm:space-x-3 sm:ml-auto">
               {/* Sorting Selector */}
-              <div className="flex items-center space-x-1.5">
-                <span className="text-neutral-500 font-medium">Ταξινόμηση:</span>
+              <div className="flex min-w-0 flex-1 items-center gap-1.5 sm:flex-initial">
+                <span className="hidden text-neutral-500 font-medium sm:inline">Ταξινόμηση:</span>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
-                  className="bg-neutral-50 border border-neutral-300 rounded px-2.5 py-1 text-xs focus:border-[#e21b22] focus:outline-none"
+                  aria-label="Ταξινόμηση προϊόντων"
+                  className="min-w-0 w-full bg-neutral-50 border border-neutral-300 rounded px-2.5 py-2 sm:py-1 text-xs focus:border-[#e21b22] focus:outline-none sm:w-auto"
                 >
                   <option value="featured">Προτεινόμενα</option>
                   <option value="price-asc">Τιμή: Χαμηλή προς Υψηλή</option>
@@ -465,9 +466,9 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
           {/* Products Grid / List */}
           {sortedProducts.length > 0 ? (
             <>
-            <div className="mb-4 flex items-center justify-between rounded border border-neutral-200 bg-white px-3 py-2 text-xs">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded border border-neutral-200 bg-white px-3 py-2 text-[10px] sm:text-xs">
               <span className="text-neutral-500">Εμφάνιση {Math.min((page - 1) * pageSize + 1, sortedProducts.length)}–{Math.min(page * pageSize, sortedProducts.length)} από {sortedProducts.length}</span>
-              <label className="flex items-center gap-2 font-semibold text-neutral-700">Προϊόντα ανά σελίδα
+              <label className="flex items-center gap-2 font-semibold text-neutral-700">Ανά σελίδα
                 <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="rounded border border-neutral-300 bg-white px-2 py-1">
                   <option value={30}>30</option><option value={60}>60</option><option value={90}>90</option>
                 </select>

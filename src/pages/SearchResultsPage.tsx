@@ -27,7 +27,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
   });
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 space-y-6 select-none">
+    <div className="mx-auto max-w-7xl px-3 py-5 space-y-5 select-none sm:px-4 sm:py-8 sm:space-y-6">
       {/* Breadcrumbs */}
       <nav className="flex items-center space-x-1.5 text-xs text-neutral-500 font-medium">
         <button onClick={() => onNavigate('/')} className="hover:text-neutral-900">
@@ -37,10 +37,10 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
         <span className="text-neutral-900 font-bold">Αποτελέσματα Αναζήτησης</span>
       </nav>
 
-      <div className="border-b border-[#cfd8dc] pb-4 flex items-center justify-between">
+      <div className="border-b border-[#cfd8dc] pb-4 flex items-start justify-between">
         <div>
-          <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <Search className="w-7 h-7 text-[#e21b22]" />
+          <h1 className="font-display font-black text-lg sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-start space-x-2 break-all">
+            <Search className="w-5 h-5 shrink-0 text-[#e21b22] sm:w-7 sm:h-7" />
             <span>ΑΠΟΤΕΛΕΣΜΑΤΑ ΓΙΑ: "{query}"</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -50,7 +50,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
       </div>
 
       {results.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-2.5 min-[390px]:gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {results.map((p) => (
             <ProductCard key={p.id} product={p} onNavigate={onNavigate} />
           ))}

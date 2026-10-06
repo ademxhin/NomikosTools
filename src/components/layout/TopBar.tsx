@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Truck, ShieldCheck, UserCheck, ShieldAlert } from 'lucide-react';
+import { Phone, Truck, ShieldCheck } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { useAuth } from '../../context/AuthContext';
 
@@ -36,7 +36,7 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* Right: B2B VAT Switcher, Admin Logistics Portal, Support */}
+        {/* Right: B2B VAT Switcher */}
         <div className="flex items-center space-x-4 ml-auto">
           {/* B2B Toggle */}
           <div className="flex items-center space-x-1.5 bg-[#1e1e1e] px-2 py-0.5 rounded border border-[#333]">
@@ -59,16 +59,6 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
               {isB2BMode ? 'NET' : 'GROSS'}
             </span>
           </div>
-
-          {/* Quick link to Logistics Admin */}
-          <button
-            id="top-admin-portal-btn"
-            onClick={() => onNavigate('/admin')}
-            className="flex items-center space-x-1 text-[#ffb4b7] hover:text-white bg-[#e21b22]/20 hover:bg-[#e21b22] px-2.5 py-0.5 rounded border border-[#e21b22]/40 transition-colors text-[11px] font-semibold"
-          >
-            <ShieldAlert className="w-3 h-3 text-[#ffe0e1]" />
-            <span className="font-display uppercase tracking-wider">Logistics &amp; Admin</span>
-          </button>
 
           {/* Role selector badge for testing */}
           <div className="hidden xl:flex items-center space-x-1 text-neutral-400 text-[11px]">

@@ -75,11 +75,11 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 space-y-8 select-none">
+    <div className="mx-auto max-w-7xl px-3 py-5 space-y-5 select-none sm:px-4 sm:py-8 sm:space-y-8">
       <div className="border-b border-[#cfd8dc] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
-          <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <ShoppingCart className="w-7 h-7 text-[#e21b22]" />
+          <h1 className="font-display font-black text-xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
+            <ShoppingCart className="w-6 h-6 shrink-0 text-[#e21b22] sm:w-7 sm:h-7" />
             <span>ΚΑΛΑΘΙ ΑΓΟΡΩΝ ({cart.reduce((s, i) => s + i.quantity, 0)} ΠΡΟΪΟΝΤΑ)</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -98,7 +98,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
 
       {/* Free shipping progress bar */}
       <div className="bg-[#fcf9f9] border border-[#cfd8dc] p-4 rounded-lg space-y-2">
-        <div className="flex items-center justify-between text-xs">
+        <div className="flex flex-col gap-2 text-xs sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center space-x-2 font-bold text-neutral-800">
             <Truck className="w-4 h-4 text-[#e21b22]" />
             {remainingForFreeShipping > 0 ? (
@@ -137,12 +137,12 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
             return (
               <div
                 key={item.product.id}
-                className="p-4 flex flex-col sm:flex-row items-center justify-between gap-4 hover:bg-neutral-50/50 transition-colors"
+                className="p-3 flex flex-row flex-wrap sm:flex-nowrap sm:p-4 items-center justify-between gap-3 sm:gap-4 hover:bg-neutral-50/50 transition-colors"
               >
                 {/* Image */}
                 <div
                   onClick={() => onNavigate(`/product/${item.product.slug}`)}
-                  className="w-20 h-20 bg-[#fafafa] p-1.5 rounded border border-neutral-200 shrink-0 cursor-pointer flex items-center justify-center"
+                  className="w-16 h-16 sm:w-20 sm:h-20 bg-[#fafafa] p-1.5 rounded border border-neutral-200 shrink-0 cursor-pointer flex items-center justify-center"
                 >
                   <img
                     src={item.product.images[0]}
@@ -152,7 +152,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
                 </div>
 
                 {/* Title & SKU */}
-                <div className="flex-1 min-w-0 text-center sm:text-left">
+                <div className="flex-1 min-w-[calc(100%-5rem)] sm:min-w-0 text-left">
                   <h3
                     onClick={() => onNavigate(`/product/${item.product.slug}`)}
                     className="font-bold text-xs sm:text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer line-clamp-2"
@@ -174,7 +174,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
                 </div>
 
                 {/* Quantity Stepper */}
-                <div className="flex items-center border border-neutral-300 rounded overflow-hidden shrink-0">
+                <div className="ml-auto flex items-center border border-neutral-300 rounded overflow-hidden shrink-0">
                   <button
                     onClick={() => updateCartQuantity(item.product.id, item.quantity - 1)}
                     className="px-2.5 py-1 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-bold"

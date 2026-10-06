@@ -55,12 +55,6 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
 
         <div className="flex items-center space-x-3 text-xs">
           <button
-            onClick={() => onNavigate('/admin')}
-            className="bg-[#2a2a2a] hover:bg-[#333] text-amber-300 border border-amber-900/40 px-3.5 py-2 rounded font-display font-bold uppercase tracking-wider"
-          >
-            Πύλη Logistics &amp; ERP
-          </button>
-          <button
             onClick={() => {
               logout();
               onNavigate('/');

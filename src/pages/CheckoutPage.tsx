@@ -205,10 +205,10 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 space-y-8 select-none">
+    <div className="mx-auto max-w-7xl px-3 py-5 space-y-5 select-none sm:px-4 sm:py-8 sm:space-y-8">
       {/* Title */}
       <div className="border-b border-[#cfd8dc] pb-4">
-        <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
+        <h1 className="font-display font-black text-xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
           <Lock className="w-6 h-6 text-[#e21b22]" />
           <span>ΑΣΦΑΛΗΣ ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</span>
         </h1>
@@ -222,8 +222,8 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
           {/* Left: 3-Step Checkout Accordion (Col 8) */}
           <div className="lg:col-span-8 space-y-6">
             {/* Step 1: Customer & Invoice details */}
-            <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-4">
-              <div className="flex items-center justify-between border-b border-neutral-200 pb-3">
+            <div className="bg-white border border-[#cfd8dc] rounded-lg p-3.5 sm:p-5 shadow-sm space-y-4">
+              <div className="flex flex-col items-stretch gap-3 border-b border-neutral-200 pb-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center space-x-2.5">
                   <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                     1
@@ -234,11 +234,11 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 </div>
 
                 {/* Receipt vs Invoice Toggle */}
-                <div className="flex bg-neutral-100 p-0.5 rounded border border-neutral-300 text-xs">
+                <div className="flex w-full bg-neutral-100 p-0.5 rounded border border-neutral-300 text-[10px] sm:w-auto sm:text-xs">
                   <button
                     type="button"
                     onClick={() => setInvoiceType('receipt')}
-                    className={`px-3 py-1 rounded font-medium transition-colors ${
+                      className={`flex-1 px-2 py-2 rounded font-medium transition-colors sm:flex-initial sm:px-3 sm:py-1 ${
                       invoiceType === 'receipt'
                         ? 'bg-white text-neutral-900 shadow font-bold'
                         : 'text-neutral-600 hover:text-neutral-900'
@@ -249,7 +249,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                   <button
                     type="button"
                     onClick={() => setInvoiceType('invoice')}
-                    className={`px-3 py-1 rounded font-medium transition-colors ${
+                      className={`flex-1 px-2 py-2 rounded font-medium transition-colors sm:flex-initial sm:px-3 sm:py-1 ${
                       invoiceType === 'invoice'
                         ? 'bg-[#e21b22] text-white shadow font-bold'
                         : 'text-neutral-600 hover:text-neutral-900'

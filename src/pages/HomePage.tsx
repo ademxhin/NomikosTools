@@ -108,39 +108,39 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   }, [activePromo, promoCopy.length]);
 
   return (
-    <div className="space-y-10 pb-8">
+    <div className="space-y-8 pb-8 sm:space-y-10">
       {/* Centered campaign banner, following the dense storefront rhythm of the reference */}
-      <section className="promo-surface px-4 py-5 sm:py-7">
-        <div className="relative mx-auto aspect-[21/9] max-w-7xl overflow-hidden rounded-3xl border-[6px] border-[#e21b22] bg-[#090909] text-white shadow-2xl">
-          <img src={currentPromo.image} alt="Milwaukee campaign" className="absolute inset-0 h-full w-full object-cover object-center" />
-          <div className={`pointer-events-none absolute inset-0 ${currentPromo.side === 'right' ? 'bg-gradient-to-l from-black/90 via-black/55 to-transparent' : 'bg-gradient-to-r from-black/90 via-black/55 to-transparent'}`} />
+      <section className="promo-surface px-3 py-4 sm:px-4 sm:py-7">
+        <div className="relative mx-auto min-h-[310px] max-w-7xl overflow-hidden rounded-[1.35rem] border-[4px] border-[#e21b22] bg-[#090909] text-white shadow-2xl sm:aspect-[21/9] sm:min-h-0 sm:rounded-3xl sm:border-[6px]">
+          <img src={currentPromo.image} alt="Milwaukee campaign" className="absolute inset-0 h-full w-full object-cover object-[68%_center] sm:object-center" />
+          <div className={`pointer-events-none absolute inset-0 ${currentPromo.side === 'right' ? 'bg-gradient-to-l from-black/90 via-black/55 to-transparent' : 'bg-gradient-to-r from-black/95 via-black/70 to-black/15 sm:from-black/90 sm:via-black/55 sm:to-transparent'}`} />
           <div className="pointer-events-none absolute inset-0 hidden bg-black/10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[36%] bg-[#e21b22]" />
           <div className="pointer-events-none absolute -right-5 top-1/2 -translate-y-1/2 font-display text-[12rem] lg:text-[18rem] font-black leading-none text-black/10 select-none">
             NT
           </div>
 
-          <div className="relative z-10 grid h-full grid-cols-1 px-6 py-8 sm:px-10 lg:px-12 lg:py-9">
-            <div className={`absolute inset-0 px-6 py-8 sm:px-10 lg:px-12 lg:py-9 ${currentPromo.side === 'right' ? 'text-right' : 'text-left'}`}>
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#e21b22] bg-black/35 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#ffb4b7]">
+          <div className="relative z-10 min-h-[310px] px-5 pb-[4.5rem] pt-5 sm:grid sm:h-full sm:min-h-0 sm:grid-cols-1 sm:px-10 sm:py-9 lg:px-12">
+            <div className={`relative flex min-h-[255px] flex-col items-start ${currentPromo.side === 'right' ? 'text-right sm:items-end' : 'text-left'}`}>
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#e21b22] bg-black/55 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.12em] text-[#ffb4b7] sm:mb-5 sm:px-3 sm:text-[11px]">
                 <Zap className="h-3.5 w-3.5" />
                 {currentPromo.eyebrow}
               </div>
 
-              <h1 className="max-w-xl font-promo text-5xl font-black uppercase leading-[0.86] tracking-tight sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-[90%] font-promo text-[clamp(2rem,9vw,2.7rem)] font-black uppercase leading-[0.9] tracking-tight sm:max-w-xl sm:text-6xl lg:text-7xl">
                 {currentPromo.title.split(currentPromo.accent)[0]}
                 <span className="text-[#e21b22]">{currentPromo.accent}</span>
               </h1>
 
-              <p className="mt-6 max-w-lg text-sm leading-relaxed text-neutral-300 sm:text-base">
+              <p className="mt-3 hidden max-w-lg text-sm leading-relaxed text-neutral-300 sm:mt-6 sm:block sm:text-base">
                 {currentPromo.description}
               </p>
 
-              <div className={`absolute bottom-8 flex flex-wrap gap-2 sm:bottom-10 ${currentPromo.side === 'right' ? 'right-6 justify-end sm:right-10 lg:right-12' : 'left-6 sm:left-10 lg:left-12'}`}>
+              <div className={`mt-auto flex flex-wrap gap-2 pt-5 sm:absolute sm:bottom-10 sm:mt-0 sm:pt-0 ${currentPromo.side === 'right' ? 'sm:right-10 sm:justify-end lg:right-12' : 'sm:left-10 lg:left-12'}`}>
                 <button
                   id="hero-explore-catalog-btn"
                   onClick={() => onNavigate('/category/ergaleia-mpatarias')}
-                  className="group flex items-center gap-2 bg-[#e21b22] px-6 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#c81016]"
+                  className="group flex items-center gap-2 rounded-xl bg-[#e21b22] px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#c81016] sm:px-6 sm:py-3.5 sm:text-sm"
                 >
                   Αγόρασε τώρα
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -148,7 +148,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <button
                   id="hero-b2b-offers-btn"
                   onClick={() => onNavigate('/offers')}
-                  className="flex items-center gap-2 rounded-xl border border-neutral-600 bg-black/35 px-5 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:border-white hover:bg-white hover:text-black"
+                  className="hidden items-center gap-2 rounded-xl border border-neutral-600 bg-black/35 px-5 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:border-white hover:bg-white hover:text-black sm:flex"
                 >
                   <Flame className="h-4 w-4 text-[#e21b22]" />
                   Όλες οι προσφορές
@@ -224,7 +224,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
+          <div className="absolute bottom-3 right-3 z-20 flex items-center gap-1.5 sm:bottom-4 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:gap-2">
             <button onClick={() => setActivePromo((activePromo - 1 + promoCopy.length) % promoCopy.length)} className="rounded-full bg-black/50 p-1.5 text-white hover:bg-[#e21b22]" aria-label="Προηγούμενο promo"><ChevronLeft className="h-4 w-4" /></button>
             {promoCopy.map((_, index) => <button key={index} onClick={() => setActivePromo(index)} aria-label={`Promo ${index + 1}`} className={`h-2.5 rounded-full transition-all ${index === activePromo ? 'w-7 bg-white' : 'w-2.5 bg-white/40'}`} />)}
             <button onClick={() => setActivePromo((activePromo + 1) % promoCopy.length)} className="rounded-full bg-black/50 p-1.5 text-white hover:bg-[#e21b22]" aria-label="Επόμενο promo"><ChevronRight className="h-4 w-4" /></button>
@@ -233,33 +233,33 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       </section>
 
       {/* Promotional tiles */}
-      <section className="max-w-7xl mx-auto grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto grid max-w-7xl grid-cols-2 gap-2.5 px-3 min-[390px]:gap-3 sm:gap-4 sm:px-4 lg:grid-cols-4">
         {[
           { image: '/assets/promos/m12-wide.png', badge: '/assets/brand-badges/m12-custom.svg', label: 'M12', title: 'PORTABLE', copy: 'PRODUCTIVITY.', action: 'EXPLORE M12', route: '/category/ergaleia-mpatarias' },
           { image: '/assets/promos/m18-fuel-wide.png', badge: '/assets/brand-badges/m18-custom.svg', label: 'M18', title: 'PERFORMANCE', copy: 'DRIVEN.', action: 'EXPLORE M18', route: '/category/ergaleia-mpatarias' },
           { image: '/assets/promos/mx-fuel-tile.png', badge: '/assets/brand-badges/mx-fuel-custom.svg', label: 'MX FUEL', title: 'EQUIPMENT', copy: 'REDEFINED.', action: 'EXPLORE MX FUEL', route: '/category/ergaleia-mpatarias' },
           { image: '/assets/promos/packout-right-wide.png', badge: '/assets/brand-badges/packout-custom.svg', label: 'PACKOUT', title: 'MODULAR STORAGE', copy: 'SYSTEM.', action: 'EXPLORE PACKOUT', route: '/offers' },
         ].map((tile) => (
-          <div key={tile.label} className="group relative min-h-[230px] overflow-hidden rounded-2xl bg-[#171717] text-white shadow-lg">
+          <button key={tile.label} type="button" onClick={() => onNavigate(tile.route)} aria-label={tile.action} className="group relative min-h-[138px] overflow-hidden rounded-xl bg-[#171717] text-white shadow-lg min-[390px]:min-h-[150px] sm:min-h-[210px] sm:rounded-2xl lg:min-h-[230px]">
             <img src={tile.image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-60 mix-blend-screen transition-transform duration-500 group-hover:scale-105" />
             <div className="absolute inset-0 bg-[#e21b22]/85 mix-blend-multiply" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#b90008]/65 via-[#e21b22]/25 to-[#e21b22]/45" />
-            <div className="relative flex h-full min-h-[230px] flex-col items-center justify-center p-5 text-center">
+            <div className="relative flex h-full min-h-[138px] flex-col items-center justify-center p-2 text-center min-[390px]:min-h-[150px] sm:min-h-[210px] sm:p-5 lg:min-h-[230px]">
               <div className="inline-flex flex-col items-center justify-center rounded-lg px-0.5 py-0.5 text-center">
                 {!tile.badge && <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ffb4b7]">{tile.label}</span>}
-                {tile.badge && <img src={tile.badge} alt={tile.label} className="mb-1 h-9 w-auto max-w-[165px] object-contain" />}
-                <h3 className="mt-0 font-promo text-lg font-black uppercase leading-none">{tile.title}</h3>
-                <p className="mt-0.5 font-promo text-lg font-black uppercase leading-none text-white">{tile.copy}</p>
+                {tile.badge && <img src={tile.badge} alt="" className="mb-1 h-6 w-auto max-w-[112px] object-contain min-[390px]:h-7 min-[390px]:max-w-[120px] sm:h-9 sm:max-w-[165px]" />}
+                <h3 className="mt-0 font-promo text-sm font-black uppercase leading-none sm:text-lg">{tile.title}</h3>
+                <p className="mt-0.5 font-promo text-sm font-black uppercase leading-none text-white sm:text-lg">{tile.copy}</p>
               </div>
             </div>
-          </div>
+          </button>
         ))}
       </section>
 
       {/* Featured Products Tabs */}
-      <section className="max-w-7xl mx-auto px-4">
+      <section className="mx-auto max-w-7xl px-3 sm:px-4">
         <div className="mb-3">
-          <h2 className="font-display text-3xl font-black uppercase tracking-wide text-neutral-950">
+          <h2 className="font-display text-2xl sm:text-3xl font-black uppercase tracking-wide text-neutral-950">
             Προτεινόμενα προϊόντα
           </h2>
         </div>
@@ -269,7 +269,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-2.5 min-[390px]:gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {visibleProducts.map((product) => (
             <ProductCard key={product.id} product={product} onNavigate={onNavigate} />
           ))}
@@ -284,10 +284,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       </section>
 
       {/* Main Categories Navigation Grid */}
-      <section className="max-w-7xl mx-auto px-4">
+      <section className="mx-auto max-w-7xl px-3 sm:px-4">
         <div className="flex items-center justify-between mb-6 border-b border-[#cfd8dc] pb-3">
           <div>
-            <h2 className="font-category font-black text-2xl text-neutral-900 uppercase tracking-wide">
+          <h2 className="font-category font-black text-xl sm:text-2xl text-neutral-900 uppercase tracking-wide">
               ΒΑΣΙΚΕΣ ΚΑΤΗΓΟΡΙΕΣ ΕΞΟΠΛΙΣΜΟΥ
             </h2>
           </div>
@@ -329,19 +329,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       </section>
 
       {/* Brand Directory Logos */}
-      <section className="max-w-7xl mx-auto px-4">
+      <section className="mx-auto max-w-7xl px-3 sm:px-4">
         <div className="border-b border-[#cfd8dc] pb-3 mb-6 flex items-center justify-between">
-          <div>
-            <h2 className="font-display font-black text-xl text-neutral-900 uppercase tracking-wide">
+          <div className="min-w-0">
+            <h2 className="font-display font-black text-base sm:text-xl text-neutral-900 uppercase tracking-wide">
               ΕΠΙΣΗΜΟΙ ΚΑΤΑΣΚΕΥΑΣΤΕΣ &amp; BRANDS
             </h2>
-            <p className="text-xs text-neutral-500">
+            <p className="hidden text-xs text-neutral-500 sm:block">
               Συνεργαζόμαστε αποκλειστικά με τους κορυφαίους κατασκευαστές παγκοσμίως
             </p>
           </div>
           <button
             onClick={() => onNavigate('/brand/milwaukee')}
-            className="text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 font-display uppercase tracking-wide"
+            className="shrink-0 text-[10px] sm:text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 font-display uppercase tracking-wide"
           >
             <span>Όλα τα Brands</span>
             <ChevronRight className="w-4 h-4" />

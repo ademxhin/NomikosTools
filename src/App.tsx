@@ -23,7 +23,6 @@ const ComparePage = lazy(() => import('./pages/ComparePage').then((module) => ({
 const BrandDirectoryPage = lazy(() => import('./pages/BrandDirectoryPage').then((module) => ({ default: module.BrandDirectoryPage })));
 const SearchResultsPage = lazy(() => import('./pages/SearchResultsPage').then((module) => ({ default: module.SearchResultsPage })));
 const TrackOrderPage = lazy(() => import('./pages/TrackOrderPage').then((module) => ({ default: module.TrackOrderPage })));
-const AdminDashboardPage = lazy(() => import('./pages/AdminDashboardPage').then((module) => ({ default: module.AdminDashboardPage })));
 const InfoPage = lazy(() => import('./pages/InfoPage').then((module) => ({ default: module.InfoPage })));
 
 const getBrowserRoute = () => `${window.location.pathname}${window.location.search}`;
@@ -142,9 +141,9 @@ function AppContent() {
       return <TrackOrderPage initialVoucher={voucher} onNavigate={handleNavigate} />;
     }
 
-    // 15. Admin Logistics & ERP Portal: /admin
-    if (currentRoute === '/admin') {
-      return <AdminDashboardPage onNavigate={handleNavigate} />;
+    // Keep the unfinished admin portal inaccessible to storefront visitors.
+    if (currentRoute === '/admin' || currentRoute.startsWith('/admin/')) {
+      return <HomePage onNavigate={handleNavigate} />;
     }
 
     // 16. Informational pages

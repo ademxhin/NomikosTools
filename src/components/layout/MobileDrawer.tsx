@@ -3,7 +3,6 @@ import {
   X,
   ChevronDown,
   ChevronRight,
-  ShieldAlert,
   Flame,
   Phone,
   Heart,
@@ -93,20 +92,13 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
             </button>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 text-xs">
+          <div className="grid grid-cols-1 gap-2 text-xs">
             <button
               onClick={() => handleNav('/offers')}
               className="flex items-center justify-center space-x-1.5 py-2 bg-red-950/40 text-red-400 border border-red-900/50 rounded font-display font-bold uppercase"
             >
               <Flame className="w-3.5 h-3.5" />
               <span>ΠΡΟΣΦΟΡΕΣ</span>
-            </button>
-            <button
-              onClick={() => handleNav('/admin')}
-              className="flex items-center justify-center space-x-1.5 py-2 bg-[#252525] text-amber-300 border border-amber-900/40 rounded font-display font-bold uppercase"
-            >
-              <ShieldAlert className="w-3.5 h-3.5" />
-              <span>LOGISTICS</span>
             </button>
           </div>
         </div>

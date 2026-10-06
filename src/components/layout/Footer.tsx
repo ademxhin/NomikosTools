@@ -98,10 +98,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       </div>
 
       {/* Main Footer Links */}
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-xs">
+      <div className="max-w-7xl mx-auto px-3 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:px-4 sm:py-12 sm:gap-8 text-xs">
         {/* Col 1: Brand Info */}
         <div className="lg:col-span-2 space-y-4">
-          <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-10 w-[205px] object-contain object-left scale-[1.5] origin-left" />
+          <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-10 w-[205px] max-w-full object-contain object-left sm:scale-[1.5] origin-left" />
 
           <p className="text-neutral-400 leading-relaxed max-w-sm">
             Η <strong>Nomikos Tools Α.Ε.Β.Ε.</strong> εξειδικεύεται στον βιομηχανικό εξοπλισμό, στα επαγγελματικά εργαλεία μπαταρίας, στα μηχανήματα συνεργείου και στις ολοκληρωμένες λύσεις εργοταξίου από το 1994.
@@ -198,9 +198,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </button>
             </li>
             <li>
-              <button onClick={() => onNavigate('/admin')} className="text-red-400 hover:text-red-300 font-semibold transition-colors">
-                Πύλη Logistics &amp; ERP
-              </button>
             </li>
           </ul>
         </div>

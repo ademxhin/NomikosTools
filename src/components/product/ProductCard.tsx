@@ -170,7 +170,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       id={`product-card-${product.id}`}
-      className="bg-white border border-[#cfd8dc] rounded-2xl p-3.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group"
+        className="bg-white border border-[#cfd8dc] rounded-xl p-2.5 flex flex-col justify-between hover:border-[#1e1e1e] hover:shadow-lg transition-all duration-200 relative group sm:rounded-2xl sm:p-3.5"
     >
       {/* Top Badges & Actions */}
       <div>
@@ -189,7 +189,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Product Image */}
         <div
           onClick={handleCardClick}
-          className="relative w-full h-56 flex items-center justify-center cursor-pointer overflow-hidden mb-3"
+          className="relative w-full aspect-square max-h-56 flex items-center justify-center cursor-pointer overflow-hidden mb-2 sm:mb-3"
         >
           <img
             src={product.images[0]}
@@ -219,14 +219,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </span>
           )}
         </div>
-        <div className="text-xs text-neutral-600 mb-1.5">
+        <div className="text-[10px] sm:text-xs text-neutral-600 mb-1.5">
           Κωδ. προϊόντος: <span className="font-mono-spec text-neutral-700">{product.sku}</span>
         </div>
 
         {/* Product Name */}
         <h3
           onClick={handleCardClick}
-          className="font-semibold text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug mb-1 min-h-[1.25rem]"
+          className="font-semibold text-xs sm:text-sm text-neutral-900 hover:text-[#e21b22] cursor-pointer transition-colors line-clamp-2 leading-snug mb-1 min-h-[1.25rem]"
           title={product.name}
         >
           {product.name}
@@ -251,7 +251,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {/* Pricing & Add to Cart Footer */}
       <div className="border-t border-[#f0f0f0] pt-2.5 pb-1.5">
         <div className="flex items-baseline justify-between mb-3">
-          <div className="text-xl font-black font-price text-[#e21b22] leading-none">
+          <div className="text-base sm:text-xl font-black font-price text-[#e21b22] leading-none">
             €{grossPrice.toFixed(2)}
           </div>
 
