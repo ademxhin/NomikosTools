@@ -136,7 +136,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 {currentPromo.description}
               </p>
 
-              <div className={`mt-auto flex flex-wrap gap-2 pt-5 sm:absolute sm:bottom-10 sm:mt-0 sm:pt-0 ${currentPromo.side === 'right' ? 'sm:right-10 sm:justify-end lg:right-12' : 'sm:left-10 lg:left-12'}`}>
+              <div className={`mt-auto flex flex-wrap gap-2 pt-5 sm:absolute sm:bottom-10 sm:mt-0 sm:pt-0 ${currentPromo.side === 'right' ? 'sm:right-0 sm:justify-end lg:right-0' : 'sm:left-0 lg:left-0'}`}>
                 <button
                   id="hero-explore-catalog-btn"
                   onClick={() => onNavigate('/category/ergaleia-mpatarias')}

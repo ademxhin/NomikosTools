@@ -117,10 +117,10 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
               Χρειάζεστε άμεση βοήθεια με την αποστολή σας;
             </span>
             <a
-              href="tel:2105550190"
+              href="tel:2110069347"
               className="text-[#e21b22] font-bold hover:underline"
             >
-              Καλέστε στο 210 5550190 →
+              Καλέστε στο 2110069347 →
             </a>
           </div>
         </div>

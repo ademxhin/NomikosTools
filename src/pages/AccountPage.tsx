@@ -250,7 +250,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
                 </span>
               </div>
               <p className="text-neutral-700">Θέση Γκορυτσά, 19300 Ασπρόπυργος Αττικής</p>
-              <p className="text-neutral-500 font-mono-spec">Τηλ: 210 5550190</p>
+              <p className="text-neutral-500 font-mono-spec">Τηλ: 2110069347</p>
             </div>
 
             <div className="border border-neutral-200 p-4 rounded-lg bg-white space-y-2">

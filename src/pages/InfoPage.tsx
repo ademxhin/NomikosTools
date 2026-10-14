@@ -127,7 +127,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
                 </p>
                 <p className="flex items-center space-x-1.5">
                   <Phone className="w-3.5 h-3.5 text-neutral-500" />
-                  <span className="font-mono-spec">Τηλεφωνικό Κέντρο: 210 5550190</span>
+                  <span className="font-mono-spec">Τηλεφωνικό Κέντρο: 2110069347</span>
                 </p>
                 <p className="flex items-center space-x-1.5">
                   <Mail className="w-3.5 h-3.5 text-neutral-500" />
@@ -135,7 +135,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
                 </p>
                 <p className="flex items-center space-x-1.5">
                   <Clock className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>Ωράριο: Δευτέρα - Παρασκευή 07:30 - 18:00, Σάββατο 08:00 - 14:00</span>
+                  <span>Ωράριο: Δευτέρα - Παρασκευή 08:00 - 17:00, Σάββατο 08:00 - 15:30, Κυριακή κλειστά</span>
                 </p>
               </div>
             </div>
@@ -148,7 +148,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
               <div className="space-y-1 text-neutral-600">
                 <p className="flex items-center space-x-1.5">
                   <MapPin className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>Λεωφ. Κηφισού 92 &amp; Πειραιώς, 18233 Αγ. Ι. Ρέντης</span>
+                  <span>Λεωφ. Σαλαμίνος 111, Κερατσίνι 187 56</span>
                 </p>
                 <p className="flex items-center space-x-1.5">
                   <Phone className="w-3.5 h-3.5 text-neutral-500" />
@@ -156,7 +156,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
                 </p>
                 <p className="flex items-center space-x-1.5">
                   <Clock className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>Ωράριο: Δευτέρα - Παρασκευή 08:00 - 17:30</span>
+                  <span>Ωράριο: Δευτέρα - Παρασκευή 08:00 - 17:00, Σάββατο 08:00 - 15:30, Κυριακή κλειστά</span>
                 </p>
               </div>
             </div>

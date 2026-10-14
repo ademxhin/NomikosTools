@@ -29,7 +29,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           email: 'g.nomikos@nomikostools.gr',
           role: 'admin',
           adminRole: 'Super Admin',
-          phone: '2105550190',
+          phone: '2110069347',
           isB2B: true,
           companyName: 'ΝΟΜΙΚΟΣ TOOLS Α.Ε.Β.Ε.',
           vatNumber: '094827102',

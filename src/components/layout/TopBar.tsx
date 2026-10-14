@@ -17,11 +17,11 @@ export const TopBar: React.FC<TopBarProps> = ({ onNavigate }) => {
         {/* Left: Contact & Value Props */}
         <div className="flex items-center space-x-4">
           <a
-            href="tel:2105550190"
+            href="tel:2110069347"
             className="flex items-center space-x-1.5 text-neutral-200 hover:text-white transition-colors"
           >
             <Phone className="w-3.5 h-3.5 text-[#e21b22]" />
-            <span className="font-semibold tracking-wide">210 5550190</span>
+            <span className="font-semibold tracking-wide">2110069347</span>
             <span className="hidden sm:inline text-neutral-400 font-normal">(08:00 - 17:30)</span>
           </a>
           <span className="hidden md:inline text-neutral-600">|</span>

@@ -83,7 +83,9 @@ a {
 }
 
 .font-mono-spec {
-  font-family: 'JetBrains Mono', monospace;
+  /* Keep technical values aligned while matching the site's Noto Sans typography. */
+  font-family: 'Noto Sans', sans-serif;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Custom scrollbars for industrial density */

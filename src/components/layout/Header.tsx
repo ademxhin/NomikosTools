@@ -190,7 +190,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           <img
             src="/assets/nomikos-tools-logo.png"
             alt="Nomikos Tools"
-            className="h-9 w-full max-w-[140px] object-contain object-left origin-left transition-transform sm:h-12 sm:w-auto sm:max-w-none sm:scale-[1.15] md:h-14 lg:scale-[1.3] group-hover:sm:scale-[1.18] lg:group-hover:scale-[1.33]"
+            className="h-9 w-full max-w-[140px] object-contain object-left origin-left sm:h-12 sm:w-auto sm:max-w-none sm:scale-[1.15] md:h-14 lg:scale-[1.3]"
           />
         </div>
 
@@ -377,7 +377,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
             <PhoneCall className="w-[30px] h-[30px] text-white" />
             <div className="leading-tight">
               <div className="font-display font-bold text-base uppercase tracking-wide">Πληροφορίες</div>
-              <div className="text-[15px] text-neutral-200 whitespace-nowrap tracking-tight">210 5550190&nbsp; | &nbsp;sales@nomikostools.gr</div>
+              <div className="text-[15px] text-neutral-200 whitespace-nowrap tracking-tight">2110069347&nbsp; | &nbsp;sales@nomikostools.gr</div>
             </div>
           </div>
           <button
@@ -391,13 +391,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           </button>
 
           <a
-            href="tel:2105550190"
+            href="tel:2110069347"
             className="hidden md:flex xl:hidden items-center gap-2 h-10 px-2.5 rounded-xl text-white hover:bg-black/15 transition-colors"
-            title="Καλέστε στο 210 5550190"
-            aria-label="Τηλέφωνο 210 5550190"
+            title="Καλέστε στο 2110069347"
+            aria-label="Τηλέφωνο 2110069347"
           >
             <Phone className="w-[22px] h-[22px]" />
-            <span className="hidden 2xl:inline text-[11px] font-semibold">210 5550190</span>
+            <span className="hidden 2xl:inline text-[11px] font-semibold">2110069347</span>
           </a>
 
           {/* Compare Button */}

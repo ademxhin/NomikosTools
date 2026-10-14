@@ -110,15 +110,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="space-y-2 text-neutral-300">
             <div className="flex items-center space-x-2.5">
               <MapPin className="w-4 h-4 text-[#e21b22] shrink-0" />
-              <span>Κεντρικό: Θέση Γκορυτσά, 19300 Ασπρόπυργος Αττικής</span>
-            </div>
-            <div className="flex items-center space-x-2.5">
-              <MapPin className="w-4 h-4 text-[#e21b22] shrink-0" />
-              <span>Κατάστημα: Λεωφ. Κηφισού 42, 18233 Αγ. Ι. Ρέντης</span>
+              <span>Κατάστημα: Λεωφ. Σαλαμίνος 111, Κερατσίνι 187 56</span>
             </div>
             <div className="flex items-center space-x-2.5">
               <Phone className="w-4 h-4 text-[#e21b22] shrink-0" />
-              <span>Τηλεφωνικό Κέντρο: 210 5550190 (Δευτ-Παρ 08:00 - 17:30)</span>
+              <span>Τηλεφωνικό Κέντρο: 2110069347 (Δευτ-Παρ 08:00 - 17:00)</span>
             </div>
             <div className="flex items-center space-x-2.5">
               <Mail className="w-4 h-4 text-[#e21b22] shrink-0" />
@@ -261,6 +257,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <div>
             © {new Date().getFullYear()} <strong>NOMIKOS TOOLS Α.Ε.Β.Ε.</strong> - Αρ. ΓΕΜΗ: 123456789000. Με την επιφύλαξη παντός δικαιώματος.
+            <span className="ml-2 text-neutral-400">Created by CSAX</span>
           </div>
           <div className="flex items-center space-x-3 text-[11px] text-neutral-400">
             <span>ΑΦΜ: 094827102 (ΔΟΥ ΦΑΕ Πειραιά)</span>

@@ -32,7 +32,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
     firstName: user?.name?.split(' ')[0] || 'Γιώργος',
     lastName: user?.name?.split(' ')[1] || 'Νομικός',
     email: user?.email || 'g.nomikos@nomikostools.gr',
-    phone: user?.phone || '2105550190',
+    phone: user?.phone || '2110069347',
     address: 'Θέση Γκορυτσά',
     city: 'Ασπρόπυργος',
     postalCode: '19300',

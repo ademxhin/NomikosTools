@@ -79,7 +79,6 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
       <div className="border-b border-[#cfd8dc] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="font-display font-black text-xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
-            <ShoppingCart className="w-6 h-6 shrink-0 text-[#e21b22] sm:w-7 sm:h-7" />
             <span>ΚΑΛΑΘΙ ΑΓΟΡΩΝ ({cart.reduce((s, i) => s + i.quantity, 0)} ΠΡΟΪΟΝΤΑ)</span>
           </h1>
           <p className="text-xs text-neutral-500 mt-1">

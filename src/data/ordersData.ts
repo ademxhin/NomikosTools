@@ -210,7 +210,7 @@ export const initialOrders: Order[] = [
       carrier: 'store_pickup',
       carrierName: 'Παραλαβή από Κατάστημα Ρέντη',
       cost: 0.00,
-      pickupStore: 'Κατάστημα & Αποθήκη - Αγ. Ι. Ρέντης (Λ. Κηφισού 42)',
+      pickupStore: 'Κατάστημα & Αποθήκη - Κερατσίνι (Λεωφ. Σαλαμίνος 111)',
     },
     payment: {
       method: 'bank',

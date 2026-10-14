@@ -10,10 +10,10 @@ export const initialLocations: WarehouseLocation[] = [
   },
   {
     id: 'loc-athens',
-    name: 'Κατάστημα & Αποθήκη - Αγ. Ι. Ρέντης',
+    name: 'Κατάστημα & Αποθήκη - Κερατσίνι',
     code: 'RET-REN-02',
     isMain: false,
-    address: 'Λεωφ. Κηφισού 42, 18233 Αγ. Ιωάννης Ρέντης',
+    address: 'Λεωφ. Σαλαμίνος 111, Κερατσίνι 187 56',
   },
   {
     id: 'loc-b2b',
@@ -63,7 +63,7 @@ export const initialStockMovements: StockMovement[] = [
     productName: 'Knipex 87 01 250 Cobra® Γκαζοτανάλια 250mm',
     sku: 'KNP-8701250',
     locationId: 'loc-athens',
-    locationName: 'Κατάστημα & Αποθήκη - Αγ. Ι. Ρέντης',
+    locationName: 'Κατάστημα & Αποθήκη - Κερατσίνι',
     quantityChange: 50,
     previousQuantity: 0,
     newQuantity: 50,

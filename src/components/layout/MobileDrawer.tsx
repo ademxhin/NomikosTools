@@ -216,9 +216,9 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
             </button>
           </div>
           <div className="pt-2 border-t border-neutral-700/60 flex items-center justify-between text-[11px] text-neutral-400">
-            <a href="tel:2105550190" className="flex items-center space-x-1 text-neutral-300">
+            <a href="tel:2110069347" className="flex items-center space-x-1 text-neutral-300">
               <Phone className="w-3 h-3 text-[#e21b22]" />
-              <span>210 5550190</span>
+              <span>2110069347</span>
             </a>
             <button onClick={() => handleNav('/track-order')} className="text-neutral-400 hover:text-white">
               Εντοπισμός Αποστολής
