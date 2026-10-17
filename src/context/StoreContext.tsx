@@ -22,6 +22,8 @@ export interface CartItem {
   product: Product;
   quantity: number;
   selectedVariantId?: string;
+  unitPrice?: number;
+  offerId?: string;
 }
 
 interface ToastNotification {
@@ -50,7 +52,7 @@ interface StoreContextType {
   setQuickViewProduct: (product: Product | null) => void;
   showToast: (message: string, type?: 'success' | 'info' | 'warning' | 'error') => void;
   // Cart Actions
-  addToCart: (product: Product, quantity?: number, variantId?: string) => void;
+  addToCart: (product: Product, quantity?: number, variantId?: string, unitPrice?: number, offerId?: string) => void;
   removeFromCart: (productId: string) => void;
   updateCartQuantity: (productId: string, quantity: number) => void;
   clearCart: () => void;
@@ -272,21 +274,32 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   // Cart operations
-  const addToCart = (product: Product, quantity = 1, variantId?: string) => {
+  const addToCart = (product: Product, quantity = 1, variantId?: string, unitPrice?: number, offerId?: string) => {
     setCart((prevCart) => {
-      const existingIndex = prevCart.findIndex((item) => item.product.id === product.id);
+      const existingIndex = prevCart.findIndex((item) => item.product.id === product.id && item.offerId === offerId);
       if (existingIndex > -1) {
         const updated = [...prevCart];
         updated[existingIndex].quantity += quantity;
         return updated;
       }
-      return [...prevCart, { product, quantity, selectedVariantId: variantId }];
+      return [...prevCart, { product, quantity, selectedVariantId: variantId, unitPrice, offerId }];
     });
     showToast(`Προστέθηκε στο καλάθι: ${product.name.slice(0, 35)}...`);
   };
 
   const removeFromCart = (productId: string) => {
-    setCart((prev) => prev.filter((item) => item.product.id !== productId));
+    setCart((prev) => {
+      const removed = prev.find((item) => item.product.id === productId);
+      if (!removed?.offerId) {
+        return prev.filter((item) => item.product.id !== productId);
+      }
+
+      return prev
+        .filter((item) => item.product.id !== productId)
+        .map((item) => item.offerId === removed.offerId
+          ? { ...item, unitPrice: undefined, offerId: undefined }
+          : item);
+    });
     showToast('Το προϊόν αφαιρέθηκε από το καλάθι', 'info');
   };
 
@@ -304,7 +317,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const getCartSubtotal = () => {
     return cart.reduce((sum, item) => {
-      const price = item.product.salePrice || item.product.price;
+      const price = item.unitPrice ?? item.product.salePrice ?? item.product.price;
       return sum + price * item.quantity;
     }, 0);
   };

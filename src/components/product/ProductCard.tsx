@@ -14,12 +14,16 @@ interface ProductCardProps {
   product: Product;
   onNavigate: (route: string) => void;
   layout?: 'grid' | 'list';
+  hideAddToCart?: boolean;
+  dealPrice?: number;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
   product,
   onNavigate,
   layout = 'grid',
+  hideAddToCart = false,
+  dealPrice,
 }) => {
   const {
     brands,
@@ -36,8 +40,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const isComp = isInCompare(product.id);
 
   // Price calculations
-  const grossPrice = product.salePrice || product.price;
-  const oldGrossPrice = product.salePrice ? product.price : null;
+  const grossPrice = dealPrice ?? product.salePrice ?? product.price;
+  const oldGrossPrice = dealPrice !== undefined ? (product.salePrice || product.price) : (product.salePrice ? product.price : null);
   const netPrice = grossPrice / 1.24;
   const oldNetPrice = oldGrossPrice ? oldGrossPrice / 1.24 : null;
 
@@ -122,15 +126,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Pricing & Actions */}
         <div className="w-full md:w-56 shrink-0 flex flex-col justify-between items-end border-t md:border-t-0 md:border-l border-[#cfd8dc] pt-3 md:pt-0 md:pl-4">
           <div className="text-right w-full">
-            <div className="text-2xl font-bold font-price text-[#e21b22]">
-              €{grossPrice.toFixed(2)}
-            </div>
-
             {oldGrossPrice && (
-              <div className="text-xs text-neutral-400 line-through font-mono-spec mt-0.5">
+              <span className="mr-2 text-xs text-neutral-400 line-through font-mono-spec">
                 €{(isB2BMode ? oldNetPrice! : oldGrossPrice).toFixed(2)}
-              </div>
+              </span>
             )}
+            <span className="text-2xl font-bold font-price text-[#e21b22]">
+              €{grossPrice.toFixed(2)}
+            </span>
           </div>
 
           <div className="w-full space-y-2 mt-4">
@@ -250,25 +253,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
       {/* Pricing & Add to Cart Footer */}
       <div className="border-t border-[#f0f0f0] pt-2.5 pb-1.5">
-        <div className="flex items-baseline justify-between mb-3">
-          <div className="text-base sm:text-xl font-black font-price text-[#e21b22] leading-none">
-            €{grossPrice.toFixed(2)}
-          </div>
-
+        <div className="flex items-baseline justify-end gap-3 mb-3">
           {oldGrossPrice && (
             <span className="text-[11px] text-neutral-400 line-through font-mono-spec">
               €{(isB2BMode ? oldNetPrice! : oldGrossPrice).toFixed(2)}
             </span>
           )}
+          <div className="text-base sm:text-xl font-black font-price text-[#e21b22] leading-none">
+            €{grossPrice.toFixed(2)}
+          </div>
         </div>
 
-        <button
-          onClick={() => addToCart(product, 1)}
-          className="w-full bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white text-xs font-display font-bold uppercase tracking-wider py-2 rounded flex items-center justify-center space-x-1.5 shadow-sm transition-colors"
-        >
-          <ShoppingCart className="w-3.5 h-3.5" />
-          <span>ΠΡΟΣΘΗΚΗ</span>
-        </button>
+        {!hideAddToCart && (
+          <button
+            onClick={() => addToCart(product, 1)}
+            className="w-full bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white text-xs font-display font-bold uppercase tracking-wider py-2 rounded flex items-center justify-center space-x-1.5 shadow-sm transition-colors"
+          >
+            <ShoppingCart className="w-3.5 h-3.5" />
+            <span>ΠΡΟΣΘΗΚΗ</span>
+          </button>
+        )}
       </div>
     </div>
   );

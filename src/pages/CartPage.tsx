@@ -128,7 +128,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
         {/* Cart Item Rows */}
         <div className="lg:col-span-8 bg-white border border-[#cfd8dc] rounded-lg divide-y divide-neutral-200 overflow-hidden shadow-sm">
           {cart.map((item) => {
-            const unitGross = item.product.salePrice || item.product.price;
+            const unitGross = item.unitPrice ?? item.product.salePrice ?? item.product.price;
             const unitNet = unitGross / 1.24;
             const lineGross = unitGross * item.quantity;
             const lineNet = unitNet * item.quantity;

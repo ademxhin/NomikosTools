@@ -102,7 +102,11 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
     .filter((p) => p.id !== product.id && p.active && p.categoryIds.some((cid) => product.categoryIds.includes(cid)))
     .slice(0, 3);
   const comboRegularTotal = comboProducts.reduce((sum, p) => sum + (p.salePrice || p.price), 0);
-  const comboDiscountedTotal = comboRegularTotal * 0.9;
+  const comboDiscountedTotal = comboProducts.reduce(
+    (sum, p) => sum + Math.round((p.salePrice || p.price) * 0.9 * 100) / 100,
+    0,
+  );
+  const comboOfferId = `super-deal-${[product.id, ...comboProducts.map((p) => p.id)].sort().join('-')}`;
   const alternativeProducts = products
     .filter((p) => p.id !== product.id && p.active && p.categoryIds.some((cid) => product.categoryIds.includes(cid)))
     .slice(2, 14);
@@ -665,12 +669,12 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         </div>
       </div>
 
-      {/* Combo offer */}
+      {/* Super deal offer */}
       {comboProducts.length > 0 && (
-        <div className="mx-auto w-full max-w-6xl space-y-5 rounded-2xl border border-[#f2b8b8] bg-[#fff7f7] p-4 shadow-sm sm:p-5">
+        <div className="mx-auto w-full max-w-7xl space-y-5 rounded-2xl border border-[#f2b8b8] bg-[#fff7f7] p-4 shadow-sm sm:p-5">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
-              <h2 className="font-display font-black text-xl text-neutral-900 uppercase tracking-wide">COMBO ΠΡΟΣΦΟΡΑ</h2>
+              <h2 className="font-display font-black text-xl text-neutral-900 uppercase tracking-wide">SUPER DEAL</h2>
               <p className="text-xs text-neutral-600">Συνδύασε τα προϊόντα και κέρδισε επιπλέον έκπτωση.</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
@@ -678,21 +682,30 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 <span className="mr-2 text-neutral-400 line-through">€{comboRegularTotal.toFixed(2)}</span>
                 <strong className="text-lg text-[#e21b22]">€{comboDiscountedTotal.toFixed(2)}</strong>
               </div>
-              <span className="rounded-full bg-[#e21b22] px-3.5 py-1.5 text-xs font-bold text-white shadow-sm">-10% στο combo</span>
+              <span className="rounded-full bg-[#e21b22] px-3.5 py-1.5 text-xs font-bold text-white shadow-sm">-10% ΠΡΟΣΦΟΡΑ</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {comboProducts.map((p) => <ProductCard key={p.id} product={p} onNavigate={onNavigate} />)}
+          <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:gap-5 lg:gap-7">
+            {comboProducts.map((p, index) => (
+              <React.Fragment key={p.id}>
+                <div className="min-w-0 flex-1">
+                  <ProductCard product={p} onNavigate={onNavigate} hideAddToCart dealPrice={(p.salePrice || p.price) * 0.9} />
+                </div>
+                {index < comboProducts.length - 1 && (
+                  <span className="flex shrink-0 items-center justify-center self-center px-1 text-5xl font-black leading-none text-[#e21b22]" aria-hidden="true">+</span>
+                )}
+              </React.Fragment>
+            ))}
           </div>
           <div className="flex justify-end border-t border-[#f2c7c7] pt-4">
             <button
               onClick={() => {
-                comboProducts.forEach((p) => addToCart(p, 1));
-                showToast('Το combo προστέθηκε στο καλάθι');
+                comboProducts.forEach((p) => addToCart(p, 1, undefined, Math.round((p.salePrice || p.price) * 0.9 * 100) / 100, comboOfferId));
+                showToast('Η προσφορά προστέθηκε στο καλάθι');
               }}
               className="rounded-xl bg-[#e21b22] px-5 py-3 text-xs font-display font-bold uppercase tracking-wider text-white shadow hover:bg-[#c81016]"
             >
-              ΠΡΟΣΘΗΚΗ ΟΛΟΥ ΤΟΥ COMBO ΣΤΟ ΚΑΛΑΘΙ
+              ΠΡΟΣΘΗΚΗ ΟΛΩΝ ΣΤΟ ΚΑΛΑΘΙ
             </button>
           </div>
         </div>
