@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { Category } from '../../types/category';
-import { categoryGroups, getCategoryGroup } from '../../data/categoryHierarchy';
+import { categoryGroups } from '../../data/categoryHierarchy';
 
 interface MegaMenuProps {
   onNavigate: (route: string) => void;
@@ -48,7 +48,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
 
   // Subcategories of currently selected main category
   const activeSubcategories = categories
-    .filter((c) => c.active && getCategoryGroup(c.name).id === activeMainCatId)
+    .filter((c) => c.active && c.parentId === activeMainCatId)
     .sort((a, b) => a.order - b.order);
 
   // Get child categories for a subcategory
@@ -105,10 +105,10 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
           {isAllCategoriesOpen && (
             <div
               id="desktop-mega-menu-panel"
-              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1050px,calc(100vw-2rem))] overflow-visible rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex text-neutral-200"
+              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1280px,calc(100vw-2rem))] overflow-visible rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex text-neutral-200"
             >
               {/* Left Column: Level 1 Main Categories */}
-              <div className="w-80 shrink-0 bg-[#161616] rounded-l-2xl border-r border-[#2a2a2a] py-1.5">
+              <div className="w-96 shrink-0 bg-[#161616] rounded-l-2xl border-r border-[#2a2a2a] py-1.5">
                 {mainCategories.map((cat) => {
                   const isActive = cat.id === activeMainCatId;
                   return (
@@ -125,9 +125,9 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                           : 'border-transparent text-neutral-300 hover:text-white hover:bg-[#1c1c1c]'
                       }`}
                     >
-                      <div className="flex items-center space-x-2.5 truncate">
+                      <div className="flex min-w-0 items-center space-x-2.5">
                         {getCategoryIcon(cat.slug)}
-                        <span className="truncate">{cat.name}</span>
+                        <span className="min-w-0 whitespace-normal leading-snug">{cat.name}</span>
                       </div>
                         <ChevronRight className={`w-4 h-4 shrink-0 ${isActive ? 'text-[#e21b22]' : 'text-neutral-500'}`} />
                     </div>
@@ -168,7 +168,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
 
                   {/* Multi-column Grid for Subcategories */}
                   {activeSubcategories.length > 0 ? (
-                    <div className="grid grid-cols-3 items-start gap-x-6 gap-y-4">
+                    <div className="grid grid-cols-3 items-start gap-x-10 gap-y-5">
                       {activeSubcategories.map((subcat) => {
                         const childCats = getChildCategories(subcat.id);
                         return (
