@@ -63,7 +63,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Image & Badges */}
         <div
           onClick={handleCardClick}
-          className="relative w-full md:w-44 h-44 shrink-0 bg-[#fbfbfb] p-3 flex items-center justify-center cursor-pointer overflow-hidden rounded"
+          className="relative w-full md:w-44 h-44 shrink-0 bg-transparent p-3 flex items-center justify-center cursor-pointer overflow-hidden rounded"
         >
           {discountPercent > 0 && (
             <span className="absolute top-2 left-2 bg-[#e21b22] text-white text-[11px] font-display font-black px-1.5 py-0.5 rounded shadow z-10">
