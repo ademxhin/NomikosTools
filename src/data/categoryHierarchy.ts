@@ -16,6 +16,22 @@ export const categoryGroups: CategoryGroup[] = [
   { id: 'parent-ydraylika-apofraktika-ergaleia-solinoseon', name: 'Υδραυλικά, Αποφρακτικά & Εργαλεία Σωληνώσεων', keywords: [] },
 ];
 
+const savedGroupNames = (() => {
+  try { return JSON.parse(localStorage.getItem('nomikos_category_group_names') ?? '{}') as Record<string, string>; } catch { return {}; }
+})();
+categoryGroups.forEach(group => { if (savedGroupNames[group.id]) group.name = savedGroupNames[group.id]; });
+try {
+  const savedOrder = JSON.parse(localStorage.getItem('nomikos_category_group_order') ?? '[]') as string[];
+  if (savedOrder.length) categoryGroups.sort((a, b) => savedOrder.indexOf(a.id) - savedOrder.indexOf(b.id));
+} catch { /* use the default order */ }
+
+export const renameCategoryGroup = (id: string, name: string) => {
+  const group = categoryGroups.find(item => item.id === id);
+  if (!group || !name.trim()) return;
+  group.name = name.trim();
+  localStorage.setItem('nomikos_category_group_names', JSON.stringify(Object.fromEntries(categoryGroups.map(item => [item.id, item.name]))));
+};
+
 export const getCategoryGroup = (name: string): CategoryGroup =>
   categoryGroups.find((group) => group.name === name) ?? categoryGroups[0];
 
