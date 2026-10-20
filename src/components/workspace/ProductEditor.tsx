@@ -12,7 +12,7 @@ function CategoryPicker({ selected, onChange, categories }: { selected: string[]
   return <div className="relative"><button type="button" className="flex min-h-11 w-full items-center justify-between rounded-lg border border-neutral-300 bg-white px-3 py-2 text-left text-sm" onClick={() => setOpen(value => !value)}><span>{selected.length ? `${selected.length} κατηγορί${selected.length === 1 ? 'α' : 'ες'} επιλεγμέν${selected.length === 1 ? 'η' : 'ες'}` : 'Επιλέξτε κατηγορίες'}</span><span className="text-neutral-400">⌄</span></button>{open && <><button type="button" aria-label="Κλείσιμο επιλογής κατηγοριών" className="fixed inset-0 z-10 cursor-default" onClick={() => setOpen(false)} /><div className="absolute left-0 right-0 top-full z-20 mt-1 max-h-72 overflow-y-auto rounded-lg border border-neutral-300 bg-white p-2 shadow-xl">{categories.map(category => <label key={category.id} className="flex cursor-pointer items-start gap-2 rounded-md px-2 py-2 text-sm hover:bg-red-50"><input type="checkbox" checked={selected.includes(category.id)} onChange={event => onChange(event.target.checked ? [...selected, category.id] : selected.filter(id => id !== category.id))} /> <span>{category.groupName ? `${category.groupName} / ` : ''}{category.name}</span></label>)}</div></>}</div>;
 }
 type ProductEditorCategory = { id: string; name: string; groupName?: string };
-export function ProductEditor({ product, onClose }: { product: Product; onClose: () => void }) {
+export function ProductEditor({ product, onClose, fullPage = true }: { product: Product; onClose: () => void; fullPage?: boolean }) {
   const { brands, categories, addProduct, updateProduct } = useStore();
   const [draft, setDraft] = useState<Product>(() => structuredClone(product));
   const [section, setSection] = useState('Βασικά'); const [error, setError] = useState(''); const [busy, setBusy] = useState(false);
@@ -34,7 +34,7 @@ export function ProductEditor({ product, onClose }: { product: Product; onClose:
     if (value.active && (!value.images.length || !value.categoryIds.length)) throw new Error('Για δημοσίευση χρειάζεται φωτογραφία και κατηγορία.');
     if (draft.id) updateProduct(draft.id, value); else addProduct(value); onClose();
   } catch (e) { setError((e as Error).message); } };
-  return <Dialog title={product.id ? 'Επεξεργασία προϊόντος' : 'Νέο προϊόν'} onClose={close}><form onSubmit={save} className="space-y-5">
+  return <Dialog title={product.id ? 'Επεξεργασία προϊόντος' : 'Νέο προϊόν'} onClose={close} fullPage={fullPage}><form onSubmit={save} className="space-y-5">
     <nav className="flex flex-wrap gap-2" aria-label="Ενότητες προϊόντος">{['Βασικά', 'Φωτογραφίες', 'Τιμές & απόθεμα', 'Χαρακτηριστικά', 'Παραλλαγές', 'Αποστολή & SEO'].map(s => <Button secondary={s !== section} key={s} onClick={() => setSection(s)}>{s}</Button>)}</nav>
     {error && <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</p>}
     {section === 'Βασικά' && <div className="grid gap-4 sm:grid-cols-2">{text('name', 'Τίτλος *')}{text('slug', 'Σύνδεσμος (slug) *')}{text('sku', 'SKU *')}{text('ean', 'Barcode (διατηρούνται τα αρχικά μηδενικά)')}
