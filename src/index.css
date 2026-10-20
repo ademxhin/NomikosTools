@@ -18,8 +18,8 @@
 
 @media (min-width: 1024px) {
   aside:has(nav > button) { overflow: hidden; }
-  aside:has(nav > button) nav { overflow: visible; }
-  aside:has(nav > button) nav > button { padding-top: .55rem; padding-bottom: .55rem; }
+  aside:has(nav > button) nav { display: flex; min-height: 0; flex: 1 1 auto; flex-direction: column; overflow: hidden; }
+  aside:has(nav > button) nav > button { flex: 0 0 auto; padding-top: .55rem; padding-bottom: .55rem; }
 }
 :where(button, a, input, select, textarea, summary):focus-visible { outline: 2px solid #e21b22; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
