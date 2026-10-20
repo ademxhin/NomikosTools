@@ -119,7 +119,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         setIsAllCategoriesOpen(false);
                         onNavigate('/products');
                       }}
-                      className={`flex min-h-[40px] items-center justify-between px-4 py-2 text-[13px] font-semibold leading-tight cursor-pointer border-l-2 transition-colors ${
+                      className={`flex min-h-[62px] items-center justify-between px-4 py-3 text-sm font-semibold leading-snug cursor-pointer border-l-2 transition-colors ${
                         isActive
                           ? 'border-[#e21b22] bg-[#222] text-white'
                           : 'border-transparent text-neutral-300 hover:text-white hover:bg-[#1c1c1c]'
@@ -172,14 +172,14 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                       {activeSubcategories.map((subcat) => {
                         const childCats = getChildCategories(subcat.id);
                         return (
-                          <div key={subcat.id} className="min-w-0 min-h-[56px] space-y-2">
+                            <div key={subcat.id} className="min-w-0 min-h-[78px] space-y-2">
                             {/* Subcategory title (Level 2) */}
                             <button
                               onClick={() => {
                                 setIsAllCategoriesOpen(false);
                                 onNavigate(`/category/${subcat.slug}`);
                               }}
-                              className="min-h-[40px] w-full font-display font-bold text-sm leading-snug text-neutral-100 hover:text-[#e21b22] tracking-wide text-left flex items-start space-x-1 uppercase transition-colors"
+                              className="min-h-[54px] w-full font-display font-bold text-base leading-snug text-neutral-100 hover:text-[#e21b22] tracking-wide text-left flex items-start space-x-1 transition-colors"
                             >
                               <span>{subcat.name}</span>
                             </button>
