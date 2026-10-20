@@ -37,12 +37,13 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
     .filter((c) => c.active && c.parentId === activeMainCatId)
     .sort((a, b) => a.order - b.order);
 
-  // Get child categories for a subcategory
-  const getChildCategories = (subcatId: string) => {
-    return categories
-      .filter((c) => c.parentId === subcatId && c.level === 3 && c.active)
-      .sort((a, b) => a.order - b.order);
-  };
+  const groupedSubcategories = Object.entries(
+    activeSubcategories.reduce<Record<string, Category[]>>((groups, category) => {
+      const groupName = category.groupName || 'Κατηγορίες';
+      groups[groupName] = [...(groups[groupName] || []), category];
+      return groups;
+    }, {})
+  );
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -142,43 +143,29 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
 
                   {/* Multi-column Grid for Subcategories */}
                   {activeSubcategories.length > 0 ? (
-                    <div className="grid grid-cols-3 auto-rows-fr gap-3">
-                      {activeSubcategories.map((subcat) => {
-                        const childCats = getChildCategories(subcat.id);
-                        return (
-                          <div key={subcat.id} className="min-w-0 h-full space-y-2">
-                            {/* Subcategory title (Level 2) */}
-                            <button
-                              onClick={() => {
-                                setIsAllCategoriesOpen(false);
-                                onNavigate(`/category/${subcat.slug}`);
-                              }}
-                              className="group relative flex h-full min-h-[64px] w-full items-center overflow-hidden rounded-lg border border-neutral-200 bg-gradient-to-br from-white to-neutral-50 px-4 py-3 text-left font-display text-[15px] font-bold leading-snug tracking-wide text-neutral-800 shadow-sm transition-all duration-200 before:absolute before:inset-y-3 before:left-0 before:w-1 before:rounded-r-full before:bg-[#e21b22] before:opacity-0 before:transition-opacity hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-50/60 hover:text-[#c81e24] hover:shadow-md hover:before:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]/30"
-                            >
-                              <span className="relative">{subcat.name}</span>
-                            </button>
-
-                            {/* Level 3 Children */}
-                            {childCats.length > 0 && (
-                              <ul className="space-y-1 pl-1 border-l border-neutral-200">
-                                {childCats.map((child) => (
-                                  <li key={child.id}>
-                                    <button
-                                      onClick={() => {
-                                        setIsAllCategoriesOpen(false);
-                                        onNavigate(`/category/${child.slug}`);
-                                      }}
-                                      className="text-xs text-neutral-500 hover:text-[#e21b22] hover:underline pl-2 text-left transition-colors"
-                                    >
-                                      {child.name}
-                                    </button>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                        );
-                      })}
+                    <div className="grid grid-cols-3 items-start gap-x-8 gap-y-5">
+                      {groupedSubcategories.map(([groupName, groupCategories]) => (
+                        <section key={groupName} className="min-w-0 border-l-2 border-neutral-200 pl-4 first:border-[#e21b22]">
+                          <h4 className="mb-2 font-display text-[15px] font-bold leading-snug text-neutral-900">
+                            {groupName}
+                          </h4>
+                          <ul className="space-y-0.5">
+                            {groupCategories.map((subcat) => (
+                              <li key={subcat.id}>
+                                <button
+                                  onClick={() => {
+                                    setIsAllCategoriesOpen(false);
+                                    onNavigate(`/category/${subcat.slug}`);
+                                  }}
+                                  className="w-full rounded-md px-2 py-1.5 text-left text-sm font-medium leading-snug text-neutral-600 transition-colors hover:bg-red-50 hover:text-[#c81e24] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]/30"
+                                >
+                                  {subcat.name}
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        </section>
+                      ))}
                     </div>
                   ) : (
                     <div className="py-8 text-center text-neutral-400">

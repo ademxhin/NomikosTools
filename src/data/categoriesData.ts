@@ -12,7 +12,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 1,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τσάντες & Εργαλειοθήκες"
   },
   {
     "id": "cat-tsantes-valitsakia-ergaleion",
@@ -25,7 +26,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 2,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τσάντες & Εργαλειοθήκες"
   },
   {
     "id": "cat-ergaleioforoi-syrtarieres",
@@ -38,7 +40,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 3,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τσάντες & Εργαλειοθήκες"
   },
   {
     "id": "cat-tampakieres-skafakia-mpaoyla",
@@ -51,7 +54,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 4,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τσάντες & Εργαλειοθήκες"
   },
   {
     "id": "cat-zones-thikes-ergaleion",
@@ -64,7 +68,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 5,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τσάντες & Εργαλειοθήκες"
   },
   {
     "id": "cat-pagkoi-ergasias",
@@ -77,7 +82,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 6,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εξοπλισμός Πάγκου & Συνεργείου"
   },
   {
     "id": "cat-exoplismos-axesoyar-synergeioy",
@@ -90,7 +96,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 7,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εξοπλισμός Πάγκου & Συνεργείου"
   },
   {
     "id": "cat-trypania-potirotrypana",
@@ -103,7 +110,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 8,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τρυπάνια & Μύτες"
   },
   {
     "id": "cat-mytes-katsavidioy-antaptores",
@@ -116,7 +124,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 9,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τρυπάνια & Μύτες"
   },
   {
     "id": "cat-tsok-trypanion",
@@ -129,7 +138,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 10,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Τρυπάνια & Μύτες"
   },
   {
     "id": "cat-diskoi-kopis-leiansis",
@@ -142,7 +152,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 11,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Αναλώσιμα Κοπής & Λείανσης"
   },
   {
     "id": "cat-lames-segas-koptika",
@@ -155,7 +166,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 12,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Αναλώσιμα Κοπής & Λείανσης"
   },
   {
     "id": "cat-kalemia-velonia-analosima-polyergaleion",
@@ -168,7 +180,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 13,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Αναλώσιμα Κοπής & Λείανσης"
   },
   {
     "id": "cat-axesoyar-exartimata-ilektrikon-ergaleion",
@@ -181,7 +194,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 14,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Γενικά Εξαρτήματα & Μπαταρίες"
   },
   {
     "id": "cat-mpataries-fortistes-ergaleion",
@@ -194,7 +208,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 15,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Γενικά Εξαρτήματα & Μπαταρίες"
   },
   {
     "id": "cat-diafora-analosima-ergaleion",
@@ -207,7 +222,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 16,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Γενικά Εξαρτήματα & Μπαταρίες"
   },
   {
     "id": "cat-katsavidia-cheiros",
@@ -220,7 +236,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 17,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κατσαβίδια & Άλλεν / Torx"
   },
   {
     "id": "cat-kleidia-allen-torx",
@@ -233,7 +250,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 18,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κατσαβίδια & Άλλεν / Torx"
   },
   {
     "id": "cat-karydakia",
@@ -246,7 +264,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 19,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κλειδιά & Καστάνιες"
   },
   {
     "id": "cat-germanopolygona-kleidia-ssfixeos",
@@ -259,7 +278,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 20,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κλειδιά & Καστάνιες"
   },
   {
     "id": "cat-set-kastanies-karydakia",
@@ -272,7 +292,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 21,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κλειδιά & Καστάνιες"
   },
   {
     "id": "cat-kastanies-proektaseis",
@@ -285,7 +306,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 22,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κλειδιά & Καστάνιες"
   },
   {
     "id": "cat-gallika-diafora-kleidia",
@@ -298,7 +320,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 23,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κλειδιά & Καστάνιες"
   },
   {
     "id": "cat-penses-koftes-psalidia",
@@ -311,7 +334,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 24,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Συγκράτηση & Κοπή"
   },
   {
     "id": "cat-sfyria-variopoyles",
@@ -324,7 +348,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 25,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κρούση & Μόχλευση"
   },
   {
     "id": "cat-lostoi-prokovgaltes-skarpela",
@@ -337,7 +362,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 26,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κρούση & Μόχλευση"
   },
   {
     "id": "cat-chartokoptes-kopidia-lepides",
@@ -350,7 +376,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 27,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Λοιπά Εργαλεία Χειρός & Κοπής"
   },
   {
     "id": "cat-machairia-polyergaleia",
@@ -363,7 +390,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 28,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Λοιπά Εργαλεία Χειρός & Κοπής"
   },
   {
     "id": "cat-prionia-voithitika-ergaleia",
@@ -376,7 +404,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 29,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Λοιπά Εργαλεία Χειρός & Κοπής"
   },
   {
     "id": "cat-drapanokatsavida-ilektrika-katsavidia",
@@ -389,7 +418,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 30,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Δράπανα & Βιδώματα"
   },
   {
     "id": "cat-mpoylonokleida",
@@ -402,7 +432,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 31,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Δράπανα & Βιδώματα"
   },
   {
     "id": "cat-eidika-vidomata-gypsosanidas-kastanies",
@@ -415,7 +446,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 32,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Δράπανα & Βιδώματα"
   },
   {
     "id": "cat-skaptika-diatritika-karotieres",
@@ -428,7 +460,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 33,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Διάτρηση & Κατεδάφιση"
   },
   {
     "id": "cat-goniakoi-trochoi",
@@ -441,7 +474,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 34,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κοπή & Λείανση"
   },
   {
     "id": "cat-seges-spathoseges",
@@ -454,7 +488,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 35,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κοπή & Λείανση"
   },
   {
     "id": "cat-diskopriona-xyloy-metalloy",
@@ -467,7 +502,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 36,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κοπή & Λείανση"
   },
   {
     "id": "cat-ilektrika-triveia-aloifadoroi",
@@ -480,7 +516,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 37,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κοπή & Λείανση"
   },
   {
     "id": "cat-frezes-planes-faltsopriona",
@@ -493,7 +530,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 38,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Κοπή & Λείανση"
   },
   {
     "id": "cat-eidika-ilektrika-ergaleia",
@@ -506,7 +544,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 39,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ειδικά & Πολυεργαλεία"
   },
   {
     "id": "cat-set-ergaleion-mpatarias",
@@ -519,7 +558,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 40,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ειδικά & Πολυεργαλεία"
   },
   {
     "id": "cat-ilektrika-polyergaleia",
@@ -532,7 +572,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 41,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ειδικά & Πολυεργαλεία"
   },
   {
     "id": "cat-pistolia-thermoy-aera-silikonis",
@@ -545,7 +586,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 42,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ειδικά & Πολυεργαλεία"
   },
   {
     "id": "cat-ilektrika-karfotika-pritsinadoroi",
@@ -558,7 +600,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 43,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ειδικά & Πολυεργαλεία"
   },
   {
     "id": "cat-alysopriona",
@@ -571,7 +614,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 44,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Κήπου & Φροντίδα"
   },
   {
     "id": "cat-chlookoptika-michanes-gkazon",
@@ -584,7 +628,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 45,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Κήπου & Φροντίδα"
   },
   {
     "id": "cat-fysitires-aporrofitires-kipoy",
@@ -597,7 +642,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 46,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Κήπου & Φροντίδα"
   },
   {
     "id": "cat-psalidia-prionia-kladematos-mporntoyras",
@@ -610,7 +656,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 47,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Κήπου & Φροντίδα"
   },
   {
     "id": "cat-tsekoyria-psekastires-potisma",
@@ -623,7 +670,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 48,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Κήπου & Φροντίδα"
   },
   {
     "id": "cat-exartimata-axesoyar-kipoy",
@@ -636,7 +684,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 49,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Κήπου & Φροντίδα"
   },
   {
     "id": "cat-skoypes-skoypakia",
@@ -649,7 +698,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 50,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Καθαρισμός & Συντήρηση"
   },
   {
     "id": "cat-axesoyar-antallaktika-katharismoy",
@@ -662,7 +712,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 51,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Καθαρισμός & Συντήρηση"
   },
   {
     "id": "cat-antlies-neroy-metaggisis",
@@ -675,7 +726,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 52,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Καθαρισμός & Συντήρηση"
   },
   {
     "id": "cat-atsalines-apogymnotes-microfiber",
@@ -688,7 +740,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 53,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Καθαρισμός & Συντήρηση"
   },
   {
     "id": "cat-thermos-pagoyria",
@@ -701,7 +754,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 54,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Lifestyle & Outdoor"
   },
   {
     "id": "cat-forita-psygeia-isothermikes-tsantes",
@@ -714,7 +768,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 55,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Lifestyle & Outdoor"
   },
   {
     "id": "cat-ilektronika-outdoor-axesoyar",
@@ -727,7 +782,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 56,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Lifestyle & Outdoor"
   },
   {
     "id": "cat-skoyfoi-kapela-perilaimia",
@@ -740,7 +796,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 57,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Jockey, Καπέλα & Κάλυψη Κεφαλής"
   },
   {
     "id": "cat-krani-ergasias",
@@ -753,7 +810,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 58,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Προστασία Κεφαλής & Προσώπου"
   },
   {
     "id": "cat-gyalia-ergasias",
@@ -766,7 +824,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 59,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Προστασία Κεφαλής & Προσώπου"
   },
   {
     "id": "cat-maskes-ergasias-antallaktika",
@@ -779,7 +838,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 60,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Προστασία Κεφαλής & Προσώπου"
   },
   {
     "id": "cat-otoaspides-prostasia-akois",
@@ -792,7 +852,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 61,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Προστασία Ακοής"
   },
   {
     "id": "cat-roycha-gileka-ergasias",
@@ -805,7 +866,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 62,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ένδυση & Υπόδηση Εργασίας"
   },
   {
     "id": "cat-papoytsia-ergasias",
@@ -818,7 +880,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 63,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ένδυση & Υπόδηση Εργασίας"
   },
   {
     "id": "cat-gantia-ergasias",
@@ -831,7 +894,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 64,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ένδυση & Υπόδηση Εργασίας"
   },
   {
     "id": "cat-epigonatides-ergasias",
@@ -844,7 +908,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 65,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ένδυση & Υπόδηση Εργασίας"
   },
   {
     "id": "cat-zones-axesoyar-endysis",
@@ -857,7 +922,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 66,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ένδυση & Υπόδηση Εργασίας"
   },
   {
     "id": "cat-sympiestes-ergaleia-aeros",
@@ -870,7 +936,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 67,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Μηχανήματα Αέρος & Συμπιεστές"
   },
   {
     "id": "cat-drapana-metalloy-prionia-pagkoy-tainias",
@@ -883,7 +950,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 68,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Μηχανήματα Επεξεργασίας & Δομικών Υλικών"
   },
   {
     "id": "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos",
@@ -896,7 +964,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 69,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Μηχανήματα Επεξεργασίας & Δομικών Υλικών"
   },
   {
     "id": "cat-metafora-anypsosi-fortion",
@@ -909,7 +978,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 70,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ανύψωση, Μεταφορά & Αυτοκίνητο"
   },
   {
     "id": "cat-ergaleia-exoplismos-aytokinitoy",
@@ -922,7 +992,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 71,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Ανύψωση, Μεταφορά & Αυτοκίνητο"
   },
   {
     "id": "cat-alfadia-cheiros-laser",
@@ -935,7 +1006,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 72,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Όργανα Μέτρησης & Αλφάδια"
   },
   {
     "id": "cat-metrotainies-metra-laser",
@@ -948,7 +1020,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 73,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Όργανα Μέτρησης & Αλφάδια"
   },
   {
     "id": "cat-charaktes-goniometra-simadeytiria",
@@ -961,7 +1034,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 74,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Όργανα Μέτρησης & Αλφάδια"
   },
   {
     "id": "cat-markadoroi",
@@ -974,7 +1048,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 75,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Όργανα Μέτρησης & Αλφάδια"
   },
   {
     "id": "cat-polymetra-anichneytes-tasis",
@@ -987,7 +1062,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 76,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Διαγνωστικά & Ηλεκτρολογικά Όργανα"
   },
   {
     "id": "cat-endoskopikes-kameres-thermometra",
@@ -1000,7 +1076,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 77,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Διαγνωστικά & Ηλεκτρολογικά Όργανα"
   },
   {
     "id": "cat-fakoi-fotismos-ergasias",
@@ -1013,7 +1090,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 78,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Φωτισμός"
   },
   {
     "id": "cat-kavoyres-tsimpides-ydraylikon",
@@ -1026,7 +1104,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 79,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Σωληνώσεων & Υδραυλικών"
   },
   {
     "id": "cat-solinokoftes-preses-solinon",
@@ -1039,7 +1118,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 80,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Σωληνώσεων & Υδραυλικών"
   },
   {
     "id": "cat-ergaleia-vidologoi-ydraylikon",
@@ -1052,7 +1132,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 81,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Σωληνώσεων & Υδραυλικών"
   },
   {
     "id": "cat-apofraktika-ergaleia",
@@ -1065,7 +1146,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 82,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Σωληνώσεων & Υδραυλικών"
   },
   {
     "id": "cat-kolaoyza-filieres-apogrezotes",
@@ -1078,7 +1160,8 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 83,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Σωληνώσεων & Υδραυλικών"
   },
   {
     "id": "cat-ylika-steganosis-stereosis",
@@ -1091,6 +1174,7 @@ export const initialCategories: Category[] = [
     "level": 2,
     "order": 84,
     "active": true,
-    "featured": false
+    "featured": false,
+    "groupName": "Εργαλεία Σωληνώσεων & Υδραυλικών"
   }
 ];
