@@ -7,6 +7,7 @@ import {
   X,
   RotateCcw,
   SlidersHorizontal,
+  Check,
 } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import { ProductCard } from '../components/product/ProductCard';
@@ -154,6 +155,14 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
     minPrice > 0 ||
     maxPrice < 2000;
 
+  const customCheckbox = (checked: boolean) => (
+    <span className={`flex h-4 w-4 shrink-0 items-center justify-center rounded border transition-colors ${
+      checked ? 'border-[#e21b22] bg-[#e21b22] text-white' : 'border-neutral-300 bg-white text-transparent'
+    }`} aria-hidden="true">
+      <Check className="h-3 w-3" strokeWidth={3} />
+    </span>
+  );
+
   return (
     <div className="mx-auto max-w-7xl space-y-5 px-3 py-5 sm:space-y-6 sm:px-4 sm:py-7">
       {/* Breadcrumbs */}
@@ -287,8 +296,9 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                                 ? selected.filter((id) => !groupIds.includes(id))
                                 : [...new Set([...selected, ...groupIds])]
                             )}
-                            className="rounded border-neutral-300 text-[#e21b22] focus:ring-[#e21b22]"
+                            className="sr-only"
                           />
+                          {customCheckbox(allSelected)}
                           <span className="font-semibold">Όλες οι υποκατηγορίες</span>
                         </label>
                         {groupSubcategories.map((subcategory) => {
@@ -303,8 +313,9 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                                   onChange={() => setSelectedSubcategoryIds((selected) =>
                                     isChecked ? selected.filter((id) => id !== subcategory.id) : [...selected, subcategory.id]
                                   )}
-                                  className="mt-0.5 shrink-0 rounded border-neutral-300 text-[#e21b22] focus:ring-[#e21b22]"
+                                  className="sr-only"
                                 />
+                                {customCheckbox(isChecked)}
                                 <span className="leading-snug">{formatSubcategoryName(subcategory.name)}</span>
                               </span>
                               <span className="shrink-0 font-mono-spec text-neutral-400">({productCount})</span>
@@ -335,8 +346,9 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                           onChange={() => setSelectedSubcategoryIds((selected) =>
                             isChecked ? selected.filter((id) => id !== subcategory.id) : [...selected, subcategory.id]
                           )}
-                          className="mt-0.5 shrink-0 rounded border-neutral-300 text-[#e21b22] focus:ring-[#e21b22]"
+                          className="sr-only"
                         />
+                        {customCheckbox(isChecked)}
                         <span className="leading-snug">{formatSubcategoryName(subcategory.name)}</span>
                       </span>
                       <span className="shrink-0 font-mono-spec text-neutral-400">({productCount})</span>
