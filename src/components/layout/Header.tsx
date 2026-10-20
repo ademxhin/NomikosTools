@@ -195,7 +195,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           aria-expanded={isMegaMenuOpen || isMobileMenuOpen}
           aria-controls={isMegaMenuOpen ? 'desktop-mega-menu-panel' : isMobileMenuOpen ? 'mobile-menu-panel' : undefined}
         >
-          {isMegaMenuOpen ? <X className="w-[26px] h-[26px]" /> : <Menu className="w-[26px] h-[26px]" />}
+          <Menu className="w-[26px] h-[26px]" />
         </button>
 
         {/* Brand Logo */}
