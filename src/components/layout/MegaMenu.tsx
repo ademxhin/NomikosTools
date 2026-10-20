@@ -43,6 +43,9 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
   useEffect(() => {
     if (!isOpen) return;
 
+    const closeOnScroll = () => onOpenChange(false);
+    window.addEventListener('scroll', closeOnScroll, { passive: true });
+
     if (document.activeElement?.id === 'mobile-menu-toggle-btn') {
       panelRef.current?.querySelector<HTMLButtonElement>('[data-main-category]')?.focus();
     }
@@ -56,7 +59,10 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
     };
 
     document.addEventListener('keydown', closeOnEscape);
-    return () => document.removeEventListener('keydown', closeOnEscape);
+    return () => {
+      document.removeEventListener('keydown', closeOnEscape);
+      window.removeEventListener('scroll', closeOnScroll);
+    };
   }, [isOpen, onOpenChange]);
 
   const cancelScheduledClose = () => {
