@@ -19,6 +19,9 @@
 .nt-view-toggle button:hover { background: #e5e5e5; color: #262626; }
 .nt-view-toggle button.is-active { background: #e21b22; color: white; box-shadow: 0 1px 3px rgb(0 0 0 / 14%); }
 .nt-view-toggle button:focus-visible { outline: 2px solid #e21b22; outline-offset: 2px; }
+.nt-results-summary { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #e5e5e5; border-radius: 999px; background: #fafafa; padding: 6px 10px; color: #737373; font-size: 11px; font-variant-numeric: tabular-nums; }
+.nt-results-summary span:first-child { color: #525252; font-weight: 600; }
+.nt-results-summary-divider { color: #d4d4d4; font-weight: 400; }
 .nt-field textarea { min-height: 100px; }
 .nt-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; border: 1px solid #e5e5e5; border-radius: 18px; padding: 24px; }
 .nt-dialog::backdrop { background: #17171799; backdrop-filter: blur(3px); }
