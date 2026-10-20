@@ -171,7 +171,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
             {groupedSubcategories.length ? (
               <div className="grid grid-cols-2 items-start gap-x-6 gap-y-6 xl:grid-cols-3 xl:gap-x-8">
                 {groupedSubcategories.map(([groupName, groupCategories]) => {
-                  const splitIntoColumns = groupCategories.length >= 9;
+                  const splitIntoColumns = groupCategories.length > 0;
                   const midpoint = Math.ceil(groupCategories.length / 2);
                   const categoryColumns = splitIntoColumns
                     ? [groupCategories.slice(0, midpoint), groupCategories.slice(midpoint)]
