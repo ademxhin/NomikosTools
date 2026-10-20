@@ -496,12 +496,11 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </button>
 
               <span className="hidden whitespace-nowrap text-neutral-500 font-mono-spec sm:inline">
-                {sortedProducts.length} αποτελέσματα
+                {sortedProducts.length} αποτελέσματα {sortedProducts.length > 0 && <><span className="mx-1 text-neutral-300">·</span>{Math.min((page - 1) * pageSize + 1)}–{Math.min(page * pageSize, sortedProducts.length)}</>}
               </span>
             </div>
 
             <div className="flex w-full items-center justify-between gap-2 sm:ml-auto sm:w-auto sm:justify-end sm:space-x-3">
-              {sortedProducts.length > 0 && <span className="hidden whitespace-nowrap text-neutral-500 sm:inline">{Math.min((page - 1) * pageSize + 1)}–{Math.min(page * pageSize, sortedProducts.length)}</span>}
               {/* Sorting Selector */}
               <div className="flex min-w-0 flex-1 items-center gap-1.5 sm:flex-initial">
                 <span className="hidden text-neutral-500 font-medium sm:inline">Ταξινόμηση:</span>
