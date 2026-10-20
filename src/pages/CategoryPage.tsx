@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import { ProductCard } from '../components/product/ProductCard';
-import { categoryGroups } from '../data/categoryHierarchy';
+import { categoryGroups, formatSubcategoryName } from '../data/categoryHierarchy';
 
 interface CategoryPageProps {
   categorySlug?: string;
@@ -147,9 +147,9 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
     maxPrice < 2000;
 
   return (
-    <div className="mx-auto max-w-7xl px-3 py-5 space-y-5 sm:px-4 sm:py-6 sm:space-y-6">
+    <div className="mx-auto max-w-7xl space-y-5 px-3 py-5 sm:space-y-6 sm:px-4 sm:py-7">
       {/* Breadcrumbs */}
-      <nav className="flex items-center space-x-1.5 text-xs text-neutral-500 font-medium">
+      <nav aria-label="Διαδρομή σελίδας" className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs font-medium text-neutral-500">
         <button onClick={() => onNavigate('/')} className="hover:text-neutral-900 transition-colors">
           Αρχική
         </button>
@@ -183,33 +183,37 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
       </nav>
 
       {/* Category Header */}
-      <div className="border-b border-[#cfd8dc] pb-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <div className="rounded-2xl border border-neutral-200 border-t-4 border-t-[#e21b22] bg-white px-4 py-5 shadow-sm sm:px-6 sm:py-6">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
           <div>
-            <h1 className="font-category font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight">
-              {currentCategory?.name || selectedGroup?.name || 'ΟΛΑ ΤΑ ΕΠΑΓΓΕΛΜΑΤΙΚΑ ΕΡΓΑΛΕΙΑ'}
+            <h1 className="font-display text-2xl font-bold tracking-tight text-neutral-950 sm:text-3xl">
+              {currentCategory?.name || selectedGroup?.name || 'Όλα τα επαγγελματικά εργαλεία'}
             </h1>
-            <p className="text-xs sm:text-sm text-neutral-500 mt-1 max-w-2xl leading-relaxed">
+            <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-neutral-500">
               {currentCategory?.description || (selectedGroup
                 ? `Περιηγηθείτε σε όλα τα προϊόντα της κατηγορίας ${selectedGroup.name}.`
                 : 'Περιηγηθείτε σε ολόκληρο τον κατάλογο βαρέος τύπου εργαλείων, εξαρτημάτων και εξοπλισμού συνεργείου.')}
             </p>
           </div>
-          <div className="text-xs font-mono-spec text-neutral-500 shrink-0">
-            {sortedProducts.length} {sortedProducts.length === 1 ? 'προϊόν' : 'προϊόντα'}
+          <div className="inline-flex w-fit shrink-0 items-center gap-1.5 rounded-full border border-neutral-200 bg-neutral-50 px-3.5 py-2 text-sm font-semibold text-neutral-700">
+            <span className="font-mono-spec text-neutral-950">{sortedProducts.length}</span>
+            <span>{sortedProducts.length === 1 ? 'προϊόν' : 'προϊόντα'}</span>
           </div>
         </div>
 
         {/* Subcategory Pills */}
         {childCategories.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-neutral-100">
+          <div className="mt-5 flex flex-wrap gap-2 border-t border-neutral-100 pt-4">
             {childCategories.map((child) => (
               <button
                 key={child.id}
                 onClick={() => onNavigate(`/category/${child.slug}`)}
-                className="bg-[#f0edec] hover:bg-[#e4dfdd] text-neutral-800 text-xs font-semibold px-3 py-1.5 rounded border border-[#cfd8dc] transition-colors"
+                className="group inline-flex min-h-10 items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3.5 py-2 text-sm font-medium text-neutral-700 shadow-sm transition-colors hover:border-red-200 hover:bg-red-50/60 hover:text-[#b91c22] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]"
               >
-                {child.name} ({products.filter((p) => p.categoryIds.includes(child.id)).length})
+                <span>{formatSubcategoryName(child.name)}</span>
+                <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs tabular-nums text-neutral-500 group-hover:bg-white group-hover:text-[#b91c22]">
+                  {products.filter((p) => p.categoryIds.includes(child.id)).length}
+                </span>
               </button>
             ))}
           </div>
@@ -219,8 +223,8 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
       {/* Main Grid: Sidebar Filters + Products */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
         {/* Desktop Filter Sidebar */}
-        <aside className="hidden lg:block space-y-5 bg-white border border-[#cfd8dc] p-4 rounded text-xs">
-          <div className="flex items-center justify-between pb-3 border-b border-[#cfd8dc]">
+        <aside className="hidden space-y-5 rounded-2xl border border-neutral-200 bg-white p-5 text-xs shadow-sm lg:block">
+          <div className="flex items-center justify-between border-b border-neutral-200 pb-3">
             <span className="font-display font-bold text-sm uppercase tracking-wider text-neutral-900 flex items-center space-x-1.5">
               <Filter className="w-4 h-4 text-[#e21b22]" />
               <span>ΦΙΛΤΡΑ ΑΝΑΖΗΤΗΣΗΣ</span>
@@ -250,7 +254,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
           </div>
 
           {/* Price Range Filter */}
-          <div className="border-t border-[#cfd8dc] pt-4 space-y-2">
+          <div className="space-y-2 border-t border-neutral-100 pt-4">
             <span className="font-bold uppercase tracking-wider text-neutral-800 block">
               ΕΥΡΟΣ ΤΙΜΗΣ (€)
             </span>
@@ -371,12 +375,12 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         {/* Product Listing Main Column */}
         <div className="lg:col-span-3 space-y-4">
           {/* Controls Bar: Sort, View Layout, Mobile filter toggle */}
-          <div className="bg-white border border-[#cfd8dc] p-2.5 sm:p-3 rounded flex flex-wrap items-center justify-between gap-2 sm:gap-3 text-xs">
+          <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-neutral-200 bg-white p-2.5 text-xs shadow-sm sm:gap-3 sm:p-3">
             <div className="flex items-center space-x-2">
               {/* Mobile Filter Button */}
               <button
                 onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
-                className="lg:hidden flex items-center space-x-1.5 bg-neutral-100 hover:bg-neutral-200 px-3 py-1.5 rounded font-semibold border border-neutral-300"
+                className="flex items-center space-x-1.5 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 font-semibold transition-colors hover:bg-neutral-100 lg:hidden"
               >
                 <SlidersHorizontal className="w-4 h-4 text-[#e21b22]" />
                 <span>Φίλτρα {hasActiveFilters && '(Ενεργά)'}</span>
@@ -395,7 +399,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
                   aria-label="Ταξινόμηση προϊόντων"
-                  className="min-w-0 w-full bg-neutral-50 border border-neutral-300 rounded px-2.5 py-2 sm:py-1 text-xs focus:border-[#e21b22] focus:outline-none sm:w-auto"
+                  className="min-w-0 w-full rounded-lg border border-neutral-200 bg-neutral-50 px-2.5 py-2 text-xs focus:border-[#e21b22] focus:outline-none sm:w-auto sm:py-1"
                 >
                   <option value="featured">Προτεινόμενα</option>
                   <option value="price-asc">Τιμή: Χαμηλή προς Υψηλή</option>
@@ -406,17 +410,17 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </div>
 
               {/* View Layout Toggle */}
-              <div className="flex items-center border border-neutral-300 rounded overflow-hidden">
+                <div className="flex items-center overflow-hidden rounded-lg border border-neutral-300">
                 <button
                   onClick={() => setLayoutMode('grid')}
-                  className={`p-1.5 ${layoutMode === 'grid' ? 'bg-[#1e1e1e] text-white' : 'bg-white text-neutral-600 hover:bg-neutral-100'}`}
+                  className={`p-1.5 ${layoutMode === 'grid' ? 'bg-[#e21b22] text-white' : 'bg-white text-neutral-600 hover:bg-neutral-100'}`}
                   title="Πλέγμα"
                 >
                   <Grid className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => setLayoutMode('list')}
-                  className={`p-1.5 ${layoutMode === 'list' ? 'bg-[#1e1e1e] text-white' : 'bg-white text-neutral-600 hover:bg-neutral-100'}`}
+                  className={`p-1.5 ${layoutMode === 'list' ? 'bg-[#e21b22] text-white' : 'bg-white text-neutral-600 hover:bg-neutral-100'}`}
                   title="Λίστα"
                 >
                   <List className="w-4 h-4" />
@@ -427,11 +431,11 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
           {/* Active Filter Chips */}
           {hasActiveFilters && (
-            <div className="flex flex-wrap items-center gap-1.5 bg-[#fafafa] p-2.5 rounded border border-neutral-200 text-xs">
+            <div className="flex flex-wrap items-center gap-1.5 rounded-xl border border-neutral-200 bg-white p-2.5 text-xs shadow-sm">
               <span className="text-neutral-500 font-semibold mr-1">Ενεργά:</span>
 
               {inStockOnly && (
-                <span className="inline-flex items-center bg-emerald-50 text-emerald-800 border border-emerald-300 px-2 py-0.5 rounded text-[11px]">
+                <span className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[11px] text-emerald-800">
                   Μόνο Ετοιμοπαράδοτα
                   <button onClick={() => setInStockOnly(false)} className="ml-1 text-emerald-600 hover:text-emerald-900">
                     <X className="w-3 h-3" />
@@ -442,7 +446,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               {selectedBrands.map((bId) => {
                 const b = brands.find((brand) => brand.id === bId);
                 return (
-                  <span key={bId} className="inline-flex items-center bg-neutral-200 text-neutral-800 px-2 py-0.5 rounded text-[11px]">
+              <span key={bId} className="inline-flex items-center rounded-full border border-neutral-200 bg-neutral-100 px-2.5 py-1 text-[11px] text-neutral-800">
                     {b?.name}
                     <button
                       onClick={() => setSelectedBrands((prev) => prev.filter((id) => id !== bId))}
@@ -455,7 +459,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               })}
 
               {selectedVoltages.map((volt) => (
-                <span key={volt} className="inline-flex items-center bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded text-[11px] font-mono-spec">
+              <span key={volt} className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-2.5 py-1 text-[11px] font-mono-spec text-blue-800">
                   {volt}
                   <button
                     onClick={() => setSelectedVoltages((prev) => prev.filter((v) => v !== volt))}
@@ -478,10 +482,10 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
           {/* Products Grid / List */}
           {sortedProducts.length > 0 ? (
             <>
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded border border-neutral-200 bg-white px-3 py-2 text-[10px] sm:text-xs">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 text-[10px] shadow-sm sm:text-xs">
               <span className="text-neutral-500">Εμφάνιση {Math.min((page - 1) * pageSize + 1, sortedProducts.length)}–{Math.min(page * pageSize, sortedProducts.length)} από {sortedProducts.length}</span>
               <label className="flex items-center gap-2 font-semibold text-neutral-700">Ανά σελίδα
-                <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="rounded border border-neutral-300 bg-white px-2 py-1">
+                <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="rounded-lg border border-neutral-200 bg-neutral-50 px-2 py-1">
                   <option value={30}>30</option><option value={60}>60</option><option value={90}>90</option>
                 </select>
               </label>
@@ -498,13 +502,13 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               ))}
             </div>
             {pageCount > 1 && <div className="mt-5 flex items-center justify-center gap-2 text-xs">
-              <button disabled={page === 1} onClick={() => setPage((value) => value - 1)} className="rounded border border-neutral-300 bg-white px-3 py-1.5 disabled:opacity-40">Προηγούμενη</button>
+              <button disabled={page === 1} onClick={() => setPage((value) => value - 1)} className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 shadow-sm disabled:opacity-40">Προηγούμενη</button>
               <span className="font-semibold text-neutral-600">Σελίδα {page} / {pageCount}</span>
-              <button disabled={page === pageCount} onClick={() => setPage((value) => value + 1)} className="rounded border border-neutral-300 bg-white px-3 py-1.5 disabled:opacity-40">Επόμενη</button>
+              <button disabled={page === pageCount} onClick={() => setPage((value) => value + 1)} className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 shadow-sm disabled:opacity-40">Επόμενη</button>
             </div>}
             </>
           ) : (
-            <div className="bg-white border border-[#cfd8dc] rounded p-12 text-center space-y-3">
+            <div className="space-y-3 rounded-2xl border border-neutral-200 bg-white p-12 text-center shadow-sm">
               <Filter className="w-12 h-12 text-neutral-300 mx-auto" />
               <h3 className="font-display font-bold text-lg text-neutral-800 uppercase">
                 Δεν βρέθηκαν προϊόντα με τα επιλεγμένα φίλτρα
@@ -514,7 +518,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </p>
               <button
                 onClick={resetFilters}
-                className="bg-[#e21b22] text-white px-4 py-2 rounded text-xs font-bold uppercase font-display"
+                className="rounded-xl bg-[#e21b22] px-4 py-2 text-xs font-bold uppercase text-white transition-colors hover:bg-[#c81016] font-display"
               >
                 Επαναφορά Όλων των Φίλτρων
               </button>
