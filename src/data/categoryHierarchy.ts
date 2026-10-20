@@ -15,13 +15,14 @@ export const categoryGroups: CategoryGroup[] = [
   { id: 'garden', name: 'Κήπος & Αγροτικά Εργαλεία', keywords: ['κήπου', 'χλοο', 'αλυσοπρίονα', 'κλαδέματος', 'ψαλίδια μπορντούρας', 'ψεκαστήρες', 'φυσητήρες', 'τσεκούρια'] },
   { id: 'measurement-electrical', name: 'Μέτρηση & Ηλεκτρολογικά', keywords: ['αλφάδια', 'μέτρα laser', 'μέτρα', 'πολύμετρα', 'τάσης', 'αμπεροτσιμπίδες', 'θερμόμετρα'] },
   { id: 'cleaning', name: 'Καθαρισμός', keywords: ['σκούπες', 'σκουπάκια', 'καθαρισμού', 'απορροφητήρες'] },
-  { id: 'storage-workshop', name: 'Αποθήκευση & Εξοπλισμός Εργαστηρίου', keywords: ['εργαλειοθήκες', 'εργαλειοφόροι', 'τσάντες εργαλείων', 'βαλιτσάκια', 'συρταριέρες', 'πάγκοι εργασίας', 'μπαούλα'] },
+  { id: 'storage-workshop', name: 'Αποθήκευση & Εργαστήριο', keywords: ['εργαλειοθήκες', 'εργαλειοφόροι', 'τσάντες εργαλείων', 'βαλιτσάκια', 'συρταριέρες', 'πάγκοι εργασίας', 'μπαούλα', 'σκαφάκια αποθήκευσης'] },
   { id: 'safety-workwear', name: 'Ασφάλεια & Ρουχισμός Εργασίας', keywords: ['κράνη', 'παπούτσια εργασίας', 'ωτοασπίδες', 'γάντια', 'πρώτων βοηθειών'] },
   { id: 'site-equipment', name: 'Μηχανήματα & Εξοπλισμός Εργοταξίου', keywords: ['μηχανήματα', 'μπετονιέρες', 'κομπρεσέρ', 'αντλίες', 'μετάγγισης', 'μεταφορά', 'ανύψωση'] },
   { id: 'consumables', name: 'Αναλώσιμα & Αξεσουάρ', keywords: ['αναλώσιμα', 'μαρκαδόροι', 'αξεσουάρ', 'διάφορα αναλώσιμα'] },
+  { id: 'other', name: 'Λοιπά / Χρειάζεται απόφαση', keywords: [] },
 ];
 
 export const getCategoryGroup = (name: string): CategoryGroup => {
   const normalized = name.toLocaleLowerCase('el-GR');
-  return categoryGroups.find((group) => group.keywords.some((keyword) => normalized.includes(keyword))) ?? categoryGroups[11];
+  return categoryGroups.find((group) => group.keywords.some((keyword) => normalized.includes(keyword))) ?? categoryGroups[12];
 };

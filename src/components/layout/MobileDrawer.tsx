@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { useAuth } from '../../context/AuthContext';
+import { categoryGroups, getCategoryGroup } from '../../data/categoryHierarchy';
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -32,10 +33,22 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
     );
   };
 
-  const mainCategories = categories.filter((c) => c.level === 1 && c.active);
+  const mainCategories = categoryGroups.map((group, index) => ({
+    id: group.id,
+    name: group.name,
+    slug: group.id,
+    level: 1 as const,
+    order: index + 1,
+    active: true,
+  }));
 
-  const getSubcategories = (parentId: string) =>
-    categories.filter((c) => c.parentId === parentId && c.level === 2 && c.active);
+  const getSubcategories = (parentId: string) => {
+    const group = categoryGroups.find((item) => item.id === parentId);
+    if (!group) return [];
+    return categories
+      .filter((category) => category.active && getCategoryGroup(category.name).id === parentId)
+      .sort((a, b) => a.order - b.order);
+  };
 
   const getChildCategories = (parentId: string) =>
     categories.filter((c) => c.parentId === parentId && c.level === 3 && c.active);
@@ -117,7 +130,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
               <div key={mainCat.id} className="bg-[#161616]">
                 <div className="flex items-center justify-between px-4 py-3 hover:bg-[#1e1e1e]">
                   <button
-                    onClick={() => handleNav(`/category/${mainCat.slug}`)}
+                    onClick={() => handleNav('/products')}
                     className="flex-1 text-left font-medium text-neutral-200 hover:text-white"
                   >
                     {mainCat.name}
