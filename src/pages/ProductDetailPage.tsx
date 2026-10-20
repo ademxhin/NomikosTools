@@ -520,7 +520,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                         </td>
                       </tr>
                     )}
-                    {product.dimensions && (
+                    {product.dimensions && (product.dimensions.length > 0 || product.dimensions.width > 0 || product.dimensions.height > 0) && (
                       <tr className="bg-[#fafafa]">
                         <td className="p-2.5 font-bold text-neutral-700 border-b border-neutral-200">Διαστάσεις (ΜxΠxΥ)</td>
                         <td className="p-2.5 text-neutral-900 font-mono-spec border-b border-neutral-200">
