@@ -17,7 +17,8 @@
 .nt-table tr:hover td { background: #fafafa; }
 
 @media (min-width: 1024px) {
-  aside:has(nav > button) { overflow: hidden; }
+  aside:has(nav > button) { position: fixed; inset: 0 auto 0 0; z-index: 40; width: 250px; height: 100vh; overflow: hidden; }
+  aside:has(nav > button) + div { margin-left: 250px; }
   aside:has(nav > button) nav { display: flex; min-height: 0; flex: 1 1 auto; flex-direction: column; overflow: hidden; }
   aside:has(nav > button) nav > button { flex: 0 0 auto; padding-top: .55rem; padding-bottom: .55rem; }
 }
