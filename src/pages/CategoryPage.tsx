@@ -34,6 +34,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
       : [];
 
   // Filter States
+  const [selectedSubcategoryIds, setSelectedSubcategoryIds] = useState<string[]>([]);
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedVoltages, setSelectedVoltages] = useState<string[]>([]);
   const [selectedMotors, setSelectedMotors] = useState<string[]>([]);
@@ -94,6 +95,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
       if (price < minPrice || price > maxPrice) return false;
       if (inStockOnly && prod.stockQuantity <= 0) return false;
+      if (selectedSubcategoryIds.length > 0 && !prod.categoryIds.some((id) => selectedSubcategoryIds.includes(id))) return false;
       if (selectedBrands.length > 0 && !selectedBrands.includes(prod.brandId)) return false;
       if (selectedVoltages.length > 0 && (!prod.attributes.voltage || !selectedVoltages.includes(prod.attributes.voltage)))
         return false;
@@ -102,7 +104,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
       return true;
     });
-  }, [baseProducts, minPrice, maxPrice, inStockOnly, selectedBrands, selectedVoltages, selectedMotors]);
+  }, [baseProducts, minPrice, maxPrice, inStockOnly, selectedSubcategoryIds, selectedBrands, selectedVoltages, selectedMotors]);
 
   // Apply sorting
   const sortedProducts = useMemo(() => {
@@ -124,12 +126,13 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
   React.useEffect(() => {
     setPage(1);
-  }, [categorySlug, pageSize, selectedBrands, selectedVoltages, selectedMotors, inStockOnly, minPrice, maxPrice, sortBy]);
+  }, [categorySlug, pageSize, selectedSubcategoryIds, selectedBrands, selectedVoltages, selectedMotors, inStockOnly, minPrice, maxPrice, sortBy]);
 
   const pageCount = Math.max(1, Math.ceil(sortedProducts.length / pageSize));
   const pagedProducts = sortedProducts.slice((page - 1) * pageSize, page * pageSize);
 
   const resetFilters = () => {
+    setSelectedSubcategoryIds([]);
     setSelectedBrands([]);
     setSelectedVoltages([]);
     setSelectedMotors([]);
@@ -139,6 +142,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
   };
 
   const hasActiveFilters =
+    selectedSubcategoryIds.length > 0 ||
     selectedBrands.length > 0 ||
     selectedVoltages.length > 0 ||
     selectedMotors.length > 0 ||
@@ -203,19 +207,41 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
         {/* Subcategory Pills */}
         {childCategories.length > 0 && (
-          <div className="mt-5 flex flex-wrap gap-2 border-t border-neutral-100 pt-4">
-            {childCategories.map((child) => (
-              <button
-                key={child.id}
-                onClick={() => onNavigate(`/category/${child.slug}`)}
-                className="group inline-flex min-h-10 items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3.5 py-2 text-sm font-medium text-neutral-700 shadow-sm transition-colors hover:border-red-200 hover:bg-red-50/60 hover:text-[#b91c22] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]"
-              >
-                <span>{formatSubcategoryName(child.name)}</span>
-                <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs tabular-nums text-neutral-500 group-hover:bg-white group-hover:text-[#b91c22]">
-                  {products.filter((p) => p.categoryIds.includes(child.id)).length}
-                </span>
-              </button>
-            ))}
+          <div aria-label="Φίλτρα υποκατηγορίας" className="mt-5 border-t border-neutral-100 pt-4">
+            <div className="mb-2.5 flex flex-wrap items-center justify-between gap-2">
+              <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-neutral-500">Φίλτρα ανά υποκατηγορία</span>
+              {selectedSubcategoryIds.length > 1 && (
+                <button onClick={() => setSelectedSubcategoryIds([])} className="text-xs font-semibold text-[#c81e24] hover:underline">
+                  Καθαρισμός επιλογής
+                </button>
+              )}
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {childCategories.map((child) => {
+                const isSelected = selectedSubcategoryIds.includes(child.id);
+                return (
+                  <button
+                    key={child.id}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => setSelectedSubcategoryIds((selected) =>
+                      isSelected ? selected.filter((id) => id !== child.id) : [...selected, child.id]
+                    )}
+                    className={`group inline-flex min-h-10 items-center gap-2 rounded-xl border px-3.5 py-2 text-sm font-medium shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22] ${
+                      isSelected
+                        ? 'border-red-200 bg-red-50 text-[#b91c22]'
+                        : 'border-neutral-200 bg-white text-neutral-700 hover:border-red-200 hover:bg-red-50/60 hover:text-[#b91c22]'
+                    }`}
+                  >
+                    {isSelected && <Check className="h-3.5 w-3.5" aria-hidden="true" />}
+                    <span>{formatSubcategoryName(child.name)}</span>
+                    <span className={`rounded-full px-2 py-0.5 text-xs tabular-nums ${isSelected ? 'bg-white text-[#b91c22]' : 'bg-neutral-100 text-neutral-500 group-hover:bg-white group-hover:text-[#b91c22]'}`}>
+                      {products.filter((product) => product.categoryIds.includes(child.id)).length}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
       </div>
@@ -433,6 +459,23 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
           {hasActiveFilters && (
             <div className="flex flex-wrap items-center gap-1.5 rounded-xl border border-neutral-200 bg-white p-2.5 text-xs shadow-sm">
               <span className="text-neutral-500 font-semibold mr-1">Ενεργά:</span>
+
+              {selectedSubcategoryIds.map((subcategoryId) => {
+                const subcategory = childCategories.find((category) => category.id === subcategoryId);
+                if (!subcategory) return null;
+                return (
+                  <span key={subcategoryId} className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-2.5 py-1 text-[11px] text-[#b91c22]">
+                    {formatSubcategoryName(subcategory.name)}
+                    <button
+                      aria-label={`Αφαίρεση φίλτρου ${formatSubcategoryName(subcategory.name)}`}
+                      onClick={() => setSelectedSubcategoryIds((selected) => selected.filter((id) => id !== subcategoryId))}
+                      className="ml-1 text-[#c81e24] hover:text-neutral-950"
+                    >
+                      <X className="h-3 w-3" />
+                    </button>
+                  </span>
+                );
+              })}
 
               {inStockOnly && (
                 <span className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[11px] text-emerald-800">
