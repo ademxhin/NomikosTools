@@ -392,7 +392,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <div className="h-full rounded-xl border border-neutral-200 bg-neutral-50 p-2.5 text-[11px] text-neutral-800">
                 <div className="flex items-center justify-between gap-2">
                   <span className="font-bold">Αποστολή με ACS</span>
-                  <span className="rounded-full bg-neutral-100 px-2 py-0.5 font-bold">1–2 ημέρες</span>
+                  <span className="inline-flex whitespace-nowrap rounded-full bg-neutral-100 px-2 py-0.5 font-bold">1–2 ημέρες</span>
                 </div>
                 <div className="mt-2 text-neutral-500">Δωρεάν μεταφορικά για αγορές άνω των 50€</div>
               </div>
