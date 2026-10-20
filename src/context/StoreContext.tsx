@@ -227,7 +227,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   useEffect(() => { localStorage.setItem('nomikos_movements', JSON.stringify(stockMovements)); }, [stockMovements]);
   useEffect(() => { localStorage.setItem('nomikos_audit', JSON.stringify(auditLogs)); }, [auditLogs]);
   useEffect(() => {
-    const notify = () => window.alert('Δεν ήταν δυνατή η τοπική αποθήκευση. Οι αλλαγές υπάρχουν μόνο στην τρέχουσα σελίδα. Μειώστε τον όγκο εικόνων πριν την ανανέωση.');
+    const notify = () => setToast({ id: Date.now().toString(), type: 'info', message: 'Ο χώρος demo του browser γέμισε. Οι μεγάλες αλλαγές διατηρούνται προσωρινά μέχρι την ανανέωση της σελίδας.' });
     window.addEventListener('nt-storage-error', notify);
     return () => window.removeEventListener('nt-storage-error', notify);
   }, []);
