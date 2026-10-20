@@ -357,11 +357,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="group flex h-20 w-52 shrink-0 flex-col items-center justify-center bg-transparent px-6 text-center transition-all"
               >
                 {b.name.toLowerCase() === 'milwaukee' ? (
-                  <img src="/assets/brand-milwaukee.png" alt="Milwaukee" className="h-12 w-40 scale-125 object-contain grayscale mix-blend-multiply transition duration-200 group-hover:grayscale-0 group-hover:mix-blend-normal" />
+                  <img src="/assets/brand-milwaukee.png" alt="Milwaukee" className="h-12 w-40 scale-125 object-contain grayscale mix-blend-darken transition duration-200 group-hover:grayscale-0" />
                 ) : b.name.toLowerCase() === 'aeg' ? (
-                  <img src="/assets/brand-aeg.png" alt="AEG" className="h-12 w-40 scale-90 object-contain grayscale mix-blend-multiply transition duration-200 group-hover:grayscale-0 group-hover:mix-blend-normal" />
+                  <img src="/assets/brand-aeg.png" alt="AEG" className="h-12 w-40 scale-90 object-contain grayscale mix-blend-darken transition duration-200 group-hover:grayscale-0" />
                 ) : b.name.toLowerCase() === 'brennenstuhl' ? (
-                  <img src="/assets/brand-brennenstuhl.png" alt="Brennenstuhl" className="h-12 w-40 scale-[2.1] object-contain grayscale mix-blend-multiply transition duration-200 group-hover:grayscale-0 group-hover:mix-blend-normal" />
+                  <img src="/assets/brand-brennenstuhl.png" alt="Brennenstuhl" className="h-12 w-40 scale-[2.1] object-contain grayscale mix-blend-darken transition duration-200 group-hover:grayscale-0" />
                 ) : (
                   <span className="flex h-12 w-40 items-center justify-center font-display text-xl font-black tracking-wider text-neutral-800 group-hover:text-[#e21b22] uppercase">{b.name}</span>
                 )}
