@@ -7,7 +7,7 @@ export const Empty = ({ children }: { children: React.ReactNode }) => <p classNa
 export const Badge = ({ children }: { children: React.ReactNode }) => <span className="inline-flex rounded-full border border-neutral-200 bg-neutral-50 px-2.5 py-1 text-xs font-semibold">{children}</span>;
 export function Dialog({ title, children, onClose, fullPage = false }: { title: string; children: React.ReactNode; onClose: () => void; fullPage?: boolean }) {
   const ref = useRef<HTMLDialogElement>(null);
-  useEffect(() => { const previous = document.activeElement as HTMLElement; ref.current?.showModal(); return () => { ref.current?.close(); previous?.focus(); }; }, []);
+  useEffect(() => { const previous = document.activeElement as HTMLElement; if (fullPage) ref.current?.show(); else ref.current?.showModal(); return () => { ref.current?.close(); previous?.focus(); }; }, [fullPage]);
   return <dialog ref={ref} className={`nt-dialog ${fullPage ? 'nt-dialog-full-page' : ''}`} onCancel={e => { e.preventDefault(); onClose(); }}><header className="mb-5 flex items-center justify-between gap-4"><h2 className="text-xl font-bold">{title}</h2><button onClick={onClose} aria-label="Κλείσιμο" className="rounded-lg p-2 hover:bg-neutral-100"><X /></button></header>{children}</dialog>;
 }
 export function Pager({ page, total, onChange }: { page: number; total: number; onChange: (page: number) => void }) {
