@@ -223,7 +223,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <img
                 src={product.images[selectedImage] || product.images[0]}
                 alt={product.name}
-                className="max-h-full max-w-full object-contain transition-transform duration-200 hover:scale-[1.02]"
+                className="max-h-full max-w-full object-contain mix-blend-multiply transition-transform duration-200 hover:scale-[1.02]"
               />
             </button>
           </div>
@@ -239,7 +239,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                     selectedImage === idx ? 'border-[#e21b22] ring-2 ring-[#e21b22]/30' : 'border-neutral-200'
                   }`}
                 >
-                  <img src={img} alt="" className="w-full h-full object-contain" />
+                  <img src={img} alt="" className="w-full h-full object-contain mix-blend-multiply" />
                 </button>
               ))}
             </div>
