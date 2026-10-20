@@ -512,7 +512,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                         </td>
                       </tr>
                     ))}
-                    {product.weight && (
+                    {product.weight > 0 && (
                       <tr className="bg-white">
                         <td className="p-2.5 font-bold text-neutral-700 border-b border-neutral-200">Βάρος</td>
                         <td className="p-2.5 text-neutral-900 font-mono-spec border-b border-neutral-200">
