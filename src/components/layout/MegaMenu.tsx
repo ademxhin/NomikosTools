@@ -13,6 +13,7 @@ interface MegaMenuProps {
 export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenChange }) => {
   const { categories, products } = useStore();
   const panelRef = useRef<HTMLDivElement>(null);
+  const closeTimerRef = useRef<number | null>(null);
   const [activeMainCatId, setActiveMainCatId] = useState(categoryGroups[0]?.id ?? '');
 
   const activeSubcategories = useMemo(
@@ -34,6 +35,12 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
   const selectedCategory = categoryGroups.find((category) => category.id === activeMainCatId);
 
   useEffect(() => {
+    return () => {
+      if (closeTimerRef.current !== null) window.clearTimeout(closeTimerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
     if (!isOpen) return;
 
     if (document.activeElement?.id === 'mobile-menu-toggle-btn') {
@@ -51,6 +58,21 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
     document.addEventListener('keydown', closeOnEscape);
     return () => document.removeEventListener('keydown', closeOnEscape);
   }, [isOpen, onOpenChange]);
+
+  const cancelScheduledClose = () => {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  };
+
+  const scheduleClose = () => {
+    cancelScheduledClose();
+    closeTimerRef.current = window.setTimeout(() => {
+      onOpenChange(false);
+      closeTimerRef.current = null;
+    }, 220);
+  };
 
   const navigate = (route: string) => {
     onOpenChange(false);
@@ -84,6 +106,8 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
         ref={panelRef}
         id="desktop-mega-menu-panel"
         className="mx-auto flex max-h-full w-full max-w-7xl overflow-hidden rounded-2xl border border-neutral-200 bg-white text-neutral-900 shadow-[0_24px_70px_-24px_rgba(0,0,0,0.42)]"
+        onMouseEnter={cancelScheduledClose}
+        onMouseLeave={scheduleClose}
         aria-label="Μενού κατηγοριών προϊόντων"
       >
         <nav aria-label="Βασικές κατηγορίες" className="w-[330px] shrink-0 overflow-y-auto border-r border-neutral-200 bg-[#f7f7f6] p-3 xl:w-[365px]">
