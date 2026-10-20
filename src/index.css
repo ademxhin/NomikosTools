@@ -15,6 +15,12 @@
 .nt-table th { color: #737373; font-size: 11px; letter-spacing: .06em; background: #fafafa; }
 .nt-table th, .nt-table td { padding: 13px 12px; border-bottom: 1px solid #eee; }
 .nt-table tr:hover td { background: #fafafa; }
+
+@media (min-width: 1024px) {
+  aside:has(nav > button) { overflow: hidden; }
+  aside:has(nav > button) nav { overflow: visible; }
+  aside:has(nav > button) nav > button { padding-top: .55rem; padding-bottom: .55rem; }
+}
 :where(button, a, input, select, textarea, summary):focus-visible { outline: 2px solid #e21b22; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
 @media print { body * { visibility: hidden; } .nt-print, .nt-print * { visibility: visible; } .nt-print { position: absolute; inset: 0; background: white; } .nt-no-print { display: none; } }
