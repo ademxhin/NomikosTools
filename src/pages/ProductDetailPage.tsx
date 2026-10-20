@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ChevronRight,
   Heart,
@@ -56,6 +56,17 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   const [selectedVariantId, setSelectedVariantId] = useState<string | undefined>(
     product?.variants?.[0]?.id
   );
+
+  useEffect(() => {
+    if (!isLightboxOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isLightboxOpen]);
 
   if (!product) {
     return (
@@ -409,7 +420,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
       {isLightboxOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex h-[100dvh] w-screen items-center justify-center overflow-hidden bg-black/80 p-4 backdrop-blur-sm"
           onClick={() => setIsLightboxOpen(false)}
           role="dialog"
           aria-modal="true"
