@@ -497,7 +497,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
               <span className="nt-results-summary hidden whitespace-nowrap sm:inline" aria-live="polite">
                 <span>{sortedProducts.length} αποτελέσματα</span>
-                {sortedProducts.length > 0 && <><span className="nt-results-summary-divider" aria-hidden="true">/</span><span>{Math.min((page - 1) * pageSize + 1)}–{Math.min(page * pageSize, sortedProducts.length)}</span></>}
+                {sortedProducts.length > 0 && <><span className="nt-results-summary-divider" aria-hidden="true">/</span><span>{Math.min((page - 1) * pageSize + 1)}-{Math.min(page * pageSize, sortedProducts.length)}</span></>}
               </span>
             </div>
 

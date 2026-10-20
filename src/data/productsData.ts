@@ -69813,10 +69813,10 @@ export const initialProducts: Product[] = [
   },
   {
     "id": "prod-8287912",
-    "name": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi – 5 Tem",
+    "name": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi - 5 Tem",
     "slug": "milwaukee-48475021-lames-katedafisis-heavy-duty-ax-xyla-prokes-150mmx-5-tpi-5-tem",
     "shortDescription": "Milwaukee · Λάμες Σέγας · Κωδικός 48475021",
-    "fullDescription": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi – 5 Tem. Κατασκευαστής: Milwaukee. Κατηγορία: Λάμες Σέγας.",
+    "fullDescription": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi - 5 Tem. Κατασκευαστής: Milwaukee. Κατηγορία: Λάμες Σέγας.",
     "sku": "48475021",
     "ean": "",
     "manufacturerCode": "48475021",
@@ -69866,8 +69866,8 @@ export const initialProducts: Product[] = [
       "width": 0,
       "height": 0
     },
-    "seoTitle": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi – 5 Tem | Nomikos Tools",
-    "seoDescription": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi – 5 Tem από Milwaukee.",
+    "seoTitle": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi - 5 Tem | Nomikos Tools",
+    "seoDescription": "Milwaukee 48475021 Λάμες Κατεδάφισης Heavy Duty Ax Ξύλα Πρόκες 150mmx 5 Tpi - 5 Tem από Milwaukee.",
     "active": true,
     "featured": false,
     "popular": false,
