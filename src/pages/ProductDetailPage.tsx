@@ -416,13 +416,13 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           aria-label="Μεγέθυνση εικόνας προϊόντος"
         >
           <div
-            className="relative max-h-[90vh] max-w-[92vw]"
+            className="flex max-h-[90vh] max-w-[92vw] items-start gap-2.5"
             onClick={(event) => event.stopPropagation()}
           >
             <button
               type="button"
               onClick={() => setIsLightboxOpen(false)}
-              className="absolute -right-3 -top-3 z-10 rounded-full border border-neutral-200 bg-white p-2 text-neutral-800 shadow-lg transition-colors hover:bg-[#e21b22] hover:text-white"
+              className="shrink-0 rounded-full border border-neutral-200 bg-white p-2 text-neutral-800 shadow-lg transition-colors hover:bg-[#e21b22] hover:text-white"
               aria-label="Κλείσιμο εικόνας"
             >
               <X className="h-5 w-5" />
@@ -430,7 +430,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             <img
               src={product.images[selectedImage] || product.images[0]}
               alt={product.name}
-              className="max-h-[90vh] max-w-[92vw] rounded-xl bg-white object-contain p-4 shadow-2xl"
+              className="max-h-[90vh] max-w-[calc(92vw-48px)] rounded-xl bg-white object-contain p-4 shadow-2xl"
             />
           </div>
         </div>
