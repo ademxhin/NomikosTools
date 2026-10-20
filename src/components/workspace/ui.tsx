@@ -9,20 +9,15 @@ export function Dialog({ title, children, onClose, fullPage = false }: { title: 
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     const previous = document.activeElement as HTMLElement;
-    const previousBodyOverflow = document.body.style.overflow;
 
     if (fullPage) {
       ref.current?.show();
-      // The full-page editor owns scrolling; prevent the page behind it from
-      // creating a second scrollbar while the fixed admin sidebar remains visible.
-      document.body.style.overflow = 'hidden';
     } else {
       ref.current?.showModal();
     }
 
     return () => {
       ref.current?.close();
-      document.body.style.overflow = previousBodyOverflow;
       previous?.focus();
     };
   }, [fullPage]);
