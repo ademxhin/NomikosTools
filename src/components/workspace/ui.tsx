@@ -7,7 +7,25 @@ export const Empty = ({ children }: { children: React.ReactNode }) => <p classNa
 export const Badge = ({ children }: { children: React.ReactNode }) => <span className="inline-flex rounded-full border border-neutral-200 bg-neutral-50 px-2.5 py-1 text-xs font-semibold">{children}</span>;
 export function Dialog({ title, children, onClose, fullPage = false }: { title: string; children: React.ReactNode; onClose: () => void; fullPage?: boolean }) {
   const ref = useRef<HTMLDialogElement>(null);
-  useEffect(() => { const previous = document.activeElement as HTMLElement; if (fullPage) ref.current?.show(); else ref.current?.showModal(); return () => { ref.current?.close(); previous?.focus(); }; }, [fullPage]);
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement;
+    const previousBodyOverflow = document.body.style.overflow;
+
+    if (fullPage) {
+      ref.current?.show();
+      // The full-page editor owns scrolling; prevent the page behind it from
+      // creating a second scrollbar while the fixed admin sidebar remains visible.
+      document.body.style.overflow = 'hidden';
+    } else {
+      ref.current?.showModal();
+    }
+
+    return () => {
+      ref.current?.close();
+      document.body.style.overflow = previousBodyOverflow;
+      previous?.focus();
+    };
+  }, [fullPage]);
   return <dialog ref={ref} className={`nt-dialog ${fullPage ? 'nt-dialog-full-page' : ''}`} onCancel={e => { e.preventDefault(); onClose(); }}><header className="mb-5 flex items-center justify-between gap-4"><h2 className="text-xl font-bold">{title}</h2><button onClick={onClose} aria-label="Κλείσιμο" className="rounded-lg p-2 hover:bg-neutral-100"><X /></button></header>{children}</dialog>;
 }
 export function Pager({ page, total, onChange }: { page: number; total: number; onChange: (page: number) => void }) {
