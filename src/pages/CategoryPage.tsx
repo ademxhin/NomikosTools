@@ -5,7 +5,6 @@ import {
   Grid,
   List,
   X,
-  Check,
   RotateCcw,
   SlidersHorizontal,
 } from 'lucide-react';
@@ -141,6 +140,11 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
     setMaxPrice(2000);
   };
 
+  const closeMobileFilters = () => {
+    setIsMobileFilterOpen(false);
+    requestAnimationFrame(() => document.getElementById('mobile-filter-toggle-btn')?.focus());
+  };
+
   const hasActiveFilters =
     selectedSubcategoryIds.length > 0 ||
     selectedBrands.length > 0 ||
@@ -205,51 +209,27 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
           </div>
         </div>
 
-        {/* Subcategory Pills */}
-        {childCategories.length > 0 && (
-          <div aria-label="Φίλτρα υποκατηγορίας" className="mt-5 border-t border-neutral-100 pt-4">
-            <div className="mb-2.5 flex flex-wrap items-center justify-between gap-2">
-              <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-neutral-500">Φίλτρα ανά υποκατηγορία</span>
-              {selectedSubcategoryIds.length > 1 && (
-                <button onClick={() => setSelectedSubcategoryIds([])} className="text-xs font-semibold text-[#c81e24] hover:underline">
-                  Καθαρισμός επιλογής
-                </button>
-              )}
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {childCategories.map((child) => {
-                const isSelected = selectedSubcategoryIds.includes(child.id);
-                return (
-                  <button
-                    key={child.id}
-                    type="button"
-                    aria-pressed={isSelected}
-                    onClick={() => setSelectedSubcategoryIds((selected) =>
-                      isSelected ? selected.filter((id) => id !== child.id) : [...selected, child.id]
-                    )}
-                    className={`group inline-flex min-h-10 items-center gap-2 rounded-xl border px-3.5 py-2 text-sm font-medium shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22] ${
-                      isSelected
-                        ? 'border-red-200 bg-red-50 text-[#b91c22]'
-                        : 'border-neutral-200 bg-white text-neutral-700 hover:border-red-200 hover:bg-red-50/60 hover:text-[#b91c22]'
-                    }`}
-                  >
-                    {isSelected && <Check className="h-3.5 w-3.5" aria-hidden="true" />}
-                    <span>{formatSubcategoryName(child.name)}</span>
-                    <span className={`rounded-full px-2 py-0.5 text-xs tabular-nums ${isSelected ? 'bg-white text-[#b91c22]' : 'bg-neutral-100 text-neutral-500 group-hover:bg-white group-hover:text-[#b91c22]'}`}>
-                      {products.filter((product) => product.categoryIds.includes(child.id)).length}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Main Grid: Sidebar Filters + Products */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
-        {/* Desktop Filter Sidebar */}
-        <aside className="hidden space-y-5 rounded-2xl border border-neutral-200 bg-white p-5 text-xs shadow-sm lg:block">
+        {/* Shared desktop sidebar and mobile filter sheet */}
+        <aside
+          id="category-filter-sidebar"
+          role={isMobileFilterOpen ? 'dialog' : undefined}
+          aria-modal={isMobileFilterOpen || undefined}
+          aria-label="Φίλτρα προϊόντων"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) closeMobileFilters();
+          }}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape' && isMobileFilterOpen) closeMobileFilters();
+          }}
+          className={isMobileFilterOpen
+            ? 'fixed inset-0 z-[60] flex items-end bg-neutral-950/45 lg:sticky lg:top-4 lg:block lg:bg-transparent'
+            : 'hidden lg:sticky lg:top-4 lg:block'}
+        >
+          <div className="max-h-[88vh] w-full space-y-5 overflow-y-auto rounded-t-2xl border border-neutral-200 bg-white p-5 text-xs shadow-xl lg:max-h-none lg:overflow-visible lg:rounded-2xl lg:shadow-sm">
           <div className="flex items-center justify-between border-b border-neutral-200 pb-3">
             <span className="font-display font-bold text-sm uppercase tracking-wider text-neutral-900 flex items-center space-x-1.5">
               <Filter className="w-4 h-4 text-[#e21b22]" />
@@ -264,7 +244,42 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                 <span>Καθαρισμός</span>
               </button>
             )}
+            <button
+              onClick={closeMobileFilters}
+              aria-label="Κλείσιμο φίλτρων"
+              className="rounded-lg p-1 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-900 lg:hidden"
+            >
+              <X className="h-4 w-4" />
+            </button>
           </div>
+
+          {childCategories.length > 0 && (
+            <section className="space-y-2 border-b border-neutral-100 pb-4" aria-labelledby="subcategory-filter-heading">
+              <h2 id="subcategory-filter-heading" className="font-bold uppercase tracking-wider text-neutral-800">Κατηγορία</h2>
+              <div className="max-h-64 space-y-1 overflow-y-auto pr-1">
+                {childCategories.map((subcategory) => {
+                  const isChecked = selectedSubcategoryIds.includes(subcategory.id);
+                  const productCount = products.filter((product) => product.categoryIds.includes(subcategory.id)).length;
+                  return (
+                    <label key={subcategory.id} className="flex cursor-pointer items-start justify-between gap-3 rounded-lg px-1 py-1.5 text-neutral-700 transition-colors hover:bg-neutral-50 hover:text-neutral-950">
+                      <span className="flex min-w-0 items-start gap-2">
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={() => setSelectedSubcategoryIds((selected) =>
+                            isChecked ? selected.filter((id) => id !== subcategory.id) : [...selected, subcategory.id]
+                          )}
+                          className="mt-0.5 shrink-0 rounded border-neutral-300 text-[#e21b22] focus:ring-[#e21b22]"
+                        />
+                        <span className="leading-snug">{formatSubcategoryName(subcategory.name)}</span>
+                      </span>
+                      <span className="shrink-0 font-mono-spec text-neutral-400">({productCount})</span>
+                    </label>
+                  );
+                })}
+              </div>
+            </section>
+          )}
 
           {/* In stock only filter */}
           <div>
@@ -396,6 +411,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </div>
             </div>
           )}
+          </div>
         </aside>
 
         {/* Product Listing Main Column */}
@@ -405,7 +421,10 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
             <div className="flex items-center space-x-2">
               {/* Mobile Filter Button */}
               <button
+                id="mobile-filter-toggle-btn"
                 onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
+                aria-expanded={isMobileFilterOpen}
+                aria-controls="category-filter-sidebar"
                 className="flex items-center space-x-1.5 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 font-semibold transition-colors hover:bg-neutral-100 lg:hidden"
               >
                 <SlidersHorizontal className="w-4 h-4 text-[#e21b22]" />
