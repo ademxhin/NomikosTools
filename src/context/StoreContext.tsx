@@ -16,7 +16,7 @@ import { initialAuditLogs } from '../data/auditData';
 // The catalog is generated from the supplier Excel export. Bump this when the
 // source catalog is intentionally replaced so old browser-local products do
 // not survive the migration.
-const PRODUCT_CATALOG_VERSION = 'excel-2026-09-24-v1';
+const PRODUCT_CATALOG_VERSION = 'excel-2026-09-24-v2-category-hierarchy';
 
 export interface CartItem {
   product: Product;
@@ -163,7 +163,11 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 
   const [categories, setCategories] = useState<Category[]>(() => {
-    return readStoredArray('nomikos_categories', initialCategories);
+    const storedCategories = readStoredArray('nomikos_categories', initialCategories);
+    const hasParentHierarchy = storedCategories.some(
+      (category) => typeof category.parentId === 'string' && category.parentId.startsWith('parent-')
+    );
+    return hasParentHierarchy ? storedCategories : initialCategories;
   });
 
   const [brands, setBrands] = useState<Brand[]>(() => {

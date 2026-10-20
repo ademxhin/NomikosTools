@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { useAuth } from '../../context/AuthContext';
-import { categoryGroups, getCategoryGroup } from '../../data/categoryHierarchy';
+import { categoryGroups } from '../../data/categoryHierarchy';
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -46,7 +46,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
     const group = categoryGroups.find((item) => item.id === parentId);
     if (!group) return [];
     return categories
-      .filter((category) => category.active && getCategoryGroup(category.name).id === parentId)
+      .filter((category) => category.active && category.parentId === parentId)
       .sort((a, b) => a.order - b.order);
   };
 

@@ -12,10 +12,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493602",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-michanimata-epexergasias-dapedoy-odostromatos"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
-    "price": 9672.0,
-    "costPrice": 6630.0,
+    "price": 9672,
+    "costPrice": 6630,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -27,7 +27,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μηχανήματα Επεξεργασίας Δαπέδου & Οδοστρώματος",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3991034",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -50,7 +50,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 60.0,
+    "weight": 60,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -77,7 +77,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493268",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 7438.99,
     "costPrice": 5099.15,
@@ -92,7 +92,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3991033",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -142,7 +142,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493955",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 6699.9,
     "costPrice": 4012.5,
@@ -157,7 +157,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3991351",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -207,10 +207,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471844",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
-    "price": 5900.0,
-    "costPrice": 3740.0,
+    "price": 5900,
+    "costPrice": 3740,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -222,7 +222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990247",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -272,10 +272,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493953",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 5889.9,
-    "costPrice": 3525.0,
+    "costPrice": 3525,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -287,7 +287,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3991290",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -339,7 +339,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 4959.0,
+    "price": 4959,
     "costPrice": 2999.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -404,7 +404,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 4959.0,
+    "price": 4959,
     "costPrice": 2999.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -467,10 +467,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480480",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-epexergasia-kopi-domikon-ylikon"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 4958.95,
-    "costPrice": 3230.0,
+    "costPrice": 3230,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -482,7 +482,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Επεξεργασία & Κοπή Δομικών Υλικών",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990929",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -534,7 +534,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 4835.0,
+    "price": 4835,
     "costPrice": 2924.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -599,7 +599,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 4835.0,
+    "price": 4835,
     "costPrice": 2924.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -662,7 +662,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479610",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 4595.35,
     "costPrice": 2770.15,
@@ -677,7 +677,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990361",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -729,7 +729,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 4463.0,
+    "price": 4463,
     "costPrice": 2699.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -794,7 +794,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 4463.0,
+    "price": 4463,
     "costPrice": 2699.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -857,7 +857,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479593",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 4400.95,
     "costPrice": 3016.65,
@@ -872,7 +872,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990336",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -922,9 +922,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498133",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
-    "price": 4339.0,
+    "price": 4339,
     "costPrice": 2974.15,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -937,7 +937,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3991032",
       "supplierStock": "Διαθέσιμο"
     },
@@ -987,7 +987,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498230",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 4289.9,
     "costPrice": 2662.5,
@@ -1002,7 +1002,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3991292",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -1052,7 +1052,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498231",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 4099.9,
     "costPrice": 2512.5,
@@ -1067,7 +1067,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3991350",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -1119,7 +1119,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 3967.0,
+    "price": 3967,
     "costPrice": 2399.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -1184,7 +1184,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 3967.0,
+    "price": 3967,
     "costPrice": 2399.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -1249,8 +1249,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 3650.0,
-    "costPrice": 2325.0,
+    "price": 3650,
+    "costPrice": 2325,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -1312,10 +1312,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471835",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-karotieres-diatrisis"
+      "cat-skaptika-diatritika-karotieres"
     ],
-    "price": 3596.0,
-    "costPrice": 2465.0,
+    "price": 3596,
+    "costPrice": 2465,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -1327,7 +1327,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καροτιέρες Διάτρησης",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990038",
       "supplierStock": "Διαθέσιμο"
     },
@@ -1379,7 +1379,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-apofraktika-ergaleia"
     ],
-    "price": 3590.0,
+    "price": 3590,
     "costPrice": 2249.25,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -1442,9 +1442,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479772",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
-    "price": 3534.0,
+    "price": 3534,
     "costPrice": 2422.5,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -1457,7 +1457,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3991071",
       "supplierStock": "Διαθέσιμο"
     },
@@ -1507,10 +1507,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "SP-4933499275",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 3489.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -1522,7 +1522,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -1545,7 +1545,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -1572,10 +1572,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479789",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-ydraylikon"
+      "cat-ergaleia-vidologoi-ydraylikon"
     ],
     "price": 3389.9,
-    "costPrice": 2100.0,
+    "costPrice": 2100,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -1587,7 +1587,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Υδραυλικών",
+      "category": "Εργαλεία & Βιδολόγοι Υδραυλικών",
       "supplierCode": "3991264",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -1705,7 +1705,7 @@ export const initialProducts: Product[] = [
       "cat-eidika-ilektrika-ergaleia"
     ],
     "price": 3099.98,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -1740,7 +1740,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -1767,7 +1767,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471414",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 2969.9,
     "costPrice": 1837.5,
@@ -1782,7 +1782,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3990364",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -1835,7 +1835,7 @@ export const initialProducts: Product[] = [
       "cat-mpataries-fortistes-ergaleion"
     ],
     "price": 2929.3,
-    "costPrice": 2040.0,
+    "costPrice": 2040,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -1899,7 +1899,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 2889.0,
+    "price": 2889,
     "costPrice": 2061.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -1962,9 +1962,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498072",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
-    "price": 2722.0,
+    "price": 2722,
     "costPrice": 1911.65,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -1977,7 +1977,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3991035",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -2094,7 +2094,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-fysitires-aporrofitires-kipoy"
     ],
-    "price": 2231.0,
+    "price": 2231,
     "costPrice": 1349.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -2107,7 +2107,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3991096",
       "supplierStock": "Διαθέσιμο"
     },
@@ -2157,9 +2157,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499182",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
-    "price": 2107.0,
+    "price": 2107,
     "costPrice": 1274.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -2172,7 +2172,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3931634",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -2224,7 +2224,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 2045.0,
+    "price": 2045,
     "costPrice": 1236.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -2287,7 +2287,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451636",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana-epexergasias-metalloy"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
     "price": 1989.29,
     "costPrice": 1266.75,
@@ -2302,7 +2302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα Επεξεργασίας Μετάλλου",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3902887",
       "supplierStock": "Διαθέσιμο"
     },
@@ -2325,7 +2325,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 13.0,
+    "weight": 13,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -2352,9 +2352,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451012",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana-epexergasias-metalloy"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
-    "price": 1935.0,
+    "price": 1935,
     "costPrice": 1394.25,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -2367,7 +2367,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα Επεξεργασίας Μετάλλου",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3930049",
       "supplierStock": "Διαθέσιμο"
     },
@@ -2417,7 +2417,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478306",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-preses-sysfixis-solinon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 1929.9,
     "costPrice": 1349.25,
@@ -2432,7 +2432,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πρέσες Σύσφιξης Σωλήνων",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3990138",
       "supplierStock": "Διαθέσιμο"
     },
@@ -2484,7 +2484,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 1921.0,
+    "price": 1921,
     "costPrice": 1161.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -2549,7 +2549,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-diafora-analosima-ergaleion"
     ],
-    "price": 1890.0,
+    "price": 1890,
     "costPrice": 1267.5,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -2585,7 +2585,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -2744,7 +2744,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 1735.0,
+    "price": 1735,
     "costPrice": 1086.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -2807,10 +2807,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478305",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-preses-sysfixis-solinon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 1715.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -2822,7 +2822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πρέσες Σύσφιξης Σωλήνων",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -2845,7 +2845,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -2872,7 +2872,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493446",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 1649.9,
     "costPrice": 1094.25,
@@ -2887,7 +2887,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3991327",
       "supplierStock": "Διαθέσιμο"
     },
@@ -3069,7 +3069,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 1590.0,
+    "price": 1590,
     "costPrice": 1049.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -3134,7 +3134,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 1590.0,
+    "price": 1590,
     "costPrice": 1049.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -3197,9 +3197,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492011",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-michanes-gkazon"
+      "cat-chlookoptika-michanes-gkazon"
     ],
-    "price": 1585.0,
+    "price": 1585,
     "costPrice": 1011.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -3212,7 +3212,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μηχανές Γκαζόν",
+      "category": "Χλοοκοπτικά & Μηχανές Γκαζόν",
       "supplierCode": "3990998",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -3265,7 +3265,7 @@ export const initialProducts: Product[] = [
       "cat-eidika-ilektrika-ergaleia"
     ],
     "price": 1580.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -3300,7 +3300,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -3327,9 +3327,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499002",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 1550.0,
+    "price": 1550,
     "costPrice": 899.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -3342,7 +3342,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3991242",
       "supplierStock": "Διαθέσιμο"
     },
@@ -3392,7 +3392,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478852",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 1548.95,
     "costPrice": 1049.25,
@@ -3407,7 +3407,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3927605",
       "supplierStock": "Διαθέσιμο"
     },
@@ -3430,7 +3430,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 154.0,
+    "weight": 154,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -3459,7 +3459,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 1545.0,
+    "price": 1545,
     "costPrice": 1086.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -3522,7 +3522,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479585",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-michanes-gkazon"
+      "cat-chlookoptika-michanes-gkazon"
     ],
     "price": 1535.9,
     "costPrice": 1124.25,
@@ -3537,7 +3537,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μηχανές Γκαζόν",
+      "category": "Χλοοκοπτικά & Μηχανές Γκαζόν",
       "supplierCode": "3990308",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -3587,7 +3587,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471122",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-faltsopriona"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 1530.4,
     "costPrice": 996.75,
@@ -3602,7 +3602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φαλτσοπρίονα",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3990039",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -3652,7 +3652,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493138",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 1489.9,
     "costPrice": 974.25,
@@ -3667,7 +3667,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3991348",
       "supplierStock": "Διαθέσιμο"
     },
@@ -3782,7 +3782,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933481032",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-preses-sysfixis-solinon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 1489.9,
     "costPrice": 974.25,
@@ -3797,7 +3797,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πρέσες Σύσφιξης Σωλήνων",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3991324",
       "supplierStock": "Διαθέσιμο"
     },
@@ -3914,7 +3914,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 1487.0,
+    "price": 1487,
     "costPrice": 899.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -3979,7 +3979,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 1487.0,
+    "price": 1487,
     "costPrice": 899.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4042,9 +4042,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499200",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-vidologoi-ydraylikon"
+      "cat-ergaleia-vidologoi-ydraylikon"
     ],
-    "price": 1485.0,
+    "price": 1485,
     "costPrice": 1049.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4057,7 +4057,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βιδολόγοι Υδραυλικών",
+      "category": "Εργαλεία & Βιδολόγοι Υδραυλικών",
       "supplierCode": "3991101",
       "supplierStock": "Διαθέσιμο"
     },
@@ -4239,8 +4239,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 1429.0,
-    "costPrice": 1070.0,
+    "price": 1429,
+    "costPrice": 1070,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -4304,7 +4304,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpoylonokleida"
     ],
-    "price": 1399.0,
+    "price": 1399,
     "costPrice": 1011.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4369,7 +4369,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpoylonokleida"
     ],
-    "price": 1399.0,
+    "price": 1399,
     "costPrice": 1011.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4434,7 +4434,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 1390.0,
+    "price": 1390,
     "costPrice": 921.75,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -4497,7 +4497,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499269",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 1377.48,
     "costPrice": 876.75,
@@ -4512,7 +4512,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3991097",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -4564,8 +4564,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 1371.0,
-    "costPrice": 0.0,
+    "price": 1371,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -4600,7 +4600,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -4629,7 +4629,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 1370.0,
+    "price": 1370,
     "costPrice": 899.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4692,9 +4692,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459418",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
-    "price": 1363.0,
+    "price": 1363,
     "costPrice": 824.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4707,7 +4707,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3902767",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -4759,7 +4759,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 1349.0,
+    "price": 1349,
     "costPrice": 846.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4824,7 +4824,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-alysopriona"
     ],
-    "price": 1319.0,
+    "price": 1319,
     "costPrice": 936.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4860,7 +4860,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 9.0,
+    "weight": 9,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -4887,7 +4887,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451015",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana-epexergasias-metalloy"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
     "price": 1298.95,
     "costPrice": 936.75,
@@ -4902,7 +4902,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα Επεξεργασίας Μετάλλου",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3903069",
       "supplierStock": "Διαθέσιμο"
     },
@@ -4952,9 +4952,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499179",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona-pagkoy"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
-    "price": 1239.0,
+    "price": 1239,
     "costPrice": 749.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -4967,7 +4967,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα Πάγκου",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3991308",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5017,9 +5017,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478498",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
-    "price": 1214.0,
+    "price": 1214,
     "costPrice": 734.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5032,7 +5032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990290",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5082,9 +5082,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471697",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-epexergasia-kopi-domikon-ylikon"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
-    "price": 1200.0,
+    "price": 1200,
     "costPrice": 734.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5097,7 +5097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Επεξεργασία & Κοπή Δομικών Υλικών",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990012",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -5147,9 +5147,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499243",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
-    "price": 1189.0,
+    "price": 1189,
     "costPrice": 719.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5162,7 +5162,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991106",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5212,9 +5212,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478602",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikoi-pritsinadoroi"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
-    "price": 1177.0,
+    "price": 1177,
     "costPrice": 711.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5227,7 +5227,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικοί Πριτσιναδόροι",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990153",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5277,9 +5277,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459415",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
-    "price": 1177.0,
+    "price": 1177,
     "costPrice": 711.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5292,7 +5292,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3902702",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -5474,7 +5474,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpataries-fortistes-ergaleion"
     ],
-    "price": 1115.0,
+    "price": 1115,
     "costPrice": 764.15,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5575,7 +5575,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 4.0,
+    "weight": 4,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -5604,7 +5604,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 1090.0,
+    "price": 1090,
     "costPrice": 749.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -5732,7 +5732,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498142",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 1089.9,
     "costPrice": 749.25,
@@ -5747,7 +5747,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3991268",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5797,7 +5797,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478854",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 1079.99,
     "costPrice": 749.25,
@@ -5812,7 +5812,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3927620",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5835,7 +5835,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 109.0,
+    "weight": 109,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -5862,7 +5862,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498983",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-zoympades"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 1079.9,
     "costPrice": 711.75,
@@ -5877,7 +5877,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια & Ζουμπάδες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3991271",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5927,7 +5927,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478849",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 1063.35,
     "costPrice": 749.25,
@@ -5942,7 +5942,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3927649",
       "supplierStock": "Διαθέσιμο"
     },
@@ -5992,7 +5992,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464893",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 1055.6,
     "costPrice": 674.25,
@@ -6007,7 +6007,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3903038",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6124,7 +6124,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-fysitires-aporrofitires-kipoy"
     ],
-    "price": 1050.0,
+    "price": 1050,
     "costPrice": 651.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -6137,7 +6137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3991088",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6187,7 +6187,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471205",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-faltsopriona"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 1026.45,
     "costPrice": 749.25,
@@ -6202,7 +6202,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φαλτσοπρίονα",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3985710",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6252,9 +6252,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478506",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
-    "price": 1016.0,
+    "price": 1016,
     "costPrice": 614.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -6267,7 +6267,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990284",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6317,9 +6317,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478960",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 940.0,
+    "price": 940,
     "costPrice": 674.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -6332,7 +6332,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990307",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6382,7 +6382,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478496",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 939.98,
     "costPrice": 636.75,
@@ -6397,7 +6397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990287",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6447,7 +6447,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478778",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 939.9,
     "costPrice": 659.25,
@@ -6462,7 +6462,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3990848",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6512,7 +6512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498915",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 928.9,
     "costPrice": 614.25,
@@ -6527,7 +6527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3991252",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6550,7 +6550,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3.0,
+    "weight": 3,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -6577,7 +6577,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499997",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 919.9,
     "costPrice": 606.75,
@@ -6592,7 +6592,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991326",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6707,9 +6707,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479600",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
-    "price": 880.0,
+    "price": 880,
     "costPrice": 561.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -6722,7 +6722,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990293",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6772,7 +6772,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498982",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-zoympades"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 879.9,
     "costPrice": 561.75,
@@ -6787,7 +6787,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια & Ζουμπάδες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3991253",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6902,7 +6902,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471404",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
     "price": 869.9,
     "costPrice": 611.25,
@@ -6917,7 +6917,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990052",
       "supplierStock": "Διαθέσιμο"
     },
@@ -6967,9 +6967,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498605",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
-    "price": 867.0,
+    "price": 867,
     "costPrice": 524.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -6982,7 +6982,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3991129",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7005,7 +7005,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 2.0,
+    "weight": 2,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -7032,9 +7032,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933416060",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
-    "price": 867.0,
+    "price": 867,
     "costPrice": 524.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -7047,7 +7047,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3910054",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -7097,9 +7097,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478601",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikoi-pritsinadoroi"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
-    "price": 860.0,
+    "price": 860,
     "costPrice": 599.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -7112,7 +7112,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικοί Πριτσιναδόροι",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990147",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7162,7 +7162,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478302",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
     "price": 859.9,
     "costPrice": 611.25,
@@ -7177,7 +7177,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990091",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -7230,7 +7230,7 @@ export const initialProducts: Product[] = [
       "cat-mpataries-fortistes-ergaleion"
     ],
     "price": 855.55,
-    "costPrice": 612.0,
+    "costPrice": 612,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -7357,7 +7357,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498252",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 845.98,
     "costPrice": 543.75,
@@ -7372,7 +7372,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3930249",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7424,7 +7424,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-kastanies-karydakia"
     ],
-    "price": 842.0,
+    "price": 842,
     "costPrice": 509.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -7487,7 +7487,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464967",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikes-kastanies"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 839.6,
     "costPrice": 599.25,
@@ -7502,7 +7502,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικές Καστάνιες",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3990081",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7552,7 +7552,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451729",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-faltsopriona"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 829.25,
     "costPrice": 591.75,
@@ -7567,7 +7567,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φαλτσοπρίονα",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3901722",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7617,9 +7617,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478856",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
-    "price": 820.0,
+    "price": 820,
     "costPrice": 524.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -7632,7 +7632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3927621",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7682,7 +7682,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493492",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 819.9,
     "costPrice": 561.75,
@@ -7697,7 +7697,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991127",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7750,7 +7750,7 @@ export const initialProducts: Product[] = [
       "cat-eidika-ilektrika-ergaleia"
     ],
     "price": 819.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -7785,7 +7785,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -7812,10 +7812,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933383855",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 799.9,
-    "costPrice": 540.0,
+    "costPrice": 540,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -7827,7 +7827,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3930060",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7942,9 +7942,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464722",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona-pagkoy"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
-    "price": 785.0,
+    "price": 785,
     "costPrice": 554.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -7957,7 +7957,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα Πάγκου",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3903044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -7980,7 +7980,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 20.0,
+    "weight": 20,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -8007,9 +8007,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471407",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
-    "price": 774.0,
+    "price": 774,
     "costPrice": 494.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -8022,7 +8022,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3903104",
       "supplierStock": "Διαθέσιμο"
     },
@@ -8072,7 +8072,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498310",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diafora-michanimata-epexergasias-xyloy"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 765.58,
     "costPrice": 554.25,
@@ -8087,7 +8087,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Διάφορα Μηχανήματα Επεξεργασίας Ξύλου",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3991080",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -8202,7 +8202,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471696",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-epexergasia-kopi-domikon-ylikon"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 759.88,
     "costPrice": 509.25,
@@ -8217,7 +8217,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Επεξεργασία & Κοπή Δομικών Υλικών",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990013",
       "supplierStock": "Διαθέσιμο"
     },
@@ -8269,7 +8269,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 755.0,
+    "price": 755,
     "costPrice": 486.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -8305,7 +8305,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 6.0,
+    "weight": 6,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -8332,7 +8332,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479599",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 748.98,
     "costPrice": 486.75,
@@ -8347,7 +8347,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990334",
       "supplierStock": "Διαθέσιμο"
     },
@@ -8397,7 +8397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498560",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antlies-neroy-epifaneias"
+      "cat-antlies-neroy-metaggisis"
     ],
     "price": 739.9,
     "costPrice": 494.25,
@@ -8412,7 +8412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντλίες Νερού Επιφάνειας",
+      "category": "Αντλίες Νερού & Μετάγγισης",
       "supplierCode": "3991123",
       "supplierStock": "Διαθέσιμο"
     },
@@ -8462,7 +8462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493305",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 729.99,
     "costPrice": 501.75,
@@ -8477,7 +8477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3990946",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -8527,7 +8527,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478837",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 729.97,
     "costPrice": 449.25,
@@ -8542,7 +8542,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990331",
       "supplierStock": "Διαθέσιμο"
     },
@@ -8722,7 +8722,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478504",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 719.17,
     "costPrice": 524.25,
@@ -8737,7 +8737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990285",
       "supplierStock": "Διαθέσιμο"
     },
@@ -8789,7 +8789,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 706.0,
+    "price": 706,
     "costPrice": 426.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -8852,9 +8852,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478092",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
-    "price": 704.0,
+    "price": 704,
     "costPrice": 494.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -8867,7 +8867,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990297",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -9049,7 +9049,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-seges-spathoseges"
     ],
-    "price": 699.0,
+    "price": 699,
     "costPrice": 509.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -9177,7 +9177,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479596",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-donites-mpeton"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 682.04,
     "costPrice": 434.25,
@@ -9192,7 +9192,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δονητές Μπετόν",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3990292",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9244,7 +9244,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-seges-spathoseges"
     ],
-    "price": 682.0,
+    "price": 682,
     "costPrice": 434.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -9309,8 +9309,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpataries-fortistes-ergaleion"
     ],
-    "price": 680.0,
-    "costPrice": 0.0,
+    "price": 680,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -9345,7 +9345,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -9372,7 +9372,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493589",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 679.9,
     "costPrice": 464.25,
@@ -9387,7 +9387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991039",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9437,7 +9437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478889",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 672.06,
     "costPrice": 509.25,
@@ -9452,7 +9452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990280",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9502,9 +9502,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478102",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 670.0,
+    "price": 670,
     "costPrice": 449.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -9517,7 +9517,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990113",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9567,7 +9567,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459411",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 669.99,
     "costPrice": 486.75,
@@ -9582,7 +9582,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3903074",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -9634,7 +9634,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-fysitires-aporrofitires-kipoy"
     ],
-    "price": 668.0,
+    "price": 668,
     "costPrice": 426.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -9647,7 +9647,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3991091",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9762,9 +9762,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479203",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 657.0,
+    "price": 657,
     "costPrice": 397.5,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -9777,7 +9777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990918",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9827,7 +9827,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933472022",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 655.9,
     "costPrice": 434.25,
@@ -9842,7 +9842,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3990960",
       "supplierStock": "Διαθέσιμο"
     },
@@ -9892,7 +9892,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471406",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
     "price": 649.9,
     "costPrice": 449.25,
@@ -9907,7 +9907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990053",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10087,7 +10087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479619",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-zoympades"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 646.7,
     "costPrice": 411.75,
@@ -10102,7 +10102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια & Ζουμπάδες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3990962",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10349,7 +10349,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 641.0,
+    "price": 641,
     "costPrice": 449.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -10412,10 +10412,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471057",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-faltsopriona"
+      "cat-frezes-planes-faltsopriona"
     ],
-    "price": 640.0,
-    "costPrice": 0.0,
+    "price": 640,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -10427,7 +10427,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φαλτσοπρίονα",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -10450,7 +10450,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -10477,7 +10477,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493248",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 638.99,
     "costPrice": 389.25,
@@ -10492,7 +10492,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928178",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10542,7 +10542,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479202",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 629.95,
     "costPrice": 401.25,
@@ -10557,7 +10557,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990948",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10607,7 +10607,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498914",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 628.9,
     "costPrice": 411.75,
@@ -10622,7 +10622,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3991254",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10645,7 +10645,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3.0,
+    "weight": 3,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -10737,7 +10737,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480956",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 625.87,
     "costPrice": 449.25,
@@ -10752,7 +10752,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990877",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10802,7 +10802,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478964",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 623.5,
     "costPrice": 441.75,
@@ -10817,7 +10817,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3990381",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -10867,9 +10867,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459193",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
-    "price": 623.0,
+    "price": 623,
     "costPrice": 449.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -10882,7 +10882,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3900799",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10932,7 +10932,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492853",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antlies-thalamoi-kenoy"
+      "cat-antlies-neroy-metaggisis"
     ],
     "price": 622.9,
     "costPrice": 434.25,
@@ -10947,7 +10947,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντλίες & Θάλαμοι Κενού",
+      "category": "Αντλίες Νερού & Μετάγγισης",
       "supplierCode": "3990939",
       "supplierStock": "Διαθέσιμο"
     },
@@ -10970,7 +10970,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 7.0,
+    "weight": 7,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -11192,7 +11192,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478777",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 615.9,
     "costPrice": 434.25,
@@ -11207,7 +11207,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3990380",
       "supplierStock": "Διαθέσιμο"
     },
@@ -11387,9 +11387,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451550",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
-    "price": 605.0,
+    "price": 605,
     "costPrice": 386.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -11402,7 +11402,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3900707",
       "supplierStock": "Διαθέσιμο"
     },
@@ -11452,7 +11452,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933472110",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 598.98,
     "costPrice": 419.25,
@@ -11467,7 +11467,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3990104",
       "supplierStock": "Διαθέσιμο"
     },
@@ -11517,9 +11517,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493247",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
-    "price": 598.0,
+    "price": 598,
     "costPrice": 374.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -11532,7 +11532,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928177",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -11582,9 +11582,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933448245",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-sidiropriona-tainias"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
-    "price": 594.0,
+    "price": 594,
     "costPrice": 359.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -11597,7 +11597,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σιδηροπρίονα Ταινίας",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3900481",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -11647,7 +11647,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493593",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 586.25,
     "costPrice": 374.25,
@@ -11662,7 +11662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3991005",
       "supplierStock": "Διαθέσιμο"
     },
@@ -11712,7 +11712,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478094",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
     "price": 586.02,
     "costPrice": 366.75,
@@ -11727,7 +11727,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3990298",
       "supplierStock": "Διαθέσιμο"
     },
@@ -11815,7 +11815,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -11972,7 +11972,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478495",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 568.7,
     "costPrice": 396.75,
@@ -11987,7 +11987,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990288",
       "supplierStock": "Διαθέσιμο"
     },
@@ -12234,7 +12234,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-seges-spathoseges"
     ],
-    "price": 550.0,
+    "price": 550,
     "costPrice": 374.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -12362,7 +12362,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498254",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 549.9,
     "costPrice": 374.25,
@@ -12377,7 +12377,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3991125",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -12465,7 +12465,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 2.0,
+    "weight": 2,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -12492,7 +12492,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933443330",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 540.53,
     "costPrice": 344.25,
@@ -12507,7 +12507,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3981451",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -12557,7 +12557,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464590",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 540.32,
     "costPrice": 396.75,
@@ -12572,7 +12572,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3900989",
       "supplierStock": "Διαθέσιμο"
     },
@@ -12595,7 +12595,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 4.0,
+    "weight": 4,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -12622,10 +12622,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441400",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
-    "price": 540.0,
-    "costPrice": 0.0,
+    "price": 540,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -12637,7 +12637,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -12660,7 +12660,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -12687,9 +12687,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492892",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
-    "price": 539.0,
+    "price": 539,
     "costPrice": 366.75,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -12702,7 +12702,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3927984",
       "supplierStock": "Διαθέσιμο"
     },
@@ -12725,7 +12725,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 33.0,
+    "weight": 33,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -12882,7 +12882,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493355",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
     "price": 533.55,
     "costPrice": 344.25,
@@ -12897,7 +12897,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3991011",
       "supplierStock": "Διαθέσιμο"
     },
@@ -12947,7 +12947,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498984",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 529.99,
     "costPrice": 359.25,
@@ -12962,7 +12962,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3931389",
       "supplierStock": "Διαθέσιμο"
     },
@@ -13012,7 +13012,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493491",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 529.9,
     "costPrice": 366.75,
@@ -13027,7 +13027,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991112",
       "supplierStock": "Διαθέσιμο"
     },
@@ -13050,7 +13050,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 4.0,
+    "weight": 4,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -13144,7 +13144,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-seges-spathoseges"
     ],
-    "price": 524.0,
+    "price": 524,
     "costPrice": 333.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -13207,7 +13207,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933472166",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kompreser-aeros"
+      "cat-sympiestes-ergaleia-aeros"
     ],
     "price": 523.98,
     "costPrice": 374.25,
@@ -13222,7 +13222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κομπρεσέρ Αέρος",
+      "category": "Συμπιεστές & Εργαλεία Αέρος",
       "supplierCode": "3990121",
       "supplierStock": "Διαθέσιμο"
     },
@@ -13274,8 +13274,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-karydakia"
     ],
-    "price": 520.0,
-    "costPrice": 0.0,
+    "price": 520,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -13310,7 +13310,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -13337,7 +13337,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492140",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 519.97,
     "costPrice": 359.25,
@@ -13352,7 +13352,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990875",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -13570,7 +13570,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 5.0,
+    "weight": 5,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -13597,9 +13597,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478892",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
-    "price": 510.0,
+    "price": 510,
     "costPrice": 374.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -13612,7 +13612,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990278",
       "supplierStock": "Διαθέσιμο"
     },
@@ -13727,7 +13727,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451114",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 509.5,
     "costPrice": 359.25,
@@ -13742,7 +13742,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3900410",
       "supplierStock": "Διαθέσιμο"
     },
@@ -13989,7 +13989,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-goniakoi-trochoi"
     ],
-    "price": 495.0,
+    "price": 495,
     "costPrice": 299.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -14117,9 +14117,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498934",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikes-kastanies"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
-    "price": 490.0,
+    "price": 490,
     "costPrice": 291.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -14132,7 +14132,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικές Καστάνιες",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3991356",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14182,7 +14182,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492669",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 489.98,
     "costPrice": 299.25,
@@ -14197,7 +14197,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3929515",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14377,7 +14377,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478100",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 476.3,
     "costPrice": 344.25,
@@ -14392,7 +14392,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990115",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14442,9 +14442,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478836",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
-    "price": 470.0,
+    "price": 470,
     "costPrice": 299.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -14457,7 +14457,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990368",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14509,7 +14509,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-ergaleion-mpatarias"
     ],
-    "price": 470.0,
+    "price": 470,
     "costPrice": 284.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -14610,7 +14610,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -14702,7 +14702,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493489",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 468.9,
     "costPrice": 321.75,
@@ -14717,7 +14717,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991053",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14832,7 +14832,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478503",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 464.97,
     "costPrice": 321.75,
@@ -14847,7 +14847,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990286",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14897,7 +14897,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459199",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-katsavidia-gypsosanidas"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 464.9,
     "costPrice": 359.25,
@@ -14912,7 +14912,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κατσαβίδια Γυψοσανίδας",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3900778",
       "supplierStock": "Διαθέσιμο"
     },
@@ -14935,7 +14935,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 2.0,
+    "weight": 2,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -14962,9 +14962,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478441",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-sidiropriona-tainias"
+      "cat-drapana-metalloy-prionia-pagkoy-tainias"
     ],
-    "price": 460.0,
+    "price": 460,
     "costPrice": 336.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -14977,7 +14977,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σιδηροπρίονα Ταινίας",
+      "category": "Δράπανα Μετάλλου & Πριόνια Πάγκου/Ταινίας",
       "supplierCode": "3990139",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15027,9 +15027,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492663",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chlookoptika-chortokoptika"
+      "cat-chlookoptika-michanes-gkazon"
     ],
-    "price": 460.0,
+    "price": 460,
     "costPrice": 299.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -15042,7 +15042,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χλοοκοπτικά / Χορτοκοπτικά",
+      "category": "Χλοοκοπτικά & Μηχανές Γκαζόν",
       "supplierCode": "3991067",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15157,7 +15157,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478834",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 457.18,
     "costPrice": 291.75,
@@ -15172,7 +15172,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990385",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15222,9 +15222,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498937",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
-    "price": 457.0,
+    "price": 457,
     "costPrice": 291.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -15237,7 +15237,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3991357",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15287,7 +15287,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499185",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 454.9,
     "costPrice": 321.75,
@@ -15302,7 +15302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3991089",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15417,9 +15417,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441814 4933441812",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-pistolia-silikonis"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
-    "price": 450.0,
+    "price": 450,
     "costPrice": 288.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -15432,7 +15432,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Πιστόλια Σιλικόνης",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3950067",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15547,7 +15547,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "3901714",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-katsavidia-gypsosanidas"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 449.9,
     "costPrice": 306.75,
@@ -15562,7 +15562,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κατσαβίδια Γυψοσανίδας",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3901714",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15677,9 +15677,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933500039",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
-    "price": 449.0,
+    "price": 449,
     "costPrice": 321.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -15692,7 +15692,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3991255",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15742,10 +15742,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459772 4933459773",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-pistolia-thermoy-aera"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
     "price": 446.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -15757,7 +15757,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πιστόλια Θερμού Αέρα",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -15780,7 +15780,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -15807,9 +15807,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441808",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-pistolia-silikonis"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
-    "price": 443.0,
+    "price": 443,
     "costPrice": 291.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -15822,7 +15822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Πιστόλια Σιλικόνης",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3950066",
       "supplierStock": "Διαθέσιμο"
     },
@@ -15872,7 +15872,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480961",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 442.98,
     "costPrice": 314.25,
@@ -15887,7 +15887,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990891",
       "supplierStock": "Διαθέσιμο"
     },
@@ -16132,7 +16132,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493588",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 437.9,
     "costPrice": 299.25,
@@ -16147,7 +16147,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991040",
       "supplierStock": "Διαθέσιμο"
     },
@@ -16262,7 +16262,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933447480",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 433.7,
     "costPrice": 276.75,
@@ -16277,7 +16277,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3902776",
       "supplierStock": "Διαθέσιμο"
     },
@@ -16327,7 +16327,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478099",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 433.5,
     "costPrice": 276.75,
@@ -16342,7 +16342,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990117",
       "supplierStock": "Διαθέσιμο"
     },
@@ -16394,7 +16394,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpataries-fortistes-ergaleion"
     ],
-    "price": 433.0,
+    "price": 433,
     "costPrice": 261.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -16430,7 +16430,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3818.0,
+    "weight": 3818,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -16459,7 +16459,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ilektrika-polyergaleia"
     ],
-    "price": 433.0,
+    "price": 433,
     "costPrice": 299.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -16522,9 +16522,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499295",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diafora-ergaleia-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
-    "price": 433.0,
+    "price": 433,
     "costPrice": 261.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -16537,7 +16537,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Διάφορα Εργαλεία Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3931279",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -16587,7 +16587,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933446800",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 432.98,
     "costPrice": 311.25,
@@ -16602,7 +16602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3900044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -16655,7 +16655,7 @@ export const initialProducts: Product[] = [
       "cat-seges-spathoseges"
     ],
     "price": 432.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -16690,7 +16690,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -16719,7 +16719,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-seges-spathoseges"
     ],
-    "price": 430.0,
+    "price": 430,
     "costPrice": 273.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -16847,7 +16847,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493136",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diafora-eidi-naytilias"
+      "cat-ilektronika-outdoor-axesoyar"
     ],
     "price": 429.25,
     "costPrice": 299.25,
@@ -16862,7 +16862,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Διάφορα Είδη Ναυτιλίας",
+      "category": "Ηλεκτρονικά Outdoor & Αξεσουάρ",
       "supplierCode": "3990994",
       "supplierStock": "Διαθέσιμο"
     },
@@ -16912,7 +16912,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498384",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-mporntoyras"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
     "price": 428.95,
     "costPrice": 276.75,
@@ -16927,7 +16927,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Μπορντούρας",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3991210",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -16950,7 +16950,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 6.0,
+    "weight": 6,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -16977,7 +16977,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464229",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 425.9,
     "costPrice": 299.25,
@@ -16992,7 +16992,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3902780",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17042,7 +17042,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479984",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 422.85,
     "costPrice": 269.25,
@@ -17057,7 +17057,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3928220",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17080,7 +17080,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -17107,9 +17107,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480955",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
-    "price": 420.0,
+    "price": 420,
     "costPrice": 254.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -17122,7 +17122,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990878",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17172,9 +17172,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441305",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-pistolia-silikonis"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
-    "price": 420.0,
+    "price": 420,
     "costPrice": 291.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -17187,7 +17187,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Πιστόλια Σιλικόνης",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3950045",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17302,7 +17302,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498026",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ekkinites-fortistes-mpatarias-aytokinitoy"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 419.9,
     "costPrice": 284.25,
@@ -17317,7 +17317,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εκκινητές & Φορτιστές Μπαταρίας Αυτοκινήτου",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3991266",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17367,9 +17367,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933472112",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-radiofona"
+      "cat-ilektronika-outdoor-axesoyar"
     ],
-    "price": 419.0,
+    "price": 419,
     "costPrice": 299.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -17382,7 +17382,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ραδιόφωνα",
+      "category": "Ηλεκτρονικά Outdoor & Αξεσουάρ",
       "supplierCode": "3990098",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17627,7 +17627,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479957",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 408.9,
     "costPrice": 284.25,
@@ -17642,7 +17642,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3927596",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17694,7 +17694,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
-    "price": 408.0,
+    "price": 408,
     "costPrice": 246.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -17757,7 +17757,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478888",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 402.99,
     "costPrice": 299.25,
@@ -17772,7 +17772,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990281",
       "supplierStock": "Διαθέσιμο"
     },
@@ -17887,7 +17887,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471461",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 400.9,
     "costPrice": 231.75,
@@ -17902,7 +17902,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3990068",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -17952,7 +17952,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471979",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 398.88,
     "costPrice": 277.5,
@@ -17967,7 +17967,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3926514",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18019,8 +18019,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-karydakia"
     ],
-    "price": 397.0,
-    "costPrice": 240.0,
+    "price": 397,
+    "costPrice": 240,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -18082,9 +18082,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933447935",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-zoympades"
+      "cat-penses-koftes-psalidia"
     ],
-    "price": 395.0,
+    "price": 395,
     "costPrice": 276.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -18097,7 +18097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια & Ζουμπάδες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3900480",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18212,7 +18212,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464405",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikoi-pritsinadoroi"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
     "price": 392.52,
     "costPrice": 269.25,
@@ -18227,7 +18227,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικοί Πριτσιναδόροι",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3902773",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18277,7 +18277,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479073",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 389.98,
     "costPrice": 276.75,
@@ -18292,7 +18292,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3990155",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18342,7 +18342,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492851",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 389.9,
     "costPrice": 261.75,
@@ -18357,7 +18357,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3990915",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18407,9 +18407,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441310 4933448759",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-pistolia-silikonis"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
-    "price": 387.0,
+    "price": 387,
     "costPrice": 276.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -18422,7 +18422,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Πιστόλια Σιλικόνης",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3900043",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18472,7 +18472,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480115",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
     "price": 384.98,
     "costPrice": 261.75,
@@ -18487,7 +18487,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3990924",
       "supplierStock": "Διαθέσιμο"
     },
@@ -18705,7 +18705,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 5.0,
+    "weight": 5,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -18929,7 +18929,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpataries-fortistes-ergaleion"
     ],
-    "price": 371.0,
+    "price": 371,
     "costPrice": 254.15,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -18992,9 +18992,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499113",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diafora-ergaleia-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
-    "price": 371.0,
+    "price": 371,
     "costPrice": 224.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -19007,7 +19007,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Διάφορα Εργαλεία Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3931278",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -19122,7 +19122,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498980",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 369.94,
     "costPrice": 261.75,
@@ -19137,7 +19137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3991257",
       "supplierStock": "Διαθέσιμο"
     },
@@ -19187,7 +19187,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499411",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikes-kastanies"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 368.9,
     "costPrice": 261.75,
@@ -19202,7 +19202,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικές Καστάνιες",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3991072",
       "supplierStock": "Διαθέσιμο"
     },
@@ -19382,7 +19382,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451117",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 365.79,
     "costPrice": 224.25,
@@ -19397,7 +19397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3900744",
       "supplierStock": "Διαθέσιμο"
     },
@@ -19550,7 +19550,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3.0,
+    "weight": 3,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -19579,7 +19579,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-karydakia"
     ],
-    "price": 360.0,
+    "price": 360,
     "costPrice": 217.5,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -19772,9 +19772,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479828",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
-    "price": 353.0,
+    "price": 353,
     "costPrice": 213.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -19787,7 +19787,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927669",
       "supplierStock": "Διαθέσιμο"
     },
@@ -19837,7 +19837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933443320",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 352.4,
     "costPrice": 224.25,
@@ -19852,7 +19852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3900450",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -19902,7 +19902,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492667",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 351.55,
     "costPrice": 224.25,
@@ -19917,7 +19917,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929506",
       "supplierStock": "Διαθέσιμο"
     },
@@ -19967,7 +19967,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499041",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 349.9,
     "costPrice": 254.25,
@@ -19982,7 +19982,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3931268",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -20032,7 +20032,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464589",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 349.9,
     "costPrice": 254.25,
@@ -20047,7 +20047,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3990066",
       "supplierStock": "Διαθέσιμο"
     },
@@ -20070,7 +20070,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 4.0,
+    "weight": 4,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -20162,7 +20162,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479985",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 348.9,
     "costPrice": 239.25,
@@ -20177,7 +20177,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3928221",
       "supplierStock": "Διαθέσιμο"
     },
@@ -20200,7 +20200,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -20227,7 +20227,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933396420",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 348.56,
     "costPrice": 261.75,
@@ -20242,7 +20242,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3900012",
       "supplierStock": "Διαθέσιμο"
     },
@@ -20359,7 +20359,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-kastanies-karydakia"
     ],
-    "price": 346.0,
+    "price": 346,
     "costPrice": 209.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -20554,7 +20554,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 341.0,
+    "price": 341,
     "costPrice": 206.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -20617,7 +20617,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459192",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 339.98,
     "costPrice": 266.25,
@@ -20632,7 +20632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3901792",
       "supplierStock": "Διαθέσιμο"
     },
@@ -20682,7 +20682,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471978",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 339.9,
     "costPrice": 236.25,
@@ -20697,7 +20697,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3926513",
       "supplierStock": "Διαθέσιμο"
     },
@@ -20747,7 +20747,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493488",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 339.5,
     "costPrice": 224.25,
@@ -20762,7 +20762,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3991062",
       "supplierStock": "Διαθέσιμο"
     },
@@ -20944,7 +20944,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-kastanies-karydakia"
     ],
-    "price": 334.0,
+    "price": 334,
     "costPrice": 201.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -21007,9 +21007,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493339",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
-    "price": 334.0,
+    "price": 334,
     "costPrice": 201.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -21022,7 +21022,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3929168",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21175,7 +21175,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -21202,7 +21202,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933446639",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-radiofona"
+      "cat-ilektronika-outdoor-axesoyar"
     ],
     "price": 331.5,
     "costPrice": 239.25,
@@ -21217,7 +21217,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ραδιόφωνα",
+      "category": "Ηλεκτρονικά Outdoor & Αξεσουάρ",
       "supplierCode": "3900498",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21267,9 +21267,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478098",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 331.0,
+    "price": 331,
     "costPrice": 243.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -21282,7 +21282,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990095",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21332,7 +21332,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479242",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 329.95,
     "costPrice": 224.25,
@@ -21347,7 +21347,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3990320",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21397,10 +21397,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464244",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 329.94,
-    "costPrice": 249.0,
+    "costPrice": 249,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -21412,7 +21412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3924003",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21462,7 +21462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498233",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 329.5,
     "costPrice": 224.25,
@@ -21477,7 +21477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3991048",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21527,9 +21527,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492662",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chlookoptika-chortokoptika"
+      "cat-chlookoptika-michanes-gkazon"
     ],
-    "price": 325.0,
+    "price": 325,
     "costPrice": 213.75,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -21542,7 +21542,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χλοοκοπτικά / Χορτοκοπτικά",
+      "category": "Χλοοκοπτικά & Μηχανές Γκαζόν",
       "supplierCode": "3991066",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21565,7 +21565,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3.0,
+    "weight": 3,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -21594,8 +21594,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ilektrika-polyergaleia"
     ],
-    "price": 325.0,
-    "costPrice": 210.0,
+    "price": 325,
+    "costPrice": 210,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -21659,7 +21659,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 325.0,
+    "price": 325,
     "costPrice": 201.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -21722,7 +21722,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933447799",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 324.45,
     "costPrice": 224.25,
@@ -21737,7 +21737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3900128",
       "supplierStock": "Διαθέσιμο"
     },
@@ -21760,7 +21760,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -21854,7 +21854,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 321.0,
+    "price": 321,
     "costPrice": 194.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -21982,9 +21982,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479640",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antlies-metaggisis"
+      "cat-antlies-neroy-metaggisis"
     ],
-    "price": 320.0,
+    "price": 320,
     "costPrice": 224.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -21997,7 +21997,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντλίες Μετάγγισης",
+      "category": "Αντλίες Νερού & Μετάγγισης",
       "supplierCode": "3990327",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22020,7 +22020,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 2.0,
+    "weight": 2,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -22047,9 +22047,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459635",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-karfotika"
+      "cat-ilektrika-karfotika-pritsinadoroi"
     ],
-    "price": 320.0,
+    "price": 320,
     "costPrice": 194.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -22062,7 +22062,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Καρφωτικά",
+      "category": "Ηλεκτρικά Καρφωτικά & Πριτσιναδόροι",
       "supplierCode": "3902722",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22112,9 +22112,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933383925",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
-    "price": 320.0,
+    "price": 320,
     "costPrice": 221.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -22127,7 +22127,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3930052",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22177,7 +22177,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471436",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 319.97,
     "costPrice": 221.25,
@@ -22192,7 +22192,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990006",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22242,7 +22242,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471355",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 319.9,
     "costPrice": 224.25,
@@ -22257,7 +22257,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3926515",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22372,10 +22372,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478558",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 317.48,
-    "costPrice": 216.0,
+    "costPrice": 216,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -22387,7 +22387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927278",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22437,7 +22437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478891",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 314.99,
     "costPrice": 224.25,
@@ -22452,7 +22452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990279",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22502,7 +22502,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492482",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 314.99,
     "costPrice": 224.25,
@@ -22517,7 +22517,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990959",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22632,7 +22632,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498633",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 312.99,
     "costPrice": 206.25,
@@ -22647,7 +22647,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3931019",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22697,10 +22697,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459798 4933459799",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikes-kastanies"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 311.95,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -22712,7 +22712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικές Καστάνιες",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -22735,7 +22735,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -22762,7 +22762,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480782",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psekastires"
+      "cat-tsekoyria-psekastires-potisma"
     ],
     "price": 310.05,
     "costPrice": 179.25,
@@ -22777,7 +22777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψεκαστήρες",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3990900",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22827,9 +22827,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471952",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 310.0,
+    "price": 310,
     "costPrice": 224.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -22842,7 +22842,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3990059",
       "supplierStock": "Διαθέσιμο"
     },
@@ -22892,9 +22892,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459341",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 309.0,
+    "price": 309,
     "costPrice": 186.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -22907,7 +22907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3901924",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -22930,7 +22930,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -23022,7 +23022,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479681",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 308.5,
     "costPrice": 216.75,
@@ -23037,7 +23037,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990358",
       "supplierStock": "Διαθέσιμο"
     },
@@ -23087,7 +23087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451552",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 306.36,
     "costPrice": 224.25,
@@ -23102,7 +23102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3901724",
       "supplierStock": "Διαθέσιμο"
     },
@@ -23152,7 +23152,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480740",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 305.9,
     "costPrice": 216.75,
@@ -23167,7 +23167,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3990890",
       "supplierStock": "Διαθέσιμο"
     },
@@ -23412,7 +23412,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933419134",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 304.95,
     "costPrice": 194.25,
@@ -23427,7 +23427,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3900431",
       "supplierStock": "Διαθέσιμο"
     },
@@ -23479,7 +23479,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-apofraktika-ergaleia"
     ],
-    "price": 302.0,
+    "price": 302,
     "costPrice": 216.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -23607,7 +23607,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451113",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 299.5,
     "costPrice": 201.75,
@@ -23622,7 +23622,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3900411",
       "supplierStock": "Διαθέσιμο"
     },
@@ -23740,7 +23740,7 @@ export const initialProducts: Product[] = [
       "cat-ergaleiothikes-me-ergaleia"
     ],
     "price": 295.6,
-    "costPrice": 174.0,
+    "costPrice": 174,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -23804,7 +23804,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-kastanies-karydakia"
     ],
-    "price": 295.0,
+    "price": 295,
     "costPrice": 186.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -23867,9 +23867,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933447925",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-zoympades"
+      "cat-penses-koftes-psalidia"
     ],
-    "price": 295.0,
+    "price": 295,
     "costPrice": 206.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -23882,7 +23882,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια & Ζουμπάδες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3901756",
       "supplierStock": "Διαθέσιμο"
     },
@@ -23932,7 +23932,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498253",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 294.9,
     "costPrice": 201.75,
@@ -23947,7 +23947,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3991126",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -24062,7 +24062,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459719",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mpetonieres"
+      "cat-michanimata-epexergasias-domikon-ylikon-xyloy-skyrodematos"
     ],
     "price": 292.9,
     "costPrice": 186.75,
@@ -24077,7 +24077,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μπετονιέρες",
+      "category": "Μηχανήματα Επεξεργασίας Δομικών Υλικών, Ξύλου & Σκυροδέματος",
       "supplierCode": "3903030",
       "supplierStock": "Διαθέσιμο"
     },
@@ -24127,9 +24127,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493633",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
-    "price": 291.0,
+    "price": 291,
     "costPrice": 176.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -24142,7 +24142,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3929153",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -24322,9 +24322,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478161",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mpaoyla-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
-    "price": 287.0,
+    "price": 287,
     "costPrice": 206.25,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -24337,7 +24337,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μπαούλα Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3927290",
       "supplierStock": "Διαθέσιμο"
     },
@@ -24425,7 +24425,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 5.0,
+    "weight": 5,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -24584,7 +24584,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-metafora-anypsosi-fortion"
     ],
-    "price": 280.0,
+    "price": 280,
     "costPrice": 186.75,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -24647,7 +24647,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478187",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 279.99,
     "costPrice": 201.75,
@@ -24662,7 +24662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3990110",
       "supplierStock": "Διαθέσιμο"
     },
@@ -24714,7 +24714,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-eidika-ilektrika-ergaleia"
     ],
-    "price": 279.0,
+    "price": 279,
     "costPrice": 209.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -24842,9 +24842,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498965",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-psekastires"
+      "cat-tsekoyria-psekastires-potisma"
     ],
-    "price": 275.0,
+    "price": 275,
     "costPrice": 149.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -24857,7 +24857,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Ψεκαστήρες",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3991243",
       "supplierStock": "Διαθέσιμο"
     },
@@ -24907,7 +24907,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492850",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-frezes-planes"
+      "cat-frezes-planes-faltsopriona"
     ],
     "price": 274.9,
     "costPrice": 179.25,
@@ -24922,7 +24922,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φρέζες & Πλάνες",
+      "category": "Φρέζες, Πλάνες & Φαλτσοπρίονα",
       "supplierCode": "3990914",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25037,7 +25037,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478648",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-forita-psygeia"
+      "cat-forita-psygeia-isothermikes-tsantes"
     ],
     "price": 273.9,
     "costPrice": 187.5,
@@ -25052,7 +25052,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φορητά Ψυγεία",
+      "category": "Φορητά Ψυγεία & Ισοθερμικές Τσάντες",
       "supplierCode": "3927848",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25102,7 +25102,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933499183",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 273.9,
     "costPrice": 194.25,
@@ -25117,7 +25117,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3991100",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25167,7 +25167,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441670",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-pistolia-silikonis"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
     "price": 271.45,
     "costPrice": 194.25,
@@ -25182,7 +25182,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Πιστόλια Σιλικόνης",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3900135",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25362,7 +25362,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441655",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-pistolia-silikonis"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
     "price": 269.55,
     "costPrice": 186.75,
@@ -25377,7 +25377,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Πιστόλια Σιλικόνης",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3950068",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25427,7 +25427,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933471494",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antlies-metaggisis"
+      "cat-antlies-neroy-metaggisis"
     ],
     "price": 269.5,
     "costPrice": 198.75,
@@ -25442,7 +25442,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντλίες Μετάγγισης",
+      "category": "Αντλίες Νερού & Μετάγγισης",
       "supplierCode": "3990329",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25492,7 +25492,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480790",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikes-kastanies"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 269.4,
     "costPrice": 171.75,
@@ -25507,7 +25507,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικές Καστάνιες",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3990895",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25622,7 +25622,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479676",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-mporntoyras"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
     "price": 266.95,
     "costPrice": 186.75,
@@ -25637,7 +25637,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Μπορντούρας",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3990322",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25687,7 +25687,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933411760",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona-metalloy"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 264.95,
     "costPrice": 179.25,
@@ -25702,7 +25702,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα Μετάλλου",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3900005",
       "supplierStock": "Διαθέσιμο"
     },
@@ -25725,7 +25725,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 18.0,
+    "weight": 18,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -25755,7 +25755,7 @@ export const initialProducts: Product[] = [
       "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
     "price": 264.89,
-    "costPrice": 188.0,
+    "costPrice": 188,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -25947,9 +25947,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498964",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psekastires"
+      "cat-tsekoyria-psekastires-potisma"
     ],
-    "price": 260.0,
+    "price": 260,
     "costPrice": 164.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -25962,7 +25962,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψεκαστήρες",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3991247",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26015,7 +26015,7 @@ export const initialProducts: Product[] = [
       "cat-goniakoi-trochoi"
     ],
     "price": 259.95,
-    "costPrice": 180.0,
+    "costPrice": 180,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -26077,7 +26077,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498634",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 259.9,
     "costPrice": 171.75,
@@ -26092,7 +26092,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3931020",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26207,7 +26207,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430478",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 256.5,
     "costPrice": 179.4,
@@ -26222,7 +26222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3921370",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26245,7 +26245,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3.0,
+    "weight": 3,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -26467,7 +26467,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492668",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 249.7,
     "costPrice": 134.25,
@@ -26482,7 +26482,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3929672",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26532,7 +26532,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "030250",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana"
+      "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
     "price": 248.99,
     "costPrice": 171.75,
@@ -26547,7 +26547,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα",
+      "category": "Δραπανοκατσάβιδα & Ηλεκτρικά Κατσαβίδια",
       "supplierCode": "3930006",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -26570,7 +26570,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 2.0,
+    "weight": 2,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -26597,7 +26597,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933419225",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskopriona"
+      "cat-diskopriona-xyloy-metalloy"
     ],
     "price": 247.88,
     "costPrice": 186.75,
@@ -26612,7 +26612,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δισκοπρίονα",
+      "category": "Δισκοπρίονα (Ξύλου & Μετάλλου)",
       "supplierCode": "3900187",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26662,9 +26662,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459201",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-katsavidia-gypsosanidas"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
-    "price": 247.0,
+    "price": 247,
     "costPrice": 186.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -26677,7 +26677,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κατσαβίδια Γυψοσανίδας",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3900796",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26727,7 +26727,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933441720",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrikes-kastanies"
+      "cat-eidika-vidomata-gypsosanidas-kastanies"
     ],
     "price": 246.65,
     "costPrice": 171.75,
@@ -26742,7 +26742,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικές Καστάνιες",
+      "category": "Ειδικά Βιδώματα (Γυψοσανίδας / Καστάνιες)",
       "supplierCode": "3900745",
       "supplierStock": "Διαθέσιμο"
     },
@@ -26857,9 +26857,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493927",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleioforoi"
+      "cat-ergaleioforoi-syrtarieres"
     ],
-    "price": 245.0,
+    "price": 245,
     "costPrice": 186.75,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -26872,7 +26872,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλειοφόροι",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3929189",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -26922,7 +26922,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493623",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 239.9,
     "costPrice": 176.25,
@@ -26937,7 +26937,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3929507",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27117,10 +27117,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493189",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syrtarieres-ergaleiothikes"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 235.53,
-    "costPrice": 174.0,
+    "costPrice": 174,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -27132,7 +27132,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Συρταριέρες Εργαλειοθήκες",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3929158",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27184,7 +27184,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 235.0,
+    "price": 235,
     "costPrice": 149.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -27247,7 +27247,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492666",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 234.2,
     "costPrice": 149.25,
@@ -27262,7 +27262,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3929514",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27314,7 +27314,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
-    "price": 234.0,
+    "price": 234,
     "costPrice": 141.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -27379,7 +27379,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-goniakoi-trochoi"
     ],
-    "price": 234.0,
+    "price": 234,
     "costPrice": 141.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -27442,9 +27442,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459292",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
-    "price": 234.0,
+    "price": 234,
     "costPrice": 113.4,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -27457,7 +27457,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3901838",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27507,7 +27507,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48899266",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 227.9,
     "costPrice": 155.4,
@@ -27522,7 +27522,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3924427",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27572,7 +27572,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933419595",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana"
+      "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
     "price": 225.45,
     "costPrice": 156.75,
@@ -27587,7 +27587,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα",
+      "category": "Δραπανοκατσάβιδα & Ηλεκτρικά Κατσαβίδια",
       "supplierCode": "3984520",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27610,7 +27610,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 3.0,
+    "weight": 3,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -27637,7 +27637,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478753",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia-laser"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 224.99,
     "costPrice": 149.25,
@@ -27652,7 +27652,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια Laser",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3990349",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27702,7 +27702,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464994",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 224.9,
     "costPrice": 155.4,
@@ -27717,7 +27717,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926554",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27767,7 +27767,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498232",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 222.9,
     "costPrice": 149.25,
@@ -27782,7 +27782,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3991047",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27834,7 +27834,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 222.0,
+    "price": 222,
     "costPrice": 134.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -27897,9 +27897,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498721",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kolaoyza-filieres"
+      "cat-kolaoyza-filieres-apogrezotes"
     ],
-    "price": 222.0,
+    "price": 222,
     "costPrice": 134.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -27912,7 +27912,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κολαούζα & Φιλιέρες",
+      "category": "Κολαούζα, Φιλιέρες & Απογρεζωτές",
       "supplierCode": "3931198",
       "supplierStock": "Διαθέσιμο"
     },
@@ -27962,7 +27962,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493190",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syrtarieres-ergaleiothikes"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 220.48,
     "costPrice": 164.25,
@@ -27977,7 +27977,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Συρταριέρες Εργαλειοθήκες",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3929159",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28027,9 +28027,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478509",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 220.0,
+    "price": 220,
     "costPrice": 156.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -28042,7 +28042,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3990289",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28092,7 +28092,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933416976",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psifiaka-polymetra"
+      "cat-polymetra-anichneytes-tasis"
     ],
     "price": 219.99,
     "costPrice": 156.75,
@@ -28107,7 +28107,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψηφιακά Πολύμετρα",
+      "category": "Πολύμετρα & Ανιχνευτές Τάσης",
       "supplierCode": "3900026",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28157,7 +28157,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478508",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 218.98,
     "costPrice": 149.25,
@@ -28172,7 +28172,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3990282",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28287,10 +28287,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459895",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 214.9,
-    "costPrice": 138.0,
+    "costPrice": 138,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -28302,7 +28302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924014",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -28354,7 +28354,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
-    "price": 214.0,
+    "price": 214,
     "costPrice": 123.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -28390,7 +28390,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -28482,7 +28482,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479680",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 212.9,
     "costPrice": 141.75,
@@ -28497,7 +28497,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3990357",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28679,7 +28679,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-fysitires-aporrofitires-kipoy"
     ],
-    "price": 210.0,
+    "price": 210,
     "costPrice": 126.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -28692,7 +28692,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3991295",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28744,7 +28744,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 210.0,
+    "price": 210,
     "costPrice": 126.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -28807,7 +28807,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464029",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypes-ygron-stereon"
+      "cat-skoypes-skoypakia"
     ],
     "price": 209.9,
     "costPrice": 141.75,
@@ -28822,7 +28822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούπες Υγρών Στερεών",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3902729",
       "supplierStock": "Διαθέσιμο"
     },
@@ -28845,7 +28845,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 6.0,
+    "weight": 6,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -28937,7 +28937,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479241",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 208.99,
     "costPrice": 156.75,
@@ -28952,7 +28952,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3990319",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29002,7 +29002,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492496",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 208.9,
     "costPrice": 149.4,
@@ -29017,7 +29017,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3929445",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29132,7 +29132,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459771",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-pistolia-thermoy-aera"
+      "cat-pistolia-thermoy-aera-silikonis"
     ],
     "price": 207.95,
     "costPrice": 141.75,
@@ -29147,7 +29147,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πιστόλια Θερμού Αέρα",
+      "category": "Πιστόλια Θερμού Αέρα & Σιλικόνης",
       "supplierCode": "3902721",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29262,9 +29262,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464957",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
-    "price": 205.0,
+    "price": 205,
     "costPrice": 141.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -29277,7 +29277,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3925010",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29327,7 +29327,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933447791",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-aloifadoroi"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 204.73,
     "costPrice": 141.75,
@@ -29342,7 +29342,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλοιφαδόροι",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3901730",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -29457,7 +29457,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459278",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metra-laser"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 204.5,
     "costPrice": 149.25,
@@ -29472,7 +29472,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μέτρα Laser",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3901796",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29522,7 +29522,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933492344",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-radiofona"
+      "cat-ilektronika-outdoor-axesoyar"
     ],
     "price": 199.96,
     "costPrice": 179.25,
@@ -29537,7 +29537,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ραδιόφωνα",
+      "category": "Ηλεκτρονικά Outdoor & Αξεσουάρ",
       "supplierCode": "3990990",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29587,7 +29587,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933480738",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-endoskopikes-kameres"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 199.95,
     "costPrice": 141.75,
@@ -29602,7 +29602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ενδοσκοπικές Κάμερες",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3990888",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29652,7 +29652,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479986",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 198.55,
     "costPrice": 126.75,
@@ -29667,7 +29667,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3927907",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29717,7 +29717,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464228",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 197.75,
     "costPrice": 146.25,
@@ -29732,7 +29732,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3902779",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29782,9 +29782,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499086",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-polygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
-    "price": 197.0,
+    "price": 197,
     "costPrice": 119.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -29797,7 +29797,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Πολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3930720",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29820,7 +29820,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 2.0,
+    "weight": 2,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -29847,7 +29847,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478186",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypakia-cheiros"
+      "cat-skoypes-skoypakia"
     ],
     "price": 196.95,
     "costPrice": 141.75,
@@ -29862,7 +29862,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκουπάκια Χειρός",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3990111",
       "supplierStock": "Διαθέσιμο"
     },
@@ -29912,7 +29912,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464959",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 194.5,
     "costPrice": 134.25,
@@ -29927,7 +29927,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3925013",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30042,7 +30042,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472130",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syrtarieres-ergaleiothikes"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 191.79,
     "costPrice": 141.75,
@@ -30057,7 +30057,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Συρταριέρες Εργαλειοθήκες",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3986165",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30237,7 +30237,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933500788",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-skoypakia-cheiros"
+      "cat-skoypes-skoypakia"
     ],
     "price": 188.9,
     "costPrice": 119.25,
@@ -30252,7 +30252,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Σκουπάκια Χειρός",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3991353",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30367,7 +30367,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459761",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kollitiria"
+      "cat-eidika-ilektrika-ergaleia"
     ],
     "price": 186.99,
     "costPrice": 134.25,
@@ -30382,7 +30382,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κολλητήρια",
+      "category": "Ειδικά Ηλεκτρικά Εργαλεία",
       "supplierCode": "3902727",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30432,7 +30432,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459761",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kollitiria"
+      "cat-eidika-ilektrika-ergaleia"
     ],
     "price": 186.99,
     "costPrice": 134.25,
@@ -30447,7 +30447,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κολλητήρια",
+      "category": "Ειδικά Ηλεκτρικά Εργαλεία",
       "supplierCode": "3902727",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30627,10 +30627,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493622",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 184.9,
-    "costPrice": 135.0,
+    "costPrice": 135,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -30642,7 +30642,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3929516",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30692,7 +30692,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480623",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 184.3,
     "costPrice": 134.625,
@@ -30707,7 +30707,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3927985",
       "supplierStock": "Διαθέσιμο"
     },
@@ -30757,10 +30757,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933409206",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana"
+      "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
     "price": 183.98,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -30772,7 +30772,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα",
+      "category": "Δραπανοκατσάβιδα & Ηλεκτρικά Κατσαβίδια",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -30795,7 +30795,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -30952,7 +30952,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459075",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 178.8,
     "costPrice": 109.2,
@@ -30967,7 +30967,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900881",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -31017,7 +31017,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472129",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syrtarieres-ergaleiothikes"
+      "cat-ergaleioforoi-syrtarieres"
     ],
     "price": 177.99,
     "costPrice": 126.75,
@@ -31032,7 +31032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Συρταριέρες Εργαλειοθήκες",
+      "category": "Εργαλειοφόροι & Συρταριέρες",
       "supplierCode": "3986166",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31082,7 +31082,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478706",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trompes-aytokinitoy"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 177.5,
     "costPrice": 123.75,
@@ -31097,7 +31097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρόμπες Αυτοκινήτου",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3990333",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31147,7 +31147,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464958",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 175.5,
     "costPrice": 111.75,
@@ -31162,7 +31162,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3925096",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31342,7 +31342,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464078",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mpaoyla-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 172.27,
     "costPrice": 134.25,
@@ -31357,7 +31357,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μπαούλα Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3924029",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31409,7 +31409,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 172.0,
+    "price": 172,
     "costPrice": 104.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -31537,9 +31537,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498626",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-psalidia-koryfis-kontaropsalida"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
-    "price": 169.0,
+    "price": 169,
     "costPrice": 95.4,
     "vatRate": 0.13,
     "stockQuantity": 1,
@@ -31552,7 +31552,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Ψαλίδια Κορυφής (Κονταροψάλιδα)",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3931581",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31667,7 +31667,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459204",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypakia-cheiros"
+      "cat-skoypes-skoypakia"
     ],
     "price": 167.85,
     "costPrice": 111.75,
@@ -31682,7 +31682,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκουπάκια Χειρός",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3900780",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31734,7 +31734,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-katsavidia-cheiros"
     ],
-    "price": 167.0,
+    "price": 167,
     "costPrice": 101.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -31797,7 +31797,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464580",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 166.99,
     "costPrice": 131.25,
@@ -31812,7 +31812,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3902877",
       "supplierStock": "Διαθέσιμο"
     },
@@ -31862,7 +31862,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933427315",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-amperotsimpides"
+      "cat-polymetra-anichneytes-tasis"
     ],
     "price": 166.88,
     "costPrice": 108.75,
@@ -31877,7 +31877,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αμπεροτσιμπίδες",
+      "category": "Πολύμετρα & Ανιχνευτές Τάσης",
       "supplierCode": "3900712",
       "supplierStock": "Διαθέσιμο"
     },
@@ -32007,7 +32007,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3991267",
       "supplierStock": "Διαθέσιμο"
     },
@@ -32122,7 +32122,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493591",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trochoi-aeros"
+      "cat-sympiestes-ergaleia-aeros"
     ],
     "price": 162.89,
     "costPrice": 119.25,
@@ -32137,7 +32137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τροχοί Αέρος",
+      "category": "Συμπιεστές & Εργαλεία Αέρος",
       "supplierCode": "3990978",
       "supplierStock": "Διαθέσιμο"
     },
@@ -32187,9 +32187,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493628",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diafora-ergaleia-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
-    "price": 160.0,
+    "price": 160,
     "costPrice": 96.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -32202,7 +32202,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Διάφορα Εργαλεία Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3929146",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -32254,7 +32254,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 160.0,
+    "price": 160,
     "costPrice": 96.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -32382,10 +32382,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459894",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 159.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -32397,7 +32397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -32420,7 +32420,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -32447,7 +32447,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932501784",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 156.49,
     "costPrice": 108.75,
@@ -32462,7 +32462,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3931588",
       "supplierStock": "Διαθέσιμο"
     },
@@ -32512,7 +32512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933416550",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 156.17,
     "costPrice": 108.75,
@@ -32527,7 +32527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3950031",
       "supplierStock": "Διαθέσιμο"
     },
@@ -32644,7 +32644,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-zones-thikes-ergaleion"
     ],
-    "price": 155.0,
+    "price": 155,
     "costPrice": 93.75,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -32707,10 +32707,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459074",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 155.0,
-    "costPrice": 96.0,
+    "price": 155,
+    "costPrice": 96,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -32722,7 +32722,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900892",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -32772,9 +32772,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430467",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 155.0,
+    "price": 155,
     "costPrice": 93.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -32787,7 +32787,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3950091",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -32837,7 +32837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493246",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-axesoyar-syskeyon-katharismoy"
+      "cat-axesoyar-antallaktika-katharismoy"
     ],
     "price": 154.9,
     "costPrice": 104.25,
@@ -32852,7 +32852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα & Αξεσουάρ Συσκευών Καθαρισμού",
+      "category": "Αξεσουάρ & Ανταλλακτικά Καθαρισμού",
       "supplierCode": "3930232",
       "supplierStock": "Διαθέσιμο"
     },
@@ -32967,7 +32967,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464581",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skaptika-diatritika"
+      "cat-skaptika-diatritika-karotieres"
     ],
     "price": 152.55,
     "costPrice": 111.75,
@@ -32982,7 +32982,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαπτικά & Διατρητικά",
+      "category": "Σκαπτικά, Διατρητικά & Καροτιέρες",
       "supplierCode": "3990338",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33032,7 +33032,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471722",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-forita-psygeia"
+      "cat-forita-psygeia-isothermikes-tsantes"
     ],
     "price": 151.58,
     "costPrice": 96.75,
@@ -33047,7 +33047,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φορητά Ψυγεία",
+      "category": "Φορητά Ψυγεία & Ισοθερμικές Τσάντες",
       "supplierCode": "3985091",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33162,7 +33162,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464955",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-polyergaleion-kipoy"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 149.85,
     "costPrice": 104.25,
@@ -33177,7 +33177,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Πολυεργαλείων Κήπου",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3925011",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33230,7 +33230,7 @@ export const initialProducts: Product[] = [
       "cat-set-kastanies-karydakia"
     ],
     "price": 148.9,
-    "costPrice": 90.0,
+    "costPrice": 90,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -33292,7 +33292,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478557",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 147.9,
     "costPrice": 101.4,
@@ -33307,7 +33307,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927277",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33359,7 +33359,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
-    "price": 147.0,
+    "price": 147,
     "costPrice": 104.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -33422,10 +33422,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459073",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 146.8,
-    "costPrice": 96.0,
+    "costPrice": 96,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -33437,7 +33437,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900880",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33489,7 +33489,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
-    "price": 145.0,
+    "price": 145,
     "costPrice": 96.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -33552,9 +33552,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493250",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
-    "price": 145.0,
+    "price": 145,
     "costPrice": 108.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -33567,7 +33567,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928173",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33617,9 +33617,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430005",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 145.0,
+    "price": 145,
     "costPrice": 87.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -33632,7 +33632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3900223",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33785,7 +33785,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 6.0,
+    "weight": 6,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -33812,10 +33812,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471130",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 144.47,
-    "costPrice": 108.0,
+    "costPrice": 108,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -33827,7 +33827,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3925008",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33877,7 +33877,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471131",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 143.99,
     "costPrice": 104.925,
@@ -33892,7 +33892,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3925009",
       "supplierStock": "Διαθέσιμο"
     },
@@ -33942,7 +33942,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933411920",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 142.99,
     "costPrice": 101.25,
@@ -33957,7 +33957,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3900062",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34072,7 +34072,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478162",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mpaoyla-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 142.28,
     "costPrice": 102.75,
@@ -34087,7 +34087,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μπαούλα Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3936387",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34137,10 +34137,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459071",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 139.99,
-    "costPrice": 93.0,
+    "costPrice": 93,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -34152,7 +34152,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900879",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -34267,10 +34267,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459072",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 139.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -34282,7 +34282,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -34305,7 +34305,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -34397,7 +34397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933433180",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ilektrika-triveia"
+      "cat-ilektrika-triveia-aloifadoroi"
     ],
     "price": 138.99,
     "costPrice": 104.25,
@@ -34412,7 +34412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ηλεκτρικά Τριβεία",
+      "category": "Ηλεκτρικά Τριβεία & Αλοιφαδόροι",
       "supplierCode": "3970007",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34462,7 +34462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498433",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-forita-icheia-bluetooth"
+      "cat-ilektronika-outdoor-axesoyar"
     ],
     "price": 138.9,
     "costPrice": 96.75,
@@ -34477,7 +34477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φορητά Ηχεία Bluetooth",
+      "category": "Ηλεκτρονικά Outdoor & Αξεσουάρ",
       "supplierCode": "3991198",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34672,7 +34672,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3900168",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34722,9 +34722,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493634",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
-    "price": 135.0,
+    "price": 135,
     "costPrice": 81.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -34737,7 +34737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3929151",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -34787,7 +34787,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498720",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kolaoyza-filieres"
+      "cat-kolaoyza-filieres-apogrezotes"
     ],
     "price": 134.35,
     "costPrice": 77.4,
@@ -34802,7 +34802,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κολαούζα & Φιλιέρες",
+      "category": "Κολαούζα, Φιλιέρες & Απογρεζωτές",
       "supplierCode": "3931382",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34852,7 +34852,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430468",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 131.1,
     "costPrice": 93.75,
@@ -34867,7 +34867,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3950092",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -34917,9 +34917,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478965",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 130.0,
+    "price": 130,
     "costPrice": 78.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -34932,7 +34932,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927622",
       "supplierStock": "Διαθέσιμο"
     },
@@ -34985,7 +34985,7 @@ export const initialProducts: Product[] = [
       "cat-set-kastanies-karydakia"
     ],
     "price": 129.5,
-    "costPrice": 81.0,
+    "costPrice": 81,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -35085,7 +35085,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -35150,7 +35150,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -35177,7 +35177,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498323",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 127.23,
     "costPrice": 89.25,
@@ -35192,7 +35192,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3931024",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35242,7 +35242,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464086",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 125.98,
     "costPrice": 95.25,
@@ -35257,7 +35257,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924012",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35307,10 +35307,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464258",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 125.89,
-    "costPrice": 87.0,
+    "costPrice": 87,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -35322,7 +35322,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3924329",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35372,7 +35372,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933451906",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermometra-laser-yperythron"
+      "cat-endoskopikes-kameres-thermometra"
     ],
     "price": 123.99,
     "costPrice": 89.25,
@@ -35387,7 +35387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμόμετρα Laser/Υπερύθρων",
+      "category": "Ενδοσκοπικές Κάμερες & Θερμόμετρα",
       "supplierCode": "3900741",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35437,7 +35437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933498148",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 123.9,
     "costPrice": 89.25,
@@ -35452,7 +35452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3991064",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35504,7 +35504,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 123.0,
+    "price": 123,
     "costPrice": 74.25,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -35567,7 +35567,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459070",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 121.3,
     "costPrice": 79.2,
@@ -35582,7 +35582,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900890",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35632,7 +35632,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464079",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 120.5,
     "costPrice": 88.125,
@@ -35647,7 +35647,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924022",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35712,7 +35712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φυσητήρες / Απορροφητήρες Κήπου",
+      "category": "Φυσητήρες & Απορροφητήρες Κήπου",
       "supplierCode": "3990198",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35762,7 +35762,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459089",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 119.9,
     "costPrice": 71.4,
@@ -35777,7 +35777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903957",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35827,10 +35827,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459277",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metra-laser"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 117.45,
-    "costPrice": 84.0,
+    "costPrice": 84,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -35842,7 +35842,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μέτρα Laser",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900905",
       "supplierStock": "Διαθέσιμο"
     },
@@ -35892,7 +35892,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48899265",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 115.99,
     "costPrice": 77.4,
@@ -35907,7 +35907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3924428",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -36025,7 +36025,7 @@ export const initialProducts: Product[] = [
       "cat-set-kastanies-karydakia"
     ],
     "price": 114.9,
-    "costPrice": 69.0,
+    "costPrice": 69,
     "vatRate": 0.24,
     "stockQuantity": 3,
     "lowStockThreshold": 1,
@@ -36087,7 +36087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464085",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 113.99,
     "costPrice": 86.25,
@@ -36102,7 +36102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924011",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36152,7 +36152,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459760",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kollitiria"
+      "cat-eidika-ilektrika-ergaleia"
     ],
     "price": 113.99,
     "costPrice": 78.75,
@@ -36167,7 +36167,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κολλητήρια",
+      "category": "Ειδικά Ηλεκτρικά Εργαλεία",
       "supplierCode": "3902755",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36217,7 +36217,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933431955",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-drapana"
+      "cat-drapanokatsavida-ilektrika-katsavidia"
     ],
     "price": 113.88,
     "costPrice": 78.75,
@@ -36232,7 +36232,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δράπανα",
+      "category": "Δραπανοκατσάβιδα & Ηλεκτρικά Κατσαβίδια",
       "supplierCode": "3900125",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36282,7 +36282,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464124",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trompes-aytokinitoy"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 112.8,
     "costPrice": 78.75,
@@ -36297,7 +36297,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρόμπες Αυτοκινήτου",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3902731",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36347,7 +36347,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464833",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 110.49,
     "costPrice": 81.75,
@@ -36362,7 +36362,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3926626",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36414,7 +36414,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-ergaleiothikes-me-ergaleia"
     ],
-    "price": 110.0,
+    "price": 110,
     "costPrice": 66.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -36477,10 +36477,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472119",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-atsalines-ilektrologoy"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 109.9,
-    "costPrice": 69.0,
+    "costPrice": 69,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -36492,7 +36492,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ατσαλίνες Ηλεκτρολόγου",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3926566",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36607,10 +36607,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459069",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 108.5,
-    "costPrice": 72.0,
+    "costPrice": 72,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -36622,7 +36622,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900878",
       "supplierStock": "Διαθέσιμο"
     },
@@ -36674,7 +36674,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -36739,7 +36739,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -36804,7 +36804,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -36840,7 +36840,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -36869,7 +36869,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -36905,7 +36905,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -36934,7 +36934,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -36970,7 +36970,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -36999,7 +36999,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -37035,7 +37035,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -37064,7 +37064,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -37129,7 +37129,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 108.0,
+    "price": 108,
     "costPrice": 65.175,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -37165,7 +37165,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -37257,7 +37257,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478226",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 105.59,
     "costPrice": 76.5,
@@ -37272,7 +37272,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990102",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37325,7 +37325,7 @@ export const initialProducts: Product[] = [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
     "price": 103.99,
-    "costPrice": 69.0,
+    "costPrice": 69,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -37337,7 +37337,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3930414",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37387,7 +37387,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479963",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 103.98,
     "costPrice": 66.75,
@@ -37402,7 +37402,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990378",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37452,7 +37452,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479898",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 102.98,
     "costPrice": 69.75,
@@ -37467,7 +37467,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3927963",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37532,7 +37532,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3926624",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37582,7 +37582,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478112",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 102.58,
     "costPrice": 66.75,
@@ -37597,7 +37597,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990060",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37647,10 +37647,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459893",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 102.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -37662,7 +37662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -37685,7 +37685,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -37712,7 +37712,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479488",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-koptika-frezes"
+      "cat-lames-segas-koptika"
     ],
     "price": 102.37,
     "costPrice": 65.4,
@@ -37727,7 +37727,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κοπτικά & Φρέζες",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3927953",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -37777,7 +37777,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479766",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 101.99,
     "costPrice": 66.75,
@@ -37792,7 +37792,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990272",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37842,7 +37842,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933448390",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoypakia-cheiros"
+      "cat-skoypes-skoypakia"
     ],
     "price": 101.98,
     "costPrice": 72.75,
@@ -37857,7 +37857,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκουπάκια Χειρός",
+      "category": "Σκούπες & Σκουπάκια",
       "supplierCode": "3940013",
       "supplierStock": "Διαθέσιμο"
     },
@@ -37972,7 +37972,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464993",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 100.99,
     "costPrice": 69.3,
@@ -37987,7 +37987,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926553",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38037,7 +38037,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471067",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 100.79,
     "costPrice": 74.25,
@@ -38052,7 +38052,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924433",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38102,7 +38102,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479767",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 99.9,
     "costPrice": 69.75,
@@ -38117,7 +38117,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990275",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38232,7 +38232,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459067",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 98.9,
     "costPrice": 65.4,
@@ -38247,7 +38247,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900877",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38297,7 +38297,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500309",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 98.83,
     "costPrice": 74.25,
@@ -38312,7 +38312,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3931425",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38362,7 +38362,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459088",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 98.5,
     "costPrice": 59.94,
@@ -38377,7 +38377,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924320",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38465,7 +38465,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -38557,7 +38557,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479656",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 97.9,
     "costPrice": 59.4,
@@ -38572,7 +38572,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928058",
       "supplierStock": "Διαθέσιμο"
     },
@@ -38624,7 +38624,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 97.0,
+    "price": 97,
     "costPrice": 58.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -38689,8 +38689,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 97.0,
-    "costPrice": 0.0,
+    "price": 97,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -38725,7 +38725,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -38754,7 +38754,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 97.0,
+    "price": 97,
     "costPrice": 58.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -38819,7 +38819,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 97.0,
+    "price": 97,
     "costPrice": 58.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -38884,7 +38884,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 97.0,
+    "price": 97,
     "costPrice": 58.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -39012,7 +39012,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459068",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 96.8,
     "costPrice": 64.2,
@@ -39027,7 +39027,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900889",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39145,7 +39145,7 @@ export const initialProducts: Product[] = [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
     "price": 95.9,
-    "costPrice": 63.0,
+    "costPrice": 63,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -39157,7 +39157,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903970",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39222,7 +39222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3928871",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -39272,7 +39272,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471863",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 94.68,
     "costPrice": 65.4,
@@ -39287,7 +39287,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926153",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -39402,10 +39402,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229253",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 92.99,
-    "costPrice": 63.0,
+    "costPrice": 63,
     "vatRate": 0.24,
     "stockQuantity": 3,
     "lowStockThreshold": 1,
@@ -39417,7 +39417,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3904976",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39467,7 +39467,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471723",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 92.9,
     "costPrice": 66.75,
@@ -39482,7 +39482,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3926622",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39532,7 +39532,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498677",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-torx"
+      "cat-kleidia-allen-torx"
     ],
     "price": 92.9,
     "costPrice": 53.94,
@@ -39547,7 +39547,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Torx",
+      "category": "Κλειδιά Allen & Torx",
       "supplierCode": "3931385",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39600,7 +39600,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 91.96,
-    "costPrice": 57.0,
+    "costPrice": 57,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -39662,7 +39662,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464080",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 89.9,
     "costPrice": 67.125,
@@ -39677,7 +39677,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924019",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39727,7 +39727,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933479765",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 89.39,
     "costPrice": 61.125,
@@ -39742,7 +39742,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990274",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39794,7 +39794,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-kastanies-karydakia"
     ],
-    "price": 89.0,
+    "price": 89,
     "costPrice": 59.4,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -39857,7 +39857,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459087",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 88.5,
     "costPrice": 53.34,
@@ -39872,7 +39872,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903956",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39922,7 +39922,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498625",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-makries-psalides-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
     "price": 87.9,
     "costPrice": 47.4,
@@ -39937,7 +39937,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μακριές Ψαλίδες Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3931295",
       "supplierStock": "Διαθέσιμο"
     },
@@ -39987,10 +39987,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459065",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 86.99,
-    "costPrice": 57.0,
+    "costPrice": 57,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -40002,7 +40002,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900876",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40052,10 +40052,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459066",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 86.8,
-    "costPrice": 57.0,
+    "costPrice": 57,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -40067,7 +40067,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900888",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40117,7 +40117,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471132",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-isothermikes-tsantes"
+      "cat-forita-psygeia-isothermikes-tsantes"
     ],
     "price": 86.16,
     "costPrice": 61.875,
@@ -40132,7 +40132,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ισοθερμικές Τσάντες",
+      "category": "Φορητά Ψυγεία & Ισοθερμικές Τσάντες",
       "supplierCode": "3924488",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40182,10 +40182,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48225211",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 86.07,
-    "costPrice": 66.0,
+    "costPrice": 66,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -40197,7 +40197,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900884",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40312,7 +40312,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479655",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 85.9,
     "costPrice": 55.2,
@@ -40327,7 +40327,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928057",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40442,7 +40442,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464834",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 85.77,
     "costPrice": 61.5,
@@ -40457,7 +40457,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924490",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40507,10 +40507,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464851",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 85.6,
-    "costPrice": 57.0,
+    "costPrice": 57,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -40522,7 +40522,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926537",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -40637,7 +40637,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471066",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 84.97,
     "costPrice": 64.5,
@@ -40652,7 +40652,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924432",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40702,7 +40702,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478567",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 84.89,
     "costPrice": 53.4,
@@ -40717,7 +40717,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3927147",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40767,7 +40767,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933493528",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 84.48,
     "costPrice": 56.25,
@@ -40782,7 +40782,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3991045",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40832,7 +40832,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478587",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 83.99,
     "costPrice": 59.25,
@@ -40847,7 +40847,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3936398",
       "supplierStock": "Διαθέσιμο"
     },
@@ -40897,7 +40897,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459284",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 83.95,
     "costPrice": 41.4,
@@ -40912,7 +40912,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3901806",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -40935,7 +40935,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -40962,7 +40962,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464252",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 83.28,
     "costPrice": 63.75,
@@ -40977,7 +40977,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924020",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41027,7 +41027,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492503",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 81.99,
     "costPrice": 53.4,
@@ -41042,7 +41042,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3929449",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41092,7 +41092,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464575",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 81.99,
     "costPrice": 59.4,
@@ -41107,7 +41107,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926596",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41157,7 +41157,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459276",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metra-laser"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 81.9,
     "costPrice": 57.375,
@@ -41172,7 +41172,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μέτρα Laser",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900777",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41287,7 +41287,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478625",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 79.99,
     "costPrice": 59.925,
@@ -41302,7 +41302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3927274",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41354,8 +41354,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-katsavidia-cheiros"
     ],
-    "price": 79.0,
-    "costPrice": 48.0,
+    "price": 79,
+    "costPrice": 48,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -41482,7 +41482,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464084",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 78.79,
     "costPrice": 59.25,
@@ -41497,7 +41497,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3924010",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41547,7 +41547,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459085",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 78.5,
     "costPrice": 47.94,
@@ -41562,7 +41562,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903955",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41615,7 +41615,7 @@ export const initialProducts: Product[] = [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
     "price": 77.85,
-    "costPrice": 45.0,
+    "costPrice": 45,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -41627,7 +41627,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3931625",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41677,10 +41677,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459064",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 77.8,
-    "costPrice": 51.0,
+    "costPrice": 51,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -41692,7 +41692,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900887",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41715,7 +41715,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -41742,7 +41742,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478586",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 77.39,
     "costPrice": 51.75,
@@ -41757,7 +41757,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990157",
       "supplierStock": "Διαθέσιμο"
     },
@@ -41874,8 +41874,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-set-kastanies-karydakia"
     ],
-    "price": 77.0,
-    "costPrice": 57.0,
+    "price": 77,
+    "costPrice": 57,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -41937,7 +41937,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464960",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diafora-exartimata-gia-chortokoptika"
+      "cat-exartimata-axesoyar-kipoy"
     ],
     "price": 76.9,
     "costPrice": 48.75,
@@ -41952,7 +41952,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Διάφορα Εξαρτήματα για Χορτοκοπτικά",
+      "category": "Εξαρτήματα & Αξεσουάρ Κήπου",
       "supplierCode": "3925097",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42002,7 +42002,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498268",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 76.52,
     "costPrice": 53.4,
@@ -42017,7 +42017,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3929991",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42067,7 +42067,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493870",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 74.95,
     "costPrice": 50.94,
@@ -42082,7 +42082,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929960",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42132,7 +42132,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479654",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 74.9,
     "costPrice": 45.3,
@@ -42147,7 +42147,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928894",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42197,7 +42197,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479653",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 74.9,
     "costPrice": 46.14,
@@ -42212,7 +42212,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928060",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42262,7 +42262,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459086",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 74.5,
     "costPrice": 46.14,
@@ -42277,7 +42277,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924319",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42392,7 +42392,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430835",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 73.4,
     "costPrice": 52.5,
@@ -42407,7 +42407,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3950096",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -42457,7 +42457,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464173",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 73.32,
     "costPrice": 53.1,
@@ -42472,7 +42472,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3924325",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -42522,7 +42522,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472118",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-atsalines-ilektrologoy"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 72.9,
     "costPrice": 47.4,
@@ -42537,7 +42537,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ατσαλίνες Ηλεκτρολόγου",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3926565",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -42590,7 +42590,7 @@ export const initialProducts: Product[] = [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
     "price": 72.5,
-    "costPrice": 45.0,
+    "costPrice": 45,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -42602,7 +42602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903969",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42652,7 +42652,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478879",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-koytia-farmakeia-proton-voitheion"
+      "cat-exoplismos-axesoyar-synergeioy"
     ],
     "price": 71.99,
     "costPrice": 52.5,
@@ -42667,7 +42667,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κουτιά & Φαρμακεία Πρώτων Βοηθειών",
+      "category": "Εξοπλισμός & Αξεσουάρ Συνεργείου",
       "supplierCode": "3903120",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42717,7 +42717,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472128",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 70.95,
     "costPrice": 46.5,
@@ -42732,7 +42732,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926939",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42782,7 +42782,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492773",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 70.75,
     "costPrice": 47.94,
@@ -42797,7 +42797,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928028",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -42847,7 +42847,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492499",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 70.34,
     "costPrice": 40.74,
@@ -42862,7 +42862,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3929452",
       "supplierStock": "Διαθέσιμο"
     },
@@ -42912,10 +42912,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498629",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsekoyria"
+      "cat-tsekoyria-psekastires-potisma"
     ],
     "price": 69.99,
-    "costPrice": 39.0,
+    "costPrice": 39,
     "vatRate": 0.13,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -42927,7 +42927,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσεκούρια",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3931294",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -42977,7 +42977,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459063",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 69.88,
     "costPrice": 50.1,
@@ -42992,7 +42992,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900875",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43080,7 +43080,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -43122,7 +43122,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3900715",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -43172,7 +43172,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499025",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 69.21,
     "costPrice": 47.94,
@@ -43187,7 +43187,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3931048",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43237,7 +43237,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471724",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mpaoyla-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 68.99,
     "costPrice": 47.925,
@@ -43252,7 +43252,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μπαούλα Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3926020",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43302,7 +43302,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459061",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 67.6,
     "costPrice": 43.14,
@@ -43317,7 +43317,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900874",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43369,7 +43369,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpataries-fortistes-ergaleion"
     ],
-    "price": 67.0,
+    "price": 67,
     "costPrice": 51.75,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -43447,7 +43447,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3926561",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43497,7 +43497,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459062",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 66.8,
     "costPrice": 43.14,
@@ -43512,7 +43512,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900886",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43562,7 +43562,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464835",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-isothermikes-tsantes"
+      "cat-forita-psygeia-isothermikes-tsantes"
     ],
     "price": 66.49,
     "costPrice": 43.425,
@@ -43577,7 +43577,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ισοθερμικές Τσάντες",
+      "category": "Φορητά Ψυγεία & Ισοθερμικές Τσάντες",
       "supplierCode": "3924489",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -43627,7 +43627,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48899263",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 65.99,
     "costPrice": 43.14,
@@ -43642,7 +43642,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3924431",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43757,7 +43757,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459083",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 64.99,
     "costPrice": 39.54,
@@ -43772,7 +43772,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903954",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43822,7 +43822,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500062",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 64.9,
     "costPrice": 37.8,
@@ -43837,7 +43837,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3931235",
       "supplierStock": "Διαθέσιμο"
     },
@@ -43952,7 +43952,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459084",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 64.5,
     "costPrice": 38.94,
@@ -43967,7 +43967,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924318",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44017,7 +44017,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464172",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 64.48,
     "costPrice": 46.2,
@@ -44032,7 +44032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3924324",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44084,8 +44084,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-katsavidia-cheiros"
     ],
-    "price": 64.0,
-    "costPrice": 39.0,
+    "price": 64,
+    "costPrice": 39,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -44227,7 +44227,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903974",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44277,7 +44277,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479652",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 63.89,
     "costPrice": 41.94,
@@ -44292,7 +44292,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928059",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44342,7 +44342,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464824",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 63.89,
     "costPrice": 44.25,
@@ -44357,7 +44357,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3903033",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44407,10 +44407,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464850",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 63.5,
-    "costPrice": 39.0,
+    "costPrice": 39,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -44422,7 +44422,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926536",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44472,7 +44472,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493867",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 63.4,
     "costPrice": 43.74,
@@ -44487,7 +44487,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929959",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -44602,7 +44602,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459081",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 62.79,
     "costPrice": 37.74,
@@ -44617,7 +44617,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903953",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -44667,9 +44667,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499680",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
-    "price": 62.0,
+    "price": 62,
     "costPrice": 29.4,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -44682,7 +44682,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3931292",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44732,7 +44732,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478771",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 61.95,
     "costPrice": 37.425,
@@ -44747,7 +44747,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926945",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44797,7 +44797,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480622",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 61.79,
     "costPrice": 43.5,
@@ -44812,7 +44812,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927966",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44862,10 +44862,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499679",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
-    "price": 61.0,
-    "costPrice": 33.0,
+    "price": 61,
+    "costPrice": 33,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -44877,7 +44877,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3931291",
       "supplierStock": "Διαθέσιμο"
     },
@@ -44927,7 +44927,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478711",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 60.9,
     "costPrice": 44.925,
@@ -44942,7 +44942,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3936395",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -44992,7 +44992,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933464825",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 60.77,
     "costPrice": 40.125,
@@ -45007,7 +45007,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3903034",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45057,7 +45057,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459060",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 59.99,
     "costPrice": 39.3,
@@ -45072,7 +45072,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900885",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45122,7 +45122,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464082",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 58.9,
     "costPrice": 43.425,
@@ -45137,7 +45137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3924015",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45252,7 +45252,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352320",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 58.88,
     "costPrice": 41.94,
@@ -45267,7 +45267,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3900222",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45317,7 +45317,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48906115",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-analosima-polyergaleion"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 58.8,
     "costPrice": 40.2,
@@ -45332,7 +45332,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αναλώσιμα Πολυεργαλείων",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3928525",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45512,7 +45512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478566",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 58.3,
     "costPrice": 35.4,
@@ -45527,7 +45527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3927146",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45577,7 +45577,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464563",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 57.9,
     "costPrice": 38.1,
@@ -45592,7 +45592,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924417",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45642,7 +45642,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498013",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 57.9,
     "costPrice": 37.425,
@@ -45657,7 +45657,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3930217",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45707,7 +45707,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498859",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-anichneytes-tasis"
+      "cat-polymetra-anichneytes-tasis"
     ],
     "price": 57.89,
     "costPrice": 36.75,
@@ -45722,7 +45722,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανιχνευτές Τάσης",
+      "category": "Πολύμετρα & Ανιχνευτές Τάσης",
       "supplierCode": "3930250",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -45772,10 +45772,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933478705",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 57.89,
-    "costPrice": 39.0,
+    "costPrice": 39,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -45787,7 +45787,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3990156",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45837,7 +45837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493656",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 57.79,
     "costPrice": 37.425,
@@ -45852,7 +45852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3929949",
       "supplierStock": "Διαθέσιμο"
     },
@@ -45902,7 +45902,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229252",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 57.49,
     "costPrice": 42.6,
@@ -45917,7 +45917,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3903949",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46097,7 +46097,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932453385",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 57.3,
     "costPrice": 26.25,
@@ -46112,7 +46112,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3904987",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -46162,10 +46162,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430360",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fotismos-ergasias"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 57.09,
-    "costPrice": 39.0,
+    "costPrice": 39,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -46177,7 +46177,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φωτισμός Εργασίας",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3900048",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46227,7 +46227,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492713",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanika-kleidia"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 56.76,
     "costPrice": 40.2,
@@ -46242,7 +46242,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανικά Κλειδιά",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3929466",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46265,7 +46265,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -46357,10 +46357,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464826",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 56.39,
-    "costPrice": 36.0,
+    "costPrice": 36,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -46372,7 +46372,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926535",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -46422,7 +46422,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464257",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 55.99,
     "costPrice": 41.7,
@@ -46437,7 +46437,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3924328",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46552,7 +46552,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48227002",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-ydraylikon"
+      "cat-ergaleia-vidologoi-ydraylikon"
     ],
     "price": 55.9,
     "costPrice": 35.4,
@@ -46567,7 +46567,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Υδραυλικών",
+      "category": "Εργαλεία & Βιδολόγοι Υδραυλικών",
       "supplierCode": "3900507",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -46617,7 +46617,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459082",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 55.5,
     "costPrice": 33.54,
@@ -46632,7 +46632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924317",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46682,7 +46682,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498628",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsekoyria"
+      "cat-tsekoyria-psekastires-potisma"
     ],
     "price": 55.5,
     "costPrice": 29.94,
@@ -46697,7 +46697,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσεκούρια",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3931293",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -46747,9 +46747,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479647",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
-    "price": 55.0,
+    "price": 55,
     "costPrice": 26.7,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -46762,7 +46762,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928891",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -46812,7 +46812,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480569",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleia-cheiros-aytokinitoy"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 54.98,
     "costPrice": 35.94,
@@ -46827,7 +46827,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλεία Χειρός Αυτοκινήτου",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3928090",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46877,7 +46877,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459080",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 54.9,
     "costPrice": 32.34,
@@ -46892,7 +46892,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924316",
       "supplierStock": "Διαθέσιμο"
     },
@@ -46942,7 +46942,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48224216",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 54.9,
     "costPrice": 35.1,
@@ -46957,7 +46957,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3924327",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47007,7 +47007,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352045",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 54.9,
     "costPrice": 32.94,
@@ -47022,7 +47022,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3920581",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -47087,7 +47087,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3926562",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47137,7 +47137,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478770",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 54.34,
     "costPrice": 37.425,
@@ -47152,7 +47152,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926944",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47202,7 +47202,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480625",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-valitsakia-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 53.99,
     "costPrice": 35.25,
@@ -47217,7 +47217,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βαλιτσάκια Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3927902",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47267,7 +47267,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479649",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 53.98,
     "costPrice": 33.9,
@@ -47282,7 +47282,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928062",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47332,7 +47332,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493468",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 53.89,
     "costPrice": 33.675,
@@ -47347,7 +47347,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3929604",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47397,7 +47397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479975",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 53.2,
     "costPrice": 33.75,
@@ -47412,7 +47412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3928643",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -47462,7 +47462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48894760",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 52.9,
     "costPrice": 33.9,
@@ -47477,7 +47477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3902843",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -47527,7 +47527,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48475052",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 52.9,
     "costPrice": 31.5,
@@ -47542,7 +47542,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3931058",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47592,7 +47592,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500389",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 52.89,
     "costPrice": 34.74,
@@ -47607,7 +47607,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931545",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47722,7 +47722,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493866",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 52.19,
     "costPrice": 34.14,
@@ -47737,7 +47737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929958",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47867,7 +47867,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903968",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47917,7 +47917,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459079",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 50.9,
     "costPrice": 32.7,
@@ -47932,7 +47932,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903952",
       "supplierStock": "Διαθέσιμο"
     },
@@ -47982,7 +47982,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493467",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 50.89,
     "costPrice": 33.675,
@@ -47997,7 +47997,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3929603",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -48047,7 +48047,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471064",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 50.32,
     "costPrice": 38.175,
@@ -48062,7 +48062,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3924434",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48112,10 +48112,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "SP-4932498623",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-prionia-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
-    "price": 50.0,
-    "costPrice": 0.0,
+    "price": 50,
+    "costPrice": 0,
     "vatRate": 0.13,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -48127,7 +48127,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Πριόνια Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -48150,7 +48150,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -48307,7 +48307,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430480",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 49.9,
     "costPrice": 34.5,
@@ -48322,7 +48322,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3950093",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48372,7 +48372,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49222229",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 49.9,
     "costPrice": 35.4,
@@ -48387,7 +48387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3903017",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -48437,7 +48437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479648",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 49.79,
     "costPrice": 31.2,
@@ -48452,7 +48452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928061",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48505,7 +48505,7 @@ export const initialProducts: Product[] = [
       "cat-zones-thikes-ergaleion"
     ],
     "price": 49.6,
-    "costPrice": 30.0,
+    "costPrice": 30,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -48567,9 +48567,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479651",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
-    "price": 49.0,
+    "price": 49,
     "costPrice": 28.2,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -48582,7 +48582,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928893",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -48635,7 +48635,7 @@ export const initialProducts: Product[] = [
       "cat-katsavidia-cheiros"
     ],
     "price": 48.99,
-    "costPrice": 33.0,
+    "costPrice": 33,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -48697,7 +48697,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498649",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 48.9,
     "costPrice": 33.75,
@@ -48712,7 +48712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931031",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48762,7 +48762,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498648",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 48.79,
     "costPrice": 33.75,
@@ -48777,7 +48777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931030",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48827,7 +48827,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459078",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 48.68,
     "costPrice": 29.94,
@@ -48842,7 +48842,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3924315",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48892,10 +48892,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471927",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 48.58,
-    "costPrice": 39.0,
+    "costPrice": 39,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -48907,7 +48907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926578",
       "supplierStock": "Διαθέσιμο"
     },
@@ -48957,7 +48957,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493560",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 47.99,
     "costPrice": 29.25,
@@ -48972,7 +48972,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931012",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49087,7 +49087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498650",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 47.9,
     "costPrice": 29.25,
@@ -49102,7 +49102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931032",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49152,7 +49152,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472259",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 47.9,
     "costPrice": 29.1,
@@ -49167,7 +49167,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3927152",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49217,7 +49217,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498015",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-cheiros"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 47.9,
     "costPrice": 29.925,
@@ -49232,7 +49232,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Χειρός",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3931190",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -49347,7 +49347,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498019",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-cheiros"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 47.5,
     "costPrice": 29.925,
@@ -49362,7 +49362,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Χειρός",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3991191",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -49412,10 +49412,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479650",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
-    "price": 47.0,
-    "costPrice": 27.0,
+    "price": 47,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -49427,7 +49427,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928892",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -49492,7 +49492,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903967",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49542,10 +49542,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471867",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-proektaseis-kastanias"
+      "cat-kastanies-proektaseis"
     ],
     "price": 46.51,
-    "costPrice": 33.0,
+    "costPrice": 33,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -49557,7 +49557,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Προεκτάσεις Καστάνιας",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3926559",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49607,7 +49607,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498018",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ergaleion-aeros"
+      "cat-sympiestes-ergaleia-aeros"
     ],
     "price": 46.5,
     "costPrice": 29.925,
@@ -49622,7 +49622,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Εργαλείων Αέρος",
+      "category": "Συμπιεστές & Εργαλεία Αέρος",
       "supplierCode": "3931189",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49672,7 +49672,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498020",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-akrofysia-plystikon"
+      "cat-axesoyar-antallaktika-katharismoy"
     ],
     "price": 46.5,
     "costPrice": 29.925,
@@ -49687,7 +49687,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ακροφύσια Πλυστικών",
+      "category": "Αξεσουάρ & Ανταλλακτικά Καθαρισμού",
       "supplierCode": "3930231",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -49740,7 +49740,7 @@ export const initialProducts: Product[] = [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
     "price": 45.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 3,
     "lowStockThreshold": 1,
@@ -49752,7 +49752,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -49775,7 +49775,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -49840,7 +49840,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -49867,7 +49867,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471638",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 45.57,
     "costPrice": 29.625,
@@ -49882,7 +49882,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3925021",
       "supplierStock": "Διαθέσιμο"
     },
@@ -49932,10 +49932,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "SP-4933500162",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-anichneytes-tasis"
+      "cat-polymetra-anichneytes-tasis"
     ],
     "price": 45.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -49947,7 +49947,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Ανιχνευτές Τάσης",
+      "category": "Πολύμετρα & Ανιχνευτές Τάσης",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -49970,7 +49970,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -49997,9 +49997,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464857",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 45.0,
+    "price": 45,
     "costPrice": 29.1,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -50012,7 +50012,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903026",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -50062,7 +50062,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500061",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 44.99,
     "costPrice": 29.94,
@@ -50077,7 +50077,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3931234",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50127,7 +50127,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464562",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 44.9,
     "costPrice": 26.94,
@@ -50142,7 +50142,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924416",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50192,7 +50192,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459096",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 44.89,
     "costPrice": 32.4,
@@ -50207,7 +50207,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900860",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50257,7 +50257,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499365",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-vysmata"
+      "cat-ylika-steganosis-stereosis"
     ],
     "price": 44.16,
     "costPrice": 29.25,
@@ -50272,7 +50272,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βύσματα",
+      "category": "Υλικά Στεγάνωσης & Στερέωσης",
       "supplierCode": "3931141",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50322,7 +50322,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932373380",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 44.07,
     "costPrice": 28.5,
@@ -50337,7 +50337,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3910044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50519,7 +50519,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-diafora-analosima-ergaleion"
     ],
-    "price": 43.0,
+    "price": 43,
     "costPrice": 23.4,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -50582,7 +50582,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498644",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 42.9,
     "costPrice": 27.375,
@@ -50597,7 +50597,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931026",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50647,7 +50647,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459099",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 42.9,
     "costPrice": 29.34,
@@ -50662,7 +50662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900872",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50712,7 +50712,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4933459440",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-fakoi-fotismoy"
+      "cat-fakoi-fotismos-ergasias"
     ],
     "price": 42.8,
     "costPrice": 29.25,
@@ -50727,7 +50727,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Φακοί Φωτισμού",
+      "category": "Φακοί & Φωτισμός Εργασίας",
       "supplierCode": "3902741",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50777,7 +50777,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471865",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 42.6,
     "costPrice": 27.9,
@@ -50792,7 +50792,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3926557",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50842,10 +50842,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "12338446",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-ydraylikon"
+      "cat-ergaleia-vidologoi-ydraylikon"
     ],
     "price": 42.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -50857,7 +50857,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Υδραυλικών",
+      "category": "Εργαλεία & Βιδολόγοι Υδραυλικών",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -50880,7 +50880,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -50907,7 +50907,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480206",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 42.5,
     "costPrice": 27.6,
@@ -50922,7 +50922,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928880",
       "supplierStock": "Διαθέσιμο"
     },
@@ -50987,7 +50987,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3928031",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51102,9 +51102,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492390",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 42.0,
+    "price": 42,
     "costPrice": 25.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -51117,7 +51117,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3928105",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51167,7 +51167,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500308",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 41.99,
     "costPrice": 29.925,
@@ -51182,7 +51182,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "3931516",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51232,7 +51232,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48225203",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 41.89,
     "costPrice": 32.34,
@@ -51247,7 +51247,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900883",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51297,7 +51297,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229038",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 41.69,
     "costPrice": 29.34,
@@ -51312,7 +51312,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3903022",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -51362,10 +51362,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493472",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 41.53,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -51377,7 +51377,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3930257",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51427,7 +51427,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498270",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 41.45,
     "costPrice": 27.54,
@@ -51442,7 +51442,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3929993",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51625,7 +51625,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 40.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -51660,7 +51660,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -51687,7 +51687,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498742",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 40.79,
     "costPrice": 29.94,
@@ -51702,7 +51702,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3931165",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51752,7 +51752,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48225360",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 40.69,
     "costPrice": 29.34,
@@ -51767,7 +51767,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3926512",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51882,7 +51882,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479897",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skarpela"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 40.42,
     "costPrice": 28.2,
@@ -51897,7 +51897,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαρπέλα",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3928043",
       "supplierStock": "Διαθέσιμο"
     },
@@ -51947,7 +51947,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48224211",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 40.3,
     "costPrice": 28.74,
@@ -51962,7 +51962,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3924326",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52012,10 +52012,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472261",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 39.99,
-    "costPrice": 24.0,
+    "costPrice": 24,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -52027,7 +52027,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926858",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52077,7 +52077,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499256",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 39.9,
     "costPrice": 23.94,
@@ -52092,7 +52092,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3931439",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52145,7 +52145,7 @@ export const initialProducts: Product[] = [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
     "price": 39.9,
-    "costPrice": 24.0,
+    "costPrice": 24,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -52157,7 +52157,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903966",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52222,7 +52222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3924410",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52272,7 +52272,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464081",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 39.88,
     "costPrice": 26.25,
@@ -52287,7 +52287,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3924340",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52337,7 +52337,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493465",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 39.59,
     "costPrice": 26.175,
@@ -52352,7 +52352,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3929601",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52402,7 +52402,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493466",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 39.59,
     "costPrice": 26.175,
@@ -52417,7 +52417,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3929602",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52467,7 +52467,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498621",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
     "price": 39.5,
     "costPrice": 23.4,
@@ -52482,7 +52482,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3931289",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52547,7 +52547,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903972",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52662,7 +52662,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459590",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 38.99,
     "costPrice": 25.5,
@@ -52677,7 +52677,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903964",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -52727,10 +52727,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493471",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 38.9,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -52742,7 +52742,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3930256",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52792,10 +52792,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492469",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 38.69,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -52807,7 +52807,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3928183",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52857,7 +52857,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471635",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-charaktes"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 38.5,
     "costPrice": 23.1,
@@ -52872,7 +52872,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαράκτες",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3926518",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52922,7 +52922,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464570",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 38.5,
     "costPrice": 25.5,
@@ -52937,7 +52937,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924420",
       "supplierStock": "Διαθέσιμο"
     },
@@ -52987,10 +52987,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471866",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-proektaseis-kastanias"
+      "cat-kastanies-proektaseis"
     ],
     "price": 38.5,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -53002,7 +53002,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Προεκτάσεις Καστάνιας",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3926558",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53182,10 +53182,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478565",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 37.5,
-    "costPrice": 24.0,
+    "costPrice": 24,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -53197,7 +53197,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3927145",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -53247,10 +53247,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229259",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 37.48,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -53262,7 +53262,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3904975",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53312,7 +53312,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499020",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 37.38,
     "costPrice": 25.74,
@@ -53327,7 +53327,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3931046",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53377,10 +53377,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498368",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 37.18,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -53392,7 +53392,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3931022",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53442,7 +53442,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493474",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 37.1,
     "costPrice": 23.625,
@@ -53457,7 +53457,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3930746",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53507,9 +53507,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459095",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 23.1,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -53522,7 +53522,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900849",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53574,7 +53574,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-mpataries-fortistes-ergaleion"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 41.25,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -53637,9 +53637,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500146",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -53652,7 +53652,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931609",
       "supplierStock": "Διαθέσιμο"
     },
@@ -53704,7 +53704,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -53769,7 +53769,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -53834,7 +53834,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -53899,7 +53899,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -53964,7 +53964,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54029,7 +54029,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54094,7 +54094,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54159,7 +54159,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54224,7 +54224,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54289,7 +54289,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54354,7 +54354,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54419,7 +54419,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54484,7 +54484,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-krani-ergasias"
     ],
-    "price": 37.0,
+    "price": 37,
     "costPrice": 22.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -54547,7 +54547,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493473",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 36.9,
     "costPrice": 23.625,
@@ -54562,7 +54562,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3930745",
       "supplierStock": "Διαθέσιμο"
     },
@@ -54742,7 +54742,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464565",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 36.9,
     "costPrice": 23.1,
@@ -54757,7 +54757,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924413",
       "supplierStock": "Διαθέσιμο"
     },
@@ -54807,7 +54807,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472260",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 36.9,
     "costPrice": 22.5,
@@ -54822,7 +54822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3927153",
       "supplierStock": "Διαθέσιμο"
     },
@@ -54887,7 +54887,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3902810",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -54937,7 +54937,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498622",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia-kladematos"
+      "cat-psalidia-prionia-kladematos-mporntoyras"
     ],
     "price": 36.8,
     "costPrice": 19.8,
@@ -54952,7 +54952,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια Κλαδέματος",
+      "category": "Ψαλίδια & Πριόνια Κλαδέματος / Μπορντούρας",
       "supplierCode": "3931290",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55067,7 +55067,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229014",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 36.49,
     "costPrice": 23.94,
@@ -55082,7 +55082,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3903021",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55132,7 +55132,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480714",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 36.39,
     "costPrice": 26.175,
@@ -55147,7 +55147,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3928000",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55197,7 +55197,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464083",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 36.18,
     "costPrice": 26.925,
@@ -55212,7 +55212,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3924004",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55265,7 +55265,7 @@ export const initialProducts: Product[] = [
       "cat-gyalia-ergasias"
     ],
     "price": 35.96,
-    "costPrice": 27.0,
+    "costPrice": 27,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -55327,7 +55327,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493102",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-jockey"
+      "cat-skoyfoi-kapela-perilaimia"
     ],
     "price": 35.9,
     "costPrice": 22.425,
@@ -55342,7 +55342,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Jockey",
+      "category": "Σκούφοι, Καπέλα & Περιλαίμια",
       "supplierCode": "3929100",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55392,7 +55392,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498025",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 35.9,
     "costPrice": 22.425,
@@ -55407,7 +55407,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931185",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -55457,7 +55457,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498638",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-pagoyria"
+      "cat-thermos-pagoyria"
     ],
     "price": 35.89,
     "costPrice": 22.43,
@@ -55472,7 +55472,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Παγούρια",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3931039",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55522,7 +55522,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498641",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-paidika-pagoyria"
+      "cat-thermos-pagoyria"
     ],
     "price": 35.89,
     "costPrice": 22.43,
@@ -55537,7 +55537,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Παιδικά Παγούρια",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3931040",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55587,7 +55587,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492008",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 35.69,
     "costPrice": 27.9,
@@ -55602,7 +55602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928016",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55652,7 +55652,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498021",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-cheiros"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 35.5,
     "costPrice": 22.425,
@@ -55667,7 +55667,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Χειρός",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3931192",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -55717,7 +55717,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498023",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 35.5,
     "costPrice": 22.425,
@@ -55732,7 +55732,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3991194",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -55782,7 +55782,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498977",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 35.38,
     "costPrice": 23.625,
@@ -55797,7 +55797,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3930263",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55847,7 +55847,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498978",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 35.38,
     "costPrice": 23.625,
@@ -55862,7 +55862,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3930286",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55912,9 +55912,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464569",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
-    "price": 35.0,
+    "price": 35,
     "costPrice": 23.34,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -55927,7 +55927,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924412",
       "supplierStock": "Διαθέσιμο"
     },
@@ -55977,10 +55977,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479075",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 34.99,
-    "costPrice": 24.0,
+    "costPrice": 24,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -55992,7 +55992,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3927847",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56042,7 +56042,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493992",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 34.9,
     "costPrice": 22.425,
@@ -56057,7 +56057,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3929565",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56107,7 +56107,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352374",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 34.9,
     "costPrice": 23.94,
@@ -56122,7 +56122,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3920580",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -56172,7 +56172,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471513",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 34.9,
     "costPrice": 21.9,
@@ -56187,7 +56187,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927176",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56237,7 +56237,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478878",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-otoaspides-ergasias"
+      "cat-otoaspides-prostasia-akois"
     ],
     "price": 34.75,
     "costPrice": 22.425,
@@ -56252,7 +56252,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ωτοασπίδες Εργασίας",
+      "category": "Ωτοασπίδες & Προστασία Ακοής",
       "supplierCode": "3929482",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56302,7 +56302,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498010",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 34.7,
     "costPrice": 22.425,
@@ -56317,7 +56317,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3930229",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56497,7 +56497,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493991",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-silikones-sfragistika"
+      "cat-ylika-steganosis-stereosis"
     ],
     "price": 34.49,
     "costPrice": 22.425,
@@ -56512,7 +56512,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σιλικόνες - Σφραγιστικά",
+      "category": "Υλικά Στεγάνωσης & Στερέωσης",
       "supplierCode": "3929564",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56562,7 +56562,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492464",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 34.4,
     "costPrice": 23.34,
@@ -56577,7 +56577,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928027",
       "supplierStock": "Διαθέσιμο"
     },
@@ -56887,7 +56887,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464564",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 33.89,
     "costPrice": 21.9,
@@ -56902,7 +56902,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924406",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -56955,7 +56955,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 33.82,
-    "costPrice": 24.0,
+    "costPrice": 24,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -57017,10 +57017,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "SP-4933500161",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-anichneytes-tasis"
+      "cat-polymetra-anichneytes-tasis"
     ],
     "price": 33.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -57032,7 +57032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Ανιχνευτές Τάσης",
+      "category": "Πολύμετρα & Ανιχνευτές Τάσης",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -57055,7 +57055,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -57097,7 +57097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3903971",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -57147,7 +57147,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471065",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tampakieres-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 33.19,
     "costPrice": 24.525,
@@ -57162,7 +57162,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ταμπακιέρες Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3924479",
       "supplierStock": "Διαθέσιμο"
     },
@@ -57277,7 +57277,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464568",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 32.92,
     "costPrice": 21.3,
@@ -57292,7 +57292,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924419",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -57407,7 +57407,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472126",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-goniometra"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 32.89,
     "costPrice": 20.7,
@@ -57422,7 +57422,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γωνιόμετρα",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3926958",
       "supplierStock": "Διαθέσιμο"
     },
@@ -57472,10 +57472,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471587",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 32.66,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 8,
     "lowStockThreshold": 1,
@@ -57487,7 +57487,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -57510,7 +57510,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -57537,10 +57537,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464827",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 32.5,
-    "costPrice": 21.0,
+    "costPrice": 21,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -57552,7 +57552,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926534",
       "supplierStock": "Διαθέσιμο"
     },
@@ -57602,7 +57602,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492466",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 32.5,
     "costPrice": 20.7,
@@ -57617,7 +57617,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928025",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -57797,7 +57797,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479074",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 32.3,
     "costPrice": 20.925,
@@ -57812,7 +57812,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3927846",
       "supplierStock": "Διαθέσιμο"
     },
@@ -57864,8 +57864,8 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-kavoyres-tsimpides-ydraylikon"
     ],
-    "price": 32.0,
-    "costPrice": 0.0,
+    "price": 32,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -57877,7 +57877,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -57900,7 +57900,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -57927,10 +57927,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4931416739",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 31.98,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -57942,7 +57942,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -57965,7 +57965,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -57992,7 +57992,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352306",
     "brandId": "brand-aeg",
     "categoryIds": [
-      "cat-sakoyles-skoypas"
+      "cat-axesoyar-antallaktika-katharismoy"
     ],
     "price": 31.9,
     "costPrice": 19.5,
@@ -58007,7 +58007,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "AEG",
-      "category": "Σακούλες Σκούπας",
+      "category": "Αξεσουάρ & Ανταλλακτικά Καθαρισμού",
       "supplierCode": "3980901",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -58187,7 +58187,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464573",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 31.9,
     "costPrice": 21.3,
@@ -58202,7 +58202,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3924415",
       "supplierStock": "Διαθέσιμο"
     },
@@ -58252,7 +58252,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471512",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 31.9,
     "costPrice": 20.34,
@@ -58267,7 +58267,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926621",
       "supplierStock": "Διαθέσιμο"
     },
@@ -58317,10 +58317,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4931411958",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-tsantes-ergaleion"
+      "cat-tsantes-valitsakia-ergaleion"
     ],
     "price": 31.89,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -58332,7 +58332,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τσάντες Εργαλείων",
+      "category": "Τσάντες & Βαλιτσάκια Εργαλείων",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -58355,7 +58355,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -58397,7 +58397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3928030",
       "supplierStock": "Διαθέσιμο"
     },
@@ -58512,7 +58512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560260",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 31.65,
     "costPrice": 22.74,
@@ -58527,7 +58527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3900194",
       "supplierStock": "Διαθέσιμο"
     },
@@ -58577,10 +58577,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479646",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kastanies"
+      "cat-kastanies-proektaseis"
     ],
     "price": 31.48,
-    "costPrice": 21.0,
+    "costPrice": 21,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -58592,7 +58592,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καστάνιες",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3928890",
       "supplierStock": "Διαθέσιμο"
     },
@@ -58642,7 +58642,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492465",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 31.45,
     "costPrice": 20.34,
@@ -58657,7 +58657,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928024",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -58707,7 +58707,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464572",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 31.39,
     "costPrice": 20.1,
@@ -58722,7 +58722,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924414",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -58837,7 +58837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492004",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 31.28,
     "costPrice": 23.94,
@@ -58852,7 +58852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927970",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59032,7 +59032,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48228145",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-zones-imantes"
+      "cat-zones-axesoyar-endysis"
     ],
     "price": 31.05,
     "costPrice": 22.875,
@@ -59047,7 +59047,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ζώνες & Ιμάντες",
+      "category": "Ζώνες & Αξεσουάρ Ένδυσης",
       "supplierCode": "3903977",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59227,7 +59227,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472125",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-goniometra"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 30.9,
     "costPrice": 18.9,
@@ -59242,7 +59242,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γωνιόμετρα",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3927148",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59292,7 +59292,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480192",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 30.5,
     "costPrice": 19.14,
@@ -59307,7 +59307,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928972",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59357,7 +59357,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459098",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 30.28,
     "costPrice": 20.34,
@@ -59372,7 +59372,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900871",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59422,7 +59422,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459097",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 30.18,
     "costPrice": 22.14,
@@ -59437,7 +59437,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900861",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59552,7 +59552,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471634",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-charaktes"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 29.99,
     "costPrice": 20.1,
@@ -59567,7 +59567,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαράκτες",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3926517",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59617,7 +59617,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464567",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 29.99,
     "costPrice": 20.1,
@@ -59632,7 +59632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924411",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59682,7 +59682,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493004",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mployzes-ergasias"
+      "cat-roycha-gileka-ergasias"
     ],
     "price": 29.99,
     "costPrice": 18.675,
@@ -59697,7 +59697,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μπλούζες Εργασίας",
+      "category": "Ρούχα & Γιλέκα Εργασίας",
       "supplierCode": "3929192",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59747,7 +59747,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478996",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 29.9,
     "costPrice": 21.75,
@@ -59762,7 +59762,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3936400",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -59812,7 +59812,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498645",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 29.9,
     "costPrice": 19.5,
@@ -59827,7 +59827,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931027",
       "supplierStock": "Διαθέσιμο"
     },
@@ -59877,10 +59877,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "SP-4933500160",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-anichneytes-tasis"
+      "cat-polymetra-anichneytes-tasis"
     ],
     "price": 29.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -59892,7 +59892,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Ανιχνευτές Τάσης",
+      "category": "Πολύμετρα & Ανιχνευτές Τάσης",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -59915,7 +59915,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -60087,7 +60087,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κάβουρες - Τσιμπίδες Υδραυλικών",
+      "category": "Κάβουρες & Τσιμπίδες Υδραυλικών",
       "supplierCode": "3928029",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60267,7 +60267,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464571",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 28.9,
     "costPrice": 18.9,
@@ -60282,7 +60282,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924409",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60332,7 +60332,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471511",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 28.9,
     "costPrice": 17.1,
@@ -60347,7 +60347,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927175",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -60397,7 +60397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480190",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 28.9,
     "costPrice": 17.1,
@@ -60412,7 +60412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928970",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -60462,7 +60462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464566",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 28.89,
     "costPrice": 18.9,
@@ -60477,7 +60477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3924418",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60592,7 +60592,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498647",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 28.84,
     "costPrice": 19.875,
@@ -60607,7 +60607,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931029",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60657,7 +60657,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498646",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 28.82,
     "costPrice": 19.875,
@@ -60672,7 +60672,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931028",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60722,7 +60722,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352469",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 28.54,
     "costPrice": 19.5,
@@ -60737,7 +60737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921178",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60787,7 +60787,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48225330",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 28.5,
     "costPrice": 17.4,
@@ -60802,7 +60802,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3925012",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60852,7 +60852,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480621",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 28.46,
     "costPrice": 19.125,
@@ -60867,7 +60867,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927965",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60917,7 +60917,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478554",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 28.37,
     "costPrice": 21.54,
@@ -60932,7 +60932,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3927150",
       "supplierStock": "Διαθέσιμο"
     },
@@ -60982,10 +60982,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479407",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 28.24,
-    "costPrice": 21.0,
+    "costPrice": 21,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -60997,7 +60997,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3927834",
       "supplierStock": "Διαθέσιμο"
     },
@@ -61047,7 +61047,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493865",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 28.18,
     "costPrice": 20.34,
@@ -61062,7 +61062,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929957",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -61112,7 +61112,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459094",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 27.99,
     "costPrice": 17.1,
@@ -61127,7 +61127,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900848",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -61177,7 +61177,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492462",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 27.99,
     "costPrice": 17.94,
@@ -61192,7 +61192,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928023",
       "supplierStock": "Διαθέσιμο"
     },
@@ -61242,7 +61242,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229251",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 27.98,
     "costPrice": 17.1,
@@ -61257,7 +61257,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3904951",
       "supplierStock": "Διαθέσιμο"
     },
@@ -61280,7 +61280,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -61307,7 +61307,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464856",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 27.9,
     "costPrice": 17.94,
@@ -61322,7 +61322,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903025",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -61372,7 +61372,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492463",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 27.9,
     "costPrice": 17.34,
@@ -61387,7 +61387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928026",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -61437,7 +61437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48225103",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 27.85,
     "costPrice": 21.3,
@@ -61452,7 +61452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900868",
       "supplierStock": "Διαθέσιμο"
     },
@@ -61567,7 +61567,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471734",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 27.84,
     "costPrice": 16.5,
@@ -61582,7 +61582,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926027",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -61697,7 +61697,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492547",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 27.55,
     "costPrice": 18.375,
@@ -61712,7 +61712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929068",
       "supplierStock": "Διαθέσιμο"
     },
@@ -61762,10 +61762,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48226100",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 27.4,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -61777,7 +61777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -61800,7 +61800,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -61892,9 +61892,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500145",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
-    "price": 27.0,
+    "price": 27,
     "costPrice": 16.425,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -61907,7 +61907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931610",
       "supplierStock": "Διαθέσιμο"
     },
@@ -61957,7 +61957,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498767",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 26.89,
     "costPrice": 19.8,
@@ -61972,7 +61972,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931271",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62022,7 +62022,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48220050",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-prionia"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 26.88,
     "costPrice": 20.94,
@@ -62037,7 +62037,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πριόνια",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3920114",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62087,7 +62087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479477",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 26.83,
     "costPrice": 16.14,
@@ -62102,7 +62102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3927952",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62217,7 +62217,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472258",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 26.4,
     "costPrice": 16.2,
@@ -62232,7 +62232,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926844",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62282,7 +62282,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499471",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-ergaleia-cheiros-aytokinitoy"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 26.23,
     "costPrice": 13.14,
@@ -62297,7 +62297,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εργαλεία Χειρός Αυτοκινήτου",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3931303",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62347,7 +62347,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498637",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-pagoyria"
+      "cat-thermos-pagoyria"
     ],
     "price": 26.14,
     "costPrice": 18.68,
@@ -62362,7 +62362,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Παγούρια",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3931037",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62412,7 +62412,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498640",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-pagoyria"
+      "cat-thermos-pagoyria"
     ],
     "price": 26.13,
     "costPrice": 18.675,
@@ -62427,7 +62427,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Παγούρια",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3931038",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -62477,7 +62477,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493816",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 26.09,
     "costPrice": 17.94,
@@ -62492,7 +62492,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3930235",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62542,7 +62542,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48906040",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-analosima-polyergaleion"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 25.9,
     "costPrice": 15.9,
@@ -62557,7 +62557,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αναλώσιμα Πολυεργαλείων",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3927065",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -62607,7 +62607,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499205",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 25.89,
     "costPrice": 17.94,
@@ -62622,7 +62622,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931351",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62737,7 +62737,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472121",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-atsalines-ilektrologoy"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 25.89,
     "costPrice": 16.74,
@@ -62752,7 +62752,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ατσαλίνες Ηλεκτρολόγου",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3926564",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62802,7 +62802,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492005",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 25.87,
     "costPrice": 20.94,
@@ -62817,7 +62817,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928012",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62867,10 +62867,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471727",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 25.87,
-    "costPrice": 15.0,
+    "costPrice": 15,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -62882,7 +62882,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3925099",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62932,7 +62932,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480979",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-torx"
+      "cat-kleidia-allen-torx"
     ],
     "price": 25.65,
     "costPrice": 17.94,
@@ -62947,7 +62947,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Torx",
+      "category": "Κλειδιά Allen & Torx",
       "supplierCode": "3928271",
       "supplierStock": "Διαθέσιμο"
     },
@@ -62997,10 +62997,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472257",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 25.5,
-    "costPrice": 15.0,
+    "costPrice": 15,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -63012,7 +63012,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926855",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63062,7 +63062,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499209",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 25.39,
     "costPrice": 16.74,
@@ -63077,7 +63077,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931305",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63127,7 +63127,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498765",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 25.28,
     "costPrice": 17.94,
@@ -63142,7 +63142,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931270",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63192,7 +63192,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478265",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kalemia-velonia-skaptikon"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 24.98,
     "costPrice": 16.14,
@@ -63207,7 +63207,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καλέμια & Βελόνια Σκαπτικών",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3926956",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63257,7 +63257,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499203",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 24.98,
     "costPrice": 15.54,
@@ -63272,7 +63272,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931350",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -63322,10 +63322,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48226101",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 24.97,
-    "costPrice": 18.0,
+    "costPrice": 18,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -63337,7 +63337,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3900184",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63387,7 +63387,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492461",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 24.92,
     "costPrice": 16.5,
@@ -63402,7 +63402,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3928022",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63452,7 +63452,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500552",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 24.9,
     "costPrice": 14.94,
@@ -63467,7 +63467,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931313",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63517,7 +63517,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493094",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-koykoyles-perilaimia-anavati"
+      "cat-skoyfoi-kapela-perilaimia"
     ],
     "price": 24.9,
     "costPrice": 14.925,
@@ -63532,7 +63532,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κουκούλες & Περιλαίμια Αναβάτη",
+      "category": "Σκούφοι, Καπέλα & Περιλαίμια",
       "supplierCode": "3929400",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63582,10 +63582,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "SP-4932501153",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 24.89,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -63597,7 +63597,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -63620,7 +63620,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -63647,7 +63647,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48226104",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 24.89,
     "costPrice": 16.74,
@@ -63662,7 +63662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3900500",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63712,7 +63712,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464916",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 24.89,
     "costPrice": 15.9,
@@ -63727,7 +63727,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926313",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63777,10 +63777,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472120",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-atsalines-ilektrologoy"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 24.89,
-    "costPrice": 15.0,
+    "costPrice": 15,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -63792,7 +63792,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ατσαλίνες Ηλεκτρολόγου",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3926563",
       "supplierStock": "Διαθέσιμο"
     },
@@ -63907,7 +63907,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500063",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 24.79,
     "costPrice": 17.94,
@@ -63922,7 +63922,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3931236",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -63972,7 +63972,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498297",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 24.79,
     "costPrice": 17.94,
@@ -63987,7 +63987,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3930216",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -64037,7 +64037,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480914",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 24.68,
     "costPrice": 11.94,
@@ -64052,7 +64052,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929475",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -64102,7 +64102,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229258",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 24.55,
     "costPrice": 16.5,
@@ -64117,7 +64117,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3904950",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64167,10 +64167,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48221950",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 24.5,
-    "costPrice": 15.0,
+    "costPrice": 15,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -64182,7 +64182,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "39002430",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -64232,7 +64232,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49902301",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 24.5,
     "costPrice": 16.875,
@@ -64247,7 +64247,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3950095",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64297,7 +64297,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471728",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 24.5,
     "costPrice": 14.34,
@@ -64312,7 +64312,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926552",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64362,7 +64362,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493814",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-charaktes"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 24.45,
     "costPrice": 14.94,
@@ -64377,7 +64377,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαράκτες",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3930222",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64427,7 +64427,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430001",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kalemia-velonia-skaptikon"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 24.43,
     "costPrice": 17.4,
@@ -64442,7 +64442,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καλέμια & Βελόνια Σκαπτικών",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3900321",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -64622,7 +64622,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499517",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gallika-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
     "price": 24.27,
     "costPrice": 15.9,
@@ -64637,7 +64637,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γαλλικά Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3931423",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64687,7 +64687,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498390",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-charaktes"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 24.22,
     "costPrice": 14.94,
@@ -64702,7 +64702,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαράκτες",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3930236",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64752,7 +64752,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932451185",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-leiansis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 24.19,
     "costPrice": 16.74,
@@ -64767,7 +64767,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Λείανσης",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3950087",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64817,7 +64817,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499520",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gallika-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
     "price": 24.18,
     "costPrice": 13.5,
@@ -64832,7 +64832,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γαλλικά Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3931640",
       "supplierStock": "Διαθέσιμο"
     },
@@ -64882,10 +64882,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479784",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-cheiros"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 24.1,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -64897,7 +64897,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Χειρός",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -64920,7 +64920,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -64947,10 +64947,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471898 4932471899 4932471900",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gileka-ergasias"
+      "cat-roycha-gileka-ergasias"
     ],
     "price": 24.09,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -64962,7 +64962,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γιλέκα Εργασίας",
+      "category": "Ρούχα & Γιλέκα Εργασίας",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -64985,7 +64985,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -65012,7 +65012,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499207",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 23.95,
     "costPrice": 16.14,
@@ -65027,7 +65027,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931306",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65077,10 +65077,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471895 4932471896 4932471897",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gileka-ergasias"
+      "cat-roycha-gileka-ergasias"
     ],
     "price": 23.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 5,
     "lowStockThreshold": 1,
@@ -65092,7 +65092,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γιλέκα Εργασίας",
+      "category": "Ρούχα & Γιλέκα Εργασίας",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -65115,7 +65115,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -65142,7 +65142,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478252",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lostoi-prokovgaltes"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 23.9,
     "costPrice": 14.7,
@@ -65157,7 +65157,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λοστοί - Προκοβγάλτες",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3926891",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65207,7 +65207,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480186",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 23.9,
     "costPrice": 14.34,
@@ -65222,7 +65222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928966",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65272,7 +65272,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498011",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65287,7 +65287,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3930230",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65337,7 +65337,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498012",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65352,7 +65352,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931184",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -65402,7 +65402,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498014",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-axesoyar-syskeyon-katharismoy"
+      "cat-axesoyar-antallaktika-katharismoy"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65417,7 +65417,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα & Αξεσουάρ Συσκευών Καθαρισμού",
+      "category": "Αξεσουάρ & Ανταλλακτικά Καθαρισμού",
       "supplierCode": "3931186",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -65467,7 +65467,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498016",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65482,7 +65482,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931187",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -65532,7 +65532,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498017",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65547,7 +65547,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931188",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -65597,7 +65597,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498022",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-cheiros"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65612,7 +65612,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Χειρός",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3931193",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -65662,7 +65662,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498024",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-voithitika-ergaleia-cheiros"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 23.9,
     "costPrice": 14.925,
@@ -65677,7 +65677,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Βοηθητικά Εργαλεία Χειρός",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3931194",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -65727,7 +65727,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498636",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 23.89,
     "costPrice": 14.93,
@@ -65742,7 +65742,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3931035",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65792,7 +65792,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498639",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-thermos"
+      "cat-thermos-pagoyria"
     ],
     "price": 23.89,
     "costPrice": 14.93,
@@ -65807,7 +65807,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Θερμός",
+      "category": "Θερμός & Παγούρια",
       "supplierCode": "3931036",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65922,10 +65922,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352945",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 23.89,
-    "costPrice": 15.0,
+    "costPrice": 15,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -65937,7 +65937,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3920739",
       "supplierStock": "Διαθέσιμο"
     },
@@ -65987,7 +65987,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493871",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 23.84,
     "costPrice": 17.7,
@@ -66002,7 +66002,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929953",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66117,7 +66117,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471428",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 23.73,
     "costPrice": 14.925,
@@ -66132,7 +66132,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3924491",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66247,7 +66247,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480918",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 23.44,
     "costPrice": 11.34,
@@ -66262,7 +66262,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929470",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -66312,7 +66312,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492006",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 23.29,
     "costPrice": 17.94,
@@ -66327,7 +66327,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928013",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66444,7 +66444,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-sfyria-variopoyles"
     ],
-    "price": 23.0,
+    "price": 23,
     "costPrice": 14.94,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -66507,7 +66507,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493435",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-maskes-ergasias"
+      "cat-maskes-ergasias-antallaktika"
     ],
     "price": 22.99,
     "costPrice": 14.94,
@@ -66522,7 +66522,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μάσκες Εργασίας",
+      "category": "Μάσκες Εργασίας & Ανταλλακτικά",
       "supplierCode": "3930272",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66572,7 +66572,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498716",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 22.99,
     "costPrice": 17.1,
@@ -66587,7 +66587,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3931164",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66637,7 +66637,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492003",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 22.99,
     "costPrice": 18.9,
@@ -66652,7 +66652,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927892",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66702,7 +66702,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471310",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 22.99,
     "costPrice": 13.74,
@@ -66717,7 +66717,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3925020",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -66767,7 +66767,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48220212",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-prionia"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 22.9,
     "costPrice": 13.74,
@@ -66782,7 +66782,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πριόνια",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3920117",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66832,7 +66832,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480200",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 22.9,
     "costPrice": 14.94,
@@ -66847,7 +66847,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928875",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66897,7 +66897,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493872",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 22.79,
     "costPrice": 16.5,
@@ -66912,7 +66912,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929954",
       "supplierStock": "Διαθέσιμο"
     },
@@ -66962,7 +66962,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471113",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 22.79,
     "costPrice": 16.5,
@@ -66977,7 +66977,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926860",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -67027,7 +67027,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459093",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 22.75,
     "costPrice": 14.1,
@@ -67042,7 +67042,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900847",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67157,7 +67157,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478251",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lostoi-prokovgaltes"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 22.5,
     "costPrice": 15.3,
@@ -67172,7 +67172,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λοστοί - Προκοβγάλτες",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3926913",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67222,7 +67222,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499522",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gallika-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
     "price": 22.34,
     "costPrice": 14.34,
@@ -67237,7 +67237,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γαλλικά Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3931626",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67287,7 +67287,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492389",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 22.2,
     "costPrice": 13.425,
@@ -67302,7 +67302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3928104",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67417,7 +67417,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492009",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 22.1,
     "costPrice": 17.94,
@@ -67432,7 +67432,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928017",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67482,7 +67482,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478621",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-allen"
+      "cat-kleidia-allen-torx"
     ],
     "price": 22.08,
     "costPrice": 15.54,
@@ -67497,7 +67497,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Allen",
+      "category": "Κλειδιά Allen & Torx",
       "supplierCode": "3927209",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67547,7 +67547,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493815",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-charaktes"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 21.99,
     "costPrice": 14.94,
@@ -67562,7 +67562,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαράκτες",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3930223",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67612,7 +67612,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493881",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 21.99,
     "costPrice": 14.94,
@@ -67627,7 +67627,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929955",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67677,7 +67677,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471192",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 21.99,
     "costPrice": 16.14,
@@ -67692,7 +67692,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926861",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67742,7 +67742,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498391",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-charaktes"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 21.95,
     "costPrice": 14.94,
@@ -67757,7 +67757,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαράκτες",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3930224",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67807,7 +67807,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492454",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 21.95,
     "costPrice": 16.74,
@@ -67822,7 +67822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3928003",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -67872,7 +67872,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430002",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 21.95,
     "costPrice": 16.74,
@@ -67887,7 +67887,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3901804",
       "supplierStock": "Διαθέσιμο"
     },
@@ -67937,7 +67937,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498269",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogymnotes-kalodion"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 21.94,
     "costPrice": 14.34,
@@ -67952,7 +67952,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογυμνωτές Καλωδίων",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3929992",
       "supplierStock": "Διαθέσιμο"
     },
@@ -68067,7 +68067,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471510",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 21.9,
     "costPrice": 13.74,
@@ -68082,7 +68082,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926620",
       "supplierStock": "Διαθέσιμο"
     },
@@ -68132,7 +68132,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479410",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 21.88,
     "costPrice": 14.34,
@@ -68147,7 +68147,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3927650",
       "supplierStock": "Διαθέσιμο"
     },
@@ -68197,7 +68197,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480158",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 21.79,
     "costPrice": 12.54,
@@ -68212,7 +68212,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3928402",
       "supplierStock": "Διαθέσιμο"
     },
@@ -68330,7 +68330,7 @@ export const initialProducts: Product[] = [
       "cat-sfyria-variopoyles"
     ],
     "price": 21.49,
-    "costPrice": 15.0,
+    "costPrice": 15,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -68392,7 +68392,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471333",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 21.48,
     "costPrice": 12.9,
@@ -68407,7 +68407,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3924493",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -68587,7 +68587,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480978",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-allen"
+      "cat-kleidia-allen-torx"
     ],
     "price": 21.25,
     "costPrice": 14.4,
@@ -68602,7 +68602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Allen",
+      "category": "Κλειδιά Allen & Torx",
       "supplierCode": "3928269",
       "supplierStock": "Διαθέσιμο"
     },
@@ -68652,7 +68652,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471760",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 21.13,
     "costPrice": 13.74,
@@ -68667,7 +68667,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926148",
       "supplierStock": "Διαθέσιμο"
     },
@@ -68977,7 +68977,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493882",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 20.88,
     "costPrice": 14.34,
@@ -68992,7 +68992,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3929956",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69042,7 +69042,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479409",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-psalidia"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 20.77,
     "costPrice": 13.74,
@@ -69057,7 +69057,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ψαλίδια",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3927835",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -69107,7 +69107,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478559",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 20.77,
     "costPrice": 15.54,
@@ -69122,7 +69122,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3926869",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69172,7 +69172,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471530",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 20.75,
     "costPrice": 14.34,
@@ -69187,7 +69187,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927168",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -69237,7 +69237,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478254",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lostoi-prokovgaltes"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 20.5,
     "costPrice": 12.54,
@@ -69252,7 +69252,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λοστοί - Προκοβγάλτες",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3926914",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69302,7 +69302,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459092",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 20.49,
     "costPrice": 13.14,
@@ -69317,7 +69317,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900846",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69367,7 +69367,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479157",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 20.47,
     "costPrice": 13.425,
@@ -69382,7 +69382,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927215",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69432,7 +69432,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480650",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syndesmoi-rakor-potismatos"
+      "cat-tsekoyria-psekastires-potisma"
     ],
     "price": 20.46,
     "costPrice": 9.9,
@@ -69447,7 +69447,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σύνδεσμοι / Ρακόρ Ποτίσματος",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3929485",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -69562,7 +69562,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492399",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-allen"
+      "cat-kleidia-allen-torx"
     ],
     "price": 20.38,
     "costPrice": 14.94,
@@ -69577,7 +69577,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Allen",
+      "category": "Κλειδιά Allen & Torx",
       "supplierCode": "3928045",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69627,7 +69627,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471529",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 19.95,
     "costPrice": 13.14,
@@ -69642,7 +69642,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927167",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69822,7 +69822,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48475021",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 19.9,
     "costPrice": 13.14,
@@ -69837,7 +69837,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3931052",
       "supplierStock": "Διαθέσιμο"
     },
@@ -69887,10 +69887,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479896",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skarpela"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 19.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -69902,7 +69902,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαρπέλα",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -69925,7 +69925,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -69952,7 +69952,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48226407",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 19.9,
     "costPrice": 14.34,
@@ -69967,7 +69967,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3900501",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -70017,7 +70017,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471508",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 19.9,
     "costPrice": 11.94,
@@ -70032,7 +70032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927173",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70082,7 +70082,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480183",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 19.9,
     "costPrice": 12.3,
@@ -70097,7 +70097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928963",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70147,7 +70147,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498763",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 19.89,
     "costPrice": 15.3,
@@ -70162,7 +70162,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931269",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70212,7 +70212,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492511",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kleidia-filtron-ladioy"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 19.78,
     "costPrice": 13.14,
@@ -70227,7 +70227,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κλειδιά Φίλτρων Λαδιού",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3928044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70342,7 +70342,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498770",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 19.58,
     "costPrice": 14.7,
@@ -70357,7 +70357,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931232",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70472,7 +70472,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480624",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 19.5,
     "costPrice": 13.125,
@@ -70487,7 +70487,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927908",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70537,7 +70537,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471586",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 19.4,
     "costPrice": 14.1,
@@ -70552,7 +70552,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926203",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70602,7 +70602,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472122",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 19.32,
     "costPrice": 13.5,
@@ -70617,7 +70617,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3926516",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70667,7 +70667,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471274",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 19.09,
     "costPrice": 14.94,
@@ -70682,7 +70682,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3903086",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70732,9 +70732,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498780",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
-    "price": 19.0,
+    "price": 19,
     "costPrice": 11.1,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -70747,7 +70747,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931274",
       "supplierStock": "Διαθέσιμο"
     },
@@ -70797,7 +70797,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480356",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 18.96,
     "costPrice": 13.5,
@@ -70812,7 +70812,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928438",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71057,7 +71057,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459597",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 18.9,
     "costPrice": 12.9,
@@ -71072,7 +71072,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3902846",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71122,7 +71122,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471507",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 18.9,
     "costPrice": 11.34,
@@ -71137,7 +71137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927172",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71252,7 +71252,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493470",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 18.8,
     "costPrice": 10.875,
@@ -71267,7 +71267,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3930747",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71317,7 +71317,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478620",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 18.79,
     "costPrice": 13.5,
@@ -71332,7 +71332,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3927606",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71382,7 +71382,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478250",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lostoi-prokovgaltes"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 18.79,
     "costPrice": 12.54,
@@ -71397,7 +71397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λοστοί - Προκοβγάλτες",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3926890",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -71447,7 +71447,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464854",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 18.59,
     "costPrice": 12.54,
@@ -71462,7 +71462,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3903023",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71512,7 +71512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471729",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 18.57,
     "costPrice": 10.74,
@@ -71527,7 +71527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926547",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71707,10 +71707,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471889 4932471890 4932471891",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gileka-ergasias"
+      "cat-roycha-gileka-ergasias"
     ],
     "price": 18.39,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 4,
     "lowStockThreshold": 1,
@@ -71722,7 +71722,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γιλέκα Εργασίας",
+      "category": "Ρούχα & Γιλέκα Εργασίας",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -71745,7 +71745,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -71772,7 +71772,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499014",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 18.19,
     "costPrice": 11.94,
@@ -71787,7 +71787,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3931045",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71837,7 +71837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471358",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 18.08,
     "costPrice": 13.74,
@@ -71852,7 +71852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3926530",
       "supplierStock": "Διαθέσιμο"
     },
@@ -71902,7 +71902,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492812",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-prionia"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 17.99,
     "costPrice": 14.34,
@@ -71917,7 +71917,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πριόνια",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3929980",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72032,7 +72032,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480975",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exolkeis"
+      "cat-ergaleia-exoplismos-aytokinitoy"
     ],
     "price": 17.97,
     "costPrice": 11.7,
@@ -72047,7 +72047,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξωλκείς",
+      "category": "Εργαλεία & Εξοπλισμός Αυτοκινήτου",
       "supplierCode": "3928317",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72097,10 +72097,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479895",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skarpela"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 17.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -72112,7 +72112,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαρπέλα",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -72135,7 +72135,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -72162,7 +72162,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471505",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 17.9,
     "costPrice": 10.5,
@@ -72177,7 +72177,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927171",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72227,7 +72227,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480181",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 17.9,
     "costPrice": 10.98,
@@ -72242,7 +72242,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928961",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72292,7 +72292,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499518",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gallika-kleidia"
+      "cat-gallika-diafora-kleidia"
     ],
     "price": 17.81,
     "costPrice": 10.5,
@@ -72307,7 +72307,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γαλλικά Κλειδιά",
+      "category": "Γαλλικά & Διάφορα Κλειδιά",
       "supplierCode": "3931424",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72552,7 +72552,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471528",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 17.64,
     "costPrice": 11.94,
@@ -72567,7 +72567,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927166",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72617,7 +72617,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498768",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 17.59,
     "costPrice": 13.14,
@@ -72632,7 +72632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931231",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72682,7 +72682,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932501156",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-simadeytiria-charaktes-ergasias"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 17.59,
     "costPrice": 10.14,
@@ -72697,7 +72697,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σημαδευτήρια & Χαράκτες Εργασίας",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3931653",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -72747,7 +72747,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498607",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 17.53,
     "costPrice": 10.74,
@@ -72762,7 +72762,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931034",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72812,7 +72812,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471501",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 17.5,
     "costPrice": 10.14,
@@ -72827,7 +72827,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926617",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72877,7 +72877,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471733",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 17.48,
     "costPrice": 10.5,
@@ -72892,7 +72892,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926551",
       "supplierStock": "Διαθέσιμο"
     },
@@ -72942,7 +72942,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471506",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 17.47,
     "costPrice": 10.74,
@@ -72957,7 +72957,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926619",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -73007,7 +73007,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471726",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 17.44,
     "costPrice": 10.74,
@@ -73022,7 +73022,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926550",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73072,7 +73072,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464240",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 17.39,
     "costPrice": 13.14,
@@ -73087,7 +73087,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3924398",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -73202,7 +73202,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499024",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 17.27,
     "costPrice": 11.94,
@@ -73217,7 +73217,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3931047",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73267,7 +73267,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471759",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 17.26,
     "costPrice": 11.94,
@@ -73282,7 +73282,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926147",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73332,7 +73332,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932499011",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 17.14,
     "costPrice": 11.94,
@@ -73347,7 +73347,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3931044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73397,7 +73397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48475221",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 17.14,
     "costPrice": 11.34,
@@ -73412,7 +73412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3931075",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73462,7 +73462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472123",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-goniometra"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 16.99,
     "costPrice": 10.14,
@@ -73477,7 +73477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γωνιόμετρα",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3927149",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73527,7 +73527,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471730",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 16.99,
     "costPrice": 9.9,
@@ -73542,7 +73542,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926018",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73592,7 +73592,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493384",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 16.98,
     "costPrice": 11.175,
@@ -73607,7 +73607,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929179",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73722,7 +73722,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48229250",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-solinokoftes-ydraylikon"
+      "cat-solinokoftes-preses-solinon"
     ],
     "price": 16.87,
     "costPrice": 10.14,
@@ -73737,7 +73737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σωληνοκόφτες Υδραυλικών",
+      "category": "Σωληνοκόφτες & Πρέσες Σωλήνων",
       "supplierCode": "3904949",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -73852,7 +73852,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498774",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 16.79,
     "costPrice": 11.7,
@@ -73867,7 +73867,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931263",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73917,7 +73917,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560159",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 16.79,
     "costPrice": 10.14,
@@ -73932,7 +73932,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921234",
       "supplierStock": "Διαθέσιμο"
     },
@@ -73982,7 +73982,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480917",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 16.74,
     "costPrice": 8.1,
@@ -73997,7 +73997,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929469",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -74047,7 +74047,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480913",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 16.69,
     "costPrice": 8.1,
@@ -74062,7 +74062,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929474",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -74112,7 +74112,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459091",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 16.65,
     "costPrice": 10.74,
@@ -74127,7 +74127,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900845",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74177,7 +74177,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560147",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 16.55,
     "costPrice": 9.54,
@@ -74192,7 +74192,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921231",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74242,7 +74242,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478253",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lostoi-prokovgaltes"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 16.5,
     "costPrice": 10.5,
@@ -74257,7 +74257,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λοστοί - Προκοβγάλτες",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3926892",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -74307,7 +74307,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471503",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 16.5,
     "costPrice": 10.14,
@@ -74322,7 +74322,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3926618",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -74372,10 +74372,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48224530",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 16.49,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 3,
     "lowStockThreshold": 1,
@@ -74387,7 +74387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -74410,7 +74410,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -74437,7 +74437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932501777",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 16.49,
     "costPrice": 10.14,
@@ -74452,7 +74452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3931592",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74502,7 +74502,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500397",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 16.49,
     "costPrice": 10.74,
@@ -74517,7 +74517,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931548",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74567,7 +74567,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48475091",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 16.49,
     "costPrice": 11.94,
@@ -74582,7 +74582,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3931059",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74697,7 +74697,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352468",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 16.43,
     "costPrice": 11.34,
@@ -74712,7 +74712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921177",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74762,7 +74762,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352338",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 16.39,
     "costPrice": 11.7,
@@ -74777,7 +74777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3920700",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74827,7 +74827,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471732",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 16.29,
     "costPrice": 9.9,
@@ -74842,7 +74842,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926548",
       "supplierStock": "Διαθέσιμο"
     },
@@ -74892,7 +74892,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471527",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 16.26,
     "costPrice": 11.34,
@@ -74907,7 +74907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927165",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75087,7 +75087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479894",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skarpela"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 16.08,
     "costPrice": 9.3,
@@ -75102,7 +75102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαρπέλα",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3928040",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75152,7 +75152,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493358",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syndesmoi-rakor-potismatos"
+      "cat-tsekoyria-psekastires-potisma"
     ],
     "price": 16.07,
     "costPrice": 9.3,
@@ -75167,7 +75167,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σύνδεσμοι / Ρακόρ Ποτίσματος",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3928174",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75219,7 +75219,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-diafora-analosima-ergaleion"
     ],
-    "price": 16.0,
+    "price": 16,
     "costPrice": 9.675,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -75284,7 +75284,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-metafora-anypsosi-fortion"
     ],
-    "price": 16.0,
+    "price": 16,
     "costPrice": 9.675,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -75347,9 +75347,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493357",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-syndesmoi-rakor-potismatos"
+      "cat-tsekoyria-psekastires-potisma"
     ],
-    "price": 16.0,
+    "price": 16,
     "costPrice": 7.74,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -75362,7 +75362,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σύνδεσμοι / Ρακόρ Ποτίσματος",
+      "category": "Τσεκούρια, Ψεκαστήρες & Πότισμα",
       "supplierCode": "3929486",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -75412,7 +75412,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560153",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 15.99,
     "costPrice": 9.9,
@@ -75427,7 +75427,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921232",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75542,7 +75542,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498077",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skoyfoi-kapela-ergasias"
+      "cat-skoyfoi-kapela-perilaimia"
     ],
     "price": 15.9,
     "costPrice": 9.54,
@@ -75557,7 +75557,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκούφοι & Καπέλα Εργασίας",
+      "category": "Σκούφοι, Καπέλα & Περιλαίμια",
       "supplierCode": "3929989",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75607,7 +75607,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471504",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 15.9,
     "costPrice": 10.14,
@@ -75622,7 +75622,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927170",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -75672,7 +75672,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478998",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 15.9,
     "costPrice": 9.54,
@@ -75687,7 +75687,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3927231",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75737,7 +75737,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48906031",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-analosima-polyergaleion"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 15.9,
     "costPrice": 9.54,
@@ -75752,7 +75752,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αναλώσιμα Πολυεργαλείων",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3927062",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -75867,7 +75867,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480707",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-epaggelmatikes-thikes-chartioy"
+      "cat-exoplismos-axesoyar-synergeioy"
     ],
     "price": 15.88,
     "costPrice": 10.125,
@@ -75882,7 +75882,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Επαγγελματικές Θήκες Χαρτιού",
+      "category": "Εξοπλισμός & Αξεσουάρ Συνεργείου",
       "supplierCode": "3927993",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75932,7 +75932,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498778",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 15.88,
     "costPrice": 9.54,
@@ -75947,7 +75947,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931273",
       "supplierStock": "Διαθέσιμο"
     },
@@ -75997,7 +75997,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471731",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 15.86,
     "costPrice": 9.9,
@@ -76012,7 +76012,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926002",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76062,7 +76062,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472124",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-goniometra"
+      "cat-charaktes-goniometra-simadeytiria"
     ],
     "price": 15.84,
     "costPrice": 11.1,
@@ -76077,7 +76077,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γωνιόμετρα",
+      "category": "Χαράκτες, Γωνιόμετρα & Σημαδευτήρια",
       "supplierCode": "3926955",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76127,7 +76127,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500041",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-prionia"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 15.8,
     "costPrice": 10.74,
@@ -76142,7 +76142,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πριόνια",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3931549",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76257,7 +76257,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471502",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 15.79,
     "costPrice": 10.14,
@@ -76272,7 +76272,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927169",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -76387,7 +76387,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464715",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 15.7,
     "costPrice": 10.14,
@@ -76402,7 +76402,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3924402",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76452,7 +76452,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480709",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 15.66,
     "costPrice": 10.425,
@@ -76467,7 +76467,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927995",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76517,7 +76517,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560177",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 15.58,
     "costPrice": 11.1,
@@ -76532,7 +76532,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921238",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76582,7 +76582,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48906021",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 15.51,
     "costPrice": 8.94,
@@ -76597,7 +76597,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3927059",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -76647,7 +76647,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471360",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 15.48,
     "costPrice": 11.7,
@@ -76662,7 +76662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3926017",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76777,7 +76777,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478249",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lostoi-prokovgaltes"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 15.48,
     "costPrice": 10.74,
@@ -76792,7 +76792,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λοστοί - Προκοβγάλτες",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3926868",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76845,7 +76845,7 @@ export const initialProducts: Product[] = [
       "cat-katsavidia-cheiros"
     ],
     "price": 15.2,
-    "costPrice": 9.0,
+    "costPrice": 9,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -76907,7 +76907,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430446",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 15.18,
     "costPrice": 9.54,
@@ -76922,7 +76922,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3950094",
       "supplierStock": "Διαθέσιμο"
     },
@@ -76972,7 +76972,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471526",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 15.16,
     "costPrice": 9.54,
@@ -76987,7 +76987,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927164",
       "supplierStock": "Διαθέσιμο"
     },
@@ -77037,7 +77037,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459301",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-spasta-metra"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 15.1,
     "costPrice": 9.54,
@@ -77052,7 +77052,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σπαστά Μέτρα",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900864",
       "supplierStock": "Διαθέσιμο"
     },
@@ -77102,7 +77102,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478897",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 15.08,
     "costPrice": 9.54,
@@ -77117,7 +77117,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3927867",
       "supplierStock": "Διαθέσιμο"
     },
@@ -77167,7 +77167,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493377",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 14.99,
     "costPrice": 8.925,
@@ -77182,7 +77182,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929171",
       "supplierStock": "Διαθέσιμο"
     },
@@ -77297,7 +77297,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48906001",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-analosima-polyergaleion"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 14.99,
     "costPrice": 8.1,
@@ -77312,7 +77312,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αναλώσιμα Πολυεργαλείων",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3927051",
       "supplierStock": "Διαθέσιμο"
     },
@@ -77335,7 +77335,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 1.0,
+    "weight": 1,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -77492,10 +77492,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "1159700015",
     "brandId": "brand-brennenstuhl",
     "categoryIds": [
-      "cat-polypriza-taf"
+      "cat-ilektronika-outdoor-axesoyar"
     ],
     "price": 14.98,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 5,
     "lowStockThreshold": 1,
@@ -77507,7 +77507,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Brennenstuhl",
-      "category": "Πολύπριζα & Ταφ",
+      "category": "Ηλεκτρονικά Outdoor & Αξεσουάρ",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -77530,7 +77530,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -77557,7 +77557,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560507",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 14.96,
     "costPrice": 10.5,
@@ -77572,7 +77572,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921342",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -77690,7 +77690,7 @@ export const initialProducts: Product[] = [
       "cat-katsavidia-cheiros"
     ],
     "price": 14.95,
-    "costPrice": 9.0,
+    "costPrice": 9,
     "vatRate": 0.24,
     "stockQuantity": 2,
     "lowStockThreshold": 1,
@@ -77752,7 +77752,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493464",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 14.9,
     "costPrice": 10.875,
@@ -77767,7 +77767,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929605",
       "supplierStock": "Διαθέσιμο"
     },
@@ -77920,7 +77920,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -77947,7 +77947,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479893",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skarpela"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 14.9,
     "costPrice": 8.7,
@@ -77962,7 +77962,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαρπέλα",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "3928039",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -78077,7 +78077,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498772",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 14.89,
     "costPrice": 8.94,
@@ -78092,7 +78092,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931264",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78142,7 +78142,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48906011",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 14.89,
     "costPrice": 8.94,
@@ -78157,7 +78157,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3927053",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78207,7 +78207,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471357",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 14.88,
     "costPrice": 10.5,
@@ -78222,7 +78222,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3926529",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78272,7 +78272,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "49560158",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 14.79,
     "costPrice": 9.42,
@@ -78287,7 +78287,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921233",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78337,7 +78337,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480912",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 14.69,
     "costPrice": 7.14,
@@ -78352,7 +78352,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929473",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -78402,7 +78402,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471725",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 14.68,
     "costPrice": 9.54,
@@ -78417,7 +78417,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926026",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78467,7 +78467,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478299",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 14.67,
     "costPrice": 9.75,
@@ -78482,7 +78482,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926707",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78532,7 +78532,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480916",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 14.51,
     "costPrice": 7.02,
@@ -78547,7 +78547,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929468",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78597,10 +78597,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479892",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skarpela"
+      "cat-lostoi-prokovgaltes-skarpela"
     ],
     "price": 14.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -78612,7 +78612,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαρπέλα",
+      "category": "Λοστοί, Προκοβγάλτες & Σκαρπέλα",
       "supplierCode": "",
       "supplierStock": ""
     },
@@ -78635,7 +78635,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -78662,7 +78662,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498342",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 14.49,
     "costPrice": 10.17,
@@ -78677,7 +78677,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3921393",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78792,7 +78792,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480910",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 14.26,
     "costPrice": 6.9,
@@ -78807,7 +78807,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929480",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78857,7 +78857,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498642",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 13.99,
     "costPrice": 8.18,
@@ -78872,7 +78872,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3931041",
       "supplierStock": "Διαθέσιμο"
     },
@@ -78987,7 +78987,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493381",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 13.9,
     "costPrice": 8.175,
@@ -79002,7 +79002,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929173",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79052,7 +79052,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48475092",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-lames-segas"
+      "cat-lames-segas-koptika"
     ],
     "price": 13.89,
     "costPrice": 8.94,
@@ -79067,7 +79067,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Λάμες Σέγας",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3931060",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79117,7 +79117,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471525",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 13.84,
     "costPrice": 8.94,
@@ -79132,7 +79132,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927163",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79247,7 +79247,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472262",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 13.59,
     "costPrice": 9.3,
@@ -79262,7 +79262,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3927151",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79312,7 +79312,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479104",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 13.5,
     "costPrice": 10.125,
@@ -79327,7 +79327,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927205",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79377,7 +79377,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498076",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-petsetes-microfiber"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 13.5,
     "costPrice": 8.34,
@@ -79392,7 +79392,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πετσέτες Microfiber",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3929987",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -79507,7 +79507,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479105",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 13.48,
     "costPrice": 10.125,
@@ -79522,7 +79522,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927207",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79572,7 +79572,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430910",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 13.44,
     "costPrice": 10.5,
@@ -79587,7 +79587,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3900811",
       "supplierStock": "Διαθέσιμο"
     },
@@ -79705,7 +79705,7 @@ export const initialProducts: Product[] = [
       "cat-katsavidia-cheiros"
     ],
     "price": 13.39,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -79740,7 +79740,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -79962,7 +79962,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459090",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 12.9,
     "costPrice": 8.34,
@@ -79977,7 +79977,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3900844",
       "supplierStock": "Διαθέσιμο"
     },
@@ -80092,7 +80092,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471524",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 12.86,
     "costPrice": 8.34,
@@ -80107,7 +80107,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927162",
       "supplierStock": "Διαθέσιμο"
     },
@@ -80157,7 +80157,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480699",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skafakia-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 12.81,
     "costPrice": 7.425,
@@ -80172,7 +80172,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαφάκια Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3928002",
       "supplierStock": "Διαθέσιμο"
     },
@@ -80287,7 +80287,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480708",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 12.74,
     "costPrice": 8.625,
@@ -80302,7 +80302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927994",
       "supplierStock": "Διαθέσιμο"
     },
@@ -80352,7 +80352,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471825",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 12.6,
     "costPrice": 8.994,
@@ -80367,7 +80367,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926208",
       "supplierStock": "Διαθέσιμο"
     },
@@ -80417,7 +80417,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472263",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-penses-koftes"
+      "cat-penses-koftes-psalidia"
     ],
     "price": 12.6,
     "costPrice": 8.94,
@@ -80432,7 +80432,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πένσες & Κόφτες",
+      "category": "Πένσες, Κόφτες & Ψαλίδια",
       "supplierCode": "3926854",
       "supplierStock": "Διαθέσιμο"
     },
@@ -80615,7 +80615,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 12.5,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -80650,7 +80650,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -80807,7 +80807,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480915",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-proektaseis-kastanias"
+      "cat-kastanies-proektaseis"
     ],
     "price": 12.28,
     "costPrice": 5.94,
@@ -80822,7 +80822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Προεκτάσεις Καστάνιας",
+      "category": "Καστάνιες & Προεκτάσεις",
       "supplierCode": "3929467",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81002,7 +81002,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498785",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 12.15,
     "costPrice": 8.1,
@@ -81017,7 +81017,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931277",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81067,7 +81067,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48227708",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 12.15,
     "costPrice": 7.14,
@@ -81082,7 +81082,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3924008",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81132,7 +81132,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498776",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 12.14,
     "costPrice": 7.14,
@@ -81147,7 +81147,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931272",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81327,7 +81327,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478298",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 11.99,
     "costPrice": 7.875,
@@ -81342,7 +81342,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3926708",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -81392,7 +81392,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492379",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 11.99,
     "costPrice": 8.34,
@@ -81407,7 +81407,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3931261",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81457,7 +81457,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479948",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 11.99,
     "costPrice": 8.94,
@@ -81472,7 +81472,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3927601",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81522,7 +81522,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493379",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skafakia-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 11.98,
     "costPrice": 8.175,
@@ -81537,7 +81537,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαφάκια Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3929172",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81587,7 +81587,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498146",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-petsetes-microfiber"
+      "cat-atsalines-apogymnotes-microfiber"
     ],
     "price": 11.9,
     "costPrice": 7.14,
@@ -81602,7 +81602,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πετσέτες Microfiber",
+      "category": "Ατσαλίνες, Απογυμνωτές & Microfiber",
       "supplierCode": "3929988",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81717,7 +81717,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480357",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 11.88,
     "costPrice": 8.1,
@@ -81732,7 +81732,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928290",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81782,7 +81782,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471523",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 11.88,
     "costPrice": 8.1,
@@ -81797,7 +81797,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927161",
       "supplierStock": "Διαθέσιμο"
     },
@@ -81847,7 +81847,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430864",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 11.84,
     "costPrice": 8.34,
@@ -81862,7 +81862,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923054",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82042,7 +82042,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471521",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 11.49,
     "costPrice": 7.14,
@@ -82057,7 +82057,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927159",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82107,7 +82107,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471574",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 11.49,
     "costPrice": 6.9,
@@ -82122,7 +82122,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926120",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -82172,7 +82172,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471522",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 11.47,
     "costPrice": 7.74,
@@ -82187,7 +82187,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927160",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82237,7 +82237,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492378",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 11.39,
     "costPrice": 8.34,
@@ -82252,7 +82252,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3929484",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82302,7 +82302,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480157",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 11.34,
     "costPrice": 7.74,
@@ -82317,7 +82317,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3927973",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82367,7 +82367,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430853",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 11.29,
     "costPrice": 8.34,
@@ -82382,7 +82382,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923043",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82432,7 +82432,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932367146",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kalemia-velonia-skaptikon"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 11.22,
     "costPrice": 7.74,
@@ -82447,7 +82447,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καλέμια & Βελόνια Σκαπτικών",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3920177",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -82497,7 +82497,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471519",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 11.18,
     "costPrice": 6.9,
@@ -82512,7 +82512,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927157",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82627,7 +82627,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480909",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 11.04,
     "costPrice": 5.34,
@@ -82642,7 +82642,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929479",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82692,7 +82692,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480911",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 11.04,
     "costPrice": 5.34,
@@ -82707,7 +82707,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929472",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -82757,9 +82757,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478300",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skafakia-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
-    "price": 11.0,
+    "price": 11,
     "costPrice": 6.375,
     "vatRate": 0.24,
     "stockQuantity": 2,
@@ -82772,7 +82772,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαφάκια Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3926706",
       "supplierStock": "Διαθέσιμο"
     },
@@ -82887,7 +82887,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493994",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-gileka-ergasias"
+      "cat-roycha-gileka-ergasias"
     ],
     "price": 10.9,
     "costPrice": 6.3,
@@ -82902,7 +82902,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γιλέκα Εργασίας",
+      "category": "Ρούχα & Γιλέκα Εργασίας",
       "supplierCode": "3930337",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -82925,7 +82925,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -83017,7 +83017,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471520",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 10.88,
     "costPrice": 7.14,
@@ -83032,7 +83032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927158",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83082,7 +83082,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459164",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 10.84,
     "costPrice": 7.92,
@@ -83097,7 +83097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3950255",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83277,7 +83277,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430877",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 10.79,
     "costPrice": 6.9,
@@ -83292,7 +83292,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923008",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83342,7 +83342,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500668",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogrezotes"
+      "cat-kolaoyza-filieres-apogrezotes"
     ],
     "price": 10.79,
     "costPrice": 7.14,
@@ -83357,7 +83357,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογρεζωτές",
+      "category": "Κολαούζα, Φιλιέρες & Απογρεζωτές",
       "supplierCode": "3931704",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83407,7 +83407,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430882",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 10.76,
     "costPrice": 6.9,
@@ -83422,7 +83422,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923013",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83537,7 +83537,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471361",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 10.64,
     "costPrice": 7.74,
@@ -83552,7 +83552,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3926531",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83602,7 +83602,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471824",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 10.57,
     "costPrice": 7.794,
@@ -83617,7 +83617,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926207",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83667,7 +83667,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430904",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 10.49,
     "costPrice": 8.34,
@@ -83682,7 +83682,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923065",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83732,7 +83732,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471517",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 10.38,
     "costPrice": 6.54,
@@ -83747,7 +83747,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927155",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83862,7 +83862,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498783",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 10.28,
     "costPrice": 6.54,
@@ -83877,7 +83877,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931276",
       "supplierStock": "Διαθέσιμο"
     },
@@ -83927,7 +83927,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932472091",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 10.21,
     "costPrice": 7.14,
@@ -83942,7 +83942,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3926341",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84057,7 +84057,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471356",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 10.07,
     "costPrice": 7.74,
@@ -84072,7 +84072,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3926008",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84122,7 +84122,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471516",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 9.99,
     "costPrice": 6.3,
@@ -84137,7 +84137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927154",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -84225,7 +84225,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -84290,7 +84290,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -84317,7 +84317,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480355",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 9.98,
     "costPrice": 6.54,
@@ -84332,7 +84332,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927884",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84382,7 +84382,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480706",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 9.95,
     "costPrice": 6.375,
@@ -84397,7 +84397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3927992",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84447,7 +84447,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471518",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 9.91,
     "costPrice": 6.54,
@@ -84462,7 +84462,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3927156",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -84512,7 +84512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493469",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 9.89,
     "costPrice": 6.675,
@@ -84527,7 +84527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929675",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84577,7 +84577,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480108",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 9.89,
     "costPrice": 7.14,
@@ -84592,7 +84592,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3927865",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84707,7 +84707,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480649",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 9.8,
     "costPrice": 4.74,
@@ -84722,7 +84722,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929916",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -84772,7 +84772,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48224255",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-apogrezotes"
+      "cat-kolaoyza-filieres-apogrezotes"
     ],
     "price": 9.79,
     "costPrice": 7.14,
@@ -84787,7 +84787,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Απογρεζωτές",
+      "category": "Κολαούζα, Φιλιέρες & Απογρεζωτές",
       "supplierCode": "3900869",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84837,7 +84837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500396",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 9.75,
     "costPrice": 5.94,
@@ -84852,7 +84852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931574",
       "supplierStock": "Διαθέσιμο"
     },
@@ -84902,7 +84902,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480661",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktika-gia-maskes-ergasias"
+      "cat-maskes-ergasias-antallaktika"
     ],
     "price": 9.7,
     "costPrice": 5.625,
@@ -84917,7 +84917,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικά για Μάσκες Εργασίας",
+      "category": "Μάσκες Εργασίας & Ανταλλακτικά",
       "supplierCode": "3928125",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -85227,7 +85227,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480198",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 9.57,
     "costPrice": 6.3,
@@ -85242,7 +85242,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928873",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85292,7 +85292,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478301",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skafakia-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 9.5,
     "costPrice": 5.925,
@@ -85307,7 +85307,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαφάκια Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3926705",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85357,7 +85357,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430866",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 9.49,
     "costPrice": 6.9,
@@ -85372,7 +85372,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923056",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85422,7 +85422,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480197",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-germanopolygona"
+      "cat-germanopolygona-kleidia-ssfixeos"
     ],
     "price": 9.45,
     "costPrice": 5.94,
@@ -85437,7 +85437,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Γερμανοπολύγωνα",
+      "category": "Γερμανοπολύγωνα & Κλειδιά Σσφίξεως",
       "supplierCode": "3928872",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85617,7 +85617,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478135",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-otoaspides-ergasias"
+      "cat-otoaspides-prostasia-akois"
     ],
     "price": 9.37,
     "costPrice": 5.52,
@@ -85632,7 +85632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ωτοασπίδες Εργασίας",
+      "category": "Ωτοασπίδες & Προστασία Ακοής",
       "supplierCode": "3927217",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85655,7 +85655,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -85747,7 +85747,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480941",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 9.23,
     "costPrice": 6.54,
@@ -85762,7 +85762,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927932",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85812,7 +85812,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932492939",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 9.21,
     "costPrice": 6.54,
@@ -85827,7 +85827,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3928011",
       "supplierStock": "Διαθέσιμο"
     },
@@ -85915,7 +85915,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -85942,9 +85942,9 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480647",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
-    "price": 9.0,
+    "price": 9,
     "costPrice": 4.38,
     "vatRate": 0.24,
     "stockQuantity": 1,
@@ -85957,7 +85957,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929914",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -86007,7 +86007,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480698",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-skafakia-apothikeysis-ergaleion"
+      "cat-tampakieres-skafakia-mpaoyla"
     ],
     "price": 8.99,
     "costPrice": 5.925,
@@ -86022,7 +86022,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σκαφάκια Αποθήκευσης Εργαλείων",
+      "category": "Ταμπακιέρες, Σκαφάκια & Μπαούλα",
       "supplierCode": "3928001",
       "supplierStock": "Διαθέσιμο"
     },
@@ -86370,7 +86370,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -86397,7 +86397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932339626",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kalemia-velonia-skaptikon"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 8.89,
     "costPrice": 5.94,
@@ -86412,7 +86412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καλέμια & Βελόνια Σκαπτικών",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3920176",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -86592,7 +86592,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932493380",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-axesoyar-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 8.7,
     "costPrice": 5.625,
@@ -86607,7 +86607,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αξεσουάρ Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3929174",
       "supplierStock": "Διαθέσιμο"
     },
@@ -86787,7 +86787,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479466",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 8.62,
     "costPrice": 5.94,
@@ -86802,7 +86802,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3927592",
       "supplierStock": "Διαθέσιμο"
     },
@@ -86917,7 +86917,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480646",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 8.56,
     "costPrice": 4.14,
@@ -86932,7 +86932,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929913",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -86982,7 +86982,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480908",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 8.56,
     "costPrice": 4.14,
@@ -86997,7 +86997,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929478",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -87280,7 +87280,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -87345,7 +87345,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -87372,7 +87372,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932339625",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-kalemia-velonia-skaptikon"
+      "cat-kalemia-velonia-analosima-polyergaleion"
     ],
     "price": 8.48,
     "costPrice": 5.94,
@@ -87387,7 +87387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Καλέμια & Βελόνια Σκαπτικών",
+      "category": "Καλέμια, Βελόνια & Αναλώσιμα Πολυεργαλείων",
       "supplierCode": "3920175",
       "supplierStock": "Διαθέσιμο"
     },
@@ -87697,7 +87697,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480907",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 8.06,
     "costPrice": 3.9,
@@ -87712,7 +87712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3929477",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -87957,7 +87957,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48221962",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 7.96,
     "costPrice": 5.94,
@@ -87972,7 +87972,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3900236",
       "supplierStock": "Διαθέσιμο"
     },
@@ -88087,7 +88087,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932464717",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 7.93,
     "costPrice": 4.77,
@@ -88102,7 +88102,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3924400",
       "supplierStock": "Διαθέσιμο"
     },
@@ -88542,7 +88542,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479783",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-prionia"
+      "cat-prionia-voithitika-ergaleia"
     ],
     "price": 7.62,
     "costPrice": 5.82,
@@ -88557,7 +88557,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Πριόνια",
+      "category": "Πριόνια & Βοηθητικά Εργαλεία",
       "supplierCode": "3927651",
       "supplierStock": "Διαθέσιμο"
     },
@@ -88672,7 +88672,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48221961",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-chartokoptes-kopidia"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 7.56,
     "costPrice": 5.58,
@@ -88687,7 +88687,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Χαρτοκόπτες, Κοπίδια",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3900235",
       "supplierStock": "Διαθέσιμο"
     },
@@ -88802,7 +88802,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459398",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 7.48,
     "costPrice": 5.394,
@@ -88817,7 +88817,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3924227",
       "supplierStock": "Διαθέσιμο"
     },
@@ -88867,7 +88867,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932498782",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-metrotainies"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 7.34,
     "costPrice": 4.74,
@@ -88882,7 +88882,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μετροταινίες",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3931275",
       "supplierStock": "Διαθέσιμο"
     },
@@ -89257,7 +89257,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352466",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 7.09,
     "costPrice": 4.47,
@@ -89272,7 +89272,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3920715",
       "supplierStock": "Διαθέσιμο"
     },
@@ -89322,7 +89322,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500395",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 6.93,
     "costPrice": 4.77,
@@ -89337,7 +89337,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931575",
       "supplierStock": "Διαθέσιμο"
     },
@@ -89387,7 +89387,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471929",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 6.74,
     "costPrice": 4.14,
@@ -89402,7 +89402,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926113",
       "supplierStock": "Διαθέσιμο"
     },
@@ -89452,7 +89452,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479228",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 6.69,
     "costPrice": 5.1,
@@ -89467,7 +89467,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927599",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -89517,7 +89517,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471904",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-otoaspides"
+      "cat-otoaspides-prostasia-akois"
     ],
     "price": 6.58,
     "costPrice": 4.14,
@@ -89532,7 +89532,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ωτοασπίδες",
+      "category": "Ωτοασπίδες & Προστασία Ακοής",
       "supplierCode": "3927598",
       "supplierStock": "Διαθέσιμο"
     },
@@ -89647,7 +89647,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480107",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 6.49,
     "costPrice": 4.74,
@@ -89662,7 +89662,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3927864",
       "supplierStock": "Διαθέσιμο"
     },
@@ -89907,7 +89907,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480354",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 6.28,
     "costPrice": 4.14,
@@ -89922,7 +89922,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927701",
       "supplierStock": "Διαθέσιμο"
     },
@@ -90037,7 +90037,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471823",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 6.08,
     "costPrice": 4.5,
@@ -90052,7 +90052,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926015",
       "supplierStock": "Διαθέσιμο"
     },
@@ -90102,7 +90102,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459100",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-alfadia"
+      "cat-alfadia-cheiros-laser"
     ],
     "price": 5.98,
     "costPrice": 4.14,
@@ -90117,7 +90117,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αλφάδια",
+      "category": "Αλφάδια (Χειρός & Laser)",
       "supplierCode": "3904954",
       "supplierStock": "Διαθέσιμο"
     },
@@ -90167,7 +90167,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471928",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 5.94,
     "costPrice": 4.14,
@@ -90182,7 +90182,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926112",
       "supplierStock": "Διαθέσιμο"
     },
@@ -90297,7 +90297,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479091",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-leiansis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 5.72,
     "costPrice": 3.3,
@@ -90312,7 +90312,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Λείανσης",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3927235",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -90362,7 +90362,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479408",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 5.65,
     "costPrice": 3.54,
@@ -90377,7 +90377,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3927811",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -90492,7 +90492,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430912",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-exartimata-ilektrikon-ergaleion"
+      "cat-axesoyar-exartimata-ilektrikon-ergaleion"
     ],
     "price": 5.46,
     "costPrice": 2.94,
@@ -90507,7 +90507,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Εξαρτήματα Ηλεκτρικών Εργαλείων",
+      "category": "Αξεσουάρ & Εξαρτήματα Ηλεκτρικών Εργαλείων",
       "supplierCode": "3900295",
       "supplierStock": "Διαθέσιμο"
     },
@@ -90817,7 +90817,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480106",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 5.19,
     "costPrice": 3.6,
@@ -90832,7 +90832,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3927866",
       "supplierStock": "Διαθέσιμο"
     },
@@ -90947,7 +90947,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471960",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 5.02,
     "costPrice": 3.48,
@@ -90962,7 +90962,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926876",
       "supplierStock": "Διαθέσιμο"
     },
@@ -91014,7 +91014,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-karydakia"
     ],
-    "price": 5.0,
+    "price": 5,
     "costPrice": 2.91,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -91079,7 +91079,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-karydakia"
     ],
-    "price": 5.0,
+    "price": 5,
     "costPrice": 2.91,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -91144,7 +91144,7 @@ export const initialProducts: Product[] = [
     "categoryIds": [
       "cat-karydakia"
     ],
-    "price": 5.0,
+    "price": 5,
     "costPrice": 2.91,
     "vatRate": 0.24,
     "stockQuantity": 0,
@@ -91272,7 +91272,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430339",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 4.99,
     "costPrice": 3.42,
@@ -91287,7 +91287,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3984033",
       "supplierStock": "Διαθέσιμο"
     },
@@ -91600,7 +91600,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 4.93,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -91635,7 +91635,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -91665,7 +91665,7 @@ export const initialProducts: Product[] = [
       "cat-markadoroi"
     ],
     "price": 4.9,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 13,
     "lowStockThreshold": 1,
@@ -91700,7 +91700,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -91857,7 +91857,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932479465",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-potirotrypana"
+      "cat-trypania-potirotrypana"
     ],
     "price": 4.85,
     "costPrice": 3.42,
@@ -91872,7 +91872,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ποτηροτρύπανα",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3927629",
       "supplierStock": "Διαθέσιμο"
     },
@@ -91925,7 +91925,7 @@ export const initialProducts: Product[] = [
       "cat-markadoroi"
     ],
     "price": 4.84,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 17,
     "lowStockThreshold": 1,
@@ -91960,7 +91960,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -91987,7 +91987,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471822",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 4.78,
     "costPrice": 3.594,
@@ -92002,7 +92002,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926206",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -92442,7 +92442,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932363705",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-koptika-frezes"
+      "cat-lames-segas-koptika"
     ],
     "price": 4.5,
     "costPrice": 2.79,
@@ -92457,7 +92457,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κοπτικά & Φρέζες",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3936373",
       "supplierStock": "Διαθέσιμο"
     },
@@ -92510,7 +92510,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 4.48,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -92545,7 +92545,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -92637,10 +92637,10 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471107",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 4.34,
-    "costPrice": 3.0,
+    "costPrice": 3,
     "vatRate": 0.24,
     "stockQuantity": 1,
     "lowStockThreshold": 1,
@@ -92652,7 +92652,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926933",
       "supplierStock": "Διαθέσιμο"
     },
@@ -92897,7 +92897,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932480464",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-otoaspides"
+      "cat-otoaspides-prostasia-akois"
     ],
     "price": 4.28,
     "costPrice": 2.4,
@@ -92912,7 +92912,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ωτοασπίδες",
+      "category": "Ωτοασπίδες & Προστασία Ακοής",
       "supplierCode": "3928106",
       "supplierStock": "Διαθέσιμο"
     },
@@ -93030,7 +93030,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 4.25,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -93065,7 +93065,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -93160,7 +93160,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 4.15,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -93195,7 +93195,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -93287,7 +93287,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471959",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 4.14,
     "costPrice": 2.868,
@@ -93302,7 +93302,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926872",
       "supplierStock": "Διαθέσιμο"
     },
@@ -93352,7 +93352,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932363704",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-koptika-frezes"
+      "cat-lames-segas-koptika"
     ],
     "price": 4.1,
     "costPrice": 2.52,
@@ -93367,7 +93367,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κοπτικά & Φρέζες",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3936372",
       "supplierStock": "Διαθέσιμο"
     },
@@ -93615,7 +93615,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 4.03,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -93650,7 +93650,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -93680,7 +93680,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 4.03,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -93715,7 +93715,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -93807,7 +93807,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932459303",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-spasta-metra"
+      "cat-metrotainies-metra-laser"
     ],
     "price": 3.99,
     "costPrice": 2.94,
@@ -93822,7 +93822,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Σπαστά Μέτρα",
+      "category": "Μετροταινίες & Μέτρα Laser",
       "supplierCode": "3900863",
       "supplierStock": "Διαθέσιμο"
     },
@@ -93872,7 +93872,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932363703",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-koptika-frezes"
+      "cat-lames-segas-koptika"
     ],
     "price": 3.99,
     "costPrice": 2.46,
@@ -93887,7 +93887,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Κοπτικά & Φρέζες",
+      "category": "Λάμες Σέγας & Κοπτικά",
       "supplierCode": "3936371",
       "supplierStock": "Διαθέσιμο"
     },
@@ -94002,7 +94002,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932363268",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.98,
     "costPrice": 2.19,
@@ -94017,7 +94017,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3924156",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -94070,7 +94070,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 3.95,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -94105,7 +94105,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -94392,7 +94392,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471104",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.86,
     "costPrice": 2.67,
@@ -94407,7 +94407,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926930",
       "supplierStock": "Διαθέσιμο"
     },
@@ -94590,7 +94590,7 @@ export const initialProducts: Product[] = [
       "cat-gantia-ergasias"
     ],
     "price": 3.73,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 125,
     "lowStockThreshold": 1,
@@ -94625,7 +94625,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -94785,7 +94785,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 3.69,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -94820,7 +94820,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -94847,7 +94847,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500391",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 3.69,
     "costPrice": 2.34,
@@ -94862,7 +94862,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931547",
       "supplierStock": "Διαθέσιμο"
     },
@@ -94912,7 +94912,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500390",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 3.69,
     "costPrice": 2.34,
@@ -94927,7 +94927,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931546",
       "supplierStock": "Διαθέσιμο"
     },
@@ -94977,7 +94977,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471103",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.69,
     "costPrice": 2.46,
@@ -94992,7 +94992,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926929",
       "supplierStock": "Διαθέσιμο"
     },
@@ -95432,7 +95432,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471958",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.49,
     "costPrice": 2.37,
@@ -95447,7 +95447,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926866",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -95497,7 +95497,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471097",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.49,
     "costPrice": 2.214,
@@ -95512,7 +95512,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926923",
       "supplierStock": "Διαθέσιμο"
     },
@@ -95795,7 +95795,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -95952,7 +95952,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932352406",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 3.37,
     "costPrice": 2.97,
@@ -95967,7 +95967,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3921089",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -96017,7 +96017,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500383",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 3.37,
     "costPrice": 2.19,
@@ -96032,7 +96032,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931535",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -96082,7 +96082,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478054",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 3.36,
     "costPrice": 2.394,
@@ -96097,7 +96097,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926757",
       "supplierStock": "Διαθέσιμο"
     },
@@ -96472,7 +96472,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471096",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.29,
     "costPrice": 2.1,
@@ -96487,7 +96487,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926922",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -96667,7 +96667,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471186",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.25,
     "costPrice": 2.25,
@@ -96682,7 +96682,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926902",
       "supplierStock": "Διαθέσιμο"
     },
@@ -96797,7 +96797,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471183",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.14,
     "costPrice": 1.83,
@@ -96812,7 +96812,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926901",
       "supplierStock": "Διαθέσιμο"
     },
@@ -96927,7 +96927,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471091",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.1,
     "costPrice": 1.674,
@@ -96942,7 +96942,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926917",
       "supplierStock": "Διαθέσιμο"
     },
@@ -97057,7 +97057,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48894719",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 3.05,
     "costPrice": 2.094,
@@ -97072,7 +97072,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3902832",
       "supplierStock": "Διαθέσιμο"
     },
@@ -97122,7 +97122,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500362",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.99,
     "costPrice": 1.614,
@@ -97137,7 +97137,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931523",
       "supplierStock": "Διαθέσιμο"
     },
@@ -97317,7 +97317,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500387",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.99,
     "costPrice": 1.674,
@@ -97332,7 +97332,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931540",
       "supplierStock": "Διαθέσιμο"
     },
@@ -97382,7 +97382,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48894714",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.91,
     "costPrice": 1.74,
@@ -97397,7 +97397,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3902827",
       "supplierStock": "Διαθέσιμο"
     },
@@ -97512,7 +97512,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500380",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.89,
     "costPrice": 1.614,
@@ -97527,7 +97527,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931533",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -97577,7 +97577,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500379",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.89,
     "costPrice": 1.614,
@@ -97592,7 +97592,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931551",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -97837,7 +97837,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500382",
     "brandId": "brand-oem",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.84,
     "costPrice": 1.794,
@@ -97852,7 +97852,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "OEM",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931534",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -97970,7 +97970,7 @@ export const initialProducts: Product[] = [
       "cat-karydakia"
     ],
     "price": 2.82,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 0,
     "lowStockThreshold": 1,
@@ -98005,7 +98005,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -98097,7 +98097,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500378",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.79,
     "costPrice": 1.614,
@@ -98112,7 +98112,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931532",
       "supplierStock": "Διαθέσιμο"
     },
@@ -98162,7 +98162,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471093",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.79,
     "costPrice": 1.854,
@@ -98177,7 +98177,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926919",
       "supplierStock": "Διαθέσιμο"
     },
@@ -98422,7 +98422,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500388",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.65,
     "costPrice": 1.674,
@@ -98437,7 +98437,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931541",
       "supplierStock": "Διαθέσιμο"
     },
@@ -98487,7 +98487,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932478803",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.59,
     "costPrice": 1.8,
@@ -98502,7 +98502,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3927206",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -98617,7 +98617,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932500381",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.55,
     "costPrice": 1.614,
@@ -98632,7 +98632,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3931510",
       "supplierStock": "Διαθέσιμο"
     },
@@ -98682,7 +98682,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471175",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.54,
     "costPrice": 1.488,
@@ -98697,7 +98697,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926873",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -99137,7 +99137,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48894708",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.44,
     "costPrice": 1.53,
@@ -99152,7 +99152,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3902821",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -99202,7 +99202,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471826",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antaptores-gia-karydakia-kai-mytes"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 2.19,
     "costPrice": 1.434,
@@ -99217,7 +99217,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Αντάπτορες για Καρυδάκια και Μύτες",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926016",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99267,7 +99267,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471169",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.18,
     "costPrice": 1.29,
@@ -99282,7 +99282,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926894",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99332,7 +99332,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48894763",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.18,
     "costPrice": 1.23,
@@ -99347,7 +99347,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3902818",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99397,7 +99397,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471171",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 2.09,
     "costPrice": 1.35,
@@ -99412,7 +99412,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3926875",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99462,7 +99462,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430883",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.99,
     "costPrice": 1.14,
@@ -99477,7 +99477,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923014",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99527,7 +99527,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471571",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.94,
     "costPrice": 1.14,
@@ -99542,7 +99542,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926117",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99592,7 +99592,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430862",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.89,
     "costPrice": 1.14,
@@ -99607,7 +99607,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923052",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99657,7 +99657,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430851",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.88,
     "costPrice": 1.14,
@@ -99672,7 +99672,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923041",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99722,7 +99722,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430859",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.85,
     "costPrice": 1.17,
@@ -99737,7 +99737,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923049",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99787,7 +99787,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430867",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.84,
     "costPrice": 1.17,
@@ -99802,7 +99802,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923057",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99852,7 +99852,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430856",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.83,
     "costPrice": 1.17,
@@ -99867,7 +99867,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923046",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99917,7 +99917,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430878",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.83,
     "costPrice": 1.14,
@@ -99932,7 +99932,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923009",
       "supplierStock": "Διαθέσιμο"
     },
@@ -99982,7 +99982,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48221905",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 1.77,
     "costPrice": 1.14,
@@ -99997,7 +99997,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3904984",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100047,7 +100047,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932373335",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 1.74,
     "costPrice": 0.938,
@@ -100062,7 +100062,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3984044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100112,7 +100112,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471575",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.7,
     "costPrice": 1.14,
@@ -100127,7 +100127,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926121",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100177,7 +100177,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932373334",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-trypania"
+      "cat-trypania-potirotrypana"
     ],
     "price": 1.64,
     "costPrice": 0.87,
@@ -100192,7 +100192,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Τρυπάνια",
+      "category": "Τρυπάνια & Ποτηροτρύπανα",
       "supplierCode": "3984042",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100242,7 +100242,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932451286",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.59,
     "costPrice": 0.954,
@@ -100257,7 +100257,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923003",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100307,7 +100307,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471564",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.58,
     "costPrice": 0.954,
@@ -100322,7 +100322,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926109",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100372,7 +100372,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430890",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.57,
     "costPrice": 0.954,
@@ -100387,7 +100387,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923021",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100437,7 +100437,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430854",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.57,
     "costPrice": 0.954,
@@ -100452,7 +100452,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923044",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100502,7 +100502,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430876",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.56,
     "costPrice": 0.954,
@@ -100517,7 +100517,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923007",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100567,7 +100567,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430881",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.49,
     "costPrice": 0.954,
@@ -100582,7 +100582,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923012",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100632,7 +100632,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430887",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.49,
     "costPrice": 0.954,
@@ -100647,7 +100647,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923018",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -100697,7 +100697,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430870",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.49,
     "costPrice": 0.954,
@@ -100712,7 +100712,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923060",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100762,7 +100762,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430858",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.49,
     "costPrice": 0.954,
@@ -100777,7 +100777,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923048",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100827,7 +100827,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932430865",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.49,
     "costPrice": 0.954,
@@ -100842,7 +100842,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3923055",
       "supplierStock": "Διαθέσιμο"
     },
@@ -100892,7 +100892,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "48221934",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-antallaktikes-lepides-lames"
+      "cat-chartokoptes-kopidia-lepides"
     ],
     "price": 1.45,
     "costPrice": 0.828,
@@ -100907,7 +100907,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Ανταλλακτικές Λεπίδες & Λάμες",
+      "category": "Χαρτοκόπτες, Κοπίδια & Λεπίδες",
       "supplierCode": "3900244",
       "supplierStock": "Μη διαθέσιμο"
     },
@@ -100957,7 +100957,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932471566",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-mytes-katsavidioy"
+      "cat-mytes-katsavidioy-antaptores"
     ],
     "price": 1.45,
     "costPrice": 0.954,
@@ -100972,7 +100972,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Μύτες Κατσαβιδιού",
+      "category": "Μύτες Κατσαβιδιού & Αντάπτορες",
       "supplierCode": "3926111",
       "supplierStock": "Διαθέσιμο"
     },
@@ -101090,7 +101090,7 @@ export const initialProducts: Product[] = [
       "cat-markadoroi"
     ],
     "price": 1.33,
-    "costPrice": 0.0,
+    "costPrice": 0,
     "vatRate": 0.24,
     "stockQuantity": 30,
     "lowStockThreshold": 1,
@@ -101125,7 +101125,7 @@ export const initialProducts: Product[] = [
     "relatedProductIds": [],
     "manualFiles": [],
     "warranty": "",
-    "weight": 0.0,
+    "weight": 0,
     "dimensions": {
       "length": 0,
       "width": 0,
@@ -101152,7 +101152,7 @@ export const initialProducts: Product[] = [
     "manufacturerCode": "4932451487",
     "brandId": "brand-milwaukee",
     "categoryIds": [
-      "cat-diskoi-kopis"
+      "cat-diskoi-kopis-leiansis"
     ],
     "price": 1.3,
     "costPrice": 0.95,
@@ -101167,7 +101167,7 @@ export const initialProducts: Product[] = [
     ],
     "attributes": {
       "manufacturer": "Milwaukee",
-      "category": "Δίσκοι Κοπής",
+      "category": "Δίσκοι Κοπής & Λείανσης",
       "supplierCode": "3950252",
       "supplierStock": "Διαθέσιμο"
     },
