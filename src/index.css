@@ -8,10 +8,10 @@
 .nt-button:disabled { opacity: .45; cursor: not-allowed; }
 .nt-field { display: flex; flex-direction: column; gap: 7px; font-size: 13px; font-weight: 600; }
 .nt-field input:not([type=checkbox]), .nt-field select, .nt-field textarea, .nt-input { width: 100%; min-width: 0; border: 1px solid #d4d4d4; background-color: white; border-radius: 9px; padding: 10px 12px; font-size: 14px; font-weight: 400; color: #262626; }
-.nt-field select, select.nt-input { appearance: none; cursor: pointer; padding-right: 38px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='m5.5 7.5 4.5 4.5 4.5-4.5' stroke='%23737373' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E"); background-position: right 11px center; background-repeat: no-repeat; background-size: 18px 18px; transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease; }
-.nt-field select:hover, select.nt-input:hover { border-color: #a3a3a3; background-color: #fdfdfd; }
-.nt-field select:focus, select.nt-input:focus { border-color: #e21b22; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); outline: none; }
-.nt-field select:disabled, select.nt-input:disabled { cursor: not-allowed; opacity: .6; }
+.nt-field select, select.nt-input, .nt-category-picker-trigger { appearance: none; cursor: pointer; padding-right: 38px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='m5.5 7.5 4.5 4.5 4.5-4.5' stroke='%23737373' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E"); background-position: right 11px center; background-repeat: no-repeat; background-size: 18px 18px; transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease; }
+.nt-field select:hover, select.nt-input:hover, .nt-category-picker-trigger:hover { border-color: #a3a3a3; background-color: #fdfdfd; }
+.nt-field select:focus, select.nt-input:focus, .nt-category-picker-trigger:focus { border-color: #e21b22; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); outline: none; }
+.nt-field select:disabled, select.nt-input:disabled, .nt-category-picker-trigger:disabled { cursor: not-allowed; opacity: .6; }
 .nt-custom-select { appearance: none; cursor: pointer; padding-right: 34px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='m5.5 7.5 4.5 4.5 4.5-4.5' stroke='%23737373' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E"); background-position: right 9px center; background-repeat: no-repeat; background-size: 18px 18px; }
 .nt-custom-select:focus { border-color: #e21b22; box-shadow: 0 0 0 2px rgb(226 27 34 / 14%); outline: none; }
 .nt-view-toggle { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid #d4d4d4; border-radius: 10px; background: #f5f5f5; }
@@ -25,9 +25,8 @@
 .nt-product-editor { color: #262626; }
 .nt-product-editor > section { border: 1px solid #e5e5e5 !important; border-radius: 16px; background: #fff; padding: 24px !important; box-shadow: 0 2px 3px #00000004; }
 .nt-product-editor > section > h3 { border-left: 3px solid #e21b22; padding-left: 10px; }
-.nt-category-picker-trigger { border-color: #d4d4d4; transition: border-color 150ms ease, box-shadow 150ms ease; }
-.nt-category-picker-trigger:hover { border-color: #a3a3a3; }
-.nt-category-picker-trigger:focus-visible { border-color: #e21b22; outline: none; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); }
+.nt-category-picker-trigger { border-color: #d4d4d4; }
+.nt-category-picker-trigger > span:last-child { display: none; }
 .nt-category-picker-menu { border-color: #d4d4d4; }
 .nt-field textarea { min-height: 100px; }
 .nt-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; border: 1px solid #e5e5e5; border-radius: 18px; padding: 24px; }
