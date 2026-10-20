@@ -161,7 +161,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-3 py-5 sm:px-4 sm:py-7 space-y-8 select-none">
+    <div className="max-w-7xl mx-auto px-3 py-5 sm:px-4 sm:py-7 space-y-8">
       {/* Breadcrumbs */}
       <nav className="flex items-center space-x-1.5 text-xs text-neutral-500 font-medium">
         <button onClick={() => onNavigate('/')} className="hover:text-neutral-900 transition-colors">
