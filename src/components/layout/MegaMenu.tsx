@@ -105,10 +105,10 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
           {isAllCategoriesOpen && (
             <div
               id="desktop-mega-menu-panel"
-              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1280px,calc(100vw-2rem))] overflow-visible rounded-2xl bg-[#1a1a1a] border border-[#333] shadow-2xl z-50 flex text-neutral-200"
+              className="pointer-events-auto fixed top-[76px] left-1/2 -translate-x-1/2 w-[min(1280px,calc(100vw-2rem))] overflow-visible rounded-2xl bg-white border border-neutral-200 shadow-2xl z-50 flex text-neutral-800"
             >
               {/* Left Column: Level 1 Main Categories */}
-              <div className="w-96 shrink-0 bg-[#161616] rounded-l-2xl border-r border-[#2a2a2a] py-1.5">
+              <div className="w-96 shrink-0 bg-neutral-50 rounded-l-2xl border-r border-neutral-200 py-1.5">
                 {mainCategories.map((cat) => {
                   const isActive = cat.id === activeMainCatId;
                   return (
@@ -121,26 +121,26 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                       }}
                       className={`flex min-h-[62px] items-center justify-between px-4 py-3 text-sm font-semibold leading-snug cursor-pointer border-l-2 transition-colors ${
                         isActive
-                          ? 'border-[#e21b22] bg-[#222] text-white'
-                          : 'border-transparent text-neutral-300 hover:text-white hover:bg-[#1c1c1c]'
+                          ? 'border-[#e21b22] bg-red-50 text-neutral-900'
+                          : 'border-transparent text-neutral-700 hover:text-neutral-900 hover:bg-neutral-100'
                       }`}
                     >
                       <div className="flex min-w-0 items-center space-x-2.5">
                         {getCategoryIcon(cat.slug)}
                         <span className="min-w-0 whitespace-normal leading-snug">{cat.name}</span>
                       </div>
-                        <ChevronRight className={`w-4 h-4 shrink-0 ${isActive ? 'text-[#e21b22]' : 'text-neutral-500'}`} />
+                        <ChevronRight className={`w-4 h-4 shrink-0 ${isActive ? 'text-[#e21b22]' : 'text-neutral-400'}`} />
                     </div>
                   );
                 })}
               </div>
 
               {/* Right Area: Level 2 Subcategories & Level 3 Children */}
-              <div className="min-w-0 flex-1 p-6 bg-[#1e1e1e] rounded-r-2xl flex flex-col">
+              <div className="min-w-0 flex-1 p-6 bg-white rounded-r-2xl flex flex-col">
                 <div>
-                  <div className="flex items-center justify-between border-b border-[#2e2e2e] pb-3 mb-5">
+                  <div className="flex items-center justify-between border-b border-neutral-200 pb-3 mb-5">
                     <div>
-                      <h3 className="font-display font-bold text-lg text-white uppercase tracking-wide flex items-center space-x-2">
+                      <h3 className="font-display font-bold text-lg text-neutral-900 tracking-wide flex items-center space-x-2">
                         <span>{selectedCategory?.name}</span>
                         {selectedCategory?.slug === 'prosfores' && (
                           <span className="text-[10px] bg-red-600 text-white font-bold px-1.5 py-0.5 rounded">
@@ -149,7 +149,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         )}
                       </h3>
                       {selectedCategory?.description && (
-                        <p className="text-xs text-neutral-400 mt-0.5 line-clamp-1">
+                        <p className="text-xs text-neutral-500 mt-0.5 line-clamp-1">
                           {selectedCategory.description}
                         </p>
                       )}
@@ -159,7 +159,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         setIsAllCategoriesOpen(false);
                         if (selectedCategory) onNavigate('/products');
                       }}
-                      className="text-xs text-[#ffb4b7] hover:text-white font-semibold flex items-center space-x-1"
+                      className="text-xs text-[#c81e24] hover:text-[#e21b22] font-semibold flex items-center space-x-1"
                     >
                       <span>Προβολή Όλων</span>
                       <ChevronRight className="w-3.5 h-3.5" />
@@ -179,14 +179,14 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                                 setIsAllCategoriesOpen(false);
                                 onNavigate(`/category/${subcat.slug}`);
                               }}
-                              className="min-h-[54px] w-full font-display font-bold text-base leading-snug text-neutral-100 hover:text-[#e21b22] tracking-wide text-left flex items-start space-x-1 transition-colors"
+                              className="min-h-[54px] w-full font-display font-bold text-base leading-snug text-neutral-800 hover:text-[#e21b22] tracking-wide text-left flex items-start space-x-1 transition-colors"
                             >
                               <span>{subcat.name}</span>
                             </button>
 
                             {/* Level 3 Children */}
                             {childCats.length > 0 && (
-                              <ul className="space-y-1 pl-1 border-l border-[#333]">
+                              <ul className="space-y-1 pl-1 border-l border-neutral-200">
                                 {childCats.map((child) => (
                                   <li key={child.id}>
                                     <button
@@ -194,7 +194,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                                         setIsAllCategoriesOpen(false);
                                         onNavigate(`/category/${child.slug}`);
                                       }}
-                                      className="text-xs text-neutral-400 hover:text-white hover:underline pl-2 text-left transition-colors"
+                                      className="text-xs text-neutral-500 hover:text-[#e21b22] hover:underline pl-2 text-left transition-colors"
                                     >
                                       {child.name}
                                     </button>
@@ -210,10 +210,10 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                           setIsAllCategoriesOpen(false);
                           if (selectedCategory) onNavigate('/products');
                         }}
-                        className="self-start rounded border border-[#e21b22]/60 bg-[#e21b22]/10 px-3 py-2 text-left text-sm font-bold text-[#ffb4b7] hover:bg-[#e21b22] hover:text-white transition-colors"
+                        className="self-start rounded border border-[#e21b22]/60 bg-red-50 px-3 py-2 text-left text-sm font-bold text-[#c81e24] hover:bg-[#e21b22] hover:text-white transition-colors"
                       >
                         Προβολή όλων
-                        <span className="mt-1 block text-[11px] font-normal text-neutral-400">Όλα τα προϊόντα της κατηγορίας</span>
+                        <span className="mt-1 block text-[11px] font-normal text-neutral-500">Όλα τα προϊόντα της κατηγορίας</span>
                       </button>
                     </div>
                   ) : (
