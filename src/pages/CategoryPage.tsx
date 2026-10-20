@@ -507,7 +507,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
                   aria-label="Ταξινόμηση προϊόντων"
-                  className="min-w-0 w-full rounded-lg border border-neutral-200 bg-neutral-50 px-2.5 py-2 text-xs focus:border-[#e21b22] focus:outline-none sm:w-auto sm:py-1"
+                  className="nt-custom-select min-w-0 w-full rounded-lg border border-neutral-200 bg-neutral-50 px-2.5 py-2 text-xs sm:w-auto sm:py-1"
                 >
                   <option value="featured">Προτεινόμενα</option>
                   <option value="price-asc">Τιμή: Χαμηλή προς Υψηλή</option>
@@ -518,17 +518,21 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
               </div>
 
               {/* View Layout Toggle */}
-                <div className="flex items-center overflow-hidden rounded-lg border border-neutral-300">
+                <div className="nt-view-toggle" role="group" aria-label="Τρόπος προβολής">
                 <button
+                  type="button"
+                  aria-pressed={layoutMode === 'grid'}
                   onClick={() => setLayoutMode('grid')}
-                  className={`p-1.5 ${layoutMode === 'grid' ? 'bg-[#e21b22] text-white' : 'bg-white text-neutral-600 hover:bg-neutral-100'}`}
+                  className={layoutMode === 'grid' ? 'is-active' : ''}
                   title="Πλέγμα"
                 >
                   <Grid className="w-4 h-4" />
                 </button>
                 <button
+                  type="button"
+                  aria-pressed={layoutMode === 'list'}
                   onClick={() => setLayoutMode('list')}
-                  className={`p-1.5 ${layoutMode === 'list' ? 'bg-[#e21b22] text-white' : 'bg-white text-neutral-600 hover:bg-neutral-100'}`}
+                  className={layoutMode === 'list' ? 'is-active' : ''}
                   title="Λίστα"
                 >
                   <List className="w-4 h-4" />

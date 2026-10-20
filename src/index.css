@@ -12,6 +12,13 @@
 .nt-field select:hover, select.nt-input:hover { border-color: #a3a3a3; background-color: #fdfdfd; }
 .nt-field select:focus, select.nt-input:focus { border-color: #e21b22; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); outline: none; }
 .nt-field select:disabled, select.nt-input:disabled { cursor: not-allowed; opacity: .6; }
+.nt-custom-select { appearance: none; cursor: pointer; padding-right: 34px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='m5.5 7.5 4.5 4.5 4.5-4.5' stroke='%23737373' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E"); background-position: right 9px center; background-repeat: no-repeat; background-size: 18px 18px; }
+.nt-custom-select:focus { border-color: #e21b22; box-shadow: 0 0 0 2px rgb(226 27 34 / 14%); outline: none; }
+.nt-view-toggle { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid #d4d4d4; border-radius: 10px; background: #f5f5f5; }
+.nt-view-toggle button { display: grid; height: 30px; width: 30px; place-items: center; border-radius: 7px; color: #737373; transition: background-color 150ms ease, color 150ms ease, box-shadow 150ms ease; }
+.nt-view-toggle button:hover { background: #e5e5e5; color: #262626; }
+.nt-view-toggle button.is-active { background: #e21b22; color: white; box-shadow: 0 1px 3px rgb(0 0 0 / 14%); }
+.nt-view-toggle button:focus-visible { outline: 2px solid #e21b22; outline-offset: 2px; }
 .nt-field textarea { min-height: 100px; }
 .nt-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; border: 1px solid #e5e5e5; border-radius: 18px; padding: 24px; }
 .nt-dialog::backdrop { background: #17171799; backdrop-filter: blur(3px); }
