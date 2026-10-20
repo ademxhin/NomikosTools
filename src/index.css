@@ -39,6 +39,11 @@
 .nt-table tr:hover td { background: #fafafa; }
 .nt-dialog-full-page { position: static; inset: auto; z-index: auto; display: block; width: 100%; height: auto; max-width: none; max-height: none; margin: 0; box-sizing: border-box; border: 1px solid #e5e5e5; border-radius: 16px; background: #fff; padding: 24px; box-shadow: 0 2px 3px #00000004; overflow: visible; }
 .nt-dialog-full-page::backdrop { display: none; }
+.nt-compare-page input[type='checkbox'] { accent-color: #e21b22; }
+.nt-compare-table th, .nt-compare-table td { border-color: #e5e5e5; }
+.nt-compare-table thead th { background: #fff; }
+.nt-compare-table tbody td:first-child { background: #fafafa; color: #525252; }
+.nt-compare-table tbody tr:nth-child(even) td:not(:first-child) { background: #fdfdfd; }
 
 @media (min-width: 1024px) {
   aside:has(nav > button) { position: fixed; inset: 0 auto 0 0; z-index: 40; width: 250px; height: 100vh; overflow: hidden; }

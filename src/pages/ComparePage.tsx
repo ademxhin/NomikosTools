@@ -71,7 +71,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 space-y-6 select-none">
+    <div className="nt-compare-page max-w-7xl mx-auto px-4 py-8 space-y-6">
       {/* Top Header Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#cfd8dc] pb-4">
         <div>
@@ -105,7 +105,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
       </div>
 
       {/* Comparison Table */}
-      <div className="bg-white border border-[#cfd8dc] rounded-lg overflow-x-auto shadow-sm">
+      <div className="nt-compare-table bg-white border border-[#d4d4d4] rounded-2xl overflow-x-auto shadow-sm">
         <table className="w-full text-xs text-left border-collapse min-w-[700px]">
           <thead>
             <tr className="border-b border-neutral-200 bg-[#fbfbfb]">
@@ -130,12 +130,12 @@ export const ComparePage: React.FC<ComparePageProps> = ({ onNavigate }) => {
 
                       <div
                         onClick={() => onNavigate(`/product/${p.slug}`)}
-                        className="h-36 bg-[#fafafa] p-2 rounded border border-neutral-200 flex items-center justify-center cursor-pointer group"
+                        className="h-36 bg-transparent p-2 rounded-xl border border-[#d4d4d4] flex items-center justify-center cursor-pointer group"
                       >
                         <img
                           src={p.images[0]}
                           alt={p.name}
-                          className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform"
+                          className="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform"
                         />
                       </div>
 
