@@ -44,7 +44,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
       if (event.key === 'Escape') {
         event.preventDefault();
         onOpenChange(false);
-        document.getElementById('mega-menu-trigger-btn')?.focus();
+        document.getElementById('mobile-menu-toggle-btn')?.focus();
       }
     };
 
@@ -101,6 +101,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
                     type="button"
                     data-main-category
                     onClick={() => setActiveMainCatId(category.id)}
+                    onMouseEnter={() => setActiveMainCatId(category.id)}
                     onKeyDown={(event) => handleCategoryKeyDown(event, index)}
                     aria-current={selected ? 'true' : undefined}
                     className={`group flex min-h-[54px] w-full items-center justify-between gap-3 rounded-xl border px-3.5 py-2.5 text-left text-[14px] font-semibold leading-snug transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22] focus-visible:ring-offset-1 ${
@@ -119,13 +120,6 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
               );
             })}
           </ul>
-          <a
-            href="/products"
-            onClick={(event) => { event.preventDefault(); navigate('/products'); }}
-            className="mt-3 flex min-h-11 items-center rounded-xl px-3.5 text-sm font-semibold text-neutral-600 transition-colors hover:bg-white hover:text-[#c81e24] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]"
-          >
-            Όλα τα προϊόντα <ChevronRight className="ml-auto h-4 w-4" aria-hidden="true" />
-          </a>
         </nav>
 
         <section className="flex min-w-0 flex-1 flex-col p-6 xl:p-8" aria-labelledby="mega-menu-heading">
@@ -140,8 +134,8 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
               </p>
             </div>
             <a
-              href="/products"
-              onClick={(event) => { event.preventDefault(); navigate('/products'); }}
+              href={`/category/${activeMainCatId}`}
+              onClick={(event) => { event.preventDefault(); navigate(`/category/${activeMainCatId}`); }}
               className="inline-flex min-h-10 shrink-0 items-center gap-1 rounded-lg px-3 text-sm font-semibold text-[#c81e24] transition-colors hover:bg-red-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]"
             >
               Όλα τα προϊόντα <ChevronRight className="h-4 w-4" aria-hidden="true" />
@@ -151,14 +145,21 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
           <div className="min-h-0 flex-1 overflow-y-auto py-5">
             {groupedSubcategories.length ? (
               <div className="grid grid-cols-2 items-start gap-x-6 gap-y-6 xl:grid-cols-3 xl:gap-x-8">
-                {groupedSubcategories.map(([groupName, groupCategories]) => (
-                  <section key={groupName} className="min-w-0">
+                {groupedSubcategories.map(([groupName, groupCategories]) => {
+                  const splitIntoColumns = groupCategories.length > 9;
+                  const midpoint = Math.ceil(groupCategories.length / 2);
+                  const categoryColumns = splitIntoColumns
+                    ? [groupCategories.slice(0, midpoint), groupCategories.slice(midpoint)]
+                    : [groupCategories];
+                  return (
+                  <section key={groupName} className={`min-w-0 ${splitIntoColumns ? 'col-span-2 xl:col-span-3' : ''}`}>
                     <h3 className="mb-2.5 flex items-center gap-2 text-[12px] font-bold uppercase leading-snug tracking-wide text-neutral-500">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#e21b22]" aria-hidden="true" />
                       {groupName}
                     </h3>
-                    <ul className="space-y-1">
-                      {groupCategories.map((subcategory) => {
+                    <div className={`grid items-start gap-x-5 ${splitIntoColumns ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                    {categoryColumns.map((column, columnIndex) => <ul key={`${groupName}-${columnIndex}`} className="space-y-1">
+                      {column.map((subcategory) => {
                         const productCount = products.filter((product) => product.categoryIds.includes(subcategory.id)).length;
                         return (
                           <li key={subcategory.id}>
@@ -176,9 +177,11 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
                           </li>
                         );
                       })}
-                    </ul>
+                    </ul>)}
+                    </div>
                   </section>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <p className="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-8 text-center text-sm text-neutral-500">

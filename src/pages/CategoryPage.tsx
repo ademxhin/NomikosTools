@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import { ProductCard } from '../components/product/ProductCard';
+import { categoryGroups } from '../data/categoryHierarchy';
 
 interface CategoryPageProps {
   categorySlug?: string;
@@ -22,12 +23,15 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
   // Find target category
   const currentCategory = categories.find((c) => c.slug === categorySlug);
-  const parentCategory = currentCategory?.parentId
-    ? categories.find((c) => c.id === currentCategory.parentId)
-    : null;
+  const selectedGroup = categoryGroups.find((group) => group.id === categorySlug);
+  const parentGroup = currentCategory?.parentId
+    ? categoryGroups.find((group) => group.id === currentCategory.parentId)
+    : undefined;
   const childCategories = currentCategory
     ? categories.filter((c) => c.parentId === currentCategory.id && c.active)
-    : [];
+    : selectedGroup
+      ? categories.filter((c) => c.parentId === selectedGroup.id && c.active)
+      : [];
 
   // Filter States
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
@@ -44,15 +48,16 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
 
   // Base products for this category or all
   const baseProducts = useMemo(() => {
-    if (!currentCategory) return products;
-    // Match current category ID or any child category IDs
-    const childIds = categories.filter((c) => c.parentId === currentCategory.id).map((c) => c.id);
-    const validCategoryIds = [currentCategory.id, ...childIds];
+    if (!currentCategory && !selectedGroup) return products;
+    // For a top-level menu group, include products assigned to any active subcategory.
+    const ownerId = currentCategory?.id ?? selectedGroup?.id;
+    const childIds = categories.filter((c) => c.parentId === ownerId && c.active).map((c) => c.id);
+    const validCategoryIds = currentCategory ? [currentCategory.id, ...childIds] : childIds;
 
     return products.filter((p) =>
       p.categoryIds.some((cid) => validCategoryIds.includes(cid))
     );
-  }, [currentCategory, categories, products]);
+  }, [currentCategory, selectedGroup, categories, products]);
 
   // Available filter options based on base products
   const availableBrands = useMemo(() => {
@@ -152,15 +157,21 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         <button onClick={() => onNavigate('/products')} className="hover:text-neutral-900 transition-colors">
           Κατάλογος
         </button>
-        {parentCategory && (
+        {parentGroup && (
           <>
             <ChevronRight className="w-3.5 h-3.5" />
             <button
-              onClick={() => onNavigate(`/category/${parentCategory.slug}`)}
+              onClick={() => onNavigate(`/category/${parentGroup.id}`)}
               className="hover:text-neutral-900 transition-colors"
             >
-              {parentCategory.name}
+              {parentGroup.name}
             </button>
+          </>
+        )}
+        {selectedGroup && (
+          <>
+            <ChevronRight className="w-3.5 h-3.5" />
+            <span className="text-neutral-900 font-semibold">{selectedGroup.name}</span>
           </>
         )}
         {currentCategory && (
@@ -176,11 +187,12 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div>
             <h1 className="font-category font-black text-2xl sm:text-3xl text-neutral-900 uppercase tracking-tight">
-              {currentCategory?.name || 'ΟΛΑ ΤΑ ΕΠΑΓΓΕΛΜΑΤΙΚΑ ΕΡΓΑΛΕΙΑ'}
+              {currentCategory?.name || selectedGroup?.name || 'ΟΛΑ ΤΑ ΕΠΑΓΓΕΛΜΑΤΙΚΑ ΕΡΓΑΛΕΙΑ'}
             </h1>
             <p className="text-xs sm:text-sm text-neutral-500 mt-1 max-w-2xl leading-relaxed">
-              {currentCategory?.description ||
-                'Περιηγηθείτε σε ολόκληρο τον κατάλογο βαρέος τύπου εργαλείων, εξαρτημάτων και εξοπλισμού συνεργείου.'}
+              {currentCategory?.description || (selectedGroup
+                ? `Περιηγηθείτε σε όλα τα προϊόντα της κατηγορίας ${selectedGroup.name}.`
+                : 'Περιηγηθείτε σε ολόκληρο τον κατάλογο βαρέος τύπου εργαλείων, εξαρτημάτων και εξοπλισμού συνεργείου.')}
             </p>
           </div>
           <div className="text-xs font-mono-spec text-neutral-500 shrink-0">

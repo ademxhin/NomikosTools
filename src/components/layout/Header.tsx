@@ -25,12 +25,12 @@ import { Product } from '../../types/product';
 interface HeaderProps {
   onNavigate: (route: string) => void;
   onOpenMobileMenu: () => void;
-  onToggleMegaMenu?: () => void;
+  onOpenMegaMenu?: () => void;
   isMegaMenuOpen?: boolean;
   isMobileMenuOpen?: boolean;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, onToggleMegaMenu, isMegaMenuOpen = false, isMobileMenuOpen = false }) => {
+export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, onOpenMegaMenu, isMegaMenuOpen = false, isMobileMenuOpen = false }) => {
   const {
     products,
     categories,
@@ -176,8 +176,15 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
         <button
           id="mobile-menu-toggle-btn"
           onClick={() => {
-            if (window.matchMedia('(min-width: 1024px)').matches) onToggleMegaMenu?.();
-            else onOpenMobileMenu();
+            if (window.matchMedia('(min-width: 1024px)').matches) {
+              if (!isMegaMenuOpen) onOpenMegaMenu?.();
+            } else onOpenMobileMenu();
+          }}
+          onMouseEnter={() => {
+            if (window.matchMedia('(min-width: 1024px)').matches && !isMegaMenuOpen) onOpenMegaMenu?.();
+          }}
+          onFocus={(event) => {
+            if (event.currentTarget.matches(':focus-visible') && window.matchMedia('(min-width: 1024px)').matches && !isMegaMenuOpen) onOpenMegaMenu?.();
           }}
           className="flex h-11 w-11 items-center justify-center shrink-0 bg-[#e21b22] hover:bg-[#c81016] text-white transition-colors rounded-xl sm:w-14 sm:h-12"
           aria-label={isMegaMenuOpen || isMobileMenuOpen ? 'Κλείσιμο μενού κατηγοριών' : 'Άνοιγμα μενού κατηγοριών'}

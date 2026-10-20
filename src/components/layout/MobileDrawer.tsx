@@ -235,7 +235,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
                       })}
                     </section>
                     ))}
-                    <button onClick={() => handleNav('/products')} className="flex min-h-11 w-full items-center justify-between px-1 text-left text-sm font-semibold text-[#ffb4b7] hover:text-white">
+                    <button onClick={() => handleNav(`/category/${mainCat.id}`)} className="flex min-h-11 w-full items-center justify-between px-1 text-left text-sm font-semibold text-[#ffb4b7] hover:text-white">
                       Όλα τα προϊόντα <ChevronRight className="h-4 w-4" aria-hidden="true" />
                     </button>
                   </div>
