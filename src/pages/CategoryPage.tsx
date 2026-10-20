@@ -480,7 +480,8 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         {/* Product Listing Main Column */}
         <div className="lg:col-span-3 space-y-4">
           {/* Controls Bar: Sort, View Layout, Mobile filter toggle */}
-          <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-neutral-200 bg-white p-2.5 text-xs shadow-sm sm:gap-3 sm:p-3">
+          <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white text-xs shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 sm:gap-3 sm:p-3">
             <div className="flex items-center space-x-2">
               {/* Mobile Filter Button */}
               <button
@@ -539,6 +540,15 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                 </button>
               </div>
             </div>
+            </div>
+            {sortedProducts.length > 0 && <div className="flex flex-wrap items-center justify-between gap-2 border-t border-neutral-200 px-3 py-2 text-[10px] sm:text-xs">
+              <span className="text-neutral-500">Εμφάνιση {Math.min((page - 1) * pageSize + 1, sortedProducts.length)}–{Math.min(page * pageSize, sortedProducts.length)} από {sortedProducts.length}</span>
+              <label className="flex items-center gap-2 font-semibold text-neutral-700">Ανά σελίδα
+                <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="nt-custom-select rounded-lg border border-neutral-200 bg-neutral-50 px-2 py-1">
+                  <option value={30}>30</option><option value={60}>60</option><option value={90}>90</option>
+                </select>
+              </label>
+            </div>}
           </div>
 
           {/* Active Filter Chips */}
@@ -611,14 +621,6 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
           {/* Products Grid / List */}
           {sortedProducts.length > 0 ? (
             <>
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 text-[10px] shadow-sm sm:text-xs">
-              <span className="text-neutral-500">Εμφάνιση {Math.min((page - 1) * pageSize + 1, sortedProducts.length)}–{Math.min(page * pageSize, sortedProducts.length)} από {sortedProducts.length}</span>
-              <label className="flex items-center gap-2 font-semibold text-neutral-700">Ανά σελίδα
-                <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="rounded-lg border border-neutral-200 bg-neutral-50 px-2 py-1">
-                  <option value={30}>30</option><option value={60}>60</option><option value={90}>90</option>
-                </select>
-              </label>
-            </div>
             <div
               className={
                 layoutMode === 'grid'
