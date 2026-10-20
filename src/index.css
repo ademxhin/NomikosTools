@@ -36,7 +36,7 @@
 .nt-table th { color: #737373; font-size: 11px; letter-spacing: .06em; background: #fafafa; }
 .nt-table th, .nt-table td { padding: 13px 12px; border-bottom: 1px solid #eee; }
 .nt-table tr:hover td { background: #fafafa; }
-.nt-dialog-full-page { position: static; inset: auto; z-index: auto; display: block; width: 100%; height: auto; max-width: none; max-height: none; margin: 0; box-sizing: border-box; border: 0; border-radius: 0; overflow: visible; }
+.nt-dialog-full-page { position: static; inset: auto; z-index: auto; display: block; width: 100%; height: auto; max-width: none; max-height: none; margin: 0; box-sizing: border-box; border: 1px solid #e5e5e5; border-radius: 16px; background: #fff; padding: 24px; box-shadow: 0 2px 3px #00000004; overflow: visible; }
 .nt-dialog-full-page::backdrop { display: none; }
 
 @media (min-width: 1024px) {
