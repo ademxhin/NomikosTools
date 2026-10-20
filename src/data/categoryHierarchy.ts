@@ -18,3 +18,8 @@ export const categoryGroups: CategoryGroup[] = [
 
 export const getCategoryGroup = (name: string): CategoryGroup =>
   categoryGroups.find((group) => group.name === name) ?? categoryGroups[0];
+
+export const formatSubcategoryName = (name: string): string => {
+  const normalized = name.trim().toLocaleLowerCase('el-GR');
+  return normalized ? normalized[0].toLocaleUpperCase('el-GR') + normalized.slice(1) : normalized;
+};

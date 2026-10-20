@@ -176,7 +176,9 @@ function AppContent() {
       <Header
         onNavigate={handleNavigate}
         onOpenMobileMenu={() => setIsMobileMenuOpen(true)}
-        onToggleMegaMenu={setIsMegaMenuOpen}
+        onToggleMegaMenu={() => setIsMegaMenuOpen((open) => !open)}
+        isMegaMenuOpen={isMegaMenuOpen}
+        isMobileMenuOpen={isMobileMenuOpen}
       />
 
       {/* 2. Mega-Menu (Desktop) */}

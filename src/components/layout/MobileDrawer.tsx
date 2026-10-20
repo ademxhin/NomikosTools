@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   X,
   ChevronDown,
@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { useAuth } from '../../context/AuthContext';
-import { categoryGroups } from '../../data/categoryHierarchy';
+import { categoryGroups, formatSubcategoryName } from '../../data/categoryHierarchy';
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -24,6 +24,13 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
   const { categories, wishlist, compareList, isB2BMode, setIsB2BMode } = useStore();
   const { user, isAuthenticated } = useAuth();
   const [expandedCats, setExpandedCats] = useState<string[]>([]);
+  const drawerRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    requestAnimationFrame(() => closeButtonRef.current?.focus());
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -58,16 +65,44 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
     onNavigate(route);
   };
 
+  const closeDrawer = () => {
+    onClose();
+    requestAnimationFrame(() => document.getElementById('mobile-menu-toggle-btn')?.focus());
+  };
+
+  const handleDrawerKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      onClose();
+      requestAnimationFrame(() => document.getElementById('mobile-menu-toggle-btn')?.focus());
+      return;
+    }
+    if (event.key !== 'Tab' || !drawerRef.current) return;
+    const focusable = drawerRef.current.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), a[href], input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 lg:hidden flex">
+    <div className="fixed inset-0 z-50 flex lg:hidden" onKeyDown={handleDrawerKeyDown}>
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/70 backdrop-blur-sm transition-opacity"
-        onClick={onClose}
+        onClick={closeDrawer}
       />
 
       {/* Drawer */}
-      <div className="relative w-4/5 max-w-sm bg-[#161616] text-white h-full flex flex-col shadow-2xl z-10 overflow-hidden">
+      <div id="mobile-menu-panel" ref={drawerRef} role="dialog" aria-modal="true" aria-label="Μενού κατηγοριών" className="relative w-4/5 max-w-sm bg-[#161616] text-white h-full flex flex-col shadow-2xl z-10 overflow-hidden">
         {/* Drawer Header */}
         <div className="p-4 bg-[#1f1f1f] border-b border-[#2e2e2e] flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -80,7 +115,9 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
             </div>
           </div>
           <button
-            onClick={onClose}
+            ref={closeButtonRef}
+            onClick={closeDrawer}
+            aria-label="Κλείσιμο μενού"
             className="p-1.5 text-neutral-400 hover:text-white hover:bg-neutral-800 rounded"
           >
             <X className="w-5 h-5" />
@@ -130,45 +167,45 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
               <div key={mainCat.id} className="bg-[#161616]">
                 <div className="flex items-center justify-between px-4 py-3 hover:bg-[#1e1e1e]">
                   <button
-                    onClick={() => handleNav('/products')}
-                    className="flex-1 text-left font-medium text-neutral-200 hover:text-white"
+                    onClick={() => toggleCategory(mainCat.id)}
+                    aria-expanded={isExpanded}
+                    aria-controls={isExpanded ? `mobile-subcategories-${mainCat.id}` : undefined}
+                    className="flex flex-1 items-center justify-between gap-3 text-left font-semibold leading-snug text-neutral-200 hover:text-white"
                   >
                     {mainCat.name}
+                    <ChevronDown className={`h-4 w-4 shrink-0 transition-transform duration-200 ${isExpanded ? 'rotate-180 text-[#e21b22]' : 'text-neutral-500'}`} aria-hidden="true" />
                   </button>
-                  {subcats.length > 0 && (
-                    <button
-                      onClick={() => toggleCategory(mainCat.id)}
-                      className="p-1 text-neutral-400 hover:text-white"
-                    >
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          isExpanded ? 'rotate-180 text-[#e21b22]' : ''
-                        }`}
-                      />
-                    </button>
-                  )}
                 </div>
 
                 {/* Subcategories */}
                 {isExpanded && subcats.length > 0 && (
-                  <div className="bg-[#121212] divide-y divide-[#1e1e1e] pl-4">
-                    {subcats.map((subcat) => {
+                  <div id={`mobile-subcategories-${mainCat.id}`} className="bg-[#121212] divide-y divide-[#1e1e1e] pl-4">
+                    {[...subcats.reduce((groups, subcat) => {
+                      const name = subcat.groupName || 'Κατηγορίες';
+                      groups.set(name, [...(groups.get(name) ?? []), subcat]);
+                      return groups;
+                    }, new Map<string, typeof subcats>())].map(([groupName, groupSubcats]) => (
+                    <section key={groupName} className="py-2 pr-3">
+                      <h3 className="px-1 pb-1.5 text-[10px] font-bold uppercase tracking-wider text-neutral-500">{groupName}</h3>
+                      {groupSubcats.map((subcat) => {
                       const childCats = getChildCategories(subcat.id);
                       const isSubExpanded = expandedCats.includes(subcat.id);
 
                       return (
-                        <div key={subcat.id} className="py-2">
-                          <div className="flex items-center justify-between pr-4">
+                        <div key={subcat.id} className="py-0.5">
+                          <div className="flex min-h-10 items-center justify-between gap-2">
                             <button
                               onClick={() => handleNav(`/category/${subcat.slug}`)}
-                              className="text-xs text-neutral-300 hover:text-white font-semibold text-left"
+                              className="min-h-10 flex-1 py-2 text-left text-[13px] font-medium text-neutral-300 hover:text-white"
                             >
-                              {subcat.name}
+                              {formatSubcategoryName(subcat.name)}
                             </button>
                             {childCats.length > 0 && (
                               <button
                                 onClick={() => toggleCategory(subcat.id)}
-                                className="p-1 text-neutral-500 hover:text-white"
+                                aria-label={`${isSubExpanded ? 'Σύμπτυξη' : 'Ανάπτυξη'} ${subcat.name}`}
+                                aria-expanded={isSubExpanded}
+                                className="p-2 text-neutral-500 hover:text-white"
                               >
                                 <ChevronRight
                                   className={`w-3.5 h-3.5 transition-transform ${
@@ -195,7 +232,12 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
                           )}
                         </div>
                       );
-                    })}
+                      })}
+                    </section>
+                    ))}
+                    <button onClick={() => handleNav('/products')} className="flex min-h-11 w-full items-center justify-between px-1 text-left text-sm font-semibold text-[#ffb4b7] hover:text-white">
+                      Όλα τα προϊόντα <ChevronRight className="h-4 w-4" aria-hidden="true" />
+                    </button>
                   </div>
                 )}
               </div>

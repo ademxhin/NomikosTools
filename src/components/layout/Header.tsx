@@ -25,10 +25,12 @@ import { Product } from '../../types/product';
 interface HeaderProps {
   onNavigate: (route: string) => void;
   onOpenMobileMenu: () => void;
-  onToggleMegaMenu?: (open: boolean) => void;
+  onToggleMegaMenu?: () => void;
+  isMegaMenuOpen?: boolean;
+  isMobileMenuOpen?: boolean;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, onToggleMegaMenu }) => {
+export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, onToggleMegaMenu, isMegaMenuOpen = false, isMobileMenuOpen = false }) => {
   const {
     products,
     categories,
@@ -173,12 +175,16 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
         {/* Mobile menu trigger */}
         <button
           id="mobile-menu-toggle-btn"
-          onClick={onOpenMobileMenu}
-          onMouseEnter={() => onToggleMegaMenu?.(true)}
+          onClick={() => {
+            if (window.matchMedia('(min-width: 1024px)').matches) onToggleMegaMenu?.();
+            else onOpenMobileMenu();
+          }}
           className="flex h-11 w-11 items-center justify-center shrink-0 bg-[#e21b22] hover:bg-[#c81016] text-white transition-colors rounded-xl sm:w-14 sm:h-12"
-          aria-label="Άνοιγμα Μενού Κατηγοριών"
+          aria-label={isMegaMenuOpen || isMobileMenuOpen ? 'Κλείσιμο μενού κατηγοριών' : 'Άνοιγμα μενού κατηγοριών'}
+          aria-expanded={isMegaMenuOpen || isMobileMenuOpen}
+          aria-controls={isMegaMenuOpen ? 'desktop-mega-menu-panel' : isMobileMenuOpen ? 'mobile-menu-panel' : undefined}
         >
-          <Menu className="w-[26px] h-[26px]" />
+          {isMegaMenuOpen ? <X className="w-[26px] h-[26px]" /> : <Menu className="w-[26px] h-[26px]" />}
         </button>
 
         {/* Brand Logo */}
