@@ -110,9 +110,9 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
               </div>
 
               {/* Right Area: Level 2 Subcategories & Level 3 Children */}
-              <div className="min-w-0 flex-1 p-6 bg-white rounded-r-2xl flex flex-col">
+              <div className="min-w-0 flex-1 px-5 py-4 bg-white rounded-r-2xl flex flex-col">
                 <div>
-                  <div className="flex items-center justify-between border-b border-neutral-200 pb-3 mb-5">
+                  <div className="flex items-center justify-between border-b border-neutral-200 pb-3 mb-4">
                     <div>
                       <h3 className="font-display font-bold text-lg text-neutral-900 tracking-wide flex items-center space-x-2">
                         <span>{selectedCategory?.name}</span>
@@ -142,20 +142,20 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
 
                   {/* Multi-column Grid for Subcategories */}
                   {activeSubcategories.length > 0 ? (
-                    <div className="grid grid-cols-3 items-start gap-x-10 gap-y-5">
+                    <div className="grid grid-cols-3 auto-rows-fr gap-3">
                       {activeSubcategories.map((subcat) => {
                         const childCats = getChildCategories(subcat.id);
                         return (
-                            <div key={subcat.id} className="min-w-0 min-h-[78px] space-y-2">
+                          <div key={subcat.id} className="min-w-0 h-full space-y-2">
                             {/* Subcategory title (Level 2) */}
                             <button
                               onClick={() => {
                                 setIsAllCategoriesOpen(false);
                                 onNavigate(`/category/${subcat.slug}`);
                               }}
-                              className="min-h-[54px] w-full font-display font-bold text-base leading-snug text-neutral-800 hover:text-[#e21b22] tracking-wide text-left flex items-start space-x-1 transition-colors"
+                              className="group relative flex h-full min-h-[64px] w-full items-center overflow-hidden rounded-lg border border-neutral-200 bg-gradient-to-br from-white to-neutral-50 px-4 py-3 text-left font-display text-[15px] font-bold leading-snug tracking-wide text-neutral-800 shadow-sm transition-all duration-200 before:absolute before:inset-y-3 before:left-0 before:w-1 before:rounded-r-full before:bg-[#e21b22] before:opacity-0 before:transition-opacity hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-50/60 hover:text-[#c81e24] hover:shadow-md hover:before:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22]/30"
                             >
-                              <span>{subcat.name}</span>
+                              <span className="relative">{subcat.name}</span>
                             </button>
 
                             {/* Level 3 Children */}
