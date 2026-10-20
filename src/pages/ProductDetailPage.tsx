@@ -433,7 +433,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             <button
               type="button"
               onClick={() => setIsLightboxOpen(false)}
-        className="absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 rounded-full border border-neutral-200 bg-white p-2 text-neutral-800 shadow-lg transition-colors hover:bg-[#e21b22] hover:text-white"
+        className="absolute left-1/2 top-full z-10 mt-4 -translate-x-1/2 rounded-full border border-neutral-200 bg-white p-2 text-neutral-800 shadow-lg transition-colors hover:bg-[#e21b22] hover:text-white"
               aria-label="Κλείσιμο εικόνας"
             >
               <X className="h-5 w-5" />
