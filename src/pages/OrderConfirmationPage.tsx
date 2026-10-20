@@ -22,7 +22,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
 }) => {
   const { orders } = useStore();
 
-  const order = orders.find((o) => o.orderNumber === orderNumber) || orders[0];
+  const order = orders.find((o) => o.orderNumber === orderNumber);
 
   if (!order) {
     return (
@@ -60,7 +60,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
             ΕΥΧΑΡΙΣΤΟΥΜΕ ΓΙΑ ΤΗΝ ΠΡΟΤΙΜΗΣΗ ΣΑΣ!
           </h1>
           <p className="text-xs sm:text-sm text-neutral-600 max-w-md mx-auto">
-            Αριθμός Παραγγελίας: <strong className="font-mono-spec text-neutral-900">#{order.orderNumber}</strong>. Έχουμε στείλει επιβεβαίωση στο email <span className="font-medium text-neutral-800">{order.customer.email}</span>.
+            Δοκιμαστική παραγγελία: <strong className="font-mono-spec text-neutral-900">#{order.orderNumber}</strong>. Δεν έχει πραγματοποιηθεί χρέωση ή αποστολή email. Μπορείτε να παρακολουθείτε την εξέλιξη στον λογαριασμό σας.
           </p>
         </div>
 

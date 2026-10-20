@@ -1,4 +1,9 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+import { useAuth } from './AuthContext';
+import { can, nextOrderStatus, validateCategoryParent, validateProduct } from '../services/workspacePolicy';
+import { DEMO_MODE } from '../services/runtime';
+import { demoStorage as localStorage } from '../services/demoStorage';
+import { commitOrder, releaseOrderStock } from '../services/orderTransaction';
 import { Product } from '../types/product';
 import { Category } from '../types/category';
 import { Brand } from '../types/brand';
@@ -9,9 +14,6 @@ import { AdminRole, User } from '../types/user';
 import { initialProducts } from '../data/productsData';
 import { initialCategories } from '../data/categoriesData';
 import { initialBrands } from '../data/brandsData';
-import { initialOrders } from '../data/ordersData';
-import { initialStockMovements, initialCountSessions } from '../data/inventoryData';
-import { initialAuditLogs } from '../data/auditData';
 
 // The catalog is generated from the supplier Excel export. Bump this when the
 // source catalog is intentionally replaced so old browser-local products do
@@ -33,6 +35,8 @@ interface ToastNotification {
 }
 
 interface StoreContextType {
+  allProducts: Product[];
+  updateOrderDetails: (id: string, tracking: string, note: string) => void;
   products: Product[];
   categories: Category[];
   brands: Brand[];
@@ -104,7 +108,7 @@ const normalizeStoredProducts = (value: string | null): Product[] => {
           ? storedProduct.categoryIds
           : fallbackProduct.categoryIds,
         images:
-          Array.isArray(storedProduct.images) && storedProduct.images.length > 0
+          Array.isArray(storedProduct.images)
             ? storedProduct.images
             : fallbackProduct.images,
         attributes: storedProduct.attributes ?? fallbackProduct.attributes ?? {},
@@ -146,6 +150,10 @@ const readStoredArray = <T,>(key: string, fallback: T[]): T[] => {
 };
 
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { user } = useAuth();
+  const requirePermission = (permission: Parameters<typeof can>[1]) => {
+    if (!DEMO_MODE || !can(user, permission)) throw new Error('Δεν έχετε δικαίωμα για αυτή την ενέργεια.');
+  };
   const catalogVersionMatches = localStorage.getItem('nomikos_catalog_version') === PRODUCT_CATALOG_VERSION;
   if (!catalogVersionMatches) {
     localStorage.removeItem('nomikos_products');
@@ -175,19 +183,23 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   });
 
   const [orders, setOrders] = useState<Order[]>(() => {
-    return readStoredArray('nomikos_orders', initialOrders);
+    return DEMO_MODE ? readStoredArray('nomikos_orders', []) : [];
   });
+  const productsRef = useRef(products);
+  productsRef.current = products;
+  const ordersRef = useRef(orders);
+  ordersRef.current = orders;
 
   const [stockMovements, setStockMovements] = useState<StockMovement[]>(() => {
-    return readStoredArray('nomikos_movements', initialStockMovements);
+    return readStoredArray('nomikos_movements', []);
   });
 
   const [countSessions, setCountSessions] = useState<InventoryCountSession[]>(() => {
-    return readStoredArray('nomikos_counts', initialCountSessions);
+    return readStoredArray('nomikos_counts', []);
   });
 
   const [auditLogs, setAuditLogs] = useState<AuditLogEntry[]>(() => {
-    return readStoredArray('nomikos_audit', initialAuditLogs);
+    return readStoredArray('nomikos_audit', []);
   });
 
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -211,6 +223,14 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     return localStorage.getItem('nomikos_b2b') === 'true';
   });
   const [activeRole, setActiveRole] = useState<AdminRole>('Super Admin');
+  useEffect(() => { setActiveRole(user?.adminRole ?? 'Read Only'); }, [user?.adminRole]);
+  useEffect(() => { localStorage.setItem('nomikos_movements', JSON.stringify(stockMovements)); }, [stockMovements]);
+  useEffect(() => { localStorage.setItem('nomikos_audit', JSON.stringify(auditLogs)); }, [auditLogs]);
+  useEffect(() => {
+    const notify = () => window.alert('Δεν ήταν δυνατή η τοπική αποθήκευση. Οι αλλαγές υπάρχουν μόνο στην τρέχουσα σελίδα. Μειώστε τον όγκο εικόνων πριν την ανανέωση.');
+    window.addEventListener('nt-storage-error', notify);
+    return () => window.removeEventListener('nt-storage-error', notify);
+  }, []);
   const [toast, setToast] = useState<ToastNotification | null>(null);
 
   // Sync to localStorage
@@ -263,15 +283,15 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     curr?: any
   ) => {
     const newEntry: AuditLogEntry = {
-      id: `aud-${Date.now()}`,
+      id: crypto.randomUUID(),
       user: `Διαχειριστής (${activeRole})`,
       userRole: activeRole,
       action,
       entity,
       entityId,
       entityName,
-      previousValues: prev,
-      newValues: curr,
+      previousValues: entity === 'order' ? undefined : prev,
+      newValues: entity === 'order' ? undefined : curr,
       timestamp: new Date().toISOString().replace('T', ' ').slice(0, 19),
     };
     setAuditLogs((prevList) => [newEntry, ...prevList]);
@@ -375,7 +395,8 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   // Product CRUD
   const addProduct = (productData: Omit<Product, 'id' | 'createdAt' | 'updatedAt'>) => {
-    const id = `prod-nt-${Date.now()}`;
+    requirePermission('catalog');
+    const id = `prod-nt-${crypto.randomUUID()}`;
     const now = new Date().toISOString();
     const newProduct: Product = {
       ...productData,
@@ -383,53 +404,63 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       createdAt: now,
       updatedAt: now,
     };
-    setProducts((prev) => [newProduct, ...prev]);
-    addAuditLog('Δημιουργία Νέου Προϊόντος', 'product', id, newProduct.name, null, newProduct);
+    validateProduct(newProduct, productsRef.current);
+    productsRef.current = [newProduct, ...productsRef.current];
+    setProducts(productsRef.current);
+    addAuditLog('Δημιουργία Νέου Προϊόντος', 'product', id, newProduct.name, null, { sku: newProduct.sku });
     showToast(`Το προϊόν "${newProduct.name.slice(0, 30)}" αποθηκεύτηκε επιτυχώς`);
   };
 
   const updateProduct = (id: string, updates: Partial<Product>) => {
-    setProducts((prev) =>
-      prev.map((p) => {
-        if (p.id === id) {
-          const updated = { ...p, ...updates, updatedAt: new Date().toISOString() };
-          addAuditLog('Ενημέρωση Προϊόντος', 'product', id, p.name, p, updated);
-          return updated;
-        }
-        return p;
-      })
-    );
+    requirePermission('catalog');
+    const original = productsRef.current.find(p => p.id === id);
+    if (!original) throw new Error('Το προϊόν δεν βρέθηκε.');
+    validateProduct({ ...original, ...updates }, productsRef.current);
+    const updated = { ...original, ...updates, updatedAt: new Date().toISOString() };
+    productsRef.current = productsRef.current.map(p => p.id === id ? updated : p);
+    setProducts(productsRef.current);
+    addAuditLog('Ενημέρωση Προϊόντος', 'product', id, original.name, { sku: original.sku, stock: original.stockQuantity, price: original.price }, { sku: updated.sku, stock: updated.stockQuantity, price: updated.price });
     showToast('Το προϊόν ενημερώθηκε');
   };
 
   const deleteProduct = (id: string) => {
-    const prod = products.find((p) => p.id === id);
-    setProducts((prev) => prev.filter((p) => p.id !== id));
+    requirePermission('catalog');
+    const prod = productsRef.current.find((p) => p.id === id);
+    productsRef.current = productsRef.current.map(p => p.id === id ? { ...p, active: false, publicationStatus: 'archived' } : p);
+    setProducts(productsRef.current);
     addAuditLog('Διαγραφή Προϊόντος', 'product', id, prod?.name);
     showToast('Το προϊόν διαγράφηκε', 'warning');
   };
 
   const duplicateProduct = (id: string) => {
-    const prod = products.find((p) => p.id === id);
+    requirePermission('catalog');
+    const prod = productsRef.current.find((p) => p.id === id);
     if (!prod) return;
     const duplicated: Product = {
       ...prod,
       id: `prod-copy-${Date.now()}`,
       name: `${prod.name} (Αντίγραφο)`,
-      sku: `${prod.sku}-COPY`,
-      ean: `${Math.floor(1000000000000 + Math.random() * 9000000000000)}`,
+      sku: `${prod.sku}-COPY-${Date.now()}`,
+      slug: `${prod.slug}-copy-${Date.now()}`,
+      ean: '',
+      active: false,
+      publicationStatus: 'draft',
+      variants: [],
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
-    setProducts((prev) => [duplicated, ...prev]);
+    productsRef.current = [duplicated, ...productsRef.current];
+    setProducts(productsRef.current);
     addAuditLog('Αντιγραφή Προϊόντος', 'product', duplicated.id, duplicated.name);
     showToast('Δημιουργήθηκε αντίγραφο προϊόντος');
   };
 
   const bulkUpdateProducts = (ids: string[], updates: Partial<Product>) => {
-    setProducts((prev) =>
-      prev.map((p) => (ids.includes(p.id) ? { ...p, ...updates, updatedAt: new Date().toISOString() } : p))
+    requirePermission('catalog');
+    productsRef.current = productsRef.current.map((p) =>
+      ids.includes(p.id) ? { ...p, ...updates, updatedAt: new Date().toISOString() } : p
     );
+    setProducts(productsRef.current);
     addAuditLog('Μαζική Ενημέρωση Προϊόντων', 'product', ids.join(','), `${ids.length} Προϊόντα`, null, updates);
     showToast(`Ενημερώθηκαν επιτυχώς ${ids.length} προϊόντα`);
   };
@@ -440,19 +471,20 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     reason: string,
     details?: string
   ) => {
-    const prod = products.find((p) => p.id === productId);
+    requirePermission('warehouse');
+    const prod = productsRef.current.find((p) => p.id === productId);
     if (!prod) return;
 
     const oldQty = prod.stockQuantity;
-    const newQty = Math.max(0, oldQty + quantityChange);
+    if (!Number.isInteger(quantityChange) || !reason.trim() || oldQty + quantityChange < 0) throw new Error('Μη έγκυρη ποσότητα ή αιτιολογία.');
+    const newQty = oldQty + quantityChange;
     const availabilityStatus = newQty === 0 ? 'out_of_stock' : newQty <= prod.lowStockThreshold ? 'low_stock' : 'in_stock';
 
-    setProducts((prev) =>
-      prev.map((p) => (p.id === productId ? { ...p, stockQuantity: newQty, availabilityStatus } : p))
-    );
+    productsRef.current = productsRef.current.map((p) => p.id === productId ? { ...p, stockQuantity: newQty, availabilityStatus, updatedAt: new Date().toISOString() } : p);
+    setProducts(productsRef.current);
 
     const movement: StockMovement = {
-      id: `mov-${Date.now()}`,
+      id: crypto.randomUUID(),
       productId: prod.id,
       productName: prod.name,
       sku: prod.sku,
@@ -472,60 +504,61 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const addOrder = (order: Order) => {
-    setOrders((prev) => [order, ...prev]);
+    if (!DEMO_MODE) throw new Error('Το checkout αναμένει σύνδεση με το backend.');
+    if (ordersRef.current.some(o => o.id === order.id)) return;
+    const transaction = commitOrder(productsRef.current, ordersRef.current, order, user?.id);
+    const snapshot = transaction.order;
+    productsRef.current = transaction.products;
+    ordersRef.current = transaction.orders;
+    if (!user) sessionStorage.setItem('nt-demo-guest-order', snapshot.id);
+    setProducts(productsRef.current);
+    setOrders(ordersRef.current);
     addAuditLog('Νέα Παραγγελία E-Shop', 'order', order.id, `Παραγγελία #${order.orderNumber}`, null, order);
     clearCart();
     showToast(`Η παραγγελία #${order.orderNumber} καταχωρήθηκε επιτυχώς!`);
   };
 
   const updateOrderStatus = (orderId: string, newStatus: OrderStatus, note?: string) => {
-    setOrders((prev) =>
-      prev.map((o) => {
-        if (o.id === orderId) {
-          const historyItem = {
-            status: newStatus,
-            timestamp: new Date().toISOString().replace('T', ' ').slice(0, 16),
-            user: `Διαχειριστής (${activeRole})`,
-            note,
-          };
-          const updated = {
-            ...o,
-            status: newStatus,
-            updatedAt: new Date().toISOString().replace('T', ' ').slice(0, 16),
-            statusHistory: [...o.statusHistory, historyItem],
-          };
-          addAuditLog('Αλλαγή Κατάστασης Παραγγελίας', 'order', orderId, `Παραγγελία #${o.orderNumber}`, { status: o.status }, { status: newStatus });
-          return updated;
-        }
-        return o;
-      })
-    );
+    requirePermission('orders');
+    const current = ordersRef.current.find(o => o.id === orderId);
+    if (!current || !nextOrderStatus(current, newStatus)) return;
+    if (newStatus === 'Ακυρώθηκε' && current.stockCommitted) {
+      productsRef.current = releaseOrderStock(productsRef.current, current);
+      setProducts(productsRef.current);
+    }
+    const historyItem = {
+      status: newStatus,
+      timestamp: new Date().toISOString().replace('T', ' ').slice(0, 16),
+      user: `Διαχειριστής (${activeRole})`,
+      note,
+    };
+    ordersRef.current = ordersRef.current.map(o => o.id === orderId ? {
+      ...o,
+      status: newStatus,
+      stockCommitted: newStatus === 'Ακυρώθηκε' ? false : o.stockCommitted,
+      updatedAt: historyItem.timestamp,
+      statusHistory: [...o.statusHistory, historyItem],
+    } : o);
+    setOrders(ordersRef.current);
+    addAuditLog('Αλλαγή Κατάστασης Παραγγελίας', 'order', orderId, `Παραγγελία #${current.orderNumber}`, { status: current.status }, { status: newStatus });
     showToast(`Η παραγγελία άλλαξε κατάσταση σε: ${newStatus}`);
   };
 
   const updateOrderItemPicked = (orderId: string, sku: string, quantity: number) => {
-    setOrders((prev) =>
-      prev.map((o) => {
-        if (o.id === orderId) {
-          const updatedItems = o.items.map((item) =>
-            item.sku === sku ? { ...item, pickedQuantity: quantity } : item
-          );
-          // Check if all lines are picked
-          const allPicked = updatedItems.every(
-            (item) => (item.pickedQuantity || 0) >= item.quantity
-          );
-          return {
-            ...o,
-            items: updatedItems,
-            status: allPicked ? 'Έτοιμη για Συσκευασία' : o.status,
-          };
-        }
-        return o;
-      })
-    );
+    requirePermission('warehouse');
+    const order = ordersRef.current.find(o => o.id === orderId);
+    const item = order?.items.find(i => i.sku === sku);
+    if (!order || !item || order.status !== 'Σε Picking' || !Number.isInteger(quantity) || quantity < 0 || quantity > item.quantity) throw new Error('Λάθος είδος, ποσότητα ή κατάσταση συλλογής.');
+    ordersRef.current = ordersRef.current.map(o => o.id === orderId ? {
+      ...o,
+      items: o.items.map(i => i.sku === sku ? { ...i, pickedQuantity: quantity } : i),
+      updatedAt: new Date().toISOString().replace('T', ' ').slice(0, 16),
+    } : o);
+    setOrders(ordersRef.current);
   };
 
   const addCategory = (categoryData: Omit<Category, 'id'>) => {
+    requirePermission('catalog');
     const id = `cat-${Date.now()}`;
     const newCat: Category = { ...categoryData, id };
     setCategories((prev) => [...prev, newCat]);
@@ -534,6 +567,8 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const updateCategory = (id: string, updates: Partial<Category>) => {
+    requirePermission('catalog');
+    validateCategoryParent(categories, id, updates.parentId);
     setCategories((prev) =>
       prev.map((c) => (c.id === id ? { ...c, ...updates } : c))
     );
@@ -541,11 +576,13 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const deleteCategory = (id: string) => {
+    requirePermission('catalog');
     setCategories((prev) => prev.filter((c) => c.id !== id));
     showToast('Η κατηγορία διαγράφηκε', 'warning');
   };
 
   const updateCountSession = (sessionId: string, updates: Partial<InventoryCountSession>) => {
+    requirePermission('warehouse');
     setCountSessions((prev) =>
       prev.map((s) => (s.id === sessionId ? { ...s, ...updates } : s))
     );
@@ -554,10 +591,18 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   return (
     <StoreContext.Provider
       value={{
-        products,
+        products: products.filter(p => p.active),
+        allProducts: can(user, 'catalog') || can(user, 'warehouse') ? products : products.filter(p => p.active),
+        updateOrderDetails: (id, tracking, note) => {
+          requirePermission('orders');
+          if (!ordersRef.current.some(o => o.id === id)) throw new Error('Η παραγγελία δεν βρέθηκε.');
+          ordersRef.current = ordersRef.current.map(o => o.id === id ? { ...o, shipping: { ...o.shipping, trackingNumber: tracking.trim() },
+            internalNotes: note.trim() ? [...(o.internalNotes ?? []), { text: note.trim(), at: new Date().toISOString(), author: user?.name ?? '' }] : o.internalNotes } : o);
+          setOrders(ordersRef.current);
+        },
         categories,
         brands,
-        orders,
+        orders: can(user, 'orders') || can(user, 'support') ? orders : orders.filter(o => user ? o.customerId === user.id : o.id === sessionStorage.getItem('nt-demo-guest-order')),
         stockMovements,
         countSessions,
         auditLogs,

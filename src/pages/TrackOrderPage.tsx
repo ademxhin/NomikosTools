@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Truck, Search, CheckCircle2, Clock, MapPin, Package, ArrowRight } from 'lucide-react';
-import { courierService } from '../services/courierService';
 import { useStore } from '../context/StoreContext';
 
 interface TrackOrderPageProps {
@@ -13,8 +12,8 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
   onNavigate,
 }) => {
   const { orders } = useStore();
-  const [voucher, setVoucher] = useState(initialVoucher || 'ACS-893049102GR');
-  const [searchedVoucher, setSearchedVoucher] = useState(initialVoucher || 'ACS-893049102GR');
+  const [voucher, setVoucher] = useState(initialVoucher);
+  const [searchedVoucher, setSearchedVoucher] = useState(initialVoucher);
 
   const matchingOrder = orders.find(
     (o) =>
@@ -23,7 +22,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
       o.orderNumber.toLowerCase() === searchedVoucher.toLowerCase()
   );
 
-  const trackingInfo = courierService.getTrackingStatus(searchedVoucher);
+  const trackingInfo = { status: matchingOrder?.status ?? 'Δεν βρέθηκε διαθέσιμη παραγγελία για αυτόν τον λογαριασμό', history: matchingOrder?.statusHistory.map(s => ({ event: s.status, date: s.timestamp, location: 'Δοκιμαστική καταχώριση καταστήματος' })) ?? [] };
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,7 +34,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-8 select-none">
       <div className="text-center space-y-2">
         <h1 className="font-display font-black text-3xl sm:text-4xl text-neutral-900 uppercase tracking-tight">
-          ΖΩΝΤΑΝΟΣ ΕΝΤΟΠΙΣΜΟΣ ΑΠΟΣΤΟΛΗΣ
+          ΠΟΡΕΙΑ ΠΑΡΑΓΓΕΛΙΑΣ
         </h1>
         <p className="text-xs sm:text-sm text-neutral-500 max-w-lg mx-auto">
           Εισάγετε τον αριθμό voucher της ACS, τον κωδικό Box Now ή τον αριθμό παραγγελίας σας (π.χ. NT-84920).

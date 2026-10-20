@@ -21,7 +21,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
   const { products, categories, brands, isB2BMode } = useStore();
 
   // Find target category
-  const currentCategory = categories.find((c) => c.slug === categorySlug);
+  const currentCategory = categories.find((c) => c.active && (c.slug === categorySlug || c.previousSlugs?.includes(categorySlug ?? '')));
   const selectedGroup = categoryGroups.find((group) => group.id === categorySlug);
   const parentGroup = currentCategory?.parentId
     ? categoryGroups.find((group) => group.id === currentCategory.parentId)

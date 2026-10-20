@@ -12,6 +12,7 @@ export type OrderStatus =
   | 'Επιστροφή Χρημάτων';
 
 export interface OrderItem {
+  variantId?: string;
   productId: string;
   sku: string;
   name: string;
@@ -69,6 +70,9 @@ export interface StatusHistoryItem {
 }
 
 export interface Order {
+  customerId?: string;
+  stockCommitted?: boolean;
+  internalNotes?: { text: string; at: string; author: string }[];
   id: string;
   orderNumber: string;
   createdAt: string;

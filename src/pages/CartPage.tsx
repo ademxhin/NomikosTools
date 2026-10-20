@@ -10,12 +10,15 @@ import {
   Percent,
 } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
+import { useWorkspace } from '../context/WorkspaceContext';
+import { couponDiscount } from '../services/coupons';
 
 interface CartPageProps {
   onNavigate: (route: string) => void;
 }
 
 export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
+  const { state } = useWorkspace();
   const {
     cart,
     removeFromCart,
@@ -29,27 +32,25 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
   } = useStore();
 
   const [couponCode, setCouponCode] = useState('');
-  const [discountPercent, setDiscountPercent] = useState(0);
+  const [discountAmount, setDiscountAmount] = useState(0);
 
   const subtotal = getCartSubtotal();
   const freeShippingThreshold = 50.0;
   const remainingForFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
   const shippingCost = subtotal >= freeShippingThreshold || subtotal === 0 ? 0 : 3.50;
 
-  const discountAmount = Number(((subtotal * discountPercent) / 100).toFixed(2));
   const finalTotal = Math.max(0, subtotal - discountAmount + shippingCost);
 
   const handleApplyCoupon = (e: React.FormEvent) => {
     e.preventDefault();
-    if (couponCode.toUpperCase() === 'NOMIKOS10') {
-      setDiscountPercent(10);
-      showToast('Εφαρμόστηκε έκπτωση 10% στον κωδικό NOMIKOS10!');
-    } else if (couponCode.toUpperCase() === 'PROTOOL5') {
-      setDiscountPercent(5);
-      showToast('Εφαρμόστηκε έκπτωση 5%!');
-    } else {
-      showToast('Μη έγκυρος κωδικός κουπονιού. Δοκιμάστε: NOMIKOS10', 'warning');
-    }
+    try {
+      const coupon = state.coupons?.find(c => c.code === couponCode.trim().toUpperCase());
+      if (!coupon) throw new Error('Το κουπόνι δεν βρέθηκε.');
+      const discount = couponDiscount(coupon, cart.map(i => ({ price: i.product.salePrice ?? i.product.price, quantity: i.quantity, categoryIds: i.product.categoryIds, onSale: i.product.salePrice !== undefined })), state.couponUses?.[coupon.code] ?? 0);
+      setDiscountAmount(discount);
+      sessionStorage.setItem('nt-demo-coupon', coupon.code);
+      showToast('Το κουπόνι εφαρμόστηκε. Θα επανελεγχθεί στο checkout.');
+    } catch(e) { setDiscountAmount(0); sessionStorage.removeItem('nt-demo-coupon'); showToast((e as Error).message, 'warning'); }
   };
 
   if (cart.length === 0) {
@@ -249,7 +250,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
 
               {discountAmount > 0 && (
                 <div className="flex justify-between text-emerald-700 font-bold">
-                  <span>Έκπτωση Κουπονιού ({discountPercent}%):</span>
+                  <span>Έκπτωση κουπονιού:</span>
                   <span className="font-mono-spec">-€{discountAmount.toFixed(2)}</span>
                 </div>
               )}
@@ -306,7 +307,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
                 type="text"
                 value={couponCode}
                 onChange={(e) => setCouponCode(e.target.value)}
-                placeholder="π.χ. NOMIKOS10"
+                placeholder="Κωδικός κουπονιού"
                 className="flex-1 p-2 border border-neutral-300 rounded font-mono-spec uppercase text-xs focus:border-[#e21b22] focus:outline-none"
               />
               <button

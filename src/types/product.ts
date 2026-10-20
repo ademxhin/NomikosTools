@@ -5,6 +5,8 @@ export interface ProductSpecification {
 }
 
 export interface ProductVariant {
+  ean?: string;
+  image?: string;
   id: string;
   name: string;
   sku: string;
@@ -23,6 +25,11 @@ export interface ProductManual {
 export type AvailabilityStatus = 'in_stock' | 'low_stock' | 'out_of_stock' | 'on_order';
 
 export interface Product {
+  publicationStatus?: 'draft' | 'published' | 'archived';
+  imageAlt?: Record<string, string>;
+  saleStartsAt?: string;
+  saleEndsAt?: string;
+  shippingClass?: string;
   id: string;
   name: string;
   slug: string;

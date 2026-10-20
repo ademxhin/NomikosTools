@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { User, AdminRole } from '../types/user';
+import { DEMO_MODE } from '../services/runtime';
 
 interface AuthContextType {
   user: User | null;
@@ -14,34 +15,23 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(() => {
-    const saved = localStorage.getItem('nomikos_user');
+    const saved = DEMO_MODE ? sessionStorage.getItem('nomikos_demo_user') : null;
     if (saved) {
       try {
         return JSON.parse(saved) as User;
       } catch {
-        localStorage.removeItem('nomikos_user');
+        sessionStorage.removeItem('nomikos_demo_user');
       }
     }
 
-    return {
-          id: 'usr-admin-01',
-          name: 'Γιώργος Νομικός',
-          email: 'g.nomikos@nomikostools.gr',
-          role: 'admin',
-          adminRole: 'Super Admin',
-          phone: '2110069347',
-          isB2B: true,
-          companyName: 'ΝΟΜΙΚΟΣ TOOLS Α.Ε.Β.Ε.',
-          vatNumber: '094827102',
-          taxOffice: 'ΦΑΕ ΠΕΙΡΑΙΑ',
-        };
+    return null;
   });
 
   useEffect(() => {
     if (user) {
-      localStorage.setItem('nomikos_user', JSON.stringify(user));
+      sessionStorage.setItem('nomikos_demo_user', JSON.stringify(user));
     } else {
-      localStorage.removeItem('nomikos_user');
+      sessionStorage.removeItem('nomikos_demo_user');
     }
   }, [user]);
 
@@ -50,9 +40,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     role: 'customer' | 'admin' = 'customer',
     adminRole: AdminRole = 'Super Admin'
   ) => {
+    if (!DEMO_MODE) throw new Error('Η υπηρεσία σύνδεσης δεν έχει συνδεθεί.');
     const newUser: User = {
-      id: `usr-${Date.now()}`,
-      name: email.split('@')[0],
+      id: role === 'customer' ? `demo-${email.toLowerCase()}` : `demo-${adminRole}`,
+      name: role === 'customer' ? 'Δοκιμαστικός Πελάτης' : 'Δοκιμαστικός Διαχειριστής',
       email,
       role,
       adminRole: role === 'admin' ? adminRole : undefined,
@@ -66,7 +57,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const updateUser = (updates: Partial<User>) => {
-    setUser((prev) => (prev ? { ...prev, ...updates } : null));
+    setUser((prev) => (prev ? { ...prev, name: updates.name ?? prev.name, phone: updates.phone ?? prev.phone,
+      companyName: updates.companyName ?? prev.companyName, vatNumber: updates.vatNumber ?? prev.vatNumber,
+      taxOffice: updates.taxOffice ?? prev.taxOffice } : null));
   };
 
   return (

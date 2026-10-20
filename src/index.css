@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+.nt-panel { border: 1px solid #e5e5e5; border-radius: 16px; background: white; padding: 24px; box-shadow: 0 2px 3px #00000004; min-width: 0; }
+.nt-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 10px 16px; border-radius: 10px; background: #e21b22; color: white; font-size: 13px; font-weight: 600; cursor: pointer; }
+.nt-button:hover { background: #c81016; }
+.nt-button-secondary { background: #f5f5f5; color: #262626; border: 1px solid #e5e5e5; }
+.nt-button-secondary:hover { background: #e5e5e5; }
+.nt-button:disabled { opacity: .45; cursor: not-allowed; }
+.nt-field { display: flex; flex-direction: column; gap: 7px; font-size: 13px; font-weight: 600; }
+.nt-field input:not([type=checkbox]), .nt-field select, .nt-field textarea, .nt-input { width: 100%; min-width: 0; border: 1px solid #d4d4d4; background: white; border-radius: 9px; padding: 10px 12px; font-size: 14px; font-weight: 400; color: #262626; }
+.nt-field textarea { min-height: 100px; }
+.nt-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; border: 1px solid #e5e5e5; border-radius: 18px; padding: 24px; }
+.nt-dialog::backdrop { background: #17171799; backdrop-filter: blur(3px); }
+.nt-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+.nt-table th { color: #737373; font-size: 11px; letter-spacing: .06em; background: #fafafa; }
+.nt-table th, .nt-table td { padding: 13px 12px; border-bottom: 1px solid #eee; }
+.nt-table tr:hover td { background: #fafafa; }
+:where(button, a, input, select, textarea, summary):focus-visible { outline: 2px solid #e21b22; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+@media print { body * { visibility: hidden; } .nt-print, .nt-print * { visibility: visible; } .nt-print { position: absolute; inset: 0; background: white; } .nt-no-print { display: none; } }
+
 @layer base {
   :root {
     --font-display: 'Noto Sans', sans-serif;

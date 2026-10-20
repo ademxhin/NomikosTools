@@ -18,7 +18,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
 
   const activeSubcategories = useMemo(
     () => categories
-      .filter((category) => category.active && category.parentId === activeMainCatId)
+      .filter((category) => category.active && category.menuVisible !== false && category.parentId === activeMainCatId)
       .sort((a, b) => a.order - b.order),
     [categories, activeMainCatId]
   );

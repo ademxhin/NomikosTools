@@ -14,8 +14,10 @@ import {
 import { useStore } from '../context/StoreContext';
 import { useAuth } from '../context/AuthContext';
 import { courierService } from '../services/courierService';
-import { paymentService } from '../services/paymentService';
 import { Order, OrderItem, Address } from '../types/order';
+import { DEMO_MODE } from '../services/runtime';
+import { useWorkspace } from '../context/WorkspaceContext';
+import { couponDiscount } from '../services/coupons';
 
 interface CheckoutPageProps {
   onNavigate: (route: string) => void;
@@ -23,25 +25,29 @@ interface CheckoutPageProps {
 }
 
 export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderCompleted }) => {
-  const { cart, getCartSubtotal, getCartVat, addOrder, adjustProductStock, showToast } = useStore();
+  const { cart, getCartSubtotal, getCartVat, addOrder, showToast } = useStore();
   const { user } = useAuth();
+  const { state, useCoupon } = useWorkspace();
+  const [couponCode, setCouponCode] = useState(() => sessionStorage.getItem('nt-demo-coupon') ?? '');
+  const [couponMessage, setCouponMessage] = useState('');
+  const defaultAddress = state.addresses.find(a => a.shipping);
 
   // Form states
-  const [invoiceType, setInvoiceType] = useState<'receipt' | 'invoice'>('invoice');
+  const [invoiceType, setInvoiceType] = useState<'receipt' | 'invoice'>('receipt');
   const [formData, setFormData] = useState({
-    firstName: user?.name?.split(' ')[0] || 'Γιώργος',
-    lastName: user?.name?.split(' ')[1] || 'Νομικός',
-    email: user?.email || 'g.nomikos@nomikostools.gr',
-    phone: user?.phone || '2110069347',
-    address: 'Θέση Γκορυτσά',
-    city: 'Ασπρόπυργος',
-    postalCode: '19300',
-    notes: 'Παράδοση στην αποθήκη Logistics 2.',
+    firstName: user?.name?.split(' ')[0] || '',
+    lastName: user?.name?.split(' ').slice(1).join(' ') || '',
+    email: user?.email || '',
+    phone: defaultAddress?.phone || user?.phone || '',
+    address: defaultAddress?.street || '',
+    city: defaultAddress?.city || '',
+    postalCode: defaultAddress?.postalCode || '',
+    notes: '',
     // B2B Invoice specific fields
-    companyName: user?.companyName || 'ΝΟΜΙΚΟΣ TOOLS Α.Ε.Β.Ε.',
-    vatNumber: user?.vatNumber || '094827102',
-    taxOffice: user?.taxOffice || 'ΦΑΕ ΠΕΙΡΑΙΑ',
-    profession: 'Εμπόριο Επαγγελματικών Εργαλείων',
+    companyName: user?.companyName || '',
+    vatNumber: user?.vatNumber || '',
+    taxOffice: user?.taxOffice || '',
+    profession: '',
   });
 
   const [shippingMethod, setShippingMethod] = useState<'acs' | 'boxnow' | 'store_pickup'>('acs');
@@ -53,7 +59,15 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
   const vat = getCartVat();
   const shippingCost = courierService.calculateShipping(shippingMethod, subtotal, 3.5);
   const codFee = paymentMethod === 'cod' ? 2.00 : 0;
-  const totalAmount = Number((subtotal + shippingCost + codFee).toFixed(2));
+  const coupon = state.coupons?.find(c => c.code === couponCode.trim().toUpperCase());
+  let discount = 0;
+  try { if (coupon) discount = couponDiscount(coupon, cart.map(i => ({ price: i.product.salePrice ?? i.product.price, quantity: i.quantity, categoryIds: i.product.categoryIds, onSale: i.product.salePrice !== undefined })), state.couponUses?.[coupon.code] ?? 0); } catch { /* Validation is surfaced when checking or submitting the coupon. */ }
+  const totalAmount = Number((subtotal + shippingCost + codFee - discount).toFixed(2));
+  const validateCoupon = () => {
+    if (!couponCode.trim()) return;
+    if (!coupon) throw new Error('Το κουπόνι δεν βρέθηκε.');
+    couponDiscount(coupon, cart.map(i => ({ price: i.product.salePrice ?? i.product.price, quantity: i.quantity, categoryIds: i.product.categoryIds, onSale: i.product.salePrice !== undefined })), state.couponUses?.[coupon.code] ?? 0);
+  };
 
   if (cart.length === 0) {
     onNavigate('/cart');
@@ -69,7 +83,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
       showToast('Παρακαλώ εισάγετε έγκυρο 9ψήφιο ΑΦΜ', 'warning');
       return;
     }
-    showToast(`Το ΑΦΜ ${formData.vatNumber} επικυρώθηκε στο VIES / Taxisnet επιτυχώς!`);
+    showToast('Έλεγχος μήκους ΑΦΜ μόνο. Το VIES / Taxisnet δεν έχει συνδεθεί.', 'info');
     setFormData((prev) => ({
       ...prev,
       companyName: prev.companyName || 'ΤΕΧΝΙΚΗ ΕΡΓΟΛΗΠΤΙΚΗ Ο.Ε.',
@@ -80,26 +94,24 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
 
   const handleSubmitOrder = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isProcessing) return;
+    if (!DEMO_MODE) { showToast('Η υπηρεσία παραγγελιών δεν έχει συνδεθεί.', 'warning'); return; }
     setIsProcessing(true);
 
     try {
-      const orderNumber = `NT-${Math.floor(10000 + Math.random() * 90000)}`;
+      validateCoupon();
+      const orderNumber = `DEMO-${Date.now()}`;
 
       // 1. Process payment adapter
-      const paymentRes = await paymentService.processPayment(paymentMethod, totalAmount, orderNumber);
+      const paymentRes = { transactionId: undefined };
 
       // 2. Create courier shipment voucher adapter
-      const shipmentRes = await courierService.createShipment(shippingMethod, orderNumber, {
-        name: `${formData.firstName} ${formData.lastName}`,
-        phone: formData.phone,
-        address: formData.address,
-        city: formData.city,
-        postalCode: formData.postalCode,
-      });
+      const shipmentRes = { trackingNumber: undefined };
 
       // 3. Build order items
       const orderItems: OrderItem[] = cart.map((item) => ({
         productId: item.product.id,
+        variantId: item.selectedVariantId,
         sku: item.product.sku,
         name: item.product.name,
         image: item.product.images[0] || '',
@@ -171,34 +183,30 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
               : paymentMethod === 'cod'
               ? 'Αντικαταβολή κατά την παράδοση'
               : 'Τραπεζική Κατάθεση',
-          status: paymentMethod === 'cod' || paymentMethod === 'bank' ? 'pending' : 'paid',
+          status: 'pending',
           transactionId: paymentRes.transactionId,
         },
         subtotal,
         vatTotal: vat,
-        shippingCost,
-        discountTotal: 0,
+        shippingCost: shippingCost + codFee,
+        discountTotal: discount,
+        couponCode: coupon?.code,
         total: totalAmount,
         notes: formData.notes,
         isB2B: invoiceType === 'invoice',
       };
 
       // 5. Decrement inventory stock
-      cart.forEach((item) => {
-        adjustProductStock(
-          item.product.id,
-          -item.quantity,
-          'sale',
-          `Πώληση μέσω e-shop - Παραγγελία #${orderNumber}`
-        );
-      });
+      // Stock and order snapshots are committed together by the demo store.
 
       // 6. Save order
       addOrder(newOrder);
+      if (coupon) useCoupon(coupon.code);
+      sessionStorage.removeItem('nt-demo-coupon');
       onOrderCompleted(newOrder);
       onNavigate(`/order-confirmation/${orderNumber}`);
     } catch (err) {
-      showToast('Σφάλμα κατά την επεξεργασία της παραγγελίας', 'error');
+      showToast(err instanceof Error ? err.message : 'Σφάλμα κατά την επεξεργασία της παραγγελίας', 'error');
     } finally {
       setIsProcessing(false);
     }
@@ -218,6 +226,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
       </div>
 
       <form onSubmit={handleSubmitOrder}>
+        <div className="mb-5 rounded-xl border border-neutral-200 bg-white p-4"><label className="text-sm font-semibold" htmlFor="checkout-coupon">Κωδικός κουπονιού</label><div className="mt-2 flex gap-2"><input id="checkout-coupon" className="nt-input" value={couponCode} onChange={e => { setCouponCode(e.target.value); setCouponMessage(''); }} /><button type="button" className="nt-button" onClick={() => { try { validateCoupon(); setCouponMessage(coupon ? `Έκπτωση ${discount.toFixed(2)} €` : 'Συμπληρώστε κωδικό κουπονιού.'); } catch(e) { setCouponMessage((e as Error).message); } }}>Έλεγχος</button></div>{couponMessage && <p role="status" className="mt-2 text-sm">{couponMessage}</p>}{discount > 0 && <p className="mt-2 text-sm text-green-700">Εφαρμοσμένη έκπτωση: {discount.toFixed(2)} €</p>}</div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: 3-Step Checkout Accordion (Col 8) */}
           <div className="lg:col-span-8 space-y-6">

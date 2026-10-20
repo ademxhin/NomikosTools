@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { useAuth } from '../../context/AuthContext';
+import { useWorkspace } from '../../context/WorkspaceContext';
 import { Product } from '../../types/product';
 
 interface HeaderProps {
@@ -31,6 +32,9 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, onOpenMegaMenu, isMegaMenuOpen = false, isMobileMenuOpen = false }) => {
+  const { state: workspace } = useWorkspace();
+  const contactPhone = workspace.content?.phone ?? '2110069347';
+  const contactEmail = workspace.content?.email ?? 'sales@nomikostools.gr';
   const {
     products,
     categories,
@@ -390,7 +394,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
             <PhoneCall className="w-[30px] h-[30px] text-white" />
             <div className="leading-tight">
               <div className="font-display font-bold text-base uppercase tracking-wide">Πληροφορίες</div>
-              <div className="text-[15px] text-neutral-200 whitespace-nowrap tracking-tight">2110069347&nbsp; | &nbsp;sales@nomikostools.gr</div>
+              <div className="text-[15px] text-neutral-200 whitespace-nowrap tracking-tight">{contactPhone}&nbsp; | &nbsp;{contactEmail}</div>
             </div>
           </div>
           <button
@@ -404,13 +408,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           </button>
 
           <a
-            href="tel:2110069347"
+            href={`tel:${contactPhone}`}
             className="hidden md:flex xl:hidden items-center gap-2 h-10 px-2.5 rounded-xl text-white hover:bg-black/15 transition-colors"
-            title="Καλέστε στο 2110069347"
-            aria-label="Τηλέφωνο 2110069347"
+            title={`Καλέστε στο ${contactPhone}`}
+            aria-label={`Τηλέφωνο ${contactPhone}`}
           >
             <Phone className="w-[22px] h-[22px]" />
-            <span className="hidden 2xl:inline text-[11px] font-semibold">2110069347</span>
+            <span className="hidden 2xl:inline text-[11px] font-semibold">{contactPhone}</span>
           </a>
 
           {/* Compare Button */}

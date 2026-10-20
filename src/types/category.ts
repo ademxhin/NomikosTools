@@ -1,4 +1,8 @@
 export interface Category {
+  menuVisible?: boolean;
+  seoTitle?: string;
+  seoDescription?: string;
+  previousSlugs?: string[];
   id: string;
   name: string;
   slug: string;

@@ -9,19 +9,19 @@ import {
   RotateCcw,
   CreditCard,
   Send,
-  CheckCircle,
   ExternalLink,
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
+import { useWorkspace } from '../../context/WorkspaceContext';
 
 interface FooterProps {
   onNavigate: (route: string) => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+  const { state: workspace } = useWorkspace();
   const { showToast } = useStore();
   const [newsletterEmail, setNewsletterEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,9 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       showToast('Παρακαλώ εισάγετε έγκυρο email', 'warning');
       return;
     }
-    setSubscribed(true);
-    showToast('Ευχαριστούμε για την εγγραφή σας στο Newsletter!');
-    setNewsletterEmail('');
+    showToast('Η εγγραφή newsletter δεν έχει συνδεθεί ακόμη με υπηρεσία αποστολής.', 'info');
   };
 
   return (
@@ -114,11 +112,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
             <div className="flex items-center space-x-2.5">
               <Phone className="w-4 h-4 text-[#e21b22] shrink-0" />
-              <span>Τηλεφωνικό Κέντρο: 2110069347 (Δευτ-Παρ 08:00 - 17:00)</span>
+              <span>Τηλεφωνικό Κέντρο: {workspace.content?.phone ?? '2110069347'} (Δευτ-Παρ 08:00 - 17:00)</span>
             </div>
             <div className="flex items-center space-x-2.5">
               <Mail className="w-4 h-4 text-[#e21b22] shrink-0" />
-              <span>Email: sales@nomikostools.gr | b2b@nomikostools.gr</span>
+              <span>Email: {workspace.content?.email ?? 'sales@nomikostools.gr'}</span>
             </div>
           </div>
         </div>
@@ -224,12 +222,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <Send className="w-3.5 h-3.5" />
               </button>
             </div>
-            {subscribed && (
-              <p className="text-emerald-400 text-[11px] flex items-center space-x-1">
-                <CheckCircle className="w-3.5 h-3.5" />
-                <span>Εγγραφήκατε με επιτυχία!</span>
-              </p>
-            )}
           </form>
 
           {/* Logistics & Couriers */}

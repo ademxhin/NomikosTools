@@ -7,7 +7,10 @@ import { MobileDrawer } from './components/layout/MobileDrawer';
 import { Footer } from './components/layout/Footer';
 import { QuickViewModal } from './components/product/QuickViewModal';
 import { NotificationToast } from './components/common/NotificationToast';
-import { AccountPage } from './pages/AccountPage';
+import { WorkspaceProvider, useWorkspace } from './context/WorkspaceContext';
+import { DEMO_MODE } from './services/runtime';
+const AdminPortal = lazy(() => import('./pages/AdminPortal').then(m => ({ default: m.AdminPortal })));
+const CustomerWorkspace = lazy(() => import('./pages/CustomerWorkspace').then(m => ({ default: m.CustomerWorkspace })));
 
 import { Order } from './types/order';
 
@@ -28,6 +31,7 @@ const InfoPage = lazy(() => import('./pages/InfoPage').then((module) => ({ defau
 const getBrowserRoute = () => `${window.location.pathname}${window.location.search}`;
 
 function AppContent() {
+  const { state: workspace } = useWorkspace();
   const [currentRoute, setCurrentRoute] = useState<string>(getBrowserRoute);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
@@ -112,8 +116,8 @@ function AppContent() {
     }
 
     // 10. Account
-    if (currentRoute === '/account' || currentRoute === '/login') {
-      return <AccountPage onNavigate={handleNavigate} />;
+    if (currentRoute === '/account' || currentRoute.startsWith('/account/') || currentRoute === '/login') {
+      return <CustomerWorkspace key={currentRoute} route={currentRoute} onNavigate={handleNavigate} />;
     }
 
     // 11. Wishlist
@@ -143,7 +147,7 @@ function AppContent() {
 
     // Keep the unfinished admin portal inaccessible to storefront visitors.
     if (currentRoute === '/admin' || currentRoute.startsWith('/admin/')) {
-      return <HomePage onNavigate={handleNavigate} />;
+      return <AdminPortal route={currentRoute} onNavigate={handleNavigate} />;
     }
 
     // 16. Informational pages
@@ -172,7 +176,10 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f5f5f5] text-neutral-900 font-sans antialiased">
+      {DEMO_MODE && <div className="bg-amber-50 px-4 py-2 text-center text-xs text-amber-900">Δοκιμαστική λειτουργία · Δεν γίνονται πραγματικές πληρωμές ή αποστολές. <button className="ml-2 underline" onClick={() => handleNavigate('/admin')}>Διαχείριση</button></div>}
       {/* 1. Main Search-Focused Header */}
+      {!currentRoute.startsWith('/admin') && <>
+      {workspace.content && <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 bg-[#242424] px-4 py-2 text-xs text-white"><span>{workspace.content.announcement}</span><span>{workspace.content.phone}</span><span>{workspace.content.email}</span></div>}
       <Header
         onNavigate={handleNavigate}
         onOpenMobileMenu={() => setIsMobileMenuOpen(true)}
@@ -190,6 +197,7 @@ function AppContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onNavigate={handleNavigate}
       />
+      </>}
 
       {/* 4. Main Active Screen */}
       <main className="flex-1 w-full">
@@ -208,7 +216,7 @@ function AppContent() {
       </main>
 
       {/* 5. Comprehensive Industrial Footer */}
-      <Footer onNavigate={handleNavigate} />
+      {!currentRoute.startsWith('/admin') && <Footer onNavigate={handleNavigate} />}
 
       {/* 6. Global Modals & Notifications */}
       <QuickViewModal onNavigate={handleNavigate} />
@@ -221,7 +229,9 @@ export default function App() {
   return (
     <AuthProvider>
       <StoreProvider>
+        <WorkspaceProvider>
         <AppContent />
+        </WorkspaceProvider>
       </StoreProvider>
     </AuthProvider>
   );

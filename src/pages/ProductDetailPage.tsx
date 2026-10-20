@@ -43,7 +43,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
     showToast,
   } = useStore();
 
-  const product = products.find((p) => p.slug === productSlug) || products[0];
+  const product = products.find((p) => p.slug === productSlug);
   const brand = brands.find((b) => b.id === product?.brandId);
   const mainCategory = categories.find((c) => product?.categoryIds.includes(c.id));
 
