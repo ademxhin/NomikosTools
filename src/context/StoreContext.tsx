@@ -577,6 +577,8 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const deleteCategory = (id: string) => {
     requirePermission('catalog');
+    if (productsRef.current.some(product => product.categoryIds.includes(id))) throw new Error('Μεταφέρετε πρώτα τα προϊόντα σε άλλη κατηγορία.');
+    if (categories.some(category => category.parentId === id)) throw new Error('Διαγράψτε πρώτα τις υποκατηγορίες.');
     setCategories((prev) => prev.filter((c) => c.id !== id));
     showToast('Η κατηγορία διαγράφηκε', 'warning');
   };
