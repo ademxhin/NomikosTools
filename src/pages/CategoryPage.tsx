@@ -253,6 +253,72 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
             </button>
           </div>
 
+          {!currentCategory && !selectedGroup && (
+            <section className="space-y-2 border-b border-neutral-100 pb-4" aria-labelledby="all-category-filter-heading">
+              <h2 id="all-category-filter-heading" className="font-bold uppercase tracking-wider text-neutral-800">
+                Κατηγορίες προϊόντων
+              </h2>
+              <div className="max-h-80 space-y-1 overflow-y-auto pr-1">
+                {categoryGroups.map((group) => {
+                  const groupSubcategories = categories
+                    .filter((category) => category.active && category.parentId === group.id)
+                    .sort((a, b) => a.order - b.order);
+                  const groupIds = groupSubcategories.map((category) => category.id);
+                  const selectedGroupIds = groupIds.filter((id) => selectedSubcategoryIds.includes(id));
+                  const allSelected = groupIds.length > 0 && selectedGroupIds.length === groupIds.length;
+                  const groupProductCount = products.filter((product) => product.categoryIds.some((id) => groupIds.includes(id))).length;
+
+                  return (
+                    <details key={group.id} className="group rounded-lg border border-transparent open:border-neutral-200 open:bg-neutral-50">
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 rounded-lg px-2 py-2 font-semibold text-neutral-700 hover:bg-neutral-50 [&::-webkit-details-marker]:hidden">
+                        <span className="flex min-w-0 items-center gap-2">
+                          <span className="text-neutral-400 transition-transform group-open:rotate-90">›</span>
+                          <span className="leading-snug">{group.name}</span>
+                        </span>
+                        <span className="shrink-0 font-mono-spec text-neutral-400">({groupProductCount})</span>
+                      </summary>
+                      <div className="space-y-1 px-2 pb-2 pl-8">
+                        <label className="flex cursor-pointer items-center gap-2 py-1 text-neutral-800">
+                          <input
+                            type="checkbox"
+                            checked={allSelected}
+                            onChange={() => setSelectedSubcategoryIds((selected) =>
+                              allSelected
+                                ? selected.filter((id) => !groupIds.includes(id))
+                                : [...new Set([...selected, ...groupIds])]
+                            )}
+                            className="rounded border-neutral-300 text-[#e21b22] focus:ring-[#e21b22]"
+                          />
+                          <span className="font-semibold">Όλες οι υποκατηγορίες</span>
+                        </label>
+                        {groupSubcategories.map((subcategory) => {
+                          const isChecked = selectedSubcategoryIds.includes(subcategory.id);
+                          const productCount = products.filter((product) => product.categoryIds.includes(subcategory.id)).length;
+                          return (
+                            <label key={subcategory.id} className="flex cursor-pointer items-start justify-between gap-2 py-1 text-neutral-700">
+                              <span className="flex min-w-0 items-start gap-2">
+                                <input
+                                  type="checkbox"
+                                  checked={isChecked}
+                                  onChange={() => setSelectedSubcategoryIds((selected) =>
+                                    isChecked ? selected.filter((id) => id !== subcategory.id) : [...selected, subcategory.id]
+                                  )}
+                                  className="mt-0.5 shrink-0 rounded border-neutral-300 text-[#e21b22] focus:ring-[#e21b22]"
+                                />
+                                <span className="leading-snug">{formatSubcategoryName(subcategory.name)}</span>
+                              </span>
+                              <span className="shrink-0 font-mono-spec text-neutral-400">({productCount})</span>
+                            </label>
+                          );
+                        })}
+                      </div>
+                    </details>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
           {childCategories.length > 0 && (
             <section className="space-y-2 border-b border-neutral-100 pb-4" aria-labelledby="subcategory-filter-heading">
               <h2 id="subcategory-filter-heading" className="font-bold uppercase tracking-wider text-neutral-800">Κατηγορία</h2>
