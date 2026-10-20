@@ -481,7 +481,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
         <div className="lg:col-span-3 space-y-4">
           {/* Controls Bar: Sort, View Layout, Mobile filter toggle */}
           <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white text-xs shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 sm:gap-3 sm:p-3">
+            <div className="flex flex-wrap items-center gap-2 p-2.5 sm:flex-nowrap sm:gap-3 sm:p-3">
             <div className="flex items-center space-x-2">
               {/* Mobile Filter Button */}
               <button
@@ -495,12 +495,13 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                 <span>Φίλτρα {hasActiveFilters && '(Ενεργά)'}</span>
               </button>
 
-              <span className="hidden sm:inline text-neutral-500 font-mono-spec">
-                Προβολή {sortedProducts.length} αποτελεσμάτων
+              <span className="hidden whitespace-nowrap text-neutral-500 font-mono-spec sm:inline">
+                {sortedProducts.length} αποτελέσματα
               </span>
             </div>
 
-            <div className="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-end sm:space-x-3 sm:ml-auto">
+            <div className="flex w-full items-center justify-between gap-2 sm:ml-auto sm:w-auto sm:justify-end sm:space-x-3">
+              {sortedProducts.length > 0 && <span className="hidden whitespace-nowrap text-neutral-500 sm:inline">{Math.min((page - 1) * pageSize + 1)}–{Math.min(page * pageSize, sortedProducts.length)}</span>}
               {/* Sorting Selector */}
               <div className="flex min-w-0 flex-1 items-center gap-1.5 sm:flex-initial">
                 <span className="hidden text-neutral-500 font-medium sm:inline">Ταξινόμηση:</span>
@@ -539,16 +540,13 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categorySlug, onNavi
                   <List className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-            </div>
-            {sortedProducts.length > 0 && <div className="flex flex-wrap items-center justify-between gap-2 border-t border-neutral-200 px-3 py-2 text-[10px] sm:text-xs">
-              <span className="text-neutral-500">Εμφάνιση {Math.min((page - 1) * pageSize + 1, sortedProducts.length)}–{Math.min(page * pageSize, sortedProducts.length)} από {sortedProducts.length}</span>
-              <label className="flex items-center gap-2 font-semibold text-neutral-700">Ανά σελίδα
+              {sortedProducts.length > 0 && <label className="flex shrink-0 items-center gap-1.5 whitespace-nowrap font-semibold text-neutral-700">Ανά σελίδα
                 <select value={pageSize} onChange={(event) => setPageSize(Number(event.target.value))} className="nt-custom-select rounded-lg border border-neutral-200 bg-neutral-50 px-2 py-1">
                   <option value={30}>30</option><option value={60}>60</option><option value={90}>90</option>
                 </select>
-              </label>
-            </div>}
+              </label>}
+            </div>
+            </div>
           </div>
 
           {/* Active Filter Chips */}
