@@ -1,19 +1,5 @@
 import React, { useState, useRef } from 'react';
-import {
-  ChevronDown,
-  Layers,
-  ChevronRight,
-  Flame,
-  Award,
-  Wrench,
-  BatteryCharging,
-  Zap,
-  Disc,
-  Boxes,
-  Shield,
-  Tag,
-  Briefcase,
-} from 'lucide-react';
+import { ChevronDown, Layers, ChevronRight, Flame, Award } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { Category } from '../../types/category';
 import { categoryGroups } from '../../data/categoryHierarchy';
@@ -69,17 +55,6 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
     }, 250);
   };
 
-  const getCategoryIcon = (slug: string) => {
-    if (slug.includes('battery') || slug.includes('mpatarias')) return <BatteryCharging className="w-4 h-4 text-[#e21b22]" />;
-    if (slug.includes('electric') || slug.includes('ilektrika')) return <Zap className="w-4 h-4 text-amber-500" />;
-    if (slug.includes('hand') || slug.includes('xeiros')) return <Wrench className="w-4 h-4 text-sky-500" />;
-    if (slug.includes('accessories') || slug.includes('analosima')) return <Disc className="w-4 h-4 text-emerald-500" />;
-    if (slug.includes('storage') || slug.includes('apothikefsi')) return <Boxes className="w-4 h-4 text-purple-500" />;
-    if (slug.includes('safety') || slug.includes('rouxa')) return <Shield className="w-4 h-4 text-yellow-500" />;
-    if (slug.includes('offers') || slug.includes('prosfores')) return <Flame className="w-4 h-4 text-red-500 animate-pulse" />;
-    return <Layers className="w-4 h-4 text-neutral-400" />;
-  };
-
   const selectedCategory = mainCategories.find((c) => c.id === activeMainCatId);
 
   return (
@@ -119,14 +94,13 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                         setIsAllCategoriesOpen(false);
                         onNavigate('/products');
                       }}
-                      className={`flex min-h-[62px] items-center justify-between px-4 py-3 text-sm font-semibold leading-snug cursor-pointer border-l-2 transition-colors ${
+                      className={`flex min-h-[62px] items-center justify-between px-4 py-3 text-base font-semibold leading-snug cursor-pointer border-l-2 transition-colors ${
                         isActive
                           ? 'border-[#e21b22] bg-red-50 text-neutral-900'
                           : 'border-transparent text-neutral-700 hover:text-neutral-900 hover:bg-neutral-100'
                       }`}
                     >
-                      <div className="flex min-w-0 items-center space-x-2.5">
-                        {getCategoryIcon(cat.slug)}
+                      <div className="flex min-w-0 items-center">
                         <span className="min-w-0 whitespace-normal leading-snug">{cat.name}</span>
                       </div>
                         <ChevronRight className={`w-4 h-4 shrink-0 ${isActive ? 'text-[#e21b22]' : 'text-neutral-400'}`} />
@@ -205,16 +179,6 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen = false, 
                           </div>
                         );
                       })}
-                      <button
-                        onClick={() => {
-                          setIsAllCategoriesOpen(false);
-                          if (selectedCategory) onNavigate('/products');
-                        }}
-                        className="self-start rounded border border-[#e21b22]/60 bg-red-50 px-3 py-2 text-left text-sm font-bold text-[#c81e24] hover:bg-[#e21b22] hover:text-white transition-colors"
-                      >
-                        Προβολή όλων
-                        <span className="mt-1 block text-[11px] font-normal text-neutral-500">Όλα τα προϊόντα της κατηγορίας</span>
-                      </button>
                     </div>
                   ) : (
                     <div className="py-8 text-center text-neutral-400">
