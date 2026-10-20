@@ -7,7 +7,8 @@
 .nt-button-secondary:hover { background: #e5e5e5; }
 .nt-button:disabled { opacity: .45; cursor: not-allowed; }
 .nt-field { display: flex; flex-direction: column; gap: 7px; font-size: 13px; font-weight: 600; }
-.nt-field input:not([type=checkbox]), .nt-field select, .nt-field textarea, .nt-input { width: 100%; min-width: 0; border: 1px solid #d4d4d4; background-color: white; border-radius: 9px; padding: 10px 12px; font-size: 14px; font-weight: 400; color: #262626; }
+.nt-field input:not([type=checkbox]), .nt-field select, .nt-field textarea, .nt-input, input:not([type=checkbox]):not([type=radio]), select, textarea { border: 1px solid #d4d4d4; }
+.nt-field input:not([type=checkbox]), .nt-field select, .nt-field textarea, .nt-input { width: 100%; min-width: 0; background-color: white; border-radius: 9px; padding: 10px 12px; font-size: 14px; font-weight: 400; color: #262626; }
 .nt-field select, select.nt-input, .nt-category-picker-trigger { appearance: none; cursor: pointer; padding-right: 38px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='m5.5 7.5 4.5 4.5 4.5-4.5' stroke='%23737373' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E"); background-position: right 11px center; background-repeat: no-repeat; background-size: 18px 18px; transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease; }
 .nt-field select:hover, select.nt-input:hover, .nt-category-picker-trigger:hover { border-color: #a3a3a3; background-color: #fdfdfd; }
 .nt-field select:focus, select.nt-input:focus, .nt-category-picker-trigger:focus { border-color: #e21b22; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); outline: none; }
@@ -44,7 +45,7 @@
   aside:has(nav > button) nav { display: flex; min-height: 0; flex: 1 1 auto; flex-direction: column; overflow: hidden; }
   aside:has(nav > button) nav > button { flex: 0 0 auto; padding-top: .55rem; padding-bottom: .55rem; }
 }
-:where(button, a, input, select, textarea, summary):focus-visible { outline: 2px solid #e21b22; outline-offset: 3px; }
+:where(input:not([type=checkbox]):not([type=radio]), select, textarea, .nt-category-picker-trigger):focus-visible { border-color: #e21b22; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); outline: none; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
 @media print { body * { visibility: hidden; } .nt-print, .nt-print * { visibility: visible; } .nt-print { position: absolute; inset: 0; background: white; } .nt-no-print { display: none; } }
 
