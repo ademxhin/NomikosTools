@@ -4,6 +4,8 @@ import { Product } from '../../types/product';
 import { Button, Dialog, Field } from './ui';
 import { categoryGroups } from '../../data/categoryHierarchy';
 
+const productSlug = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
 export function blankProduct(): Product {
   return { id: '', name: '', slug: '', sku: '', ean: '', manufacturerCode: '', shortDescription: '', fullDescription: '', brandId: '', categoryIds: [], price: 0, costPrice: 0, supplierStock: 0, vatRate: .24, stockQuantity: 0, lowStockThreshold: 3, availabilityStatus: 'out_of_stock', unit: 'Τεμάχιο', packageQuantity: 1, images: [], attributes: {}, specifications: [], includedItems: [], compatibleProductIds: [], relatedProductIds: [], manualFiles: [], warranty: '', weight: 0, dimensions: { length: 0, width: 0, height: 0 }, seoTitle: '', seoDescription: '', active: false, publicationStatus: 'draft', featured: false, popular: false, rating: 0, reviewCount: 0, createdAt: '', updatedAt: '' };
 }
@@ -32,14 +34,14 @@ export function ProductEditor({ product, onClose, fullPage = true }: { product: 
     } } catch (e) { setError((e as Error).message); } finally { setBusy(false); }
   };
   const save = (event: React.FormEvent) => { event.preventDefault(); setError(''); try {
-    const value = { ...draft, active: draft.publicationStatus === 'published' };
+    const value = { ...draft, slug: draft.slug || productSlug(draft.name) || `product-${Date.now()}`, active: draft.publicationStatus === 'published' };
     if (value.active && (!value.images.length || !value.categoryIds.length)) throw new Error('Για δημοσίευση χρειάζεται φωτογραφία και κατηγορία.');
     if (draft.id) updateProduct(draft.id, value); else addProduct(value); onClose();
   } catch (e) { setError((e as Error).message); } };
   return <Dialog title={product.id ? 'Επεξεργασία προϊόντος' : 'Νέο προϊόν'} onClose={close} fullPage={fullPage}><form onSubmit={save} className="space-y-5">
     <div className="border-b border-neutral-200 pb-4"><p className="text-sm text-neutral-500">Συμπληρώστε τα στοιχεία του προϊόντος στις παρακάτω ενότητες.</p></div>
     {error && <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</p>}
-    {true && <section className="space-y-4 border-b border-neutral-200 pb-6"><h3 className="text-lg font-bold">Βασικά στοιχεία</h3><div className="grid gap-4 sm:grid-cols-2">{text('name', 'Τίτλος *')}{text('slug', 'Σύνδεσμος (slug) *')}{text('sku', 'SKU *')}{text('ean', 'Barcode (διατηρούνται τα αρχικά μηδενικά)')}
+    {true && <section className="space-y-4 border-b border-neutral-200 pb-6"><h3 className="text-lg font-bold">Βασικά στοιχεία</h3><div className="grid gap-4 sm:grid-cols-2">{text('name', 'Τίτλος *')}{text('sku', 'SKU *')}{text('ean', 'Barcode (διατηρούνται τα αρχικά μηδενικά)')}
       <Field label="Κατασκευαστής"><select value={draft.brandId} onChange={e => set('brandId', e.target.value)}><option value="">Επιλέξτε</option>{brands.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}</select></Field>
       <Field label="Κατάσταση"><select value={draft.publicationStatus ?? (draft.active ? 'published' : 'draft')} onChange={e => set('publicationStatus', e.target.value as Product['publicationStatus'])}><option value="draft">Πρόχειρο</option><option value="published">Δημοσιευμένο</option><option value="archived">Αρχειοθετημένο</option></select></Field>
       <Field label="Σύντομη περιγραφή"><textarea value={draft.shortDescription} onChange={e => set('shortDescription', e.target.value)} /></Field><Field label="Αναλυτική περιγραφή (απλό κείμενο)"><textarea value={draft.fullDescription} onChange={e => set('fullDescription', e.target.value)} /></Field>
