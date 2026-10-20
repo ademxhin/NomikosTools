@@ -97,6 +97,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
   return (
     <div
       className="fixed inset-x-0 bottom-0 top-[84px] z-50 hidden bg-neutral-950/20 px-4 pb-5 pt-3 lg:block"
+      onMouseEnter={scheduleClose}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onOpenChange(false);
       }}
