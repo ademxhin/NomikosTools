@@ -8,7 +8,6 @@ import { Footer } from './components/layout/Footer';
 import { QuickViewModal } from './components/product/QuickViewModal';
 import { NotificationToast } from './components/common/NotificationToast';
 import { WorkspaceProvider, useWorkspace } from './context/WorkspaceContext';
-import { DEMO_MODE } from './services/runtime';
 const AdminPortal = lazy(() => import('./pages/AdminPortal').then(m => ({ default: m.AdminPortal })));
 const CustomerWorkspace = lazy(() => import('./pages/CustomerWorkspace').then(m => ({ default: m.CustomerWorkspace })));
 
@@ -176,7 +175,6 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f5f5f5] text-neutral-900 font-sans antialiased">
-      {DEMO_MODE && <div className="bg-amber-50 px-4 py-2 text-center text-xs text-amber-900">Δοκιμαστική λειτουργία · Δεν γίνονται πραγματικές πληρωμές ή αποστολές. <button className="ml-2 underline" onClick={() => handleNavigate('/admin')}>Διαχείριση</button></div>}
       {/* 1. Main Search-Focused Header */}
       {!currentRoute.startsWith('/admin') && <>
       {workspace.content && <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 bg-[#242424] px-4 py-2 text-xs text-white"><span>{workspace.content.announcement}</span><span>{workspace.content.phone}</span><span>{workspace.content.email}</span></div>}
