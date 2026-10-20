@@ -22,6 +22,13 @@
 .nt-results-summary { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #e5e5e5; border-radius: 999px; background: #fafafa; padding: 6px 10px; color: #737373; font-size: 11px; font-variant-numeric: tabular-nums; }
 .nt-results-summary span:first-child { color: #525252; font-weight: 600; }
 .nt-results-summary-divider { color: #d4d4d4; font-weight: 400; }
+.nt-product-editor { color: #262626; }
+.nt-product-editor > section { border: 1px solid #e5e5e5 !important; border-radius: 16px; background: #fff; padding: 24px !important; box-shadow: 0 2px 3px #00000004; }
+.nt-product-editor > section > h3 { border-left: 3px solid #e21b22; padding-left: 10px; }
+.nt-category-picker-trigger { border-color: #d4d4d4; transition: border-color 150ms ease, box-shadow 150ms ease; }
+.nt-category-picker-trigger:hover { border-color: #a3a3a3; }
+.nt-category-picker-trigger:focus-visible { border-color: #e21b22; outline: none; box-shadow: 0 0 0 3px rgb(226 27 34 / 14%); }
+.nt-category-picker-menu { border-color: #d4d4d4; }
 .nt-field textarea { min-height: 100px; }
 .nt-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; border: 1px solid #e5e5e5; border-radius: 18px; padding: 24px; }
 .nt-dialog::backdrop { background: #17171799; backdrop-filter: blur(3px); }
