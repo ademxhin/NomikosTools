@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { ArrowUp } from 'lucide-react';
 import { StoreProvider, useStore } from './context/StoreContext';
 import { AuthProvider } from './context/AuthContext';
 import { Header } from './components/layout/Header';
@@ -35,6 +36,14 @@ function AppContent() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [lastCompletedOrder, setLastCompletedOrder] = useState<Order | null>(null);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowBackToTop(window.scrollY > 400);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Navigate handler that scrolls to top smoothly
   const handleNavigate = (route: string) => {
@@ -219,6 +228,7 @@ function AppContent() {
       {/* 6. Global Modals & Notifications */}
       <QuickViewModal onNavigate={handleNavigate} />
       <NotificationToast />
+      {showBackToTop && <button type="button" aria-label="Επιστροφή στην κορυφή" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed bottom-6 right-6 z-40 grid h-11 w-11 place-items-center rounded-full bg-[#e21b22] text-white shadow-lg transition hover:bg-[#c81016] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e21b22] focus-visible:ring-offset-2"><ArrowUp size={20} /></button>}
     </div>
   );
 }
