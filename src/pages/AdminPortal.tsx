@@ -24,6 +24,7 @@ const sections: { id: string; title: string; icon: typeof Package; permission?: 
   { id: 'promotions', title: 'Κουπόνια', icon: ShoppingBag, permission: 'catalog' },
   { id: 'content', title: 'Περιεχόμενο καταστήματος', icon: LayoutDashboard, permission: 'settings' },
   { id: 'scanner', title: 'Scanner προϊόντων', icon: Barcode, permission: 'warehouse' },
+  { id: 'pricing', title: 'Τιμές & αποθέματα', icon: Package, permission: 'catalog' },
 ];
 export function AdminPortal({ route, onNavigate }: { route: string; onNavigate: (route: string) => void }) {
   const { user, isAdmin, logout } = useAuth(); const store = useStore(); const { state } = useWorkspace();
@@ -47,6 +48,7 @@ export function AdminPortal({ route, onNavigate }: { route: string; onNavigate: 
       {section.id === 'orders' && <OrderWorkspace />}
       {section.id === 'inventory' && <InventoryWorkspace onNavigate={onNavigate} />}
       {section.id === 'scanner' && <ScannerWorkspace onNavigate={onNavigate} />}
+      {section.id === 'pricing' && <FinancialsWorkspace />}
       {section.id === 'support' && <SupportWorkspace admin />}
       {section.id === 'imports' && <ImportWorkspace />}
       {section.id === 'promotions' && <PromotionsWorkspace />}
@@ -59,6 +61,10 @@ export function AdminPortal({ route, onNavigate }: { route: string; onNavigate: 
 function ScannerWorkspace({ onNavigate }: { onNavigate: (route: string) => void }) {
   const store = useStore();
   return <Panel title="Scanner προϊόντων"><BarcodeScanner onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) onNavigate(`/admin/products?scan=${encodeURIComponent(code)}`); else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /><p className="mt-4 text-sm text-neutral-500">Μετά τη σάρωση ανοίγει ο κατάλογος προϊόντων με ενεργό φίλτρο για τον συγκεκριμένο κωδικό.</p></Panel>;
+}
+function FinancialsWorkspace() {
+  const store = useStore();
+  return <Panel title="Τιμές και αποθέματα"><p className="mb-4 text-sm text-neutral-500">Εσωτερική τιμή αγοράς, τιμή πώλησης, απόθεμα προμηθευτή και διαθέσιμο απόθεμα καταστήματος.</p><div className="overflow-x-auto"><table className="nt-table"><thead><tr><th>Προϊόν</th><th>Τιμή αγοράς</th><th>Τιμή πώλησης</th><th>Απόθεμα προμηθευτή</th><th>Απόθεμα καταστήματος</th></tr></thead><tbody>{store.allProducts.map(product => <tr key={product.id}><td><strong>{product.name}</strong><p className="text-xs text-neutral-500">SKU {product.sku}</p></td><td>{money(product.costPrice)}</td><td>{money(product.salePrice ?? product.price)}</td><td>{product.supplierStock ?? product.attributes?.supplierStock ?? '—'}</td><td>{product.stockQuantity}</td></tr>)}</tbody></table></div></Panel>;
 }
 function ProductList({ onNavigate, scan = '' }: { onNavigate: (route: string) => void; scan?: string }) {
   const store = useStore(); const [query, setQuery] = useState(scan); const [brand, setBrand] = useState(''); const [category, setCategory] = useState(''); const [status, setStatus] = useState(''); const [page, setPage] = useState(1); const [selected, setSelected] = useState<string[]>([]); const [editing, setEditing] = useState<Product | null>(null); const [error, setError] = useState(''); const [sort, setSort] = useState('updated');

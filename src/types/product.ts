@@ -43,6 +43,7 @@ export interface Product {
   price: number; // Retail price with VAT or net depending on configuration
   salePrice?: number;
   costPrice: number;
+  supplierStock?: number;
   vatRate: number; // e.g. 0.24 for 24% Greek VAT
   stockQuantity: number;
   lowStockThreshold: number;

@@ -5,7 +5,7 @@ import { Button, Dialog, Field } from './ui';
 import { categoryGroups } from '../../data/categoryHierarchy';
 
 export function blankProduct(): Product {
-  return { id: '', name: '', slug: '', sku: '', ean: '', manufacturerCode: '', shortDescription: '', fullDescription: '', brandId: '', categoryIds: [], price: 0, costPrice: 0, vatRate: .24, stockQuantity: 0, lowStockThreshold: 3, availabilityStatus: 'out_of_stock', unit: 'Τεμάχιο', packageQuantity: 1, images: [], attributes: {}, specifications: [], includedItems: [], compatibleProductIds: [], relatedProductIds: [], manualFiles: [], warranty: '', weight: 0, dimensions: { length: 0, width: 0, height: 0 }, seoTitle: '', seoDescription: '', active: false, publicationStatus: 'draft', featured: false, popular: false, rating: 0, reviewCount: 0, createdAt: '', updatedAt: '' };
+  return { id: '', name: '', slug: '', sku: '', ean: '', manufacturerCode: '', shortDescription: '', fullDescription: '', brandId: '', categoryIds: [], price: 0, costPrice: 0, supplierStock: 0, vatRate: .24, stockQuantity: 0, lowStockThreshold: 3, availabilityStatus: 'out_of_stock', unit: 'Τεμάχιο', packageQuantity: 1, images: [], attributes: {}, specifications: [], includedItems: [], compatibleProductIds: [], relatedProductIds: [], manualFiles: [], warranty: '', weight: 0, dimensions: { length: 0, width: 0, height: 0 }, seoTitle: '', seoDescription: '', active: false, publicationStatus: 'draft', featured: false, popular: false, rating: 0, reviewCount: 0, createdAt: '', updatedAt: '' };
 }
 export function ProductEditor({ product, onClose }: { product: Product; onClose: () => void }) {
   const { brands, categories, addProduct, updateProduct } = useStore();
