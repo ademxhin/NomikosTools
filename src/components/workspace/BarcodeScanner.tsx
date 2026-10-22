@@ -8,7 +8,7 @@ const SUPPORTED_FORMATS = 'EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, QR';
 export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => void }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const controlsRef = useRef<IScannerControls | null>(null);
-  const readerRef = useRef<BrowserMultiFormatReader | null>(null);
+  const startingRef = useRef(false);
   const [value, setValue] = useState('');
   const [camera, setCamera] = useState(false);
   const [error, setError] = useState('');
@@ -16,11 +16,14 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
   const stopCamera = () => {
     controlsRef.current?.stop();
     controlsRef.current = null;
-    readerRef.current = null;
+    startingRef.current = false;
     setCamera(false);
   };
 
-  useEffect(() => stopCamera, []);
+  useEffect(() => () => {
+    controlsRef.current?.stop();
+    controlsRef.current = null;
+  }, []);
 
   const submitValue = (rawValue: string) => {
     const normalized = rawValue.trim();
@@ -30,26 +33,26 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
   };
 
   const startCamera = async () => {
-    if (camera) { stopCamera(); return; }
+    if (startingRef.current || controlsRef.current) return;
     if (!navigator.mediaDevices?.getUserMedia) {
       setError('Η κάμερα δεν υποστηρίζεται από αυτόν τον browser. Χρησιμοποιήστε USB scanner ή πληκτρολογήστε τον κωδικό.');
+      setCamera(false);
       return;
     }
+    startingRef.current = true;
     try {
       setError('');
       const video = videoRef.current;
       if (!video) throw new Error('video-not-ready');
       const reader = new BrowserMultiFormatReader();
-      readerRef.current = reader;
-      setCamera(true);
-      const devices = await BrowserMultiFormatReader.listVideoInputDevices();
-      const rearCamera = devices.find(device => /back|rear|environment|πίσω/i.test(device.label));
-      const deviceId = rearCamera?.deviceId ?? devices[0]?.deviceId;
-      if (!deviceId) throw new Error('no-camera');
-      controlsRef.current = await reader.decodeFromVideoDevice(deviceId, video, (result) => {
+      controlsRef.current = await reader.decodeFromConstraints({
+        audio: false,
+        video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 }, height: { ideal: 720 } },
+      }, video, (result) => {
         const rawValue = result?.getText();
         if (rawValue) { submitValue(rawValue); stopCamera(); }
       });
+      startingRef.current = false;
     } catch (e) {
       stopCamera();
       const message = e instanceof DOMException && e.name === 'NotAllowedError'
