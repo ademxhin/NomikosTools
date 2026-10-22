@@ -47,7 +47,7 @@ input[type='checkbox'] { width: 18px !important; height: 18px !important; min-wi
 .nt-product-overview > * + * { margin-top: 8px !important; }
 .nt-product-gallery { display: grid; min-width: 0; grid-template-columns: minmax(0, 1fr); align-items: stretch; }
 .nt-product-gallery.has-thumbnails { grid-template-columns: minmax(0, 1fr) 56px; gap: 10px; }
-.nt-main-product-image { display: grid; min-height: 180px; place-items: center; overflow: hidden; border-radius: 12px; background: #fafafa; }
+.nt-main-product-image { display: grid; min-height: 180px; place-items: center; overflow: hidden; border-radius: 12px; background: transparent; }
 .nt-main-product-image img { width: min(74%, 300px); height: 100%; max-height: 200px; object-fit: contain; }
 .nt-product-thumbnails { display: flex; min-height: 230px; flex-direction: column; gap: 8px; }
 .nt-product-thumbnail-wrap { position: relative; min-height: 0; }
