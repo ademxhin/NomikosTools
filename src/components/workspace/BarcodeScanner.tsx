@@ -5,7 +5,7 @@ import { Button, Field } from './ui';
 
 const SUPPORTED_FORMATS = 'EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, QR';
 
-export function BarcodeScanner({ onDetected, autoStartCamera = false }: { onDetected: (value: string) => void; autoStartCamera?: boolean }) {
+export function BarcodeScanner({ onDetected, autoStartCamera = false, cameraOnly = false }: { onDetected: (value: string) => void; autoStartCamera?: boolean; cameraOnly?: boolean }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const controlsRef = useRef<IScannerControls | null>(null);
   const startingRef = useRef(false);
@@ -75,12 +75,12 @@ export function BarcodeScanner({ onDetected, autoStartCamera = false }: { onDete
     setCamera(true);
   };
 
-  return <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-    <div className="flex flex-wrap items-end gap-3">
+  return <div className={cameraOnly ? 'nt-camera-only' : 'rounded-xl border border-neutral-200 bg-neutral-50 p-4'}>
+    {!cameraOnly && <div className="flex flex-wrap items-end gap-3">
       <div className="min-w-56 flex-1"><Field label="Scanner SKU / barcode"><input autoComplete="off" value={value} onChange={e => setValue(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); submitValue(value); } }} placeholder="Σκανάρετε ή πληκτρολογήστε κωδικό" /></Field></div>
       <Button type="button" secondary onClick={() => submitValue(value)} disabled={!value.trim()}><Barcode size={16} /> Εντοπισμός</Button>
       <Button type="button" secondary onClick={toggleCamera}>{camera ? <CameraOff size={16} /> : <Camera size={16} />} {camera ? 'Κλείσιμο κάμερας' : 'Κάμερα'}</Button>
-    </div>
+    </div>}
     {camera && <div className="mt-3 overflow-hidden rounded-lg bg-black">
       <div className="relative">
         <video ref={videoRef} autoPlay muted playsInline className="h-56 w-full object-cover" />

@@ -71,7 +71,7 @@ function ScannerWorkspace({ onNavigate }: { onNavigate: (route: string) => void 
 
 function QuickScanner({ onNavigate, onClose }: { onNavigate: (route: string) => void; onClose: () => void }) {
   const store = useStore();
-  return <section className="nt-inline-scanner" aria-label="Scanner προϊόντων"><div className="mb-3 flex items-center justify-between gap-3"><div><p className="text-sm font-bold">Scanner προϊόντων</p><p className="text-xs text-neutral-500">Η κάμερα ξεκινά αυτόματα.</p></div><button type="button" aria-label="Κλείσιμο scanner" onClick={onClose} className="rounded-lg p-1.5 hover:bg-neutral-100"><X size={18} /></button></div><BarcodeScanner autoStartCamera onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) { onClose(); onNavigate(`/admin/products/${product.id}`); } else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /></section>;
+  return <section className="nt-inline-scanner" aria-label="Scanner προϊόντων"><div className="mb-2 flex justify-end"><button type="button" aria-label="Κλείσιμο scanner" onClick={onClose} className="rounded-lg p-1.5 hover:bg-neutral-100"><X size={18} /></button></div><BarcodeScanner cameraOnly autoStartCamera onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) { onClose(); onNavigate(`/admin/products/${product.id}`); } else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /></section>;
 }
 
 function QuickSearch({ onNavigate, onClose }: { onNavigate: (route: string) => void; onClose: () => void }) {
