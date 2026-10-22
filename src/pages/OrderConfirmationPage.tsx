@@ -30,7 +30,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
         <h2 className="text-xl font-bold">Η παραγγελία δεν βρέθηκε</h2>
         <button
           onClick={() => onNavigate('/')}
-          className="mt-4 bg-[#e21b22] text-white px-4 py-2 rounded text-xs uppercase font-display"
+          className="mt-4 bg-[#e21b22] text-white px-4 py-2 rounded text-xs  font-display"
         >
           Αρχική Σελίδα
         </button>
@@ -53,10 +53,10 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
         </div>
 
         <div className="space-y-1">
-          <span className="text-[11px] font-mono-spec font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
+          <span className="text-[11px] font-mono-spec font-bold  tracking-wider text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
             Η ΠΑΡΑΓΓΕΛΙΑ ΚΑΤΑΧΩΡΗΘΗΚΕ ΕΠΙΤΥΧΩΣ
           </span>
-          <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 uppercase">
+          <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-900 ">
             ΕΥΧΑΡΙΣΤΟΥΜΕ ΓΙΑ ΤΗΝ ΠΡΟΤΙΜΗΣΗ ΣΑΣ!
           </h1>
           <p className="text-xs sm:text-sm text-neutral-600 max-w-md mx-auto">
@@ -80,7 +80,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
           {order.shipping.trackingNumber && (
             <button
               onClick={() => onNavigate(`/track-order?voucher=${order.shipping.trackingNumber}`)}
-              className="bg-[#e21b22] text-white px-3 py-1.5 rounded font-display font-bold uppercase text-[11px] tracking-wider shrink-0"
+              className="bg-[#e21b22] text-white px-3 py-1.5 rounded font-display font-bold  text-[11px] tracking-wider shrink-0"
             >
               ΕΝΤΟΠΙΣΜΟΣ
             </button>
@@ -92,7 +92,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
         {/* Ordered Items */}
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-3">
-          <h3 className="font-display font-bold text-sm text-neutral-900 uppercase border-b border-neutral-200 pb-2">
+          <h3 className="font-display font-bold text-sm text-neutral-900  border-b border-neutral-200 pb-2">
             ΠΡΟΪΟΝΤΑ ΠΑΡΑΓΓΕΛΙΑΣ ({order.items.length})
           </h3>
           <div className="divide-y divide-neutral-100 max-h-60 overflow-y-auto">
@@ -131,7 +131,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
 
         {/* Shipping & Billing info */}
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-4">
-          <h3 className="font-display font-bold text-sm text-neutral-900 uppercase border-b border-neutral-200 pb-2">
+          <h3 className="font-display font-bold text-sm text-neutral-900  border-b border-neutral-200 pb-2">
             ΣΤΟΙΧΕΙΑ ΠΑΡΑΔΟΣΗΣ &amp; ΠΛΗΡΩΜΗΣ
           </h3>
 
@@ -173,7 +173,7 @@ export const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-neutral-200">
         <button
           onClick={() => onNavigate('/products')}
-          className="bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold uppercase tracking-wider py-2.5 px-5 rounded shadow transition-colors"
+          className="bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold  tracking-wider py-2.5 px-5 rounded shadow transition-colors"
         >
           ΣΥΝΕΧΕΙΑ ΣΤΟΝ ΚΑΤΑΛΟΓΟ
         </button>

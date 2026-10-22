@@ -216,7 +216,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
     <div className="mx-auto max-w-7xl px-3 py-5 space-y-5 select-none sm:px-4 sm:py-8 sm:space-y-8">
       {/* Title */}
       <div className="border-b border-[#cfd8dc] pb-4">
-        <h1 className="font-display font-black text-xl sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-center space-x-2">
+        <h1 className="font-display font-black text-xl sm:text-3xl text-neutral-900  tracking-tight flex items-center space-x-2">
           <Lock className="w-6 h-6 text-[#e21b22]" />
           <span>ΑΣΦΑΛΗΣ ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</span>
         </h1>
@@ -237,7 +237,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                   <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                     1
                   </div>
-                  <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+                  <h3 className="font-display font-bold text-base text-neutral-900 ">
                     ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ &amp; ΠΑΡΑΣΤΑΤΙΚΟ
                   </h3>
                 </div>
@@ -435,7 +435,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                   2
                 </div>
-                <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+                <h3 className="font-display font-bold text-base text-neutral-900 ">
                   ΤΡΟΠΟΣ ΑΠΟΣΤΟΛΗΣ
                 </h3>
               </div>
@@ -558,7 +558,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 <div className="w-6 h-6 rounded-full bg-[#e21b22] text-white flex items-center justify-center font-display font-bold text-xs">
                   3
                 </div>
-                <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+                <h3 className="font-display font-bold text-base text-neutral-900 ">
                   ΤΡΟΠΟΣ ΠΛΗΡΩΜΗΣ
                 </h3>
               </div>
@@ -674,7 +674,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
           {/* Right: Sticky Order Summary & Submit (Col 4) */}
           <div className="lg:col-span-4 space-y-4 sticky top-20">
             <div className="bg-white border border-[#cfd8dc] rounded-lg p-5 shadow-sm space-y-4 text-xs">
-              <h3 className="font-display font-black text-lg text-neutral-900 uppercase border-b border-neutral-200 pb-2">
+              <h3 className="font-display font-black text-lg text-neutral-900  border-b border-neutral-200 pb-2">
                 ΕΠΙΒΕΒΑΙΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ
               </h3>
 
@@ -737,7 +737,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate, onOrderC
                 id="submit-order-btn"
                 type="submit"
                 disabled={isProcessing}
-                className="w-full bg-[#e21b22] hover:bg-[#c81016] disabled:opacity-50 text-white font-display font-bold uppercase tracking-wider py-3.5 px-4 rounded shadow-lg flex items-center justify-center space-x-2 text-sm transition-all"
+                className="w-full bg-[#e21b22] hover:bg-[#c81016] disabled:opacity-50 text-white font-display font-bold  tracking-wider py-3.5 px-4 rounded shadow-lg flex items-center justify-center space-x-2 text-sm transition-all"
               >
                 {isProcessing ? (
                   <span>ΕΠΕΞΕΡΓΑΣΙΑ ΠΑΡΑΓΓΕΛΙΑΣ...</span>

@@ -33,7 +33,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
   return (
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-8 select-none">
       <div className="text-center space-y-2">
-        <h1 className="font-display font-black text-3xl sm:text-4xl text-neutral-900 uppercase tracking-tight">
+        <h1 className="font-display font-black text-3xl sm:text-4xl text-neutral-900  tracking-tight">
           ΠΟΡΕΙΑ ΠΑΡΑΓΓΕΛΙΑΣ
         </h1>
         <p className="text-xs sm:text-sm text-neutral-500 max-w-lg mx-auto">
@@ -54,7 +54,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
           </div>
           <button
             type="submit"
-            className="bg-[#e21b22] hover:bg-[#c81016] text-white px-5 py-2.5 rounded font-display font-bold text-xs uppercase tracking-wider"
+            className="bg-[#e21b22] hover:bg-[#c81016] text-white px-5 py-2.5 rounded font-display font-bold text-xs  tracking-wider"
           >
             ΑΝΑΖΗΤΗΣΗ
           </button>
@@ -66,7 +66,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-6 space-y-6 shadow-sm">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-neutral-200 pb-4">
             <div>
-              <span className="text-[10px] font-mono-spec font-bold text-neutral-400 uppercase tracking-wider block">
+              <span className="text-[10px] font-mono-spec font-bold text-neutral-400  tracking-wider block">
                 ΑΡΙΘΜΟΣ ΑΠΟΣΤΟΛΗΣ
               </span>
               <div className="font-display font-bold text-xl text-neutral-900">
@@ -87,7 +87,7 @@ export const TrackOrderPage: React.FC<TrackOrderPageProps> = ({
 
           {/* Timeline */}
           <div className="space-y-4">
-            <h3 className="font-display font-bold text-sm text-neutral-900 uppercase">
+            <h3 className="font-display font-bold text-sm text-neutral-900 ">
               ΠΟΡΕΙΑ ΔΙΑΚΙΝΗΣΗΣ
             </h3>
 

@@ -259,7 +259,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       {/* Featured Products Tabs */}
       <section className="mx-auto max-w-7xl px-3 sm:px-4">
         <div className="mb-3">
-          <h2 className="font-display text-2xl sm:text-3xl font-black uppercase tracking-wide text-neutral-950">
+          <h2 className="font-display text-2xl sm:text-3xl font-black  tracking-wide text-neutral-950">
             Προτεινόμενα προϊόντα
           </h2>
         </div>
@@ -287,13 +287,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="mx-auto max-w-7xl px-3 sm:px-4">
         <div className="flex items-center justify-between mb-6 border-b border-[#cfd8dc] pb-3">
           <div>
-          <h2 className="font-category font-black text-xl sm:text-2xl text-neutral-900 uppercase tracking-wide">
+          <h2 className="font-category font-black text-xl sm:text-2xl text-neutral-900  tracking-wide">
               ΒΑΣΙΚΕΣ ΚΑΤΗΓΟΡΙΕΣ ΕΞΟΠΛΙΣΜΟΥ
             </h2>
           </div>
           <button
             onClick={() => onNavigate('/products')}
-            className="text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 font-display uppercase tracking-wide"
+            className="text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 font-display  tracking-wide"
           >
             <span>Όλος ο Κατάλογος</span>
             <ChevronRight className="w-4 h-4" />
@@ -311,7 +311,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10 transition-colors group-hover:bg-[#e21b22]/50" />
 
               <div className="relative z-10 flex min-h-64 flex-col items-start justify-end p-4 text-left text-white">
-                <h3 className="font-category text-lg font-black uppercase leading-tight line-clamp-2">
+                <h3 className="font-category text-lg font-black  leading-tight line-clamp-2">
                   {cat.name}
                 </h3>
 
@@ -332,7 +332,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="mx-auto max-w-7xl px-3 sm:px-4">
         <div className="border-b border-[#cfd8dc] pb-3 mb-6 flex items-center justify-between">
           <div className="min-w-0">
-            <h2 className="font-display font-black text-base sm:text-xl text-neutral-900 uppercase tracking-wide">
+            <h2 className="font-display font-black text-base sm:text-xl text-neutral-900  tracking-wide">
               ΕΠΙΣΗΜΟΙ ΚΑΤΑΣΚΕΥΑΣΤΕΣ &amp; BRANDS
             </h2>
             <p className="hidden text-xs text-neutral-500 sm:block">
@@ -341,7 +341,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
           <button
             onClick={() => onNavigate('/brand/milwaukee')}
-            className="shrink-0 text-[10px] sm:text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 font-display uppercase tracking-wide"
+            className="shrink-0 text-[10px] sm:text-xs font-bold text-[#e21b22] hover:underline flex items-center space-x-1 font-display  tracking-wide"
           >
             <span>Όλα τα Brands</span>
             <ChevronRight className="w-4 h-4" />
@@ -363,7 +363,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 ) : b.name.toLowerCase() === 'brennenstuhl' ? (
                   <img src="/assets/brand-brennenstuhl.png" alt="Brennenstuhl" className="h-12 w-40 scale-[2.1] object-contain grayscale mix-blend-darken transition duration-200 group-hover:grayscale-0" />
                 ) : (
-                  <span className="flex h-12 w-40 items-center justify-center font-display text-xl font-black tracking-wider text-neutral-800 group-hover:text-[#e21b22] uppercase">{b.name}</span>
+                  <span className="flex h-12 w-40 items-center justify-center font-display text-xl font-black tracking-wider text-neutral-800 group-hover:text-[#e21b22] ">{b.name}</span>
                 )}
               </button>
             ))}

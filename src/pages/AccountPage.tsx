@@ -57,7 +57,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           </div>
           <div>
             <div className="flex items-center space-x-2">
-              <h1 className="font-display font-bold text-xl uppercase tracking-wider text-white">
+              <h1 className="font-display font-bold text-xl  tracking-wider text-white">
                 {user?.name || 'Επαγγελματίας Πελάτης'}
               </h1>
               {user?.isB2B && (
@@ -89,7 +89,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
       <div className="flex border-b border-[#cfd8dc] bg-white rounded-t-lg px-4 gap-2">
         <button
           onClick={() => setActiveTab('orders')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 transition-colors ${
             activeTab === 'orders'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -99,7 +99,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
         </button>
         <button
           onClick={() => setActiveTab('profile')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 transition-colors ${
             activeTab === 'profile'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -109,7 +109,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
         </button>
         <button
           onClick={() => setActiveTab('addresses')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 transition-colors ${
             activeTab === 'addresses'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -119,7 +119,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
         </button>
         <button
           onClick={() => setActiveTab('wishlist')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 transition-colors ${
             activeTab === 'wishlist'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -236,7 +236,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
 
       {activeTab === 'profile' && (
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm space-y-6 max-w-2xl text-xs">
-          <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+          <h3 className="font-display font-bold text-base text-neutral-900 ">
             ΣΤΟΙΧΕΙΑ ΕΠΑΓΓΕΛΜΑΤΙΚΟΥ ΛΟΓΑΡΙΑΣΜΟΥ
           </h3>
 
@@ -291,7 +291,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
           <div className="pt-2 flex items-center gap-3">
             <button
               onClick={saveProfile}
-              className="bg-[#e21b22] text-white px-5 py-2.5 rounded font-display font-bold uppercase"
+              className="bg-[#e21b22] text-white px-5 py-2.5 rounded font-display font-bold "
             >
               ΑΠΟΘΗΚΕΥΣΗ ΑΛΛΑΓΩΝ
             </button>
@@ -302,14 +302,14 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
 
       {activeTab === 'addresses' && (
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm space-y-4 text-xs">
-          <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+          <h3 className="font-display font-bold text-base text-neutral-900 ">
             ΑΠΟΘΗΚΕΥΜΕΝΕΣ ΔΙΕΥΘΥΝΣΕΙΣ ΠΑΡΑΔΟΣΗΣ &amp; ΕΡΓΟΤΑΞΙΩΝ
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border border-[#e21b22] p-4 rounded-lg bg-red-50/20 space-y-2">
               <div className="flex items-center justify-between">
-                <span className="font-bold text-neutral-900 uppercase">Κεντρικά Γραφεία / Έδρα</span>
+                <span className="font-bold text-neutral-900 ">Κεντρικά Γραφεία / Έδρα</span>
                 <span className="text-[10px] font-bold text-[#e21b22] bg-white px-2 py-0.5 rounded border border-[#e21b22]">
                   ΠΡΟΕΠΙΛΟΓΗ
                 </span>
@@ -320,7 +320,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
 
             <div className="border border-neutral-200 p-4 rounded-lg bg-white space-y-2">
               <div className="flex items-center justify-between">
-                <span className="font-bold text-neutral-900 uppercase">Εργοτάξιο Πειραιά</span>
+                <span className="font-bold text-neutral-900 ">Εργοτάξιο Πειραιά</span>
               </div>
               <p className="text-neutral-700">Ακτή Μιαούλη 85, 18538 Πειραιάς</p>
               <p className="text-neutral-500 font-mono-spec">Τηλ: 6940000000</p>
@@ -331,7 +331,7 @@ export const AccountPage: React.FC<AccountPageProps> = ({ onNavigate }) => {
 
       {activeTab === 'wishlist' && (
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm">
-          <h3 className="font-display font-bold text-base text-neutral-900 uppercase mb-4">ΑΓΑΠΗΜΕΝΑ ΠΡΟΪΟΝΤΑ</h3>
+          <h3 className="font-display font-bold text-base text-neutral-900  mb-4">ΑΓΑΠΗΜΕΝΑ ΠΡΟΪΟΝΤΑ</h3>
           {wishlistProducts.length === 0 ? (
             <p className="py-10 text-center text-neutral-500">Δεν έχετε αποθηκεύσει αγαπημένα προϊόντα.</p>
           ) : (

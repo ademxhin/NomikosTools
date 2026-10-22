@@ -131,14 +131,14 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
             </span>
             <span className="text-xs text-neutral-400">Κέντρο Ασπροπύργου • Terminal 01</span>
           </div>
-          <h1 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-white mt-1">
+          <h1 className="font-display font-black text-2xl sm:text-3xl  tracking-tight text-white mt-1">
             ΔΙΑΧΕΙΡΙΣΗ ΑΠΟΘΗΚΗΣ &amp; ΠΑΡΑΓΓΕΛΙΩΝ
           </h1>
         </div>
 
         <button
           onClick={() => onNavigate('/')}
-          className="bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded border border-neutral-700"
+          className="bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs font-display font-bold  tracking-wider px-4 py-2 rounded border border-neutral-700"
         >
           Επιστροφή στο E-Shop
         </button>
@@ -147,7 +147,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
       {/* KPI Overview Tiles */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div className="bg-white border border-[#cfd8dc] p-4 rounded-lg shadow-sm space-y-1">
-          <div className="text-[11px] font-bold text-neutral-500 uppercase">ΣΥΝΟΛΙΚΑ ΤΕΜΑΧΙΑ</div>
+          <div className="text-[11px] font-bold text-neutral-500 ">ΣΥΝΟΛΙΚΑ ΤΕΜΑΧΙΑ</div>
           <div className="text-2xl font-black font-mono-spec text-neutral-900">
             {totalStockUnits.toLocaleString()}
           </div>
@@ -155,7 +155,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </div>
 
         <div className="bg-white border border-[#cfd8dc] p-4 rounded-lg shadow-sm space-y-1">
-          <div className="text-[11px] font-bold text-neutral-500 uppercase">ΚΑΘΑΡΗ ΑΞΙΑ ΣΤΟΚ</div>
+          <div className="text-[11px] font-bold text-neutral-500 ">ΚΑΘΑΡΗ ΑΞΙΑ ΣΤΟΚ</div>
           <div className="text-2xl font-black font-mono-spec text-[#e21b22]">
             €{totalStockValue.toLocaleString('el-GR', { maximumFractionDigits: 0 })}
           </div>
@@ -163,7 +163,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </div>
 
         <div className="bg-white border border-[#cfd8dc] p-4 rounded-lg shadow-sm space-y-1">
-          <div className="text-[11px] font-bold text-neutral-500 uppercase">ΕΚΚΡΕΜΗ PICKING</div>
+          <div className="text-[11px] font-bold text-neutral-500 ">ΕΚΚΡΕΜΗ PICKING</div>
           <div className="text-2xl font-black font-mono-spec text-amber-600">
             {pendingOrders.length}
           </div>
@@ -171,7 +171,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </div>
 
         <div className="bg-white border border-[#cfd8dc] p-4 rounded-lg shadow-sm space-y-1">
-          <div className="text-[11px] font-bold text-neutral-500 uppercase">ΧΑΜΗΛΟ ΑΠΟΘΕΜΑ</div>
+          <div className="text-[11px] font-bold text-neutral-500 ">ΧΑΜΗΛΟ ΑΠΟΘΕΜΑ</div>
           <div className="text-2xl font-black font-mono-spec text-red-600">
             {lowStockProducts.length + outOfStockProducts.length}
           </div>
@@ -183,7 +183,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
       <div className="flex border-b border-[#cfd8dc] bg-white rounded-t-lg px-4 gap-2 overflow-x-auto">
         <button
           onClick={() => setActiveTab('inventory')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 whitespace-nowrap transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 whitespace-nowrap transition-colors ${
             activeTab === 'inventory'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -193,7 +193,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </button>
         <button
           onClick={() => setActiveTab('picking')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 whitespace-nowrap transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 whitespace-nowrap transition-colors ${
             activeTab === 'picking'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -203,7 +203,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </button>
         <button
           onClick={() => setActiveTab('labels')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 whitespace-nowrap transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 whitespace-nowrap transition-colors ${
             activeTab === 'labels'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -213,7 +213,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </button>
         <button
           onClick={() => setActiveTab('feeds')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 whitespace-nowrap transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 whitespace-nowrap transition-colors ${
             activeTab === 'feeds'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -223,7 +223,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         </button>
         <button
           onClick={() => setActiveTab('audit')}
-          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm uppercase tracking-wider border-b-2 whitespace-nowrap transition-colors ${
+          className={`py-3 px-4 font-display font-bold text-xs sm:text-sm  tracking-wider border-b-2 whitespace-nowrap transition-colors ${
             activeTab === 'audit'
               ? 'border-[#e21b22] text-[#e21b22]'
               : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -256,7 +256,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
           <div className="overflow-x-auto border border-neutral-200 rounded">
             <table className="w-full text-xs text-left border-collapse">
               <thead>
-                <tr className="bg-neutral-100 border-b border-neutral-200 font-display font-bold uppercase text-neutral-600">
+                <tr className="bg-neutral-100 border-b border-neutral-200 font-display font-bold  text-neutral-600">
                   <th className="p-3">ΠΡΟΪΟΝ / SKU</th>
                   <th className="p-3">EAN-13 BARCODE</th>
                   <th className="p-3">ΘΕΣΗ ΑΠΟΘΗΚΗΣ</th>
@@ -317,7 +317,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
                               adjustProductStock(p.id, 5, 'restock', 'Παραλαβή εμπορευμάτων από αντιπροσωπεία (+5)');
                               audioService.playSuccess();
                             }}
-                            className="bg-[#e21b22] hover:bg-[#c81016] text-white text-[11px] font-display font-bold uppercase px-2 py-1 rounded"
+                            className="bg-[#e21b22] hover:bg-[#c81016] text-white text-[11px] font-display font-bold  px-2 py-1 rounded"
                             title="Παραλαβή +5 τεμάχια"
                           >
                             +5 ΠΑΡΑΛΑΒΗ
@@ -338,7 +338,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-neutral-200 pb-4">
             <div>
-              <h3 className="font-display font-bold text-lg text-neutral-900 uppercase">
+              <h3 className="font-display font-bold text-lg text-neutral-900 ">
                 ΤΕΡΜΑΤΙΚΟ ΣΥΛΛΟΓΗΣ (ORDER PICKING CONSOLE)
               </h3>
               <p className="text-xs text-neutral-500">
@@ -391,7 +391,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
 
                 <div className="border border-neutral-200 rounded overflow-hidden">
                   <table className="w-full text-xs text-left">
-                    <thead className="bg-neutral-100 font-display font-bold uppercase text-neutral-600">
+                    <thead className="bg-neutral-100 font-display font-bold  text-neutral-600">
                       <tr>
                         <th className="p-3">ΕΙΔΟΣ</th>
                         <th className="p-3">ΘΕΣΗ</th>
@@ -434,7 +434,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
                       updateOrderStatus(activeOrder.id, 'Σε Picking', 'Έναρξη συλλογής');
                       audioService.playClick();
                     }}
-                    className="bg-neutral-800 hover:bg-black text-white text-xs font-display font-bold uppercase px-4 py-2 rounded"
+                    className="bg-neutral-800 hover:bg-black text-white text-xs font-display font-bold  px-4 py-2 rounded"
                   >
                     ΕΝΑΡΞΗ PICKING
                   </button>
@@ -445,7 +445,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
                       audioService.playSuccess();
                       showToast(`Η παραγγελία #${activeOrder.orderNumber} συσκευάστηκε!`);
                     }}
-                    className="bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold uppercase px-4 py-2 rounded shadow"
+                    className="bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold  px-4 py-2 rounded shadow"
                   >
                     ΟΛΟΚΛΗΡΩΣΗ ΣΥΣΚΕΥΑΣΙΑΣ &amp; ΕΚΤΥΠΩΣΗ VOUCHER
                   </button>
@@ -456,7 +456,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
                       audioService.playSuccess();
                       showToast(`Η παραγγελία #${activeOrder.orderNumber} παραδόθηκε στον courier!`);
                     }}
-                    className="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-display font-bold uppercase px-4 py-2 rounded"
+                    className="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-display font-bold  px-4 py-2 rounded"
                   >
                     ΠΑΡΑΔΟΣΗ ΣΤΟΝ COURIER
                   </button>
@@ -466,7 +466,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
               {/* Barcode Scanner Input Box (Col 5) */}
               <div className="lg:col-span-5 bg-[#fafafa] border border-neutral-300 rounded-lg p-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="font-display font-bold text-sm uppercase text-neutral-800 flex items-center space-x-1.5">
+                  <span className="font-display font-bold text-sm  text-neutral-800 flex items-center space-x-1.5">
                     <Barcode className="w-4 h-4 text-[#e21b22]" />
                     <span>ΕΞΟΜΟΙΩΤΗΣ BARCODE SCANNER</span>
                   </span>
@@ -489,7 +489,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
 
                   <button
                     type="submit"
-                    className="w-full bg-[#1e1e1e] hover:bg-black text-white font-display font-bold text-xs uppercase py-2.5 rounded shadow"
+                    className="w-full bg-[#1e1e1e] hover:bg-black text-white font-display font-bold text-xs  py-2.5 rounded shadow"
                   >
                     ΠΡΟΣΟΜΟΙΩΣΗ ΣΑΡΩΣΗΣ (ENTER)
                   </button>
@@ -497,7 +497,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
 
                 {/* Quick scan shortcuts for testing */}
                 <div className="border-t border-neutral-200 pt-3 space-y-2">
-                  <span className="text-[10px] font-bold text-neutral-500 uppercase block">
+                  <span className="text-[10px] font-bold text-neutral-500  block">
                     ΔΟΚΙΜΑΣΤΙΚΕΣ ΣΑΡΩΣΕΙΣ ΕΙΔΩΝ ΠΑΡΑΓΓΕΛΙΑΣ:
                   </span>
                   <div className="space-y-1.5">
@@ -527,7 +527,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-neutral-200 pb-4">
             <div>
-              <h3 className="font-display font-bold text-lg text-neutral-900 uppercase">
+              <h3 className="font-display font-bold text-lg text-neutral-900 ">
                 ΕΚΤΥΠΩΣΗ ΕΤΙΚΕΤΩΝ ΡΑΦΙΟΥ &amp; BARCODE
               </h3>
               <p className="text-xs text-neutral-500">
@@ -537,7 +537,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
 
             <button
               onClick={handlePrintLabels}
-              className="bg-[#e21b22] hover:bg-[#c81016] text-white px-5 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider flex items-center space-x-2 shadow"
+              className="bg-[#e21b22] hover:bg-[#c81016] text-white px-5 py-2.5 rounded font-display font-bold  text-xs tracking-wider flex items-center space-x-2 shadow"
             >
               <Printer className="w-4 h-4" />
               <span>ΕΚΤΥΠΩΣΗ ΕΠΙΛΕΓΜΕΝΩΝ ({labelProductIds.length})</span>
@@ -596,7 +596,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
       {activeTab === 'feeds' && (
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm space-y-6">
           <div className="border-b border-neutral-200 pb-4">
-            <h3 className="font-display font-bold text-lg text-neutral-900 uppercase flex items-center space-x-2">
+            <h3 className="font-display font-bold text-lg text-neutral-900  flex items-center space-x-2">
               <Rss className="w-5 h-5 text-[#e21b22]" />
               <span>SKROUTZ &amp; BESTPRICE XML GENERATOR</span>
             </h3>
@@ -632,7 +632,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
                   a.click();
                   showToast('Το Skroutz XML Feed κατέβηκε επιτυχώς');
                 }}
-                className="bg-[#e21b22] text-white px-4 py-2 rounded font-display font-bold uppercase text-xs"
+                className="bg-[#e21b22] text-white px-4 py-2 rounded font-display font-bold  text-xs"
               >
                 ΛΗΨΗ SKROUTZ XML FEED (.XML)
               </button>
@@ -645,7 +645,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
       {activeTab === 'audit' && (
         <div className="bg-white border border-[#cfd8dc] rounded-b-lg p-6 shadow-sm space-y-4">
           <div className="border-b border-neutral-200 pb-3 flex items-center justify-between">
-            <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+            <h3 className="font-display font-bold text-base text-neutral-900 ">
               ΙΣΤΟΡΙΚΟ ΕΝΕΡΓΕΙΩΝ &amp; ΔΙΑΚΙΝΗΣΗΣ ΑΠΟΘΗΚΗΣ (AUDIT LOG)
             </h3>
             <span className="text-xs text-neutral-500 font-mono-spec">
@@ -655,7 +655,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
 
           <div className="overflow-x-auto border border-neutral-200 rounded">
             <table className="w-full text-xs text-left">
-              <thead className="bg-neutral-100 font-display font-bold uppercase text-neutral-600">
+              <thead className="bg-neutral-100 font-display font-bold  text-neutral-600">
                 <tr>
                   <th className="p-3">ΧΡΟΝΟΣ</th>
                   <th className="p-3">ΧΡΗΣΤΗΣ</th>

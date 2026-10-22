@@ -255,7 +255,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
                 <div className="p-4 space-y-3">
                   {recentSearches.length > 0 && (
                     <div>
-                      <div className="flex items-center space-x-1 text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">
+                      <div className="flex items-center space-x-1 text-xs font-semibold text-neutral-400  tracking-wider mb-2">
                         <Clock className="w-3.5 h-3.5 text-[#e21b22]" />
                         <span>Πρόσφατες Αναζητήσεις</span>
                       </div>
@@ -278,7 +278,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
                   )}
 
                   <div>
-                    <div className="flex items-center space-x-1 text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">
+                    <div className="flex items-center space-x-1 text-xs font-semibold text-neutral-400  tracking-wider mb-2">
                       <Flame className="w-3.5 h-3.5 text-[#e65100]" />
                       <span>Δημοφιλείς Αναζητήσεις</span>
                     </div>
@@ -330,7 +330,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
                           />
                           <div className="min-w-0">
                             <div className="flex items-center space-x-2 text-[11px] text-neutral-400">
-                              <span className="font-bold text-[#e21b22] uppercase">{brand?.name}</span>
+                              <span className="font-bold text-[#e21b22] ">{brand?.name}</span>
                               <span>•</span>
                               <span className="font-mono-spec">SKU: {renderHighlighted(prod.sku, searchTerm)}</span>
                               {category && (
@@ -393,7 +393,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           <div className="hidden xl:flex items-center gap-2.5 pl-2 pr-3">
             <PhoneCall className="w-[30px] h-[30px] text-white" />
             <div className="leading-tight">
-              <div className="font-display font-bold text-base uppercase tracking-wide">Πληροφορίες</div>
+              <div className="font-display font-bold text-base  tracking-wide">Πληροφορίες</div>
               <div className="text-[15px] text-neutral-200 whitespace-nowrap tracking-tight">{contactPhone}&nbsp; | &nbsp;{contactEmail}</div>
             </div>
           </div>

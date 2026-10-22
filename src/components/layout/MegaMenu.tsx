@@ -15,6 +15,8 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
   const panelRef = useRef<HTMLDivElement>(null);
   const closeTimerRef = useRef<number | null>(null);
   const [activeMainCatId, setActiveMainCatId] = useState(categoryGroups[0]?.id ?? '');
+  const [isRendered, setIsRendered] = useState(isOpen);
+  const [isAnimatingIn, setIsAnimatingIn] = useState(isOpen);
 
   const activeSubcategories = useMemo(
     () => categories
@@ -39,6 +41,18 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
       if (closeTimerRef.current !== null) window.clearTimeout(closeTimerRef.current);
     };
   }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsRendered(true);
+      const frame = window.requestAnimationFrame(() => setIsAnimatingIn(true));
+      return () => window.cancelAnimationFrame(frame);
+    }
+
+    setIsAnimatingIn(false);
+    const timer = window.setTimeout(() => setIsRendered(false), 260);
+    return () => window.clearTimeout(timer);
+  }, [isOpen]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -98,11 +112,11 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
     panelRef.current?.querySelectorAll<HTMLButtonElement>('[data-main-category]')[nextIndex]?.focus();
   };
 
-  if (!isOpen) return null;
+  if (!isRendered) return null;
 
   return (
     <div
-      className="fixed inset-0 z-30 hidden bg-neutral-950/20 px-4 pb-5 pt-[84px] lg:block"
+      className={`nt-mega-menu-backdrop fixed inset-0 z-30 hidden bg-neutral-950/20 px-4 pb-5 pt-[84px] lg:block ${isAnimatingIn ? 'is-visible' : 'is-closing'}`}
       onMouseEnter={scheduleClose}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onOpenChange(false);
@@ -112,13 +126,13 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
       <div
         ref={panelRef}
         id="desktop-mega-menu-panel"
-        className="mx-auto flex max-h-full w-full max-w-7xl overflow-hidden rounded-2xl border border-neutral-200 bg-white text-neutral-900 shadow-[0_24px_70px_-24px_rgba(0,0,0,0.42)]"
+        className={`nt-mega-menu-panel mx-auto flex max-h-full w-full max-w-7xl overflow-hidden rounded-2xl border border-neutral-200 bg-white text-neutral-900 shadow-[0_24px_70px_-24px_rgba(0,0,0,0.42)] ${isAnimatingIn ? 'is-visible' : 'is-closing'}`}
         onMouseEnter={cancelScheduledClose}
         onMouseLeave={scheduleClose}
         aria-label="Μενού κατηγοριών προϊόντων"
       >
         <nav aria-label="Βασικές κατηγορίες" className="w-[330px] shrink-0 overflow-y-auto border-r border-neutral-200 bg-[#f7f7f6] p-3 xl:w-[365px]">
-          <div className="px-3 pb-2 pt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-500">
+          <div className="px-3 pb-2 pt-1 text-[11px] font-bold  tracking-[0.16em] text-neutral-500">
             Κατηγορίες προϊόντων
           </div>
           <ul className="space-y-1">
@@ -156,7 +170,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
         <section className="flex min-w-0 flex-1 flex-col p-6 xl:p-8" aria-labelledby="mega-menu-heading">
           <div className="flex items-start justify-between gap-6 border-b border-neutral-200 pb-5">
             <div className="min-w-0">
-              <p className="mb-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#c81e24]">Εξερεύνηση κατηγορίας</p>
+              <p className="mb-1 text-[11px] font-bold  tracking-[0.16em] text-[#c81e24]">Εξερεύνηση κατηγορίας</p>
               <h2 id="mega-menu-heading" className="font-display text-xl font-bold leading-tight text-neutral-950 xl:text-2xl">
                 {selectedCategory?.name}
               </h2>
@@ -184,7 +198,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onNavigate, isOpen, onOpenCh
                     : [groupCategories];
                   return (
                   <section key={groupName} className={`min-w-0 ${splitIntoColumns ? 'col-span-2 xl:col-span-3' : ''}`}>
-                    <h3 className="mb-2.5 flex items-center gap-2 text-[12px] font-bold uppercase leading-snug tracking-wide text-neutral-500">
+                    <h3 className="mb-2.5 flex items-center gap-2 text-[12px] font-bold  leading-snug tracking-wide text-neutral-500">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#e21b22]" aria-hidden="true" />
                       {groupName}
                     </h3>

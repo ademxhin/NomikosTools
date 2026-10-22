@@ -42,7 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <Truck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-display font-bold text-sm text-white uppercase tracking-wider">
+              <h4 className="font-display font-bold text-sm text-white  tracking-wider">
                 ΑΜΕΣΗ ΑΠΟΣΤΟΛΗ ΠΑΝΕΛΛΑΔΙΚΑ
               </h4>
               <p className="text-xs text-neutral-400 mt-0.5">
@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-display font-bold text-sm text-white uppercase tracking-wider">
+              <h4 className="font-display font-bold text-sm text-white  tracking-wider">
                 100% ΓΝΗΣΙΑ ΠΡΟΪΟΝΤΑ &amp; ΕΓΓΥΗΣΗ
               </h4>
               <p className="text-xs text-neutral-400 mt-0.5">
@@ -70,7 +70,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <RotateCcw className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-display font-bold text-sm text-white uppercase tracking-wider">
+              <h4 className="font-display font-bold text-sm text-white  tracking-wider">
                 ΕΠΙΣΤΡΟΦΗ ΕΝΤΟΣ 14 ΗΜΕΡΩΝ
               </h4>
               <p className="text-xs text-neutral-400 mt-0.5">
@@ -84,7 +84,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <CreditCard className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-display font-bold text-sm text-white uppercase tracking-wider">
+              <h4 className="font-display font-bold text-sm text-white  tracking-wider">
                 ΑΣΦΑΛΕΙΣ ΠΛΗΡΩΜΕΣ &amp; ΔΟΣΕΙΣ
               </h4>
               <p className="text-xs text-neutral-400 mt-0.5">
@@ -123,7 +123,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         {/* Col 2: Customer Service */}
         <div className="space-y-3">
-          <h5 className="font-display font-bold text-sm text-white uppercase tracking-wider border-b border-[#2a2a2a] pb-2">
+          <h5 className="font-display font-bold text-sm text-white  tracking-wider border-b border-[#2a2a2a] pb-2">
             ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ
           </h5>
           <ul className="space-y-2 text-neutral-400">
@@ -162,7 +162,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         {/* Col 3: Information & Legal */}
         <div className="space-y-3">
-          <h5 className="font-display font-bold text-sm text-white uppercase tracking-wider border-b border-[#2a2a2a] pb-2">
+          <h5 className="font-display font-bold text-sm text-white  tracking-wider border-b border-[#2a2a2a] pb-2">
             ΧΡΗΣΙΜΕΣ ΠΛΗΡΟΦΟΡΙΕΣ
           </h5>
           <ul className="space-y-2 text-neutral-400">
@@ -198,7 +198,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         {/* Col 4: Newsletter & Partner Badges */}
         <div className="space-y-4">
-          <h5 className="font-display font-bold text-sm text-white uppercase tracking-wider border-b border-[#2a2a2a] pb-2">
+          <h5 className="font-display font-bold text-sm text-white  tracking-wider border-b border-[#2a2a2a] pb-2">
             NEWSLETTER &amp; ΕΚΠΤΩΣΕΙΣ
           </h5>
           <p className="text-neutral-400 leading-relaxed text-[11px]">
@@ -216,7 +216,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               />
               <button
                 type="submit"
-                className="mt-1.5 w-full bg-[#e21b22] hover:bg-[#c81016] text-white font-display font-bold uppercase py-2 px-3 rounded text-xs tracking-wider flex items-center justify-center space-x-1.5 transition-colors"
+                className="mt-1.5 w-full bg-[#e21b22] hover:bg-[#c81016] text-white font-display font-bold  py-2 px-3 rounded text-xs tracking-wider flex items-center justify-center space-x-1.5 transition-colors"
               >
                 <span>ΕΓΓΡΑΦΗ</span>
                 <Send className="w-3.5 h-3.5" />
@@ -226,7 +226,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Logistics & Couriers */}
           <div className="pt-2">
-            <span className="text-[10px] text-neutral-400 uppercase font-mono-spec font-semibold block mb-1.5">
+            <span className="text-[10px] text-neutral-400  font-mono-spec font-semibold block mb-1.5">
               ΣΥΝΕΡΓΑΤΕΣ ΔΙΑΝΟΜΗΣ
             </span>
             <div className="flex items-center space-x-2">

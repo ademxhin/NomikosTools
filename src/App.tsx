@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useLayoutEffect, useState } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { StoreProvider, useStore } from './context/StoreContext';
 import { AuthProvider } from './context/AuthContext';
@@ -30,6 +30,12 @@ const InfoPage = lazy(() => import('./pages/InfoPage').then((module) => ({ defau
 
 const getBrowserRoute = () => `${window.location.pathname}${window.location.search}`;
 
+const scrollPageToTop = () => {
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+};
+
 function AppContent() {
   const { state: workspace } = useWorkspace();
   const [currentRoute, setCurrentRoute] = useState<string>(getBrowserRoute);
@@ -45,17 +51,22 @@ function AppContent() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Navigate handler that scrolls to top smoothly
+  // Keep every rendered route at the start of the page, including routes reached
+  // through browser back/forward navigation.
+  useLayoutEffect(() => {
+    scrollPageToTop();
+  }, [currentRoute]);
+
+  // Navigate handler for the app's client-side routes.
   const handleNavigate = (route: string) => {
     if (route !== currentRoute) window.history.pushState({}, '', route);
     setCurrentRoute(route);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
+    if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual';
     const handlePopState = () => {
       setCurrentRoute(getBrowserRoute());
-      window.scrollTo({ top: 0 });
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -211,7 +222,7 @@ function AppContent() {
         <Suspense
           fallback={
             <div className="min-h-[45vh] grid place-items-center bg-[#f4f4f2]" role="status">
-              <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-neutral-700">
+              <div className="flex items-center gap-3 text-sm font-bold  tracking-wider text-neutral-700">
                 <span className="h-5 w-5 animate-spin border-2 border-neutral-300 border-t-[#e21b22] rounded-full" />
                 Φόρτωση περιεχομένου
               </div>

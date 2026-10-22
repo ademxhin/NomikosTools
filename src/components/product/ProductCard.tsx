@@ -139,10 +139,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           <div className="w-full space-y-2 mt-4">
             <button
               onClick={() => addToCart(product, 1)}
-              className="w-full bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold uppercase tracking-wider py-2.5 rounded flex items-center justify-center space-x-1.5 shadow transition-colors"
+              className="w-full bg-[#e21b22] hover:bg-[#c81016] text-white text-xs font-display font-bold  tracking-wider py-2.5 rounded flex items-center justify-center space-x-1.5 shadow transition-colors"
             >
               <ShoppingCart className="w-4 h-4" />
-              <span>ΠΡΟΣΘΗΚΗ</span>
+              <span>Προσθήκη</span>
             </button>
 
             <div className="flex items-center justify-end w-full text-xs text-neutral-500 pt-1">
@@ -213,12 +213,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           {product.stockQuantity > 0 ? (
             <span className="inline-flex items-center text-[#2e7d32] font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-[#2e7d32] mr-1.5 animate-pulse" />
-              ΑΜΕΣΑ ΔΙΑΘΕΣΙΜΟ
+              Άμεσα διαθέσιμο
             </span>
           ) : (
             <span className="inline-flex items-center text-[#c62828] font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-[#c62828] mr-1.5" />
-              ΚΑΤΟΠΙΝ ΠΑΡΑΓΓΕΛΙΑΣ
+              Κατόπιν παραγγελίας
             </span>
           )}
         </div>
@@ -267,10 +267,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {!hideAddToCart && (
           <button
             onClick={() => addToCart(product, 1)}
-            className="w-full bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white text-xs font-display font-bold uppercase tracking-wider py-2 rounded flex items-center justify-center space-x-1.5 shadow-sm transition-colors"
+            className="w-full bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white text-xs font-display font-bold  tracking-wider py-2 rounded flex items-center justify-center space-x-1.5 shadow-sm transition-colors"
           >
             <ShoppingCart className="w-3.5 h-3.5" />
-            <span>ΠΡΟΣΘΗΚΗ</span>
+            <span>Προσθήκη</span>
           </button>
         )}
       </div>

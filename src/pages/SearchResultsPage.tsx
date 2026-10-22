@@ -39,7 +39,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
 
       <div className="border-b border-[#cfd8dc] pb-4 flex items-start justify-between">
         <div>
-          <h1 className="font-display font-black text-lg sm:text-3xl text-neutral-900 uppercase tracking-tight flex items-start space-x-2 break-all">
+          <h1 className="font-display font-black text-lg sm:text-3xl text-neutral-900  tracking-tight flex items-start space-x-2 break-all">
             <Search className="w-5 h-5 shrink-0 text-[#e21b22] sm:w-7 sm:h-7" />
             <span>ΑΠΟΤΕΛΕΣΜΑΤΑ ΓΙΑ: "{query}"</span>
           </h1>
@@ -58,7 +58,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
       ) : (
         <div className="bg-white border border-[#cfd8dc] rounded p-12 text-center space-y-4">
           <Search className="w-12 h-12 text-neutral-300 mx-auto" />
-          <h3 className="font-display font-bold text-lg text-neutral-800 uppercase">
+          <h3 className="font-display font-bold text-lg text-neutral-800 ">
             ΔΕΝ ΒΡΕΘΗΚΑΝ ΠΡΟΪΟΝΤΑ ΓΙΑ "{query}"
           </h3>
           <p className="text-xs text-neutral-500 max-w-sm mx-auto">
@@ -66,7 +66,7 @@ export const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ query, onN
           </p>
           <button
             onClick={() => onNavigate('/products')}
-            className="bg-[#e21b22] text-white px-6 py-2.5 rounded font-display font-bold uppercase text-xs tracking-wider"
+            className="bg-[#e21b22] text-white px-6 py-2.5 rounded font-display font-bold  text-xs tracking-wider"
           >
             ΠΡΟΒΟΛΗ ΟΛΩΝ ΤΩΝ ΠΡΟΪΟΝΤΩΝ
           </button>

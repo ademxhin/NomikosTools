@@ -22,10 +22,10 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
       {pageType === 'about' && (
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-8 shadow-sm space-y-6 text-sm text-neutral-700 leading-relaxed">
           <div className="border-b border-neutral-200 pb-4">
-            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22] uppercase tracking-wider block">
+            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22]  tracking-wider block">
               ΠΟΙΟΙ ΕΙΜΑΣΤΕ
             </span>
-            <h1 className="font-display font-black text-3xl text-neutral-900 uppercase">
+            <h1 className="font-display font-black text-3xl text-neutral-900 ">
               ΣΧΕΤΙΚΑ ΜΕ ΤΗ NOMIKOS TOOLS Α.Ε.Β.Ε.
             </h1>
           </div>
@@ -53,7 +53,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
           </div>
 
           <div className="space-y-3 pt-4">
-            <h3 className="font-display font-bold text-lg text-neutral-900 uppercase">
+            <h3 className="font-display font-bold text-lg text-neutral-900 ">
               ΕΠΙΣΗΜΕΣ ΑΝΤΙΠΡΟΣΩΠΕΥΣΕΙΣ
             </h3>
             <p>
@@ -67,10 +67,10 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
       {pageType === 'services' && (
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-8 shadow-sm space-y-6 text-sm text-neutral-700 leading-relaxed">
           <div className="border-b border-neutral-200 pb-4">
-            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22] uppercase tracking-wider block">
+            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22]  tracking-wider block">
               ΕΞΕΙΔΙΚΕΥΜΕΝΕΣ ΥΠΗΡΕΣΙΕΣ
             </span>
-            <h1 className="font-display font-black text-3xl text-neutral-900 uppercase">
+            <h1 className="font-display font-black text-3xl text-neutral-900 ">
               ΕΞΟΥΣΙΟΔΟΤΗΜΕΝΟ SERVICE &amp; B2B ΛΥΣΕΙΣ
             </h1>
           </div>
@@ -80,7 +80,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
               <div className="w-10 h-10 rounded-full bg-red-100 text-[#e21b22] flex items-center justify-center">
                 <Wrench className="w-5 h-5" />
               </div>
-              <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+              <h3 className="font-display font-bold text-base text-neutral-900 ">
                 ΕΠΙΣΗΜΟ ΕΞΟΥΣΙΟΔΟΤΗΜΕΝΟ SERVICE
               </h3>
               <p className="text-xs text-neutral-600">
@@ -92,7 +92,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
               <div className="w-10 h-10 rounded-full bg-blue-100 text-[#0d47a1] flex items-center justify-center">
                 <Building2 className="w-5 h-5" />
               </div>
-              <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+              <h3 className="font-display font-bold text-base text-neutral-900 ">
                 ΠΩΛΗΣΕΙΣ ΧΟΝΔΡΙΚΗΣ &amp; ΕΡΓΟΤΑΞΙΑΚΕΣ ΠΡΟΜΗΘΕΙΕΣ
               </h3>
               <p className="text-xs text-neutral-600">
@@ -106,17 +106,17 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
       {pageType === 'contact' && (
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-8 shadow-sm space-y-6 text-sm text-neutral-700 leading-relaxed">
           <div className="border-b border-neutral-200 pb-4">
-            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22] uppercase tracking-wider block">
+            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22]  tracking-wider block">
               ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ
             </span>
-            <h1 className="font-display font-black text-3xl text-neutral-900 uppercase">
+            <h1 className="font-display font-black text-3xl text-neutral-900 ">
               ΚΑΤΑΣΤΗΜΑΤΑ &amp; ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ
             </h1>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
             <div className="border border-neutral-200 p-5 rounded-lg space-y-3 bg-[#fafafa]">
-              <h3 className="font-display font-bold text-sm text-neutral-900 uppercase flex items-center space-x-1.5">
+              <h3 className="font-display font-bold text-sm text-neutral-900  flex items-center space-x-1.5">
                 <Building2 className="w-4 h-4 text-[#e21b22]" />
                 <span>ΚΕΝΤΡΙΚΑ ΓΡΑΦΕΙΑ &amp; LOGISTICS CENTER</span>
               </h3>
@@ -141,7 +141,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
             </div>
 
             <div className="border border-neutral-200 p-5 rounded-lg space-y-3 bg-[#fafafa]">
-              <h3 className="font-display font-bold text-sm text-neutral-900 uppercase flex items-center space-x-1.5">
+              <h3 className="font-display font-bold text-sm text-neutral-900  flex items-center space-x-1.5">
                 <Building2 className="w-4 h-4 text-[#e21b22]" />
                 <span>ΚΑΤΑΣΤΗΜΑ &amp; SERVICE POINT ΡΕΝΤΗ</span>
               </h3>
@@ -167,16 +167,16 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
       {pageType === 'shipping-payment' && (
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-8 shadow-sm space-y-6 text-sm text-neutral-700 leading-relaxed">
           <div className="border-b border-neutral-200 pb-4">
-            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22] uppercase tracking-wider block">
+            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22]  tracking-wider block">
               ΟΡΟΙ ΣΥΝΑΛΛΑΓΩΝ
             </span>
-            <h1 className="font-display font-black text-3xl text-neutral-900 uppercase">
+            <h1 className="font-display font-black text-3xl text-neutral-900 ">
               ΤΡΟΠΟΙ ΑΠΟΣΤΟΛΗΣ &amp; ΠΛΗΡΩΜΗΣ
             </h1>
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+            <h3 className="font-display font-bold text-base text-neutral-900 ">
               ΤΡΟΠΟΙ ΑΠΟΣΤΟΛΗΣ
             </h3>
             <ul className="list-disc pl-5 space-y-2 text-xs text-neutral-600">
@@ -191,7 +191,7 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
               </li>
             </ul>
 
-            <h3 className="font-display font-bold text-base text-neutral-900 uppercase pt-4">
+            <h3 className="font-display font-bold text-base text-neutral-900  pt-4">
               ΤΡΟΠΟΙ ΠΛΗΡΩΜΗΣ
             </h3>
             <ul className="list-disc pl-5 space-y-2 text-xs text-neutral-600">
@@ -208,10 +208,10 @@ export const InfoPage: React.FC<InfoPageProps> = ({ pageType, onNavigate }) => {
       {pageType === 'warranty' && (
         <div className="bg-white border border-[#cfd8dc] rounded-lg p-8 shadow-sm space-y-6 text-sm text-neutral-700 leading-relaxed">
           <div className="border-b border-neutral-200 pb-4">
-            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22] uppercase tracking-wider block">
+            <span className="text-[11px] font-mono-spec font-bold text-[#e21b22]  tracking-wider block">
               ΕΓΓΥΗΣΗ ΚΑΤΑΣΚΕΥΑΣΤΗ
             </span>
-            <h1 className="font-display font-black text-3xl text-neutral-900 uppercase">
+            <h1 className="font-display font-black text-3xl text-neutral-900 ">
               ΕΓΓΥΗΣΗ &amp; ΠΟΛΙΤΙΚΗ ΕΠΙΣΤΡΟΦΩΝ
             </h1>
           </div>

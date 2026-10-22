@@ -110,7 +110,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
               NT
             </div>
             <div>
-              <div className="font-display font-bold text-lg leading-tight uppercase">NOMIKOS TOOLS</div>
+              <div className="font-display font-bold text-lg leading-tight ">NOMIKOS TOOLS</div>
               <div className="text-[10px] text-neutral-400 font-mono-spec">HEAVY-DUTY CATALOG</div>
             </div>
           </div>
@@ -145,7 +145,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
           <div className="grid grid-cols-1 gap-2 text-xs">
             <button
               onClick={() => handleNav('/offers')}
-              className="flex items-center justify-center space-x-1.5 py-2 bg-red-950/40 text-red-400 border border-red-900/50 rounded font-display font-bold uppercase"
+              className="flex items-center justify-center space-x-1.5 py-2 bg-red-950/40 text-red-400 border border-red-900/50 rounded font-display font-bold "
             >
               <Flame className="w-3.5 h-3.5" />
               <span>ΠΡΟΣΦΟΡΕΣ</span>
@@ -155,7 +155,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
 
         {/* Scrollable Category Accordion */}
         <div className="flex-1 overflow-y-auto divide-y divide-[#242424] text-sm">
-          <div className="p-3 text-[11px] font-bold text-neutral-400 uppercase tracking-wider font-display">
+          <div className="p-3 text-[11px] font-bold text-neutral-400  tracking-wider font-display">
             ΚΑΤΑΛΟΓΟΣ ΠΡΟΪΟΝΤΩΝ
           </div>
 
@@ -186,7 +186,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
                       return groups;
                     }, new Map<string, typeof subcats>())].map(([groupName, groupSubcats]) => (
                     <section key={groupName} className="py-2 pr-3">
-                      <h3 className="px-1 pb-1.5 text-[10px] font-bold uppercase tracking-wider text-neutral-500">{groupName}</h3>
+                      <h3 className="px-1 pb-1.5 text-[10px] font-bold  tracking-wider text-neutral-500">{groupName}</h3>
                       {groupSubcats.map((subcat) => {
                       const childCats = getChildCategories(subcat.id);
                       const isSubExpanded = expandedCats.includes(subcat.id);

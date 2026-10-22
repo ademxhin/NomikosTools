@@ -10,7 +10,7 @@ export const CategoriesPage: React.FC<CategoriesPageProps> = ({ onNavigate }) =>
   return (
     <div className="mx-auto w-full max-w-7xl space-y-6 px-4 py-8">
       <div>
-        <h1 className="font-category text-3xl font-black uppercase tracking-tight">Όλες οι κατηγορίες</h1>
+        <h1 className="font-category text-3xl font-black  tracking-tight">Όλες οι κατηγορίες</h1>
         <p className="mt-1 text-sm text-neutral-600">Περιηγηθείτε σε όλες τις κατηγορίες και υποκατηγορίες προϊόντων.</p>
       </div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -20,7 +20,7 @@ export const CategoriesPage: React.FC<CategoriesPageProps> = ({ onNavigate }) =>
             <img src={category.image} alt="" className="absolute inset-0 h-full w-full object-contain grayscale opacity-65 transition group-hover:scale-105 group-hover:grayscale-0" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/5 transition group-hover:bg-[#e21b22]/50" />
             <div className="relative z-10 flex min-h-56 flex-col justify-end p-4">
-              <h2 className="font-category text-lg font-bold uppercase leading-tight">{category.name}</h2>
+              <h2 className="font-category text-lg font-bold  leading-tight">{category.name}</h2>
               <span className="mt-1 text-xs text-neutral-200">{count} προϊόντα</span>
               <ArrowRight className="mt-2 h-4 w-4 opacity-0 transition group-hover:translate-x-1 group-hover:opacity-100" />
             </div>

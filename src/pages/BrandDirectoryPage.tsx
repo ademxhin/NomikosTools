@@ -42,10 +42,10 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
       {currentBrand ? (
         <div className="bg-[#181818] text-white p-6 sm:p-8 rounded-lg border border-[#2e2e2e] flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center space-x-2 bg-[#e21b22] text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase font-mono-spec">
+            <div className="inline-flex items-center space-x-2 bg-[#e21b22] text-white text-[10px] font-bold px-2.5 py-0.5 rounded  font-mono-spec">
               ΕΠΙΣΗΜΟΣ ΔΙΑΝΟΜΕΑΣ ΕΛΛΑΔΟΣ
             </div>
-            <h1 className="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight text-white">
+            <h1 className="font-display font-black text-3xl sm:text-4xl  tracking-tight text-white">
               {currentBrand.name} HEAVY-DUTY EQUIPMENT
             </h1>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
@@ -62,7 +62,7 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
         </div>
       ) : (
         <div className="border-b border-[#cfd8dc] pb-4">
-          <h1 className="font-display font-black text-3xl text-neutral-900 uppercase tracking-tight">
+          <h1 className="font-display font-black text-3xl text-neutral-900  tracking-tight">
             ΚΑΤΑΛΟΓΟΣ ΚΑΤΑΣΚΕΥΑΣΤΩΝ &amp; BRANDS
           </h1>
           <p className="text-xs text-neutral-500 mt-1">
@@ -77,7 +77,7 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
           <button
             key={b.id}
             onClick={() => onNavigate(`/brand/${b.slug}`)}
-            className={`px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-wider transition-colors border ${
+            className={`px-4 py-2 rounded text-xs font-display font-bold  tracking-wider transition-colors border ${
               currentBrand?.id === b.id
                 ? 'bg-[#e21b22] text-white border-[#e21b22]'
                 : 'bg-white text-neutral-700 border-neutral-300 hover:bg-neutral-100'
@@ -91,7 +91,7 @@ export const BrandDirectoryPage: React.FC<BrandDirectoryPageProps> = ({
       {/* Brand Products Grid */}
       {brandProducts.length > 0 ? (
         <div className="space-y-4">
-          <h3 className="font-display font-bold text-lg text-neutral-900 uppercase">
+          <h3 className="font-display font-bold text-lg text-neutral-900 ">
             ΕΡΓΑΛΕΙΑ {currentBrand?.name} ({brandProducts.length})
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

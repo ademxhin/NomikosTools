@@ -74,7 +74,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         <h2 className="text-xl font-bold text-neutral-800">Το προϊόν δεν βρέθηκε</h2>
         <button
           onClick={() => onNavigate('/products')}
-          className="mt-4 bg-[#e21b22] text-white px-4 py-2 rounded text-xs font-bold uppercase font-display"
+          className="mt-4 bg-[#e21b22] text-white px-4 py-2 rounded text-xs font-bold  font-display"
         >
           Επιστροφή στον Κατάλογο
         </button>
@@ -255,7 +255,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => brand && onNavigate(`/brand/${brand.slug}`)}
-                  className="font-display font-extrabold text-sm text-[#e21b22] hover:underline uppercase tracking-wider"
+                  className="font-display font-extrabold text-sm text-[#e21b22] hover:underline  tracking-wider"
                 >
                   {brand?.name}
                 </button>
@@ -304,7 +304,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             {/* Variants Selector (if applicable) */}
             {product.variants && product.variants.length > 0 && (
               <div className="space-y-1.5 pt-2">
-                <label className="text-xs font-bold text-neutral-800 uppercase tracking-wide block">
+                <label className="text-xs font-bold text-neutral-800  tracking-wide block">
                   ΕΠΙΛΟΓΗ ΕΚΔΟΣΗΣ / ΣΥΣΚΕΥΑΣΙΑΣ:
                 </label>
                 <div className="flex flex-wrap gap-2">
@@ -379,7 +379,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <button
                 id="pdp-add-to-cart-btn"
                 onClick={() => addToCart(product, quantity, selectedVariantId)}
-                className="w-full sm:flex-1 bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white font-display font-bold uppercase tracking-wider py-4 px-6 rounded-xl flex items-center justify-center space-x-2 shadow-md transition-all text-sm"
+                className="w-full sm:flex-1 bg-[#e21b22] hover:bg-[#c81016] active:bg-[#a30b10] text-white font-display font-bold  tracking-wider py-4 px-6 rounded-xl flex items-center justify-center space-x-2 shadow-md transition-all text-sm"
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</span>
@@ -452,7 +452,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         <div className="flex gap-0 border-b border-[#cfd8dc] bg-white p-0 overflow-x-auto rounded-t-2xl [&>button]:font-black [&>button]:rounded-t-xl [&>button]:rounded-b-none">
           <button
             onClick={() => setActiveTab('specs')}
-            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
+            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm  tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'specs'
                 ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -462,7 +462,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           </button>
           <button
             onClick={() => setActiveTab('description')}
-            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
+            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm  tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'description'
                 ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -472,7 +472,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           </button>
           <button
             onClick={() => setActiveTab('warranty')}
-            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
+            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm  tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'warranty'
                 ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -482,7 +482,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           </button>
           <button
             onClick={() => setActiveTab('reviews')}
-            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm uppercase tracking-wider whitespace-nowrap transition-colors border-b-2 ${
+            className={`px-4 py-2.5 font-display font-bold text-xs sm:text-sm  tracking-wider whitespace-nowrap transition-colors border-b-2 ${
               activeTab === 'reviews'
                 ? 'border-[#e21b22] bg-white text-[#e21b22]'
                 : 'border-transparent text-neutral-600 hover:text-neutral-900'
@@ -496,7 +496,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         <div className="p-4 sm:p-5">
           {activeTab === 'specs' && (
             <div className="space-y-4">
-              <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+              <h3 className="font-display font-bold text-base text-neutral-900 ">
                 ΑΝΑΛΥΤΙΚΕΣ ΤΕΧΝΙΚΕΣ ΠΡΟΔΙΑΓΡΑΦΕΣ
               </h3>
               <div className="border border-[#cfd8dc] rounded-xl overflow-hidden">
@@ -537,7 +537,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           {activeTab === 'description' && (
             <div className="space-y-6 text-sm text-neutral-700 leading-relaxed">
               <div>
-                <h3 className="font-display font-bold text-base text-neutral-900 uppercase mb-2">
+                <h3 className="font-display font-bold text-base text-neutral-900  mb-2">
                   ΕΠΑΓΓΕΛΜΑΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ
                 </h3>
                 <p className="whitespace-pre-line leading-relaxed">{product.fullDescription || product.shortDescription}</p>
@@ -545,7 +545,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
               {product.includedItems && product.includedItems.length > 0 && (
                 <div className="bg-[#f8f9fa] border border-[#cfd8dc] p-4 rounded">
-                  <h4 className="font-display font-bold text-sm text-neutral-900 uppercase mb-2 flex items-center space-x-1.5">
+                  <h4 className="font-display font-bold text-sm text-neutral-900  mb-2 flex items-center space-x-1.5">
                     <Boxes className="w-4 h-4 text-[#e21b22]" />
                     <span>ΠΑΡΑΔΙΔΕΤΑΙ ΜΕ (ΒΑΣΙΚΟΣ ΕΞΟΠΛΙΣΜΟΣ):</span>
                   </h4>
@@ -561,7 +561,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
           {activeTab === 'warranty' && (
             <div className="space-y-4 text-xs sm:text-sm text-neutral-700 leading-relaxed max-w-2xl">
-              <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+              <h3 className="font-display font-bold text-base text-neutral-900 ">
                 ΟΡΟΙ ΕΓΓΥΗΣΗΣ &amp; ΤΕΧΝΙΚΗ ΥΠΟΣΤΗΡΙΞΗ
               </h3>
               <p>
@@ -587,7 +587,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-neutral-200 pb-4">
                 <div>
-                  <h3 className="font-display font-bold text-base text-neutral-900 uppercase">
+                  <h3 className="font-display font-bold text-base text-neutral-900 ">
                     ΑΞΙΟΛΟΓΗΣΕΙΣ ΕΠΑΓΓΕΛΜΑΤΙΩΝ ({displayReviewCount})
                   </h3>
                   <div className="flex items-center space-x-2 mt-1">
@@ -602,7 +602,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
                 <button
                   onClick={() => setIsReviewFormOpen((open) => !open)}
-                  className="bg-[#e21b22] text-white text-xs font-display font-bold uppercase px-4 py-2 rounded"
+                  className="bg-[#e21b22] text-white text-xs font-display font-bold  px-4 py-2 rounded"
                 >
                   ΓΡΑΨΤΕ ΚΡΙΤΙΚΗ
                 </button>
@@ -626,7 +626,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                     </select>
                   </div>
                   <textarea required placeholder="Γράψτε την εμπειρία σας..." className="min-h-24 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-xs" />
-                  <button type="submit" className="rounded-lg bg-[#e21b22] px-4 py-2 text-xs font-display font-bold uppercase text-white hover:bg-[#c81016]">
+                  <button type="submit" className="rounded-lg bg-[#e21b22] px-4 py-2 text-xs font-display font-bold  text-white hover:bg-[#c81016]">
                     Υποβολή κριτικής
                   </button>
                 </form>
@@ -689,7 +689,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         <div className="mx-auto w-full max-w-7xl space-y-5 rounded-2xl border border-[#f2b8b8] bg-[#fff7f7] p-4 shadow-sm sm:p-5">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
-              <h2 className="font-display font-black text-xl text-neutral-900 uppercase tracking-wide">SUPER DEAL</h2>
+              <h2 className="font-display font-black text-xl text-neutral-900  tracking-wide">SUPER DEAL</h2>
               <p className="text-xs text-neutral-600">Συνδύασε τα προϊόντα και κέρδισε επιπλέον έκπτωση.</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
@@ -718,7 +718,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 comboProducts.forEach((p) => addToCart(p, 1, undefined, Math.round((p.salePrice || p.price) * 0.9 * 100) / 100, comboOfferId));
                 showToast('Η προσφορά προστέθηκε στο καλάθι');
               }}
-              className="rounded-xl bg-[#e21b22] px-5 py-3 text-xs font-display font-bold uppercase tracking-wider text-white shadow hover:bg-[#c81016]"
+              className="rounded-xl bg-[#e21b22] px-5 py-3 text-xs font-display font-bold  tracking-wider text-white shadow hover:bg-[#c81016]"
             >
               ΠΡΟΣΘΗΚΗ ΟΛΩΝ ΣΤΟ ΚΑΛΑΘΙ
             </button>
@@ -730,7 +730,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
       {recommendedProducts.length > 0 && (
         <div className="space-y-4 pt-4">
           <div className="flex items-center justify-between border-b border-[#cfd8dc] pb-2">
-            <h2 className="font-display font-black text-xl text-neutral-900 uppercase tracking-wide">ΠΡΟΤΕΙΝΟΜΕΝΑ ΓΙΑ ΕΣΕΝΑ</h2>
+            <h2 className="font-display font-black text-xl text-neutral-900  tracking-wide">ΠΡΟΤΕΙΝΟΜΕΝΑ ΓΙΑ ΕΣΕΝΑ</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {recommendedProducts.map((p) => <ProductCard key={p.id} product={p} onNavigate={onNavigate} />)}
@@ -742,7 +742,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
       {alternativeProducts.length > 0 && (
         <div className="space-y-4 pt-4">
           <div className="flex items-center justify-between border-b border-[#cfd8dc] pb-2">
-            <h2 className="font-display font-black text-xl text-neutral-900 uppercase tracking-wide">
+            <h2 className="font-display font-black text-xl text-neutral-900  tracking-wide">
               ΠΑΡΟΜΟΙΑ / ΕΝΑΛΛΑΚΤΙΚΑ ΠΡΟΪΟΝΤΑ
             </h2>
             <div className="flex items-center gap-2">

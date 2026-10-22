@@ -97,7 +97,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
               />
 
               {quickViewProduct.salePrice && (
-                <div className="absolute top-3 left-3 bg-[#e21b22] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow uppercase font-display tracking-wider">
+                <div className="absolute top-3 left-3 bg-[#e21b22] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow  font-display tracking-wider">
                   ΕΚΠΤΩΣΗ -{Math.round((1 - quickViewProduct.salePrice / quickViewProduct.price) * 100)}%
                 </div>
               )}
@@ -128,7 +128,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
             <div>
               {/* Brand and SKU */}
               <div className="flex items-center justify-between text-xs text-neutral-500 mb-1.5">
-                <span className="font-bold text-[#e21b22] uppercase tracking-wider">
+                <span className="font-bold text-[#e21b22]  tracking-wider">
                   {brand?.name || 'Nomikos Pro'}
                 </span>
                 <span className="font-mono-spec">SKU: {quickViewProduct.sku}</span>
@@ -179,7 +179,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
               {/* Highlights Specifications */}
               {quickViewProduct.specifications.length > 0 && (
                 <div className="mt-4 pt-4 border-t border-neutral-100">
-                  <div className="text-[11px] font-bold text-neutral-700 uppercase tracking-wider font-display mb-2">
+                  <div className="text-[11px] font-bold text-neutral-700  tracking-wider font-display mb-2">
                     ΒΑΣΙΚΕΣ ΠΡΟΔΙΑΓΡΑΦΕΣ
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-xs">
@@ -222,7 +222,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ onNavigate }) =>
                 <button
                   type="button"
                   onClick={handleAddToCart}
-                  className="flex-1 bg-[#e21b22] hover:bg-[#c81016] text-white py-2.5 px-4 rounded font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-colors shadow-sm"
+                  className="flex-1 bg-[#e21b22] hover:bg-[#c81016] text-white py-2.5 px-4 rounded font-display font-bold text-xs  tracking-wider flex items-center justify-center space-x-2 transition-colors shadow-sm"
                 >
                   <ShoppingCart className="w-4 h-4" />
                   <span>ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</span>
