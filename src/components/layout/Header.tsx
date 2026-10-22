@@ -207,7 +207,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenMobileMenu, on
           <img
             src="/assets/nomikos-tools-logo.png"
             alt="Nomikos Tools"
-            className="h-9 w-full max-w-[140px] object-contain object-left origin-left sm:h-12 sm:w-auto sm:max-w-none sm:scale-[1.15] md:h-14 lg:scale-[1.3]"
+            className="h-12 w-full max-w-[190px] object-contain object-left origin-left sm:h-14 sm:w-auto sm:max-w-none md:h-16 lg:scale-[1.15]"
           />
         </div>
 

@@ -6,7 +6,7 @@
 input[type='checkbox'] { width: 18px !important; height: 18px !important; min-width: 18px !important; min-height: 18px !important; max-width: 18px !important; max-height: 18px !important; flex: 0 0 18px !important; padding: 0 !important; }
 
 .nt-panel { border: 1px solid #e5e5e5; border-radius: 16px; background: white; padding: 24px; box-shadow: 0 2px 3px #00000004; min-width: 0; }
-aside > div:first-child > button { width: 160px; height: 32px; background: url('/assets/nomikos-tools-logo.png') left center / contain no-repeat; font-size: 0 !important; }
+aside > div:first-child > button { width: 220px; height: 48px; background: url('/assets/nomikos-tools-logo.png') left center / contain no-repeat; font-size: 0 !important; }
 aside > div:first-child > button span { display: none; }
 .nt-panel:has(> p.text-3xl) { display: flex; flex-direction: column; }
 .nt-panel:has(> p.text-3xl) > p:last-child { margin-top: auto; }

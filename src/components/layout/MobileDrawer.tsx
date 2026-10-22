@@ -106,12 +106,8 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
         {/* Drawer Header */}
         <div className="p-4 bg-[#1f1f1f] border-b border-[#2e2e2e] flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#e21b22] flex items-center justify-center font-display font-black text-lg text-white rounded">
-              NT
-            </div>
             <div>
-              <div className="font-display font-bold text-lg leading-tight ">NOMIKOS TOOLS</div>
-              <div className="text-[10px] text-neutral-400 font-mono-spec">HEAVY-DUTY CATALOG</div>
+              <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-10 w-[190px] object-contain object-left" />
             </div>
           </div>
           <button

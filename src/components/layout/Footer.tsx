@@ -99,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       <div className="max-w-7xl mx-auto px-3 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:px-4 sm:py-12 sm:gap-8 text-xs">
         {/* Col 1: Brand Info */}
         <div className="lg:col-span-2 space-y-4">
-          <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-10 w-[205px] max-w-full object-contain object-left sm:scale-[1.5] origin-left" />
+          <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-14 w-[270px] max-w-full object-contain object-left origin-left" />
 
           <p className="text-neutral-400 leading-relaxed max-w-sm">
             Η <strong>Nomikos Tools Α.Ε.Β.Ε.</strong> εξειδικεύεται στον βιομηχανικό εξοπλισμό, στα επαγγελματικά εργαλεία μπαταρίας, στα μηχανήματα συνεργείου και στις ολοκληρωμένες λύσεις εργοταξίου από το 1994.
