@@ -54,7 +54,7 @@
 .nt-thumbnail-remove { position: absolute; top: 2px; right: 2px; display: grid; width: 18px; height: 18px; place-items: center; border-radius: 50%; background: #fff; color: #991b1b; opacity: 0; }
 .nt-product-thumbnail-wrap:hover .nt-thumbnail-remove, .nt-product-thumbnail-wrap:focus-within .nt-thumbnail-remove { opacity: 1; }
 .nt-product-secondary-fields { display: grid; gap: 12px; }
-.nt-price-grid, .nt-stock-grid { display: grid; gap: 12px; }
+.nt-price-grid, .nt-stock-grid { display: grid; gap: 8px; }
 .nt-price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .nt-stock-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .nt-stock-grid > .nt-readonly-value { display: flex; min-width: 0; min-height: 38px; flex-direction: row; align-items: center; justify-content: space-between; gap: 6px; border: 1px solid #d4d4d4; border-radius: 10px; background: #fff; padding: 4px 7px; }
