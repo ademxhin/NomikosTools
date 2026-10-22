@@ -5,7 +5,7 @@ import { Button, Field } from './ui';
 
 const SUPPORTED_FORMATS = 'EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, QR';
 
-export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => void }) {
+export function BarcodeScanner({ onDetected, autoStartCamera = false }: { onDetected: (value: string) => void; autoStartCamera?: boolean }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const controlsRef = useRef<IScannerControls | null>(null);
   const startingRef = useRef(false);
@@ -65,6 +65,10 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
   useEffect(() => {
     if (camera && !controlsRef.current) void startCamera();
   }, [camera]);
+
+  useEffect(() => {
+    if (autoStartCamera) setCamera(true);
+  }, [autoStartCamera]);
 
   const toggleCamera = () => {
     if (camera) { stopCamera(); return; }

@@ -85,6 +85,9 @@
 .nt-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); overflow: auto; border: 1px solid #e5e5e5; border-radius: 18px; padding: 24px; }
 .nt-dialog::backdrop { background: #17171799; backdrop-filter: blur(3px); }
 .nt-quick-tool-panel { position: absolute; top: calc(100% + 8px); right: 16px; z-index: 35; width: min(440px, calc(100vw - 32px)); max-height: min(70vh, 560px); overflow-y: auto; border: 1px solid #e5e5e5; border-radius: 14px; background: #fff; padding: 14px; box-shadow: 0 14px 35px rgb(0 0 0 / 14%); }
+.nt-inline-scanner { width: 100%; border-bottom: 1px solid #e5e5e5; background: #fff; padding: 14px 16px 16px; }
+.nt-inline-scanner > div, .nt-inline-scanner > .rounded-xl { width: min(100%, 720px); margin-right: auto; margin-left: auto; }
+.nt-inline-scanner .rounded-xl { border-color: #e5e5e5; background: #fafafa; }
 .nt-quick-search-input { min-width: 0; flex: 1; border: 0 !important; border-bottom: 1px solid #d4d4d4 !important; border-radius: 0 !important; padding: 8px 2px !important; font-size: 14px !important; }
 .nt-quick-search-input:focus { border-color: #e21b22 !important; box-shadow: none !important; outline: none; }
 .nt-quick-search-result { display: flex; width: 100%; align-items: center; gap: 10px; border-radius: 9px; padding: 9px 8px; text-align: left; color: #262626; }
