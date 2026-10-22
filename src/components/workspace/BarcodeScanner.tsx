@@ -1,21 +1,71 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Barcode, Camera, CameraOff } from 'lucide-react';
+import { BrowserMultiFormatReader, IScannerControls } from '@zxing/browser';
 import { Button, Field } from './ui';
 
+const SUPPORTED_FORMATS = 'EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, QR';
+
 export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => void }) {
-  const videoRef = useRef<HTMLVideoElement>(null); const streamRef = useRef<MediaStream | null>(null); const [value, setValue] = useState(''); const [camera, setCamera] = useState(false); const [error, setError] = useState('');
-  useEffect(() => () => streamRef.current?.getTracks().forEach(track => track.stop()), []);
-  const toggleCamera = async () => {
-    if (camera) { streamRef.current?.getTracks().forEach(track => track.stop()); streamRef.current = null; setCamera(false); return; }
-    try {
-      if (!('BarcodeDetector' in window) || !navigator.mediaDevices?.getUserMedia) throw new Error('Η κάμερα δεν υποστηρίζεται. Χρησιμοποιήστε USB scanner ή πληκτρολογήστε τον κωδικό.');
-      const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } }); streamRef.current = stream; setCamera(true); setError('');
-      if (videoRef.current) videoRef.current.srcObject = stream;
-      type Detector = { detect: (source: HTMLVideoElement) => Promise<{ rawValue: string }[]> };
-      const DetectorCtor = (window as Window & { BarcodeDetector: new (options?: { formats?: string[] }) => Detector }).BarcodeDetector;
-      const detector = new DetectorCtor({ formats: ['ean_13', 'ean_8', 'code_128', 'qr_code'] });
-      const scan = async () => { if (!streamRef.current || !videoRef.current) return; try { const found = await detector.detect(videoRef.current); if (found[0]?.rawValue) { onDetected(found[0].rawValue); streamRef.current?.getTracks().forEach(track => track.stop()); streamRef.current = null; setCamera(false); return; } } catch { /* frame unavailable while focusing */ } window.requestAnimationFrame(scan); }; window.requestAnimationFrame(scan);
-    } catch (e) { setError((e as Error).message); }
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const controlsRef = useRef<IScannerControls | null>(null);
+  const readerRef = useRef<BrowserMultiFormatReader | null>(null);
+  const [value, setValue] = useState('');
+  const [camera, setCamera] = useState(false);
+  const [error, setError] = useState('');
+
+  const stopCamera = () => {
+    controlsRef.current?.stop();
+    controlsRef.current = null;
+    readerRef.current = null;
+    setCamera(false);
   };
-  return <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4"><div className="flex flex-wrap items-end gap-3"><div className="min-w-56 flex-1"><Field label="Scanner SKU / barcode"><input autoComplete="off" value={value} onChange={e => setValue(e.target.value)} onKeyDown={e => { if (e.key === 'Enter' && value.trim()) { e.preventDefault(); onDetected(value.trim()); setValue(''); } }} placeholder="Σκανάρετε ή πληκτρολογήστε κωδικό" /></Field></div><Button type="button" secondary onClick={() => { if (value.trim()) { onDetected(value.trim()); setValue(''); } }}><Barcode size={16} /> Εντοπισμός</Button><Button type="button" secondary onClick={toggleCamera}>{camera ? <CameraOff size={16} /> : <Camera size={16} />} {camera ? 'Κλείσιμο κάμερας' : 'Κάμερα'}</Button></div>{camera && <video ref={videoRef} autoPlay muted playsInline className="mt-3 h-40 w-full rounded-lg bg-black object-cover" />}{error && <p role="alert" className="mt-2 text-sm text-amber-800">{error}</p>}</div>;
+
+  useEffect(() => stopCamera, []);
+
+  const submitValue = (rawValue: string) => {
+    const normalized = rawValue.trim();
+    if (!normalized) return;
+    onDetected(normalized);
+    setValue('');
+  };
+
+  const toggleCamera = async () => {
+    if (camera) { stopCamera(); return; }
+    if (!navigator.mediaDevices?.getUserMedia) {
+      setError('Η κάμερα δεν υποστηρίζεται από αυτόν τον browser. Χρησιμοποιήστε USB scanner ή πληκτρολογήστε τον κωδικό.');
+      return;
+    }
+    try {
+      setError('');
+      const video = videoRef.current;
+      if (!video) return;
+      const reader = new BrowserMultiFormatReader();
+      readerRef.current = reader;
+      setCamera(true);
+      const devices = await BrowserMultiFormatReader.listVideoInputDevices();
+      const rearCamera = devices.find(device => /back|rear|environment|πίσω/i.test(device.label));
+      const deviceId = rearCamera?.deviceId ?? devices[0]?.deviceId;
+      if (!deviceId) throw new Error('no-camera');
+      controlsRef.current = await reader.decodeFromVideoDevice(deviceId, video, (result) => {
+        const rawValue = result?.getText();
+        if (rawValue) { submitValue(rawValue); stopCamera(); }
+      });
+    } catch (e) {
+      stopCamera();
+      const message = e instanceof DOMException && e.name === 'NotAllowedError'
+        ? 'Η πρόσβαση στην κάμερα απορρίφθηκε. Επιτρέψτε την κάμερα από τις ρυθμίσεις του browser.'
+        : 'Δεν ήταν δυνατή η εκκίνηση της κάμερας. Ελέγξτε ότι χρησιμοποιείτε HTTPS και ότι η κάμερα είναι διαθέσιμη.';
+      setError(message);
+    }
+  };
+
+  return <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+    <div className="flex flex-wrap items-end gap-3">
+      <div className="min-w-56 flex-1"><Field label="Scanner SKU / barcode"><input autoComplete="off" value={value} onChange={e => setValue(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); submitValue(value); } }} placeholder="Σκανάρετε ή πληκτρολογήστε κωδικό" /></Field></div>
+      <Button type="button" secondary onClick={() => submitValue(value)} disabled={!value.trim()}><Barcode size={16} /> Εντοπισμός</Button>
+      <Button type="button" secondary onClick={toggleCamera}>{camera ? <CameraOff size={16} /> : <Camera size={16} />} {camera ? 'Κλείσιμο κάμερας' : 'Κάμερα'}</Button>
+    </div>
+    {camera && <div className="mt-3 overflow-hidden rounded-lg bg-black"><video ref={videoRef} autoPlay muted playsInline className="h-56 w-full object-cover" /><p className="px-3 py-2 text-xs text-white/80">Στοχεύστε το barcode μέσα στο κάδρο. Υποστηρίζονται: {SUPPORTED_FORMATS}.</p></div>}
+    {error && <p role="alert" className="mt-2 text-sm text-amber-800">{error}</p>}
+  </div>;
 }
