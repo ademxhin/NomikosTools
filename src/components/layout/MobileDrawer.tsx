@@ -107,7 +107,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose, onN
         <div className="p-4 bg-[#1f1f1f] border-b border-[#2e2e2e] flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div>
-              <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-10 w-[190px] object-contain object-left" />
+              <img src="/assets/nomikos-tools-logo.png" alt="Nomikos Tools" className="h-14 w-[240px] object-contain object-left" />
             </div>
           </div>
           <button
