@@ -91,7 +91,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
 
       <section className="nt-product-overview space-y-4" aria-labelledby="product-identity-heading">
         <div className="nt-product-heading">
-          <label className="nt-product-title-field"><span className="sr-only">Τίτλος *</span><textarea id="product-identity-heading" required rows={3} value={draft.name} onChange={event => set('name', event.target.value)} aria-label="Τίτλος προϊόντος" placeholder="Τίτλος προϊόντος" /></label>
+          <label className="nt-product-title-field"><span className="sr-only">Τίτλος *</span><textarea id="product-identity-heading" required rows={1} value={draft.name} onChange={event => set('name', event.target.value)} aria-label="Τίτλος προϊόντος" placeholder="Τίτλος προϊόντος" /></label>
           <label className="nt-product-sku"><span>Κωδικός προϊόντος:</span><input required value={draft.sku} onChange={event => set('sku', event.target.value)} autoCapitalize="off" aria-label="Κωδικός προϊόντος" /></label>
         </div>
 
