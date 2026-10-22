@@ -38,7 +38,7 @@ input[type='checkbox'] { width: 18px !important; height: 18px !important; min-wi
 .nt-product-editor > section > h3 { border-left: 3px solid #e21b22; padding-left: 10px; }
 .nt-product-heading { min-width: 0; }
 .nt-product-title-field { display: block; min-width: 0; }
-.nt-product-title-field textarea { display: block; width: 100%; min-height: 0 !important; height: auto; resize: none; overflow: hidden; field-sizing: content; border: 0 !important; border-radius: 0; padding: 0; color: #171717; font-size: clamp(1.1rem, 4vw, 1.35rem); font-weight: 600; line-height: 1.15; }
+.nt-product-title-field textarea { display: block; width: 100%; min-height: 0 !important; height: auto; resize: none; overflow: hidden; field-sizing: content; border: 0 !important; border-radius: 0; padding: 0; color: #171717; font-size: clamp(1.1rem, 4vw, 1.35rem); font-weight: 650; line-height: 1.15; }
 .nt-product-title-field textarea:focus { border-color: #e21b22; box-shadow: none; outline: none; }
 .nt-product-sku { display: flex; min-width: 0; align-items: center; gap: 4px; margin: 2px 0 0; color: #737373; font-size: 11px; white-space: nowrap; }
 .nt-product-sku > span { flex: 0 0 auto; }
