@@ -95,14 +95,13 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
           <label className="nt-product-sku"><span>Κωδικός προϊόντος:</span><input required value={draft.sku} onChange={event => set('sku', event.target.value)} autoCapitalize="off" aria-label="Κωδικός προϊόντος" /></label>
         </div>
 
-        <div className="nt-product-gallery">
+        <div className={`nt-product-gallery ${draft.images.length > 1 ? 'has-thumbnails' : ''}`}>
           <div className="nt-main-product-image">
             {draft.images[0] ? <img src={draft.images[0]} alt={draft.imageAlt?.[draft.images[0]] ?? draft.name} /> : <div className="text-center text-neutral-400"><ImagePlus className="mx-auto mb-2" /><p className="text-sm">Προσθέστε φωτογραφία</p></div>}
           </div>
-          <div className="nt-product-thumbnails" aria-label="Φωτογραφίες προϊόντος">
+          {draft.images.length > 1 && <div className="nt-product-thumbnails" aria-label="Φωτογραφίες προϊόντος">
             {draft.images.slice(1).map((url, offset) => { const index = offset + 1; return <div key={url} className="nt-product-thumbnail-wrap"><button type="button" className="nt-product-thumbnail" title="Ορισμός ως κύρια" aria-label={`Ορισμός εικόνας ${index + 1} ως κύρια`} onClick={() => set('images', [url, ...draft.images.filter((_, imageIndex) => imageIndex !== index)])}><img src={url} alt="" /></button><button type="button" className="nt-thumbnail-remove" title="Αφαίρεση εικόνας" aria-label="Αφαίρεση εικόνας" onClick={() => set('images', draft.images.filter((_, imageIndex) => imageIndex !== index))}><Trash2 size={12} /></button></div>; })}
-            <label className="nt-add-thumbnail" title="Προσθήκη εικόνων"><span>+</span><input className="sr-only" type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={event => void upload(event.target.files)} /></label>
-          </div>
+          </div>}
         </div>
         {busy && <p role="status" className="text-sm text-neutral-600">Επεξεργασία εικόνας…</p>}
       </section>
