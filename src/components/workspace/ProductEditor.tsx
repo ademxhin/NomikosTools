@@ -84,6 +84,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
   const productCategories = categoryGroups.flatMap(group => categories.filter(category => category.parentId === group.id).map(category => ({ id: category.id, name: category.name, groupName: `${group.name} / ${category.groupName ?? ''}` })));
 
   const sellingPriceExcludingVat = draft.price / (1 + draft.vatRate);
+  const grossProfit = sellingPriceExcludingVat - draft.costPrice;
 
   return <Dialog title="" onClose={close} fullPage={fullPage} hideClose>
     <form onSubmit={save} className="nt-product-editor space-y-4 pb-24 sm:space-y-6 sm:pb-0">
@@ -112,6 +113,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
           {canViewPurchasePrice && <Field label="Τιμή αγοράς"><div className="nt-price-input"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.costPrice.toFixed(2)} onChange={event => set('costPrice', Number(event.target.value) || 0)} /><span>€</span></div></Field>}
           <Field label="Τιμή πώλησης"><div className="nt-price-input"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.price.toFixed(2)} onChange={event => set('price', Number(event.target.value) || 0)} /><span>€</span></div></Field>
           <div className="nt-readonly-value"><span>Πώληση χωρίς ΦΠΑ</span><strong>{formatPrice(sellingPriceExcludingVat)}</strong></div>
+          {canViewPurchasePrice && <div className="nt-readonly-value"><span>Κέρδος</span><strong>{formatPrice(grossProfit)}</strong></div>}
         </div>
         <div className="nt-stock-grid">
           <div className="nt-readonly-value"><span>Απόθεμα προμηθευτή</span><strong>{supplierStockLabel}</strong>{supplierStockLabel !== '-' && <small>{supplierStock.source}</small>}</div>
