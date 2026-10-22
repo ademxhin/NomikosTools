@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Check, ImagePlus, PackageSearch, Trash2 } from 'lucide-react';
+import { Check, ImagePlus, Trash2 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { Product } from '../../types/product';
 import { Button, Dialog, Field } from './ui';
@@ -33,7 +33,7 @@ type ProductEditorProps = {
   fullPage?: boolean;
 };
 
-export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchasePrice = false, fullPage = true }: ProductEditorProps) {
+export function ProductEditor({ product, onClose, canViewPurchasePrice = false, fullPage = true }: ProductEditorProps) {
   const { brands, categories, addProduct, updateProduct } = useStore();
   const [draft, setDraft] = useState<Product>(() => structuredClone(product));
   const [error, setError] = useState('');
@@ -117,7 +117,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
         </div>
         <div className="nt-stock-grid">
           <div className="nt-readonly-value"><span>Απόθεμα προμηθευτή</span><strong>{supplierStockLabel}</strong>{supplierStockLabel !== '-' && <small>{supplierStock.source}</small>}</div>
-          <div className="nt-readonly-value"><span>Προσωπικό απόθεμα</span><strong>{draft.stockQuantity}</strong>{product.id && onAdjustStock && <Button secondary className="mt-2 w-full" onClick={onAdjustStock}><PackageSearch size={14} /> Ρύθμιση</Button>}</div>
+          <div className="nt-readonly-value"><span>Προσωπικό απόθεμα</span><strong>{draft.stockQuantity}</strong></div>
         </div>
       </section>
 
