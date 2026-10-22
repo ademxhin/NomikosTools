@@ -85,13 +85,13 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
 
   const sellingPriceExcludingVat = draft.price / (1 + draft.vatRate);
 
-  return <Dialog title="" onClose={close} fullPage={fullPage}>
+  return <Dialog title="" onClose={close} fullPage={fullPage} hideClose>
     <form onSubmit={save} className="nt-product-editor space-y-4 pb-24 sm:space-y-6 sm:pb-0">
       {error && <p role="alert" className="rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</p>}
 
       <section className="nt-product-overview space-y-4" aria-labelledby="product-identity-heading">
         <div className="nt-product-heading">
-          <label className="nt-product-title-field"><span className="sr-only">Τίτλος *</span><textarea id="product-identity-heading" required rows={2} value={draft.name} onChange={event => set('name', event.target.value)} aria-label="Τίτλος προϊόντος" placeholder="Τίτλος προϊόντος" /></label>
+          <label className="nt-product-title-field"><span className="sr-only">Τίτλος *</span><textarea id="product-identity-heading" required rows={3} value={draft.name} onChange={event => set('name', event.target.value)} aria-label="Τίτλος προϊόντος" placeholder="Τίτλος προϊόντος" /></label>
           <label className="nt-product-sku"><span>Κωδικός προϊόντος:</span><input required value={draft.sku} onChange={event => set('sku', event.target.value)} autoCapitalize="off" aria-label="Κωδικός προϊόντος" /></label>
         </div>
 
