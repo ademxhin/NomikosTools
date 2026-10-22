@@ -54,8 +54,9 @@
 .nt-price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .nt-price-grid.has-purchase-price { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .nt-stock-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.nt-price-grid > .nt-field, .nt-readonly-value { display: flex; min-width: 0; min-height: 68px; flex-direction: column; justify-content: center; gap: 3px; border: 1px solid #d4d4d4; border-radius: 10px; background: #fff; padding: 10px 12px; }
-.nt-price-grid > .nt-field input { border: 0; border-radius: 0; padding: 2px 0 0; font-size: 16px; font-weight: 700; }
+.nt-price-grid > .nt-field, .nt-price-grid > .nt-readonly-value { display: flex; min-width: 0; min-height: 48px; flex-direction: row; align-items: center; justify-content: space-between; gap: 6px; border: 1px solid #d4d4d4; border-radius: 10px; background: #fff; padding: 7px 9px; }
+.nt-price-grid > .nt-field > span, .nt-price-grid > .nt-readonly-value > span { min-width: 0; overflow: hidden; color: #737373; font-size: 10px; font-weight: 600; line-height: 1.1; text-overflow: ellipsis; white-space: nowrap; }
+.nt-price-grid > .nt-field input { min-width: 0; width: 58px; border: 0; border-radius: 0; padding: 0; text-align: right; font-size: 14px; font-weight: 700; }
 .nt-price-grid > .nt-field input:focus { box-shadow: none; }
 .nt-readonly-value > span { color: #737373; font-size: 11px; font-weight: 600; line-height: 1.2; }
 .nt-readonly-value > strong { overflow: hidden; color: #171717; font-size: 16px; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
@@ -304,9 +305,9 @@ body {
   .nt-product-thumbnail, .nt-add-thumbnail { width: 48px; height: 48px; }
   .nt-add-thumbnail { flex-basis: 48px; }
   .nt-price-grid, .nt-price-grid.has-purchase-price { gap: 8px; }
-  .nt-price-grid > .nt-field, .nt-readonly-value { min-height: 62px; padding: 8px 9px; }
-  .nt-readonly-value > span { font-size: 10px; }
-  .nt-readonly-value > strong { font-size: 14px; }
+  .nt-price-grid > .nt-field, .nt-price-grid > .nt-readonly-value { min-height: 44px; padding: 6px 7px; }
+  .nt-price-grid > .nt-field > span, .nt-price-grid > .nt-readonly-value > span { font-size: 9px; }
+  .nt-price-grid > .nt-field input, .nt-price-grid > .nt-readonly-value > strong { font-size: 12px; }
 
   .nt-product-savebar {
     margin-right: -12px;
