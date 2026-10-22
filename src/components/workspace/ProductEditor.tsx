@@ -7,6 +7,7 @@ import { categoryGroups } from '../../data/categoryHierarchy';
 import { getSupplierStockView } from '../../services/productAdmin';
 
 const productSlug = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const formatPrice = (value: number) => `${(Number.isFinite(value) ? value : 0).toFixed(2)}€`;
 
 export function blankProduct(): Product {
   return { id: '', name: '', slug: '', sku: '', ean: '', manufacturerCode: '', shortDescription: '', fullDescription: '', brandId: '', categoryIds: [], price: 0, costPrice: 0, supplierStock: undefined, vatRate: .24, stockQuantity: 0, lowStockThreshold: 3, availabilityStatus: 'out_of_stock', unit: 'Τεμάχιο', packageQuantity: 1, images: [], attributes: {}, specifications: [], includedItems: [], compatibleProductIds: [], relatedProductIds: [], manualFiles: [], warranty: '', weight: 0, dimensions: { length: 0, width: 0, height: 0 }, seoTitle: '', seoDescription: '', active: false, publicationStatus: 'draft', featured: false, popular: false, rating: 0, reviewCount: 0, createdAt: '', updatedAt: '' };
@@ -109,9 +110,9 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
       <section className="space-y-4" aria-labelledby="operations-heading">
         <h3 id="operations-heading" className="sr-only">Τιμές & διαθεσιμότητα</h3>
         <div className={`nt-price-grid ${canViewPurchasePrice ? 'has-purchase-price' : ''}`}>
-          {canViewPurchasePrice && <Field label="Τιμή αγοράς"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.costPrice} onChange={event => set('costPrice', Number(event.target.value))} /></Field>}
-          <Field label="Τιμή πώλησης"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.price} onChange={event => set('price', Number(event.target.value))} /></Field>
-          <div className="nt-readonly-value"><span>Πώληση χωρίς ΦΠΑ</span><strong>{sellingPriceExcludingVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR' })}</strong></div>
+          {canViewPurchasePrice && <Field label="Τιμή αγοράς"><div className="nt-price-input"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.costPrice.toFixed(2)} onChange={event => set('costPrice', Number(event.target.value) || 0)} /><span>€</span></div></Field>}
+          <Field label="Τιμή πώλησης"><div className="nt-price-input"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.price.toFixed(2)} onChange={event => set('price', Number(event.target.value) || 0)} /><span>€</span></div></Field>
+          <div className="nt-readonly-value"><span>Πώληση χωρίς ΦΠΑ</span><strong>{formatPrice(sellingPriceExcludingVat)}</strong></div>
         </div>
         <div className="nt-stock-grid">
           <div className="nt-readonly-value"><span>Απόθεμα προμηθευτή</span><strong>{supplierStockLabel}</strong>{supplierStockLabel !== '-' && <small>{supplierStock.source}</small>}</div>
