@@ -94,6 +94,8 @@
 .nt-inline-scanner .rounded-xl { border-color: #e5e5e5; background: #fafafa; }
 .nt-camera-only { width: min(100%, 720px); margin: 0 auto; }
 .nt-camera-only .mt-3 { margin-top: 0; }
+.nt-scanner-overlay { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: rgb(0 0 0 / 68%); padding: 16px; }
+.nt-scanner-modal { width: min(100%, 520px); max-height: min(90dvh, 640px); overflow-y: auto; border-radius: 16px; background: #fff; padding: 16px; box-shadow: 0 24px 70px rgb(0 0 0 / 35%); }
 .nt-quick-search-input { min-width: 0; flex: 1; border: 0 !important; border-bottom: 1px solid #d4d4d4 !important; border-radius: 0 !important; padding: 8px 2px !important; font-size: 14px !important; }
 .nt-quick-search-input:focus { border-color: #e21b22 !important; box-shadow: none !important; outline: none; }
 .nt-quick-search-result { display: flex; width: 100%; align-items: center; gap: 10px; border-radius: 9px; padding: 9px 8px; text-align: left; color: #262626; }
