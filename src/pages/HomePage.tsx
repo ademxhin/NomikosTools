@@ -224,9 +224,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-3 right-3 z-20 flex items-center gap-1.5 sm:bottom-4 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:gap-2">
+          <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1.5 sm:bottom-4 sm:gap-2">
             <button onClick={() => setActivePromo((activePromo - 1 + promoCopy.length) % promoCopy.length)} className="rounded-full bg-black/50 p-1.5 text-white hover:bg-[#e21b22]" aria-label="Προηγούμενο promo"><ChevronLeft className="h-4 w-4" /></button>
-            {promoCopy.map((_, index) => <button key={index} onClick={() => setActivePromo(index)} aria-label={`Promo ${index + 1}`} className={`h-2.5 rounded-full transition-all ${index === activePromo ? 'w-7 bg-white' : 'w-2.5 bg-white/40'}`} />)}
+            {promoCopy.map((_, index) => <button key={index} onClick={() => setActivePromo(index)} aria-label={`Promo ${index + 1}`} className={`h-2.5 w-2.5 rounded-full transition-all ${index === activePromo ? 'bg-white' : 'bg-white/40'}`} />)}
             <button onClick={() => setActivePromo((activePromo + 1) % promoCopy.length)} className="rounded-full bg-black/50 p-1.5 text-white hover:bg-[#e21b22]" aria-label="Επόμενο promo"><ChevronRight className="h-4 w-4" /></button>
           </div>
         </div>
