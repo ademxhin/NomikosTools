@@ -107,7 +107,7 @@ export function ProductEditor({ product, onClose, canViewPurchasePrice = false, 
         {busy && <p role="status" className="text-sm text-neutral-600">Επεξεργασία εικόνας…</p>}
       </section>
 
-      <section className="space-y-4" aria-labelledby="operations-heading">
+      <section className="space-y-2" aria-labelledby="operations-heading">
         <h3 id="operations-heading" className="sr-only">Τιμές & διαθεσιμότητα</h3>
         <div className={`nt-price-grid ${canViewPurchasePrice ? 'has-purchase-price' : ''}`}>
           {canViewPurchasePrice && <Field label="Τιμή αγοράς"><div className="nt-price-input"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.costPrice.toFixed(2)} onChange={event => set('costPrice', Number(event.target.value) || 0)} /><span>€</span></div></Field>}
