@@ -77,7 +77,13 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
       <Button type="button" secondary onClick={() => submitValue(value)} disabled={!value.trim()}><Barcode size={16} /> Εντοπισμός</Button>
       <Button type="button" secondary onClick={toggleCamera}>{camera ? <CameraOff size={16} /> : <Camera size={16} />} {camera ? 'Κλείσιμο κάμερας' : 'Κάμερα'}</Button>
     </div>
-    {camera && <div className="mt-3 overflow-hidden rounded-lg bg-black"><video ref={videoRef} autoPlay muted playsInline className="h-56 w-full object-cover" /><p className="px-3 py-2 text-xs text-white/80">Στοχεύστε το barcode μέσα στο κάδρο. Υποστηρίζονται: {SUPPORTED_FORMATS}.</p></div>}
+    {camera && <div className="mt-3 overflow-hidden rounded-lg bg-black">
+      <div className="relative">
+        <video ref={videoRef} autoPlay muted playsInline className="h-56 w-full object-cover" />
+        <span aria-hidden="true" className="pointer-events-none absolute left-6 right-6 top-1/2 h-px -translate-y-1/2 bg-[#e21b22] shadow-[0_0_4px_rgba(226,27,34,0.9)]" />
+      </div>
+      <p className="px-3 py-2 text-xs text-white/80">Στοχεύστε το barcode στην κόκκινη γραμμή. Υποστηρίζονται: {SUPPORTED_FORMATS}.</p>
+    </div>}
     {error && <p role="alert" className="mt-2 text-sm text-amber-800">{error}</p>}
   </div>;
 }

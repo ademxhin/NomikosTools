@@ -64,7 +64,7 @@ export function AdminPortal({ route, onNavigate }: { route: string; onNavigate: 
 }
 function ScannerWorkspace({ onNavigate }: { onNavigate: (route: string) => void }) {
   const store = useStore();
-  return <Panel title="Scanner προϊόντων"><BarcodeScanner onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) onNavigate(`/admin/products?scan=${encodeURIComponent(code)}`); else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /><p className="mt-4 text-sm text-neutral-500">Μετά τη σάρωση ανοίγει ο κατάλογος προϊόντων με ενεργό φίλτρο για τον συγκεκριμένο κωδικό.</p></Panel>;
+  return <Panel title="Scanner προϊόντων"><BarcodeScanner onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) onNavigate(`/admin/products/${product.id}`); else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /><p className="mt-4 text-sm text-neutral-500">Μετά τη σάρωση ανοίγει απευθείας το αντίστοιχο προϊόν.</p></Panel>;
 }
 function ProductList({ onNavigate, scan = '' }: { onNavigate: (route: string) => void; scan?: string }) {
   const store = useStore(); const [query, setQuery] = useState(scan); const [brand, setBrand] = useState(''); const [category, setCategory] = useState(''); const [status, setStatus] = useState(''); const [page, setPage] = useState(1); const [selected, setSelected] = useState<string[]>([]); const [error, setError] = useState(''); const [sort, setSort] = useState('updated');
