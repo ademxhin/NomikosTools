@@ -277,7 +277,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="mt-5 flex items-center justify-center gap-2">
           <button onClick={() => setProductPage((page) => (page - 1 + productPageCount) % productPageCount)} className="rounded-full bg-[#171717] p-1.5 text-white transition-colors hover:bg-[#e21b22]" aria-label="Προηγούμενα προϊόντα"><ChevronLeft className="h-4 w-4" /></button>
           {Array.from({ length: productPageCount }).map((_, index) => (
-            <button key={index} onClick={() => setProductPage(index)} aria-label={`Σελίδα προϊόντων ${index + 1}`} className={`h-2.5 rounded-full transition-all ${index === productPage ? 'w-7 bg-[#e21b22]' : 'w-2.5 bg-neutral-300 hover:bg-neutral-500'}`} />
+            <button key={index} onClick={() => setProductPage(index)} aria-label={`Σελίδα προϊόντων ${index + 1}`} className={`promo-dot h-2.5 w-2.5 rounded-full transition-all ${index === productPage ? 'bg-[#e21b22]' : 'bg-neutral-300 hover:bg-neutral-500'}`} />
           ))}
           <button onClick={() => setProductPage((page) => (page + 1) % productPageCount)} className="rounded-full bg-[#171717] p-1.5 text-white transition-colors hover:bg-[#e21b22]" aria-label="Επόμενα προϊόντα"><ChevronRight className="h-4 w-4" /></button>
         </div>
