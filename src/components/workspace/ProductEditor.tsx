@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Camera, Check, ImagePlus, PackageSearch, Star, Trash2 } from 'lucide-react';
+import { Check, ImagePlus, PackageSearch, Trash2 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { Product } from '../../types/product';
 import { Button, Dialog, Field } from './ui';
@@ -40,6 +40,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'error'>('idle');
   const dirty = JSON.stringify(product) !== JSON.stringify(draft);
   const supplierStock = getSupplierStockView(draft);
+  const supplierStockLabel = supplierStock.value === 'Μη διαθέσιμο' ? '-' : supplierStock.value;
 
   useEffect(() => {
     const warn = (event: BeforeUnloadEvent) => { if (dirty) event.preventDefault(); };
@@ -102,15 +103,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
             <label className="nt-add-thumbnail" title="Προσθήκη εικόνων"><span>+</span><input className="sr-only" type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={event => void upload(event.target.files)} /></label>
           </div>
         </div>
-        <div className="nt-image-actions flex gap-2">
-          <label className="nt-button nt-button-secondary flex-1 cursor-pointer"><ImagePlus size={15} /> Προσθήκη<input className="sr-only" type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={event => void upload(event.target.files)} /></label>
-          <label className="nt-button nt-button-secondary flex-1 cursor-pointer"><Camera size={15} /> Κάμερα<input className="sr-only" type="file" accept="image/*" capture="environment" onChange={event => void upload(event.target.files)} /></label>
-        </div>
         {busy && <p role="status" className="text-sm text-neutral-600">Επεξεργασία εικόνας…</p>}
-        <div className="nt-product-secondary-fields">
-          <div className="grid gap-3 sm:grid-cols-2"><Field label="Barcode"><input inputMode="numeric" value={draft.ean} onChange={event => set('ean', event.target.value)} autoCapitalize="off" /></Field><Field label="Κωδικός κατασκευαστή"><input value={draft.manufacturerCode} onChange={event => set('manufacturerCode', event.target.value)} /></Field></div>
-          {draft.images[0] && <Field label="Εναλλακτικό κείμενο εικόνας"><input value={draft.imageAlt?.[draft.images[0]] ?? ''} onChange={event => set('imageAlt', { ...draft.imageAlt, [draft.images[0]]: event.target.value })} /></Field>}
-        </div>
       </section>
 
       <section className="space-y-4" aria-labelledby="operations-heading">
@@ -121,7 +114,7 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
           <div className="nt-readonly-value"><span>Πώληση χωρίς ΦΠΑ</span><strong>{sellingPriceExcludingVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR' })}</strong></div>
         </div>
         <div className="nt-stock-grid">
-          <div className="nt-readonly-value"><span>Απόθεμα προμηθευτή</span><strong>{supplierStock.value}</strong><small>{supplierStock.source}</small></div>
+          <div className="nt-readonly-value"><span>Απόθεμα προμηθευτή</span><strong>{supplierStockLabel}</strong>{supplierStockLabel !== '-' && <small>{supplierStock.source}</small>}</div>
           <div className="nt-readonly-value"><span>Προσωπικό απόθεμα</span><strong>{draft.stockQuantity}</strong>{product.id && onAdjustStock && <Button secondary className="mt-2 w-full" onClick={onAdjustStock}><PackageSearch size={14} /> Ρύθμιση</Button>}</div>
         </div>
       </section>
