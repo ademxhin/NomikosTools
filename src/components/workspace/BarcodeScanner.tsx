@@ -29,7 +29,7 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
     setValue('');
   };
 
-  const toggleCamera = async () => {
+  const startCamera = async () => {
     if (camera) { stopCamera(); return; }
     if (!navigator.mediaDevices?.getUserMedia) {
       setError('Η κάμερα δεν υποστηρίζεται από αυτόν τον browser. Χρησιμοποιήστε USB scanner ή πληκτρολογήστε τον κωδικό.');
@@ -38,7 +38,7 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
     try {
       setError('');
       const video = videoRef.current;
-      if (!video) return;
+      if (!video) throw new Error('video-not-ready');
       const reader = new BrowserMultiFormatReader();
       readerRef.current = reader;
       setCamera(true);
@@ -57,6 +57,15 @@ export function BarcodeScanner({ onDetected }: { onDetected: (value: string) => 
         : 'Δεν ήταν δυνατή η εκκίνηση της κάμερας. Ελέγξτε ότι χρησιμοποιείτε HTTPS και ότι η κάμερα είναι διαθέσιμη.';
       setError(message);
     }
+  };
+
+  useEffect(() => {
+    if (camera && !controlsRef.current) void startCamera();
+  }, [camera]);
+
+  const toggleCamera = () => {
+    if (camera) { stopCamera(); return; }
+    setCamera(true);
   };
 
   return <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
