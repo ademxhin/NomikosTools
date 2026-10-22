@@ -27,10 +27,37 @@
 .nt-results-summary span:first-child { color: #525252; font-weight: 600; }
 .nt-results-summary-divider { color: #d4d4d4; font-weight: 400; }
 .nt-product-editor { max-width: 100%; min-width: 0; color: #262626; }
-.nt-product-editor > section { border: 1px solid #e5e5e5 !important; border-radius: 16px; background: #fff; padding: 24px !important; box-shadow: 0 2px 3px #00000004; }
+.nt-product-editor > section { border: 0 !important; border-radius: 0; background: transparent; padding: 0 !important; box-shadow: none; }
 .nt-product-editor > section, .nt-primary-image { max-width: 100%; min-width: 0; }
 .nt-primary-image img { max-width: 100%; }
 .nt-product-editor > section > h3 { border-left: 3px solid #e21b22; padding-left: 10px; }
+.nt-product-heading { min-width: 0; }
+.nt-product-title-field { display: block; min-width: 0; }
+.nt-product-title-field textarea { display: block; width: 100%; min-height: 54px; resize: none; overflow: hidden; border: 0; border-bottom: 1px solid #d4d4d4; border-radius: 0; padding: 0 0 6px; color: #171717; font-size: clamp(1.3rem, 5vw, 1.75rem); font-weight: 800; line-height: 1.12; }
+.nt-product-title-field textarea:focus { border-color: #e21b22; box-shadow: none; outline: none; }
+.nt-product-sku { display: flex; min-width: 0; align-items: center; gap: 4px; margin: 5px 0 0; color: #737373; font-size: 12px; }
+.nt-product-sku input { min-width: 0; width: 100%; border: 0; background: transparent; padding: 0; color: #525252; font-size: 12px; font-weight: 600; }
+.nt-product-sku input:focus { outline: none; }
+.nt-product-gallery { display: grid; min-width: 0; grid-template-columns: minmax(0, 1fr) 56px; gap: 10px; align-items: stretch; }
+.nt-main-product-image { display: grid; min-height: 230px; place-items: center; overflow: hidden; border-radius: 12px; background: #fafafa; }
+.nt-main-product-image img { width: 100%; height: 100%; max-height: 330px; object-fit: contain; }
+.nt-product-thumbnails { display: flex; min-height: 230px; flex-direction: column; gap: 8px; }
+.nt-product-thumbnail-wrap { position: relative; min-height: 0; }
+.nt-product-thumbnail, .nt-add-thumbnail { display: grid; width: 56px; height: 56px; place-items: center; overflow: hidden; border: 1px solid #e5e5e5; border-radius: 9px; background: #fafafa; cursor: pointer; }
+.nt-product-thumbnail:hover, .nt-add-thumbnail:hover { border-color: #e21b22; }
+.nt-product-thumbnail img { width: 100%; height: 100%; object-fit: contain; }
+.nt-thumbnail-remove { position: absolute; top: 2px; right: 2px; display: grid; width: 18px; height: 18px; place-items: center; border-radius: 50%; background: #fff; color: #991b1b; opacity: 0; }
+.nt-product-thumbnail-wrap:hover .nt-thumbnail-remove, .nt-product-thumbnail-wrap:focus-within .nt-thumbnail-remove { opacity: 1; }
+.nt-add-thumbnail { flex: 0 0 56px; border-style: dashed; color: #737373; font-size: 28px; font-weight: 300; }
+.nt-product-secondary-fields { display: grid; gap: 12px; }
+.nt-price-grid, .nt-stock-grid { display: grid; gap: 12px; }
+.nt-price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nt-price-grid.has-purchase-price { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.nt-stock-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nt-readonly-value { display: flex; min-width: 0; min-height: 68px; flex-direction: column; justify-content: center; gap: 3px; border-bottom: 1px solid #d4d4d4; }
+.nt-readonly-value > span { color: #737373; font-size: 11px; font-weight: 600; line-height: 1.2; }
+.nt-readonly-value > strong { overflow: hidden; color: #171717; font-size: 16px; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.nt-readonly-value > small { overflow: hidden; color: #737373; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
 .nt-editor-details { border: 1px solid #e5e5e5; border-radius: 16px; background: #fff; padding: 18px 20px; }
 .nt-editor-details > summary { cursor: pointer; font-size: 15px; font-weight: 700; }
 .nt-product-savebar { position: sticky; bottom: 0; z-index: 15; padding-bottom: max(12px, env(safe-area-inset-bottom)); }
@@ -59,7 +86,7 @@
 .nt-table th { color: #737373; font-size: 11px; letter-spacing: .06em; background: #fafafa; }
 .nt-table th, .nt-table td { padding: 13px 12px; border-bottom: 1px solid #eee; }
 .nt-table tr:hover td { background: #fafafa; }
-.nt-dialog-full-page { position: static; inset: auto; z-index: auto; display: block; width: 100%; min-width: 0; height: auto; max-width: 100%; max-height: none; margin: 0; box-sizing: border-box; border: 1px solid #e5e5e5; border-radius: 16px; background: #fff; padding: 24px; box-shadow: 0 2px 3px #00000004; overflow: visible; }
+.nt-dialog-full-page { position: static; inset: auto; z-index: auto; display: block; width: 100%; min-width: 0; height: auto; max-width: 100%; max-height: none; margin: 0; box-sizing: border-box; border: 0; border-radius: 0; background: transparent; padding: 0; box-shadow: none; overflow: visible; }
 .nt-dialog-full-page::backdrop { display: none; }
 .nt-compare-page input[type='checkbox'] { accent-color: #e21b22; }
 .nt-compare-table th, .nt-compare-table td { border-color: #e5e5e5; }
@@ -243,18 +270,15 @@ body {
 
   .nt-dialog-full-page {
     width: 100%;
-    padding: 12px;
-    border-radius: 14px;
+    padding: 0;
+    border-radius: 0;
   }
 
   .nt-dialog-full-page > header {
     margin-bottom: 12px;
   }
 
-  .nt-product-editor > section {
-    padding: 16px !important;
-    border-radius: 14px;
-  }
+  .nt-product-editor > section { padding: 0 !important; border-radius: 0; }
 
   .nt-image-actions > label {
     width: 100%;
@@ -264,6 +288,15 @@ body {
     padding: 16px;
     border-radius: 14px;
   }
+
+  .nt-main-product-image { min-height: 190px; }
+  .nt-product-thumbnails { min-height: 190px; }
+  .nt-product-thumbnail, .nt-add-thumbnail { width: 48px; height: 48px; }
+  .nt-add-thumbnail { flex-basis: 48px; }
+  .nt-price-grid, .nt-price-grid.has-purchase-price { gap: 8px; }
+  .nt-readonly-value { min-height: 62px; }
+  .nt-readonly-value > span { font-size: 10px; }
+  .nt-readonly-value > strong { font-size: 14px; }
 
   .nt-product-savebar {
     margin-right: -12px;

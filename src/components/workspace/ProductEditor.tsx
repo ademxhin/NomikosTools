@@ -81,43 +81,48 @@ export function ProductEditor({ product, onClose, onAdjustStock, canViewPurchase
 
   const productCategories = categoryGroups.flatMap(group => categories.filter(category => category.parentId === group.id).map(category => ({ id: category.id, name: category.name, groupName: `${group.name} / ${category.groupName ?? ''}` })));
 
-  return <Dialog title={product.id ? 'Επεξεργασία προϊόντος' : 'Νέο προϊόν'} onClose={close} fullPage={fullPage}>
+  const sellingPriceExcludingVat = draft.price / (1 + draft.vatRate);
+
+  return <Dialog title="" onClose={close} fullPage={fullPage}>
     <form onSubmit={save} className="nt-product-editor space-y-4 pb-24 sm:space-y-6 sm:pb-0">
       {error && <p role="alert" className="rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</p>}
 
-      <section className="space-y-5" aria-labelledby="product-identity-heading">
-        <h3 id="product-identity-heading" className="text-lg font-bold">Ταυτότητα προϊόντος</h3>
-        <div className="grid gap-4 md:grid-cols-2">
-          <Field label="Τίτλος *"><input required value={draft.name} onChange={event => set('name', event.target.value)} /></Field>
-          <Field label="SKU / κωδικός προϊόντος *"><input required value={draft.sku} onChange={event => set('sku', event.target.value)} autoCapitalize="off" /></Field>
-          <Field label="Barcode"><input inputMode="numeric" value={draft.ean} onChange={event => set('ean', event.target.value)} autoCapitalize="off" /><small>Διατηρούνται τα αρχικά μηδενικά.</small></Field>
-          <Field label="Κωδικός κατασκευαστή"><input value={draft.manufacturerCode} onChange={event => set('manufacturerCode', event.target.value)} /></Field>
+      <section className="nt-product-overview space-y-4" aria-labelledby="product-identity-heading">
+        <div className="nt-product-heading">
+          <label className="nt-product-title-field"><span className="sr-only">Τίτλος *</span><textarea id="product-identity-heading" required rows={2} value={draft.name} onChange={event => set('name', event.target.value)} aria-label="Τίτλος προϊόντος" placeholder="Τίτλος προϊόντος" /></label>
+          <label className="nt-product-sku"><span>Κωδικός προϊόντος:</span><input required value={draft.sku} onChange={event => set('sku', event.target.value)} autoCapitalize="off" aria-label="Κωδικός προϊόντος" /></label>
         </div>
 
-        <div className="nt-primary-image mx-auto w-full max-w-3xl rounded-2xl border border-neutral-200 bg-neutral-50 p-3 sm:p-4">
-          <div className="grid min-h-40 place-items-center overflow-hidden rounded-xl bg-white p-3 sm:min-h-56">
-            {draft.images[0] ? <img src={draft.images[0]} alt={draft.imageAlt?.[draft.images[0]] ?? draft.name} className="max-h-44 w-full object-contain sm:max-h-56" /> : <div className="text-center text-neutral-400"><ImagePlus className="mx-auto mb-2" /><p className="text-sm">Προσθέστε την κύρια φωτογραφία</p></div>}
+        <div className="nt-product-gallery">
+          <div className="nt-main-product-image">
+            {draft.images[0] ? <img src={draft.images[0]} alt={draft.imageAlt?.[draft.images[0]] ?? draft.name} /> : <div className="text-center text-neutral-400"><ImagePlus className="mx-auto mb-2" /><p className="text-sm">Προσθέστε φωτογραφία</p></div>}
           </div>
-          <div className="nt-image-actions mt-3 grid gap-2 sm:flex sm:flex-wrap">
-            <label className="nt-button nt-button-secondary cursor-pointer"><ImagePlus size={16} /> Προσθήκη εικόνων<input className="sr-only" type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={event => void upload(event.target.files)} /></label>
-            <label className="nt-button nt-button-secondary cursor-pointer"><Camera size={16} /> Κάμερα<input className="sr-only" type="file" accept="image/*" capture="environment" onChange={event => void upload(event.target.files)} /></label>
+          <div className="nt-product-thumbnails" aria-label="Φωτογραφίες προϊόντος">
+            {draft.images.slice(1).map((url, offset) => { const index = offset + 1; return <div key={url} className="nt-product-thumbnail-wrap"><button type="button" className="nt-product-thumbnail" title="Ορισμός ως κύρια" aria-label={`Ορισμός εικόνας ${index + 1} ως κύρια`} onClick={() => set('images', [url, ...draft.images.filter((_, imageIndex) => imageIndex !== index)])}><img src={url} alt="" /></button><button type="button" className="nt-thumbnail-remove" title="Αφαίρεση εικόνας" aria-label="Αφαίρεση εικόνας" onClick={() => set('images', draft.images.filter((_, imageIndex) => imageIndex !== index))}><Trash2 size={12} /></button></div>; })}
+            <label className="nt-add-thumbnail" title="Προσθήκη εικόνων"><span>+</span><input className="sr-only" type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={event => void upload(event.target.files)} /></label>
           </div>
-          {busy && <p role="status" className="mt-2 text-sm text-neutral-600">Επεξεργασία εικόνας…</p>}
-          {draft.images.length > 0 && <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{draft.images.map((url, index) => <div key={url} className={`rounded-xl border p-3 ${index === 0 ? 'border-red-300 bg-red-50/40' : 'border-neutral-200 bg-white'}`}>
-            <div className="flex items-center gap-3"><img src={url} alt="" className="h-16 w-16 rounded-lg bg-white object-contain" /><div className="min-w-0 flex-1"><p className="truncate text-xs font-semibold">{index === 0 ? 'Κύρια εικόνα' : `Εικόνα ${index + 1}`}</p><div className="mt-2 flex gap-1">{index !== 0 && <button type="button" className="rounded-lg border p-2" title="Ορισμός ως κύρια" aria-label="Ορισμός ως κύρια" onClick={() => set('images', [url, ...draft.images.filter((_, imageIndex) => imageIndex !== index)])}><Star size={15} /></button>}<button type="button" className="rounded-lg border p-2 text-red-700" title="Αφαίρεση εικόνας" aria-label="Αφαίρεση εικόνας" onClick={() => set('images', draft.images.filter((_, imageIndex) => imageIndex !== index))}><Trash2 size={15} /></button></div></div></div>
-            <Field label="Εναλλακτικό κείμενο"><input value={draft.imageAlt?.[url] ?? ''} onChange={event => set('imageAlt', { ...draft.imageAlt, [url]: event.target.value })} /></Field>
-          </div>)}</div>}
+        </div>
+        <div className="nt-image-actions flex gap-2">
+          <label className="nt-button nt-button-secondary flex-1 cursor-pointer"><ImagePlus size={15} /> Προσθήκη<input className="sr-only" type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={event => void upload(event.target.files)} /></label>
+          <label className="nt-button nt-button-secondary flex-1 cursor-pointer"><Camera size={15} /> Κάμερα<input className="sr-only" type="file" accept="image/*" capture="environment" onChange={event => void upload(event.target.files)} /></label>
+        </div>
+        {busy && <p role="status" className="text-sm text-neutral-600">Επεξεργασία εικόνας…</p>}
+        <div className="nt-product-secondary-fields">
+          <div className="grid gap-3 sm:grid-cols-2"><Field label="Barcode"><input inputMode="numeric" value={draft.ean} onChange={event => set('ean', event.target.value)} autoCapitalize="off" /></Field><Field label="Κωδικός κατασκευαστή"><input value={draft.manufacturerCode} onChange={event => set('manufacturerCode', event.target.value)} /></Field></div>
+          {draft.images[0] && <Field label="Εναλλακτικό κείμενο εικόνας"><input value={draft.imageAlt?.[draft.images[0]] ?? ''} onChange={event => set('imageAlt', { ...draft.imageAlt, [draft.images[0]]: event.target.value })} /></Field>}
         </div>
       </section>
 
       <section className="space-y-4" aria-labelledby="operations-heading">
-        <h3 id="operations-heading" className="text-lg font-bold">Τιμές & διαθεσιμότητα</h3>
-        <p className="text-sm text-neutral-500">Οι τιμές καταχωρίζονται σε ευρώ. Η κανονική τιμή πώλησης εμφανίζεται στον πελάτη με ΦΠΑ.</p>
-        <div className="grid gap-4 md:grid-cols-2">
-          {canViewPurchasePrice && <div className="rounded-xl border border-amber-200 bg-amber-50 p-4"><Field label="Τιμή αγοράς από προμηθευτή (€)"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.costPrice} onChange={event => set('costPrice', Number(event.target.value))} /></Field><p className="mt-2 text-xs text-amber-800">Εσωτερική πληροφορία — δεν εμφανίζεται στο κατάστημα.</p></div>}
-          <div className="rounded-xl border border-red-200 bg-red-50 p-4"><Field label="Κανονική τιμή πώλησης πελάτη (€ με ΦΠΑ)"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.price} onChange={event => set('price', Number(event.target.value))} /></Field></div>
-          <div className="rounded-xl border border-neutral-200 p-4"><p className="text-xs font-semibold text-neutral-500">Δικό μας διαθέσιμο απόθεμα</p><p className="mt-2 text-2xl font-bold">{draft.stockQuantity}</p><p className="mt-1 text-xs text-neutral-500">Read-only · οι αλλαγές καταγράφονται στο ιστορικό αποθήκης.</p>{product.id && onAdjustStock && <Button secondary className="mt-3 w-full" onClick={onAdjustStock}><PackageSearch size={16} /> Ρύθμιση αποθέματος</Button>}</div>
-          <div className="rounded-xl border border-neutral-200 p-4"><p className="text-xs font-semibold text-neutral-500">Απόθεμα προμηθευτή</p><p className="mt-2 text-lg font-bold">{supplierStock.value}</p><p className="mt-1 text-xs text-neutral-500">{supplierStock.source}. Δεν παρέχεται χρόνος τελευταίας ενημέρωσης.</p></div>
+        <h3 id="operations-heading" className="sr-only">Τιμές & διαθεσιμότητα</h3>
+        <div className={`nt-price-grid ${canViewPurchasePrice ? 'has-purchase-price' : ''}`}>
+          {canViewPurchasePrice && <Field label="Τιμή αγοράς"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.costPrice} onChange={event => set('costPrice', Number(event.target.value))} /></Field>}
+          <Field label="Τιμή πώλησης"><input type="number" inputMode="decimal" min="0" step=".01" value={draft.price} onChange={event => set('price', Number(event.target.value))} /></Field>
+          <div className="nt-readonly-value"><span>Πώληση χωρίς ΦΠΑ</span><strong>{sellingPriceExcludingVat.toLocaleString('el-GR', { style: 'currency', currency: 'EUR' })}</strong></div>
+        </div>
+        <div className="nt-stock-grid">
+          <div className="nt-readonly-value"><span>Απόθεμα προμηθευτή</span><strong>{supplierStock.value}</strong><small>{supplierStock.source}</small></div>
+          <div className="nt-readonly-value"><span>Προσωπικό απόθεμα</span><strong>{draft.stockQuantity}</strong>{product.id && onAdjustStock && <Button secondary className="mt-2 w-full" onClick={onAdjustStock}><PackageSearch size={14} /> Ρύθμιση</Button>}</div>
         </div>
       </section>
 
