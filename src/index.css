@@ -3,6 +3,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 .nt-panel { border: 1px solid #e5e5e5; border-radius: 16px; background: white; padding: 24px; box-shadow: 0 2px 3px #00000004; min-width: 0; }
+.nt-panel:has(> p.text-3xl) { display: flex; flex-direction: column; }
+.nt-panel:has(> p.text-3xl) > p:last-child { margin-top: auto; }
 .nt-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 10px 16px; border-radius: 10px; background: #e21b22; color: white; font-size: 13px; font-weight: 600; cursor: pointer; }
 .nt-button:hover { background: #c81016; }
 .nt-button-secondary { background: #f5f5f5; color: #262626; border: 1px solid #e5e5e5; }
