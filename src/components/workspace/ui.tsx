@@ -21,7 +21,7 @@ export function Dialog({ title, children, onClose, fullPage = false }: { title: 
       previous?.focus();
     };
   }, [fullPage]);
-  return <dialog ref={ref} className={`nt-dialog ${fullPage ? 'nt-dialog-full-page' : ''}`} onCancel={e => { e.preventDefault(); onClose(); }}><header className="mb-5 flex items-center justify-between gap-4"><h2 className="text-xl font-bold">{title}</h2><button onClick={onClose} aria-label="Κλείσιμο" className="rounded-lg p-2 hover:bg-neutral-100"><X /></button></header>{children}</dialog>;
+  return <dialog ref={ref} className={`nt-dialog ${fullPage ? 'nt-dialog-full-page' : ''}`} onCancel={e => { e.preventDefault(); onClose(); }}><header className="mb-5 flex min-w-0 items-center justify-between gap-3"><h2 className="min-w-0 text-lg font-bold leading-tight sm:text-xl">{title}</h2><button onClick={onClose} aria-label="Κλείσιμο" className="shrink-0 rounded-lg p-2 hover:bg-neutral-100"><X /></button></header>{children}</dialog>;
 }
 export function Pager({ page, total, onChange }: { page: number; total: number; onChange: (page: number) => void }) {
   return <div className="mt-4 flex items-center justify-end gap-3 text-sm"><Button secondary disabled={page <= 1} onClick={() => onChange(page - 1)}>Προηγούμενη</Button><span>{page} / {Math.max(total, 1)}</span><Button secondary disabled={page >= total} onClick={() => onChange(page + 1)}>Επόμενη</Button></div>;

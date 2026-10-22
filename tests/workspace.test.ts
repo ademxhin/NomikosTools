@@ -7,6 +7,7 @@ import type { Product } from '../src/types/product.ts';
 import { initialProducts } from '../src/data/productsData.ts';
 import type { Order } from '../src/types/order.ts';
 import { couponDiscount } from '../src/services/coupons.ts';
+import { getSupplierStockView } from '../src/services/productAdmin.ts';
 const product: Product = { ...initialProducts[0], id: 'p', name: 'Εργαλείο', sku: 'SKU-1', slug: 'tool', ean: '0012345', active: true, price: 12.4, salePrice: undefined, variants: [], stockQuantity: 2, lowStockThreshold: 1, weight: 1, vatRate: .24, images: [], categoryIds: [] };
 const order = { id: 'o', customerId: 'u1', status: 'Νέα', items: [{ productId: 'p', sku: 'SKU-1', quantity: 1, price: .01 }], shippingCost: 0, discountTotal: 0, payment: { status: 'paid' }, shipping: { carrier: 'acs' }, customer: { email: 'test@example.test' } } as Order;
 test('role permissions are limited by responsibility', () => {
@@ -35,6 +36,12 @@ test('cancellation releases committed stock, never uncommitted stock', () => {
 });
 test('barcode remains a string, duplicate product SKU is rejected', () => {
   validateProduct(product, []); assert.equal(product.ean, '0012345'); assert.throws(() => validateProduct({ ...product, id: 'different' }, [product]), /SKU/);
+});
+test('purchase price is validated and supplier stock never falls back to a fake zero', () => {
+  assert.throws(() => validateProduct({ ...product, costPrice: -1 }, []), /μη αρνητικά/);
+  assert.deepEqual(getSupplierStockView({ ...product, supplierStock: 7 }), { value: '7', source: 'Πεδίο supplierStock' });
+  assert.deepEqual(getSupplierStockView({ ...product, supplierStock: undefined, attributes: { supplierStock: 'Διαθέσιμο' } }), { value: 'Διαθέσιμο', source: 'Εισαγόμενα δεδομένα προμηθευτή' });
+  assert.match(getSupplierStockView({ ...product, supplierStock: undefined, attributes: {} }).value, /Δεν υπάρχει/);
 });
 test('variant duplicates and overselling a variant are rejected', () => {
   const variant = { id: 'v', name: 'Μικρό', sku: 'V-1', price: 10, stockQuantity: 1, attributes: { size: 'S' } };

@@ -27,7 +27,7 @@ export const orderSteps: OrderStatus[] = ['Νέα', 'Επιβεβαιωμένη'
 export function validateProduct(product: Product, products: Product[]) {
   if (!product.name.trim() || !product.sku.trim() || !product.slug.trim()) throw new Error('Συμπληρώστε τίτλο, SKU και σύνδεσμο.');
   if (products.some(p => p.id !== product.id && (p.sku === product.sku || p.slug === product.slug))) throw new Error('Το SKU ή ο σύνδεσμος χρησιμοποιείται ήδη.');
-  if (![product.price, product.stockQuantity, product.lowStockThreshold, product.weight].every(n => Number.isFinite(n) && n >= 0)) throw new Error('Τιμές, βάρος και ποσότητες πρέπει να είναι μη αρνητικά.');
+  if (![product.costPrice, product.price, product.stockQuantity, product.lowStockThreshold, product.weight].every(n => Number.isFinite(n) && n >= 0)) throw new Error('Τιμές, βάρος και ποσότητες πρέπει να είναι μη αρνητικά.');
   if (!Number.isInteger(product.stockQuantity)) throw new Error('Το απόθεμα πρέπει να είναι ακέραιος αριθμός.');
   if (product.salePrice !== undefined && (!Number.isFinite(product.salePrice) || product.salePrice < 0 || product.salePrice > product.price)) throw new Error('Η προσφορά πρέπει να είναι μεταξύ μηδέν και κανονικής τιμής.');
   const variants = product.variants ?? [];
