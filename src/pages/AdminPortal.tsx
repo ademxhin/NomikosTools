@@ -66,12 +66,19 @@ export function AdminPortal({ route, onNavigate }: { route: string; onNavigate: 
 }
 function ScannerWorkspace({ onNavigate }: { onNavigate: (route: string) => void }) {
   const store = useStore();
-  return <Panel title="Scanner προϊόντων"><BarcodeScanner onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) onNavigate(`/admin/products/${product.id}`); else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /><p className="mt-4 text-sm text-neutral-500">Μετά τη σάρωση ανοίγει απευθείας το αντίστοιχο προϊόν.</p></Panel>;
+  return <Panel title="Scanner προϊόντων"><BarcodeScanner onDetected={code => navigateToScannedProduct(code, store, onNavigate)} /><p className="mt-4 text-sm text-neutral-500">Μετά τη σάρωση ανοίγει απευθείας το αντίστοιχο προϊόν.</p></Panel>;
+}
+
+function navigateToScannedProduct(code: string, store: ReturnType<typeof useStore>, onNavigate: (route: string) => void, onClose?: () => void) {
+  const normalized = code.trim();
+  const product = store.allProducts.find(item => item.sku === normalized || item.ean === normalized);
+  if (product) { onClose?.(); onNavigate(`/admin/products/${product.id}`); }
+  else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning');
 }
 
 function QuickScanner({ onNavigate, onClose }: { onNavigate: (route: string) => void; onClose: () => void }) {
   const store = useStore();
-  return <div className="nt-scanner-overlay" role="presentation" onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}><section className="nt-scanner-modal" role="dialog" aria-modal="true" aria-label="Scanner προϊόντων" onMouseDown={event => event.stopPropagation()}><div className="mb-2 flex items-center justify-between"><p className="text-sm font-bold">Scanner προϊόντων</p><button type="button" aria-label="Κλείσιμο scanner" onClick={onClose} className="rounded-lg p-1.5 hover:bg-neutral-100"><X size={18} /></button></div><BarcodeScanner cameraOnly autoStartCamera onDetected={code => { const product = store.allProducts.find(p => p.sku === code || p.ean === code); if (product) { onClose(); onNavigate(`/admin/products/${product.id}`); } else store.showToast('Δεν βρέθηκε προϊόν με αυτόν τον SKU ή barcode.', 'warning'); }} /></section></div>;
+  return <div className="nt-scanner-overlay" role="presentation" onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}><section className="nt-scanner-modal" role="dialog" aria-modal="true" aria-label="Scanner προϊόντων" onMouseDown={event => event.stopPropagation()}><div className="mb-2 flex items-center justify-between"><p className="text-sm font-bold">Scanner προϊόντων</p><button type="button" aria-label="Κλείσιμο scanner" onClick={onClose} className="rounded-lg p-1.5 hover:bg-neutral-100"><X size={18} /></button></div><BarcodeScanner cameraOnly autoStartCamera onDetected={code => navigateToScannedProduct(code, store, onNavigate, onClose)} /></section></div>;
 }
 
 function QuickSearch({ onNavigate, onClose }: { onNavigate: (route: string) => void; onClose: () => void }) {
