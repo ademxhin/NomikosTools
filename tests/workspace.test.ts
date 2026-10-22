@@ -40,8 +40,8 @@ test('barcode remains a string, duplicate product SKU is rejected', () => {
 test('purchase price is validated and supplier stock never falls back to a fake zero', () => {
   assert.throws(() => validateProduct({ ...product, costPrice: -1 }, []), /μη αρνητικά/);
   assert.deepEqual(getSupplierStockView({ ...product, supplierStock: 7 }), { value: '7', source: 'Πεδίο supplierStock' });
-  assert.deepEqual(getSupplierStockView({ ...product, supplierStock: undefined, attributes: { supplierStock: 'Διαθέσιμο' } }), { value: 'Διαθέσιμο', source: 'Εισαγόμενα δεδομένα προμηθευτή' });
-  assert.match(getSupplierStockView({ ...product, supplierStock: undefined, attributes: {} }).value, /Δεν υπάρχει/);
+  assert.deepEqual(getSupplierStockView({ ...product, supplierStock: undefined, attributes: { supplierStock: 'Διαθέσιμο' } }), { value: '-', source: 'Εισαγόμενα δεδομένα προμηθευτή' });
+  assert.deepEqual(getSupplierStockView({ ...product, supplierStock: undefined, attributes: {} }), { value: '-', source: 'Εισαγόμενα δεδομένα προμηθευτή' });
 });
 test('variant duplicates and overselling a variant are rejected', () => {
   const variant = { id: 'v', name: 'Μικρό', sku: 'V-1', price: 10, stockQuantity: 1, attributes: { size: 'S' } };

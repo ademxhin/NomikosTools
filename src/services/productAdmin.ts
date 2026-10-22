@@ -1,8 +1,8 @@
 import { Product } from '../types/product';
 
 export function getSupplierStockView(product: Product) {
-  if (typeof product.supplierStock === 'number') return { value: String(product.supplierStock), source: 'Πεδίο supplierStock' };
+  if (typeof product.supplierStock === 'number' && Number.isFinite(product.supplierStock)) return { value: String(product.supplierStock), source: 'Πεδίο supplierStock' };
   const imported = product.attributes?.supplierStock?.trim();
-  if (imported) return { value: imported, source: 'Εισαγόμενα δεδομένα προμηθευτή' };
-  return { value: 'Δεν υπάρχει διαθέσιμη ένδειξη', source: 'Απαιτείται σύνδεση feed προμηθευτή' };
+  if (imported && /^\d+(?:[.,]\d+)?$/.test(imported)) return { value: imported.replace(',', '.'), source: 'Εισαγόμενα δεδομένα προμηθευτή' };
+  return { value: '-', source: 'Εισαγόμενα δεδομένα προμηθευτή' };
 }
