@@ -84,7 +84,7 @@ export function ProductEditor({ product, onClose, canViewPurchasePrice = false, 
   const productCategories = categoryGroups.flatMap(group => categories.filter(category => category.parentId === group.id).map(category => ({ id: category.id, name: category.name, groupName: `${group.name} / ${category.groupName ?? ''}` })));
 
   const sellingPriceExcludingVat = draft.price / (1 + draft.vatRate);
-  const grossProfit = sellingPriceExcludingVat - draft.costPrice;
+  const grossProfit = draft.price - draft.costPrice;
 
   return <Dialog title="" onClose={close} fullPage={fullPage} hideClose>
     <form onSubmit={save} className="nt-product-editor space-y-4 pb-24 sm:space-y-6 sm:pb-0">
